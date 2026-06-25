@@ -1,0 +1,1374 @@
+{
+  "Terry Bogard": [
+    {
+      "category": "combo",
+      "name": "Burn Knuckle Route",
+      "input": "↓ □ ~ ↓ ↙ ← □",
+      "damage": "180",
+      "difficulty": "Easy",
+      "description": "cr.LP, Burn Knuckle (214LP) — основной быстрый пандж"
+    },
+    {
+      "category": "combo",
+      "name": "Power Wave BnB",
+      "input": "□ △ ~ ↓ ↘ → □",
+      "damage": "210",
+      "difficulty": "Easy",
+      "description": "5LP, 5HP, Power Wave (236LP) — зоннинг строка"
+    },
+    {
+      "category": "combo",
+      "name": "Power Dunk Confirm",
+      "input": "□ △ ~ → ↓ ↘ ✕",
+      "damage": "250",
+      "difficulty": "Medium",
+      "description": "5LP, 5HP, Power Dunk (623HK) — лаунч финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Crack Shoot Loop",
+      "input": "□ △ ~ ↓ ↙ ← ✕ ~ ↓ ↙ ← □",
+      "damage": "280",
+      "difficulty": "Medium",
+      "description": "Crack Shoot (214HK), Burn Knuckle финиш"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ ~ ↓ ↙ ← □ + R2 ~ → ↓ ↘ ✕",
+      "damage": "320",
+      "difficulty": "Hard",
+      "description": "REV Burn Knuckle (214LP+R2), Power Dunk финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Full S.P.G. Route",
+      "input": "□ △ ~ ↓ ↙ ← □ + R2 ~ ↓ ↙ ← ✕ + R2 ~ → ↓ ↘ ✕",
+      "damage": "370",
+      "difficulty": "Hard",
+      "description": "Официальный PS Blog маршрут — REV Burn Knuckle, REV Crack Shoot, Power Dunk"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Power Wave",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "200",
+      "difficulty": "Easy",
+      "description": "Усиленный Power Wave — длинный снаряд с нокдауном"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Burning Wave",
+      "input": "↓ ↙ ← ↙ ↓ ↘ → □ + R2",
+      "damage": "280",
+      "difficulty": "Medium",
+      "description": "REV Burning Wave — огненная волна по всему экрану"
+    },
+    {
+      "category": "super",
+      "name": "Cosmic Strike Geyser",
+      "input": "↓ ↙ ← ↙ ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Super — Buster Wolf + финальный гейзер. Официальный финиш из PS Blog"
+    }
+  ],
+  "Rock Howard": [
+    {
+      "category": "combo",
+      "name": "Hard Edge Starter",
+      "input": "↓ □ ~ ↓ ↘ → □",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "cr.LP, Hard Edge (236LP) — базовый пандж"
+    },
+    {
+      "category": "combo",
+      "name": "Rage Run Layup",
+      "input": "□ △ ~ → △ + R2 ~ ↓ △",
+      "damage": "220",
+      "difficulty": "Easy",
+      "description": "5LP, 5HP, REV Rage Run Type: Layup — угловой давящий маршрут"
+    },
+    {
+      "category": "combo",
+      "name": "Rising Tackle BnB",
+      "input": "□ △ ~ ↑ △ ~ ↓ ↘ → □",
+      "damage": "260",
+      "difficulty": "Medium",
+      "description": "5LP, HP Rising Tackle (держи ↓, ↑HP), Reppuu Ken финиш"
+    },
+    {
+      "category": "combo",
+      "name": "REV Hard Edge Loop",
+      "input": "□ △ ~ ↓ ↘ → □ + R2 ~ ↑ △ ~ ↓ ↘ → □",
+      "damage": "300",
+      "difficulty": "Medium",
+      "description": "REV Hard Edge, Rising Tackle подхват, Reppuu Ken"
+    },
+    {
+      "category": "combo",
+      "name": "Full REV Route",
+      "input": "□ △ ~ ↓ ↘ → □ + R2 ~ → △ + R2 ~ ↑ △ ~ ↓ ↘ → □",
+      "damage": "355",
+      "difficulty": "Hard",
+      "description": "PS Blog маршрут — REV Hard Edge, REV Rage Run Layup, Rising Tackle, Reppuu Ken"
+    },
+    {
+      "category": "combo",
+      "name": "Corner BnB",
+      "input": "↓ △ ~ ↓ ↘ → □ + R2 ~ ↑ △ + R2 ~ ↓ ↘ → □",
+      "damage": "380",
+      "difficulty": "Hard",
+      "description": "Угловой маршрут с двойным REV"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Shippuu Ken",
+      "input": "↓ ↘ → △ + R2",
+      "damage": "210",
+      "difficulty": "Easy",
+      "description": "Усиленный снаряд — пробивает гард на близкой дистанции"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Rising Tackle",
+      "input": "↑ △ + R2",
+      "damage": "260",
+      "difficulty": "Medium",
+      "description": "Усиленный Rising Tackle — анти-эйр с огромным хитбоксом"
+    },
+    {
+      "category": "super",
+      "name": "Raging Storm",
+      "input": "↙ ↓ ↘ → ↗ ↑ ↖ □",
+      "damage": "430",
+      "difficulty": "Hard",
+      "description": "Финальный супер из PS Blog — геезовский Raging Storm наследника"
+    }
+  ],
+  "Mai Shiranui": [
+    {
+      "category": "combo",
+      "name": "Ryuuenbu Starter",
+      "input": "↓ □ ~ ↓ ↘ → □",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "cr.LP, Ryuuenbu (236LP) — базовый снаряд-веер"
+    },
+    {
+      "category": "combo",
+      "name": "Hana Arashi BnB",
+      "input": "○ ✕ ~ ↓ ↙ ← ○",
+      "damage": "210",
+      "difficulty": "Easy",
+      "description": "5LK, 5HK, Hana Arashi (214LK) — рывок-удар ногой"
+    },
+    {
+      "category": "combo",
+      "name": "Sayo Chidori Combo",
+      "input": "○ ✕ ~ ↓ ↘ → ✕ ~ ↓ ↙ ← ○",
+      "damage": "255",
+      "difficulty": "Medium",
+      "description": "Sayo Chidori (236HK), Hana Arashi финиш"
+    },
+    {
+      "category": "combo",
+      "name": "REV Ryuuenbu BnB",
+      "input": "✕ ~ ↓ ↘ → □ + R2 ~ ↓ ↙ ← ✕ + R2",
+      "damage": "300",
+      "difficulty": "Medium",
+      "description": "PS Blog маршрут — REV Ryuuenbu, REV Sayo Chidori"
+    },
+    {
+      "category": "combo",
+      "name": "Shinobi Full Route",
+      "input": "✕ ~ ↓ ↘ → □ + R2 ~ ↓ ↙ ← ✕ + R2 ~ ↓ ↙ ← ✕",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Официальный PS Blog маршрут Mai — REV цепочка, финиш Hissatsu Shinobi Bachi"
+    },
+    {
+      "category": "combo",
+      "name": "Corner REV Route",
+      "input": "↓ ✕ ~ ↓ ↘ → □ + R2 ~ ↑ ↙ □ ~ ↓ ↙ ← ✕ + R2",
+      "damage": "390",
+      "difficulty": "Hard",
+      "description": "Угловой маршрут с прыжком и двойным REV"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Ryuuenbu",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "220",
+      "difficulty": "Easy",
+      "description": "Усиленный Ryuuenbu — огненный рывок сквозь гард"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Hissatsu Shinobi Bachi",
+      "input": "↓ ↙ ← ✕ + R2",
+      "damage": "270",
+      "difficulty": "Medium",
+      "description": "Усиленный удар ногой — большой нокбэк в угол"
+    },
+    {
+      "category": "super",
+      "name": "Kagerou no Mai",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "440",
+      "difficulty": "Hard",
+      "description": "Super — танцующий огненный финиш, официальный из PS Blog"
+    }
+  ],
+  "Tizoc": [
+    {
+      "category": "combo",
+      "name": "Griffon Attack",
+      "input": "□ △ ~ ↓ ↘ → □",
+      "damage": "190",
+      "difficulty": "Easy",
+      "description": "5LP, 5HP, Griffon Attack (236LP) — рывок захват"
+    },
+    {
+      "category": "combo",
+      "name": "Bird Dive",
+      "input": "↑ □ ~ ↓ ↘ → △",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "Прыжок, Bird Dive (236HP) — воздушный нырок"
+    },
+    {
+      "category": "combo",
+      "name": "REV Griffon Route",
+      "input": "□ △ ~ ↓ ↘ → □ + R2 ~ ↓ ↘ → △",
+      "damage": "290",
+      "difficulty": "Medium",
+      "description": "REV Griffon Attack, HP Griffon финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ ~ ↓ ↘ → □ + R2 ~ ↑ △ ~ ↓ ↘ → □ + R2",
+      "damage": "350",
+      "difficulty": "Hard",
+      "description": "REV Griffon, Bird Dive продолжение, REV финиш"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Griffon Attack",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Усиленный рывок захват с бронёй"
+    },
+    {
+      "category": "super",
+      "name": "Greatest Griffon Slam",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "430",
+      "difficulty": "Hard",
+      "description": "Super — финальный гриффонный захват с slam"
+    }
+  ],
+  "Hotaru Futaba": [
+    {
+      "category": "combo",
+      "name": "Ko-bi Kyaku",
+      "input": "□ △ ~ ↓ ↙ ← ✕",
+      "damage": "180",
+      "difficulty": "Easy",
+      "description": "5LP, 5HP, Ko-bi Kyaku (214HK) — удар ногой скольжение"
+    },
+    {
+      "category": "combo",
+      "name": "Senkyuuтай BnB",
+      "input": "↓ □ ~ ↓ ↘ → □ ~ ↓ ↙ ← ✕",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "cr.LP, Futaba-ryu (236LP), Ko-bi Kyaku"
+    },
+    {
+      "category": "combo",
+      "name": "REV Route",
+      "input": "□ △ ~ ↓ ↘ → □ + R2 ~ ↓ ↙ ← ✕ + R2",
+      "damage": "285",
+      "difficulty": "Medium",
+      "description": "REV Futaba-ryu, REV Ko-bi Kyaku финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ ~ ↓ ↘ → □ + R2 ~ □ △ ~ ↓ ↙ ← ✕ + R2",
+      "damage": "340",
+      "difficulty": "Hard",
+      "description": "REV строка, продолжение, REV Ko-bi Kyaku"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Futaba-ryu",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "230",
+      "difficulty": "Easy",
+      "description": "Усиленный снаряд — пронизывающий удар ладонью"
+    },
+    {
+      "category": "super",
+      "name": "Sen'en Geki",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "410",
+      "difficulty": "Hard",
+      "description": "Super — серия стремительных ударов ладонями"
+    }
+  ],
+  "Kevin Rian": [
+    {
+      "category": "combo",
+      "name": "Tackle Rush",
+      "input": "→ → □",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "ff+LP — рывок удар, безопасный подход"
+    },
+    {
+      "category": "combo",
+      "name": "Jab String",
+      "input": "□ □ △",
+      "damage": "200",
+      "difficulty": "Easy",
+      "description": "LP, LP, HP — базовая быстрая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Slide Kick",
+      "input": "↓ ✕ ~ ↓ ↘ → □",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "cr.HK подсечка, REV продолжение"
+    },
+    {
+      "category": "combo",
+      "name": "REV Tackle BnB",
+      "input": "□ □ △ ~ → → □ + R2 ~ ↓ ↘ → □",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "Строка, REV Tackle Rush, финиш снарядом"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Power Tackle",
+      "input": "→ → □ + R2",
+      "damage": "240",
+      "difficulty": "Easy",
+      "description": "Усиленный рывок — сбивает с ног"
+    },
+    {
+      "category": "super",
+      "name": "South Town Justice",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Super — серия ударов с финальным захватом"
+    }
+  ],
+  "Vox Reaper": [
+    {
+      "category": "combo",
+      "name": "Reaper Slash",
+      "input": "□ △ ~ ↓ ↘ → □",
+      "damage": "195",
+      "difficulty": "Easy",
+      "description": "5LP, 5HP, Reaper Slash (236LP) — косящий удар"
+    },
+    {
+      "category": "combo",
+      "name": "Shadow Dive",
+      "input": "↓ □ ~ ↓ ↙ ← △",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "cr.LP, Shadow Dive (214HP) — телепорт атака"
+    },
+    {
+      "category": "combo",
+      "name": "REV Reaper BnB",
+      "input": "□ △ ~ ↓ ↘ → □ + R2 ~ ↓ ↙ ← △ + R2",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "REV Reaper Slash, REV Shadow Dive финиш"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Shadow Dive",
+      "input": "↓ ↙ ← △ + R2",
+      "damage": "250",
+      "difficulty": "Medium",
+      "description": "Усиленный телепорт — удар с тёмной аурой"
+    },
+    {
+      "category": "super",
+      "name": "Death Harvest",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "430",
+      "difficulty": "Hard",
+      "description": "Super — тёмный вихрь ударов со смертной жатвой"
+    }
+  ],
+  "B. Jenet": [
+    {
+      "category": "combo",
+      "name": "Frolicking Flora",
+      "input": "□ △ ~ ↓ ↘ → □",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "5LP, 5HP, Frolicking Flora (236LP) — воздушная атака"
+    },
+    {
+      "category": "combo",
+      "name": "Geyser Breath",
+      "input": "↓ □ ~ ↓ ↙ ← △",
+      "damage": "210",
+      "difficulty": "Easy",
+      "description": "cr.LP, Geyser Breath (214HP) — удар с водяной волной"
+    },
+    {
+      "category": "combo",
+      "name": "REV Flora BnB",
+      "input": "□ △ ~ ↓ ↘ → □ + R2 ~ ↓ ↙ ← △ + R2",
+      "damage": "280",
+      "difficulty": "Medium",
+      "description": "REV Frolicking Flora, REV Geyser Breath"
+    },
+    {
+      "category": "combo",
+      "name": "Air Juggle Route",
+      "input": "↑ □ ~ ↓ ↘ → □ + R2 ~ □ △ ~ ↓ ↙ ← △",
+      "damage": "330",
+      "difficulty": "Hard",
+      "description": "j.LP, REV Flora, строка, Geyser финиш"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Frolicking Flora",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "240",
+      "difficulty": "Easy",
+      "description": "Усиленная воздушная атака с большим хитбоксом"
+    },
+    {
+      "category": "super",
+      "name": "Brise Fatale",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Super — пиратский финальный удар с волной"
+    }
+  ],
+  "Gato": [
+    {
+      "category": "combo",
+      "name": "Shien Kick",
+      "input": "□ △ , ↓ ↘ → ✕",
+      "damage": "195",
+      "difficulty": "Easy",
+      "description": "Строка, Shien Kick (QCF+HK)"
+    },
+    {
+      "category": "combo",
+      "name": "Gou Ryu Sen",
+      "input": "↓ ↙ ← □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Gou Ryu Sen — удар ладонью"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → ✕ + R2 , ↓ ↙ ← □",
+      "damage": "285",
+      "difficulty": "Hard",
+      "description": "REV Shien Kick, Gou Ryu Sen"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → ✕ + R2 , □ △ , ↓ ↙ ← □",
+      "damage": "335",
+      "difficulty": "Hard",
+      "description": "Полный BnB Gato"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Gou Ryu Sen",
+      "input": "↓ ↙ ← □ + R2",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Усиленный удар ладонью — сбивает с ног"
+    },
+    {
+      "category": "super",
+      "name": "Deadly Rave Neo",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Super — серия смертоносных ударов"
+    }
+  ],
+  "Billy Kane": [
+    {
+      "category": "combo",
+      "name": "Staff Thrust",
+      "input": "□ △ , ← → □",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Cane Thrust (BF1)"
+    },
+    {
+      "category": "combo",
+      "name": "Spinning Staff",
+      "input": "↓ ↙ ← ○",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Whirlwind Staff — круговой удар"
+    },
+    {
+      "category": "combo",
+      "name": "Fire BnB",
+      "input": "□ △ , ← → □ + R2 , ↓ ↙ ← ○",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "REV Cane Thrust, Spinning Staff"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ← → □ + R2 , □ △ , ↓ ↙ ← ○",
+      "damage": "325",
+      "difficulty": "Hard",
+      "description": "Полный BnB Billy Kane"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Cane Thrust",
+      "input": "← → □ + R2",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "Усиленный огненный удар посохом"
+    },
+    {
+      "category": "super",
+      "name": "Blaze of Glory",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "415",
+      "difficulty": "Hard",
+      "description": "Super — огненный вихрь посохом"
+    }
+  ],
+  "Kim Dong Hwan": [
+    {
+      "category": "combo",
+      "name": "Air Raid Kick",
+      "input": "□ △ , ↓ ↘ → ✕",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Air Raid Kick (QCF+HK)"
+    },
+    {
+      "category": "combo",
+      "name": "Electric Heel",
+      "input": "↓ ↙ ← ✕",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Electric Heel Kick — удар с электро"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → ✕ + R2 , ↓ ↙ ← ✕",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "REV Air Raid, Electric Heel"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → ✕ + R2 , □ △ , ↓ ↙ ← ✕",
+      "damage": "325",
+      "difficulty": "Hard",
+      "description": "Полный BnB Kim Dong Hwan"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Air Raid",
+      "input": "↓ ↘ → ✕ + R2",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "Усиленный прыжковый удар ногой"
+    },
+    {
+      "category": "super",
+      "name": "Hou'ou Kyaku",
+      "input": "↓ ↘ → ↓ ↘ → ✕",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Super — феникс серия ударов ногой"
+    }
+  ],
+  "Marco Rodrigues": [
+    {
+      "category": "combo",
+      "name": "Capoeira Sweep",
+      "input": "□ △ , ↓ ↙ ← ✕",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Capoeira Sweep (DB+HK)"
+    },
+    {
+      "category": "combo",
+      "name": "Slide Kick",
+      "input": "↓ ↘ → ✕",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Slide Kick — подсечка вперёд"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↙ ← ✕ + R2 , ↓ ↘ → ✕",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "REV Sweep, Slide Kick"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↙ ← ✕ + R2 , □ △ , ↓ ↘ → ✕",
+      "damage": "325",
+      "difficulty": "Hard",
+      "description": "Полный BnB Marco"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Capoeira",
+      "input": "↓ ↙ ← ✕ + R2",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "Усиленный capoeira удар"
+    },
+    {
+      "category": "super",
+      "name": "Martial Arts Special",
+      "input": "↓ ↘ → ↓ ↘ → ✕",
+      "damage": "415",
+      "difficulty": "Hard",
+      "description": "Super — микс capoeira и muay thai"
+    }
+  ],
+  "Preecha": [
+    {
+      "category": "combo",
+      "name": "Muay Thai Knee",
+      "input": "□ △ , ↓ ↘ → ○",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Muay Thai Knee (QCF+LK)"
+    },
+    {
+      "category": "combo",
+      "name": "Tornado Kick",
+      "input": "↓ ↙ ← ✕",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Tornado Kick — вращающийся удар"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → ○ + R2 , ↓ ↙ ← ✕",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "REV Knee, Tornado Kick"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → ○ + R2 , □ △ , ↓ ↙ ← ✕",
+      "damage": "325",
+      "difficulty": "Hard",
+      "description": "Полный BnB Preecha"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Knee Rush",
+      "input": "↓ ↘ → ○ + R2",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "Усиленный удар коленом"
+    },
+    {
+      "category": "super",
+      "name": "Muay Boran Art",
+      "input": "↓ ↘ → ↓ ↘ → ○",
+      "damage": "415",
+      "difficulty": "Hard",
+      "description": "Super — мастерский muay boran финиш"
+    }
+  ],
+  "Kain R. Heinlein": [
+    {
+      "category": "combo",
+      "name": "Schwarze Flame",
+      "input": "□ △ , ↓ ↘ → □",
+      "damage": "195",
+      "difficulty": "Easy",
+      "description": "Строка, Schwarze Flame — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Himmelsdunk",
+      "input": "→ ↓ ↘ □",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Himmelsdunk — DP атака"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , → ↓ ↘ □",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "REV Schwarze, Himmelsdunk"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , □ △ , → ↓ ↘ □",
+      "damage": "335",
+      "difficulty": "Hard",
+      "description": "Полный BnB Kain"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Schwarze",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "245",
+      "difficulty": "Medium",
+      "description": "Усиленный тёмный огненный снаряд"
+    },
+    {
+      "category": "super",
+      "name": "Schwarzer Strom",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "440",
+      "difficulty": "Hard",
+      "description": "Super — тёмная буря тёмных сил"
+    }
+  ],
+  "Hokutomaru": [
+    {
+      "category": "combo",
+      "name": "Shuriken Toss",
+      "input": "□ △ , ↓ ↘ → □",
+      "damage": "180",
+      "difficulty": "Easy",
+      "description": "Строка, Shuriken Toss (QCF+P)"
+    },
+    {
+      "category": "combo",
+      "name": "Flying Squirrel",
+      "input": "↑ △ , ↓ ↘ → □",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "Прыжок, Shuriken из воздуха"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , ↓ ↙ ← ○",
+      "damage": "270",
+      "difficulty": "Hard",
+      "description": "REV Shuriken, ниндзя удар"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , □ △ , ↓ ↙ ← ○",
+      "damage": "315",
+      "difficulty": "Hard",
+      "description": "Полный BnB Hokutomaru"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Shuriken",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "Усиленный шурикен — следит за противником"
+    },
+    {
+      "category": "super",
+      "name": "Exploding Nuts",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Super — взрывные орехи по всему экрану"
+    }
+  ],
+  "Salvatore Ganacci": [
+    {
+      "category": "combo",
+      "name": "Disco Combo",
+      "input": "□ △ , ↓ ↘ → ✕",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Строка, танцевальный удар ногой"
+    },
+    {
+      "category": "combo",
+      "name": "Beat Drop",
+      "input": "↓ ↙ ← □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Beat Drop — удар в ритм музыки"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → ✕ + R2 , ↓ ↙ ← □",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "REV Dance Kick, Beat Drop"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → ✕ + R2 , □ △ , ↓ ↙ ← □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Полный BnB Ganacci"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Dance Kick",
+      "input": "↓ ↘ → ✕ + R2",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "Усиленный танцевальный удар"
+    },
+    {
+      "category": "super",
+      "name": "Full Send",
+      "input": "↓ ↘ → ↓ ↘ → ✕",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Super — диджей финальное выступление"
+    }
+  ],
+  "Cristiano Ronaldo": [
+    {
+      "category": "combo",
+      "name": "Bicycle Kick",
+      "input": "↑ ✕",
+      "damage": "180",
+      "difficulty": "Easy",
+      "description": "Воздушный удар — фирменный scissors kick"
+    },
+    {
+      "category": "combo",
+      "name": "Power Shot",
+      "input": "↓ ↘ → ✕",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Power Shot — удар мячом как снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "SIUUU Combo",
+      "input": "□ △ , ↑ ✕ , ↓ ↘ → ✕",
+      "damage": "255",
+      "difficulty": "Medium",
+      "description": "Строка, Bicycle Kick, Power Shot"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↑ ✕ + R2 , □ △ , ↓ ↘ → ✕",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "REV Bicycle, строка, Power Shot"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Bicycle",
+      "input": "↑ ✕ + R2",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "Усиленный знаменитый Bicycle Kick"
+    },
+    {
+      "category": "super",
+      "name": "SIUUU!",
+      "input": "↓ ↘ → ↓ ↘ → ✕",
+      "damage": "410",
+      "difficulty": "Hard",
+      "description": "Super — прыжок SIUUU с финальным ударом"
+    }
+  ],
+  "Andy Bogard": [
+    {
+      "category": "combo",
+      "name": "Zan'ei Ken",
+      "input": "□ △ , ↓ ↘ → □",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Zan'ei Ken (QCF+P) — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Hishoken",
+      "input": "↓ ↘ → □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Hishoken — воздушный снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , → ↓ ↘ □",
+      "damage": "285",
+      "difficulty": "Hard",
+      "description": "REV Zan'ei, Kuuhaden финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , □ △ , → ↓ ↘ □",
+      "damage": "330",
+      "difficulty": "Hard",
+      "description": "Полный BnB Andy"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Zan'ei Ken",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Усиленный снаряд — быстрая волна"
+    },
+    {
+      "category": "super",
+      "name": "Chou Reppadan",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "430",
+      "difficulty": "Hard",
+      "description": "Super — серия Shoryudan ударов"
+    }
+  ],
+  "Joe Higashi": [
+    {
+      "category": "combo",
+      "name": "Hurricane Upper",
+      "input": "□ △ , ↓ ↙ ← □",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Hurricane Upper (QCB+P)"
+    },
+    {
+      "category": "combo",
+      "name": "Slash Kick",
+      "input": "↓ ↘ → ✕",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Slash Kick — рывок ногой"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↙ ← □ + R2 , ↓ ↘ → ✕",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "REV Hurricane, Slash Kick"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↙ ← □ + R2 , □ △ , ↓ ↘ → ✕",
+      "damage": "325",
+      "difficulty": "Hard",
+      "description": "Полный BnB Joe"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Hurricane",
+      "input": "↓ ↙ ← □ + R2",
+      "damage": "238",
+      "difficulty": "Medium",
+      "description": "Усиленный торнадо апперкот"
+    },
+    {
+      "category": "super",
+      "name": "Screw Upper",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "425",
+      "difficulty": "Hard",
+      "description": "Super — гигантский торнадо апперкот"
+    }
+  ],
+  "Ken Masters (CotW)": [
+    {
+      "category": "combo",
+      "name": "Hadoken",
+      "input": "↓ ↘ → □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Hadoken — классический снаряд SF"
+    },
+    {
+      "category": "combo",
+      "name": "Shoryuken",
+      "input": "→ ↓ ↘ □",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Shoryuken — DP атака"
+    },
+    {
+      "category": "combo",
+      "name": "Tatsumaki BnB",
+      "input": "□ △ , ↓ ↙ ← △ , → ↓ ↘ □",
+      "damage": "260",
+      "difficulty": "Hard",
+      "description": "Строка, Tatsu, Shoryuken финиш"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , → ↓ ↘ □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "REV Hadoken, Shoryuken"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Hadoken",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "Усиленный огненный Hadoken"
+    },
+    {
+      "category": "super",
+      "name": "Shinryuken",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "440",
+      "difficulty": "Hard",
+      "description": "Super — SF Shinryuken в CotW стиле"
+    }
+  ],
+  "Chun-Li (CotW)": [
+    {
+      "category": "combo",
+      "name": "Lightning Legs",
+      "input": "○ ○ ○ ○ ○",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Hyakuretsukyaku — серия ударов ногой"
+    },
+    {
+      "category": "combo",
+      "name": "Kikoken",
+      "input": "← ↙ ↓ ↘ → □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Kikoken — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ○ ○ ○ ○ ○ + R2 , ← ↙ ↓ ↘ → □",
+      "damage": "275",
+      "difficulty": "Hard",
+      "description": "REV Legs, Kikoken"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↑ △ , ○ ○ ○ ○ ○ + R2 , ← ↙ ↓ ↘ → □",
+      "damage": "320",
+      "difficulty": "Hard",
+      "description": "SBK лаунч, REV Legs, Kikoken"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Legs",
+      "input": "○ ○ ○ ○ ○ + R2",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Усиленные Lightning Legs — нокдаун"
+    },
+    {
+      "category": "super",
+      "name": "Kikosho (CotW)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "430",
+      "difficulty": "Hard",
+      "description": "Super — Kikosho в CotW стиле"
+    }
+  ],
+  "Mr. Big": [
+    {
+      "category": "combo",
+      "name": "Stick Thrust",
+      "input": "□ △ , ← → □",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Double Strike (BF+P)"
+    },
+    {
+      "category": "combo",
+      "name": "Big Wheel",
+      "input": "↓ ↘ → □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Big Wheel — снаряд посохом"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ← → □ + R2 , ↓ ↘ → □",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "REV Double Strike, Big Wheel"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ← → □ + R2 , □ △ , ↓ ↘ → □",
+      "damage": "325",
+      "difficulty": "Hard",
+      "description": "Полный BnB Mr. Big"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Double Strike",
+      "input": "← → □ + R2",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Усиленный двойной удар посохами"
+    },
+    {
+      "category": "super",
+      "name": "Crazy Ivan",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Super — финальный удар King of Art of Fighting"
+    }
+  ],
+  "Kim Jae Hoon": [
+    {
+      "category": "combo",
+      "name": "Hangetsu Zan",
+      "input": "□ △ , ↓ ↙ ← ✕",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Hangetsu Zan (DB+HK)"
+    },
+    {
+      "category": "combo",
+      "name": "Hishou Kyaku",
+      "input": "↑ ✕",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Hishou Kyaku — прыжок удар ногой"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↙ ← ✕ + R2 , ↑ ✕",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "REV Hangetsu, Hishou Kyaku"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↙ ← ✕ + R2 , □ △ , ↑ ✕",
+      "damage": "325",
+      "difficulty": "Hard",
+      "description": "Полный BnB Kim Jae Hoon"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Hangetsu",
+      "input": "↓ ↙ ← ✕ + R2",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "Усиленный лунный серп удар"
+    },
+    {
+      "category": "super",
+      "name": "Hou'ou Tenbu Kyaku",
+      "input": "↓ ↘ → ↓ ↘ → ✕",
+      "damage": "425",
+      "difficulty": "Hard",
+      "description": "Super — феникс серия ударов ногой"
+    }
+  ],
+  "Nightmare Geese": [
+    {
+      "category": "combo",
+      "name": "Reppuken",
+      "input": "↓ ↘ → □",
+      "damage": "200",
+      "difficulty": "Easy",
+      "description": "Reppuken — мощный снаряд по земле"
+    },
+    {
+      "category": "combo",
+      "name": "Shinkuu Nage",
+      "input": "← ↙ ↓ ↘ → □",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "Shinkuu Nage — захват"
+    },
+    {
+      "category": "combo",
+      "name": "Double Reppuken",
+      "input": "↓ ↘ → △",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "Double Reppuken — двойной снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , ← ↙ ↓ ↘ → □",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "REV Reppuken, Shinkuu Nage"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , □ △ , ↓ ↘ → △",
+      "damage": "335",
+      "difficulty": "Hard",
+      "description": "Полный BnB Nightmare Geese"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Reppuken",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "255",
+      "difficulty": "Medium",
+      "description": "Усиленный Reppuken — огромный снаряд"
+    },
+    {
+      "category": "super",
+      "name": "Rashoumon",
+      "input": "← ↙ ↓ ↘ → ← ↙ ↓ ↘ → □",
+      "damage": "460",
+      "difficulty": "Hard",
+      "description": "Super — легендарный Rashoumon Geese"
+    }
+  ],
+  "Blue Mary": [
+    {
+      "category": "combo",
+      "name": "Mary Snatcher",
+      "input": "□ △ , ↓ ↙ ← □",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Mary Snatcher (QCB+P)"
+    },
+    {
+      "category": "combo",
+      "name": "Spin Fall",
+      "input": "↓ ↘ → ✕",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Spin Fall — вращающийся удар"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↙ ← □ + R2 , ↓ ↘ → ✕",
+      "damage": "275",
+      "difficulty": "Hard",
+      "description": "REV Snatcher, Spin Fall"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↙ ← □ + R2 , □ △ , ↓ ↘ → ✕",
+      "damage": "320",
+      "difficulty": "Hard",
+      "description": "Полный BnB Blue Mary"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Snatcher",
+      "input": "↓ ↙ ← □ + R2",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "Усиленный захват"
+    },
+    {
+      "category": "super",
+      "name": "Mary's Wheel",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "415",
+      "difficulty": "Hard",
+      "description": "Super — вращающийся финальный захват"
+    }
+  ],
+  "Wolfgang Krauser": [
+    {
+      "category": "combo",
+      "name": "Blitz Ball",
+      "input": "↓ ↘ → □",
+      "damage": "205",
+      "difficulty": "Easy",
+      "description": "Blitz Ball — мощный снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Kaiser Wave",
+      "input": "↓ ↘ → △",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "Kaiser Wave — полноэкранный снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "REV BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , ↓ ↘ → △",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "REV Blitz Ball, Kaiser Wave"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → □ + R2 , □ △ , ↓ ↘ → △",
+      "damage": "335",
+      "difficulty": "Hard",
+      "description": "Полный BnB Krauser"
+    },
+    {
+      "category": "rev_art",
+      "name": "REV Blitz Ball",
+      "input": "↓ ↘ → □ + R2",
+      "damage": "255",
+      "difficulty": "Medium",
+      "description": "Усиленный Blitz Ball — нокдаун"
+    },
+    {
+      "category": "super",
+      "name": "Krauser Pressure",
+      "input": "← ↙ ↓ ↘ → ← ↙ ↓ ↘ → □",
+      "damage": "450",
+      "difficulty": "Hard",
+      "description": "Super — Kaiser Pressure финиш"
+    }
+  ]
+}

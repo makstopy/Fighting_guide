@@ -1,0 +1,990 @@
+{
+  "Goku": [
+    {
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "5L 5L 5M 5M 5H — универсальная базовая цепочка",
+      "category": "combo"
+    },
+    {
+      "name": "Kamehameha",
+      "input": "↓ ↘ → □",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Kamehameha — базовый снаряд",
+      "category": "combo"
+    },
+    {
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "BnB стартер, Super Dash, продолжение в воздухе",
+      "category": "combo"
+    },
+    {
+      "name": "Air Route",
+      "input": "↑ □ ↑ ○ ↑ △ ↑ ✕, ↓ □ □ ○ ○ △",
+      "damage": "270",
+      "difficulty": "Medium",
+      "description": "Воздушная цепочка, приземление, BnB продолжение",
+      "category": "combo"
+    },
+    {
+      "name": "Kamehameha Ender",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → △",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, воздух, Kamehameha финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Level 3 Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "BnB в Super Dash, Super Kamehameha (SA)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Super Kamehameha (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — максимальный урон, кансел из BnB"
+    }
+  ],
+  "Vegeta": [
+    {
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "5L 5L 5M 5M 5H — базовая цепочка",
+      "category": "combo"
+    },
+    {
+      "name": "Galick Gun",
+      "input": "↓ ↘ → ○",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Galick Gun — базовый снаряд",
+      "category": "combo"
+    },
+    {
+      "name": "SD Confirm",
+      "input": "↓ □ ○, ↗ □ ○ △ ✕",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "2M, 2H, Super Dash, воздушная строка",
+      "category": "combo"
+    },
+    {
+      "name": "Big Bang Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↙ ← ○",
+      "damage": "270",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, Big Bang Attack финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Corner BnB",
+      "input": "↓ □ ○, ○, ↗ □ ○ △ ✕, ↓ ↙ ← ○",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "2M, 5M, Super Dash, Big Bang",
+      "category": "combo"
+    },
+    {
+      "name": "Final Flash",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → ↓ ↘ → ○",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Final Flash (SA)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Final Flash (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → ○",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — Final Flash в полный экран"
+    }
+  ],
+  "Gohan": [
+    {
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая пятиударная цепочка",
+      "category": "combo"
+    },
+    {
+      "name": "Charge Shot",
+      "input": "↓ ↘ → □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Masenko — снаряд сверху вниз",
+      "category": "combo"
+    },
+    {
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздушная строка",
+      "category": "combo"
+    },
+    {
+      "name": "Teen Gohan",
+      "input": "↓ □ ○, ○ ○, ↗ □ ○ △",
+      "damage": "265",
+      "difficulty": "Medium",
+      "description": "2M, 2H, Super Dash, воздух",
+      "category": "combo"
+    },
+    {
+      "name": "Unlock Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Masenko финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Level 3 Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "BnB в Father-Son Kamehameha (SA)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Father-Son Kamehameha (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — командный Kamehameha"
+    }
+  ],
+  "Frieza": [
+    {
+      "name": "Death Beam",
+      "input": "↓ ↘ → □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Death Beam — быстрый снаряд",
+      "category": "combo"
+    },
+    {
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая пятиударная цепочка",
+      "category": "combo"
+    },
+    {
+      "name": "Death Saucer",
+      "input": "↓ ↙ ← ○",
+      "damage": "185",
+      "difficulty": "Medium",
+      "description": "Death Saucer — снаряд-диск",
+      "category": "combo"
+    },
+    {
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух",
+      "category": "combo"
+    },
+    {
+      "name": "Beam Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Death Beam финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Death Ball",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "BnB в Supernova (SA)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Supernova (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — планетарный взрыв"
+    }
+  ],
+  "Cell": [
+    {
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка",
+      "category": "combo"
+    },
+    {
+      "name": "Energy Field",
+      "input": "↓ ↘ → □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Perfect Shot — снаряд",
+      "category": "combo"
+    },
+    {
+      "name": "Tail Grab",
+      "input": "↓ ↙ ← □",
+      "damage": "190",
+      "difficulty": "Medium",
+      "description": "Drain Charge — захват хвостом",
+      "category": "combo"
+    },
+    {
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух",
+      "category": "combo"
+    },
+    {
+      "name": "Perfect Cell",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Perfect Shot финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Solar Kamehameha",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "BnB в Solar Kamehameha (SA)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Solar Kamehameha (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — Perfect Cell максимум"
+    }
+  ],
+  "Piccolo": [
+    {
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "145",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка",
+      "category": "combo"
+    },
+    {
+      "name": "Special Beam",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Special Beam Cannon — мощный снаряд",
+      "category": "combo"
+    },
+    {
+      "name": "Arm Extend",
+      "input": "↓ ↘ → ○",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Light Grenade — растяжение руки",
+      "category": "combo"
+    },
+    {
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух",
+      "category": "combo"
+    },
+    {
+      "name": "Hellzone Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↙ ← ↓ ↙ ← □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Hellzone Grenade",
+      "category": "combo"
+    },
+    {
+      "name": "Level 3 Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "BnB в True Rollout (SA)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "True Rollout (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — гигантская форма"
+    }
+  ],
+  "Android 18": [
+    {
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "148",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка",
+      "category": "combo"
+    },
+    {
+      "name": "Barrier",
+      "input": "↓ ↙ ← □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Accel Dance — снаряд-барьер",
+      "category": "combo"
+    },
+    {
+      "name": "16 Assist",
+      "input": "↓ ↘ → □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Infinity Bullet — серия энергошаров",
+      "category": "combo"
+    },
+    {
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух",
+      "category": "combo"
+    },
+    {
+      "name": "Combo Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↙ ← □",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Accel Dance финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Level 3 Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "BnB в Pretty Energy Cannon (SA)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Pretty Energy Cannon (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — массированный энергоудар"
+    }
+  ],
+  "Broly": [
+    {
+      "name": "Gigantic Strike",
+      "input": "↓ ↘ → □",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Gigantic Strike — мощный рывок",
+      "category": "combo"
+    },
+    {
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка — медленнее других",
+      "category": "combo"
+    },
+    {
+      "name": "Eraser Cannon",
+      "input": "↓ ↙ ← ○",
+      "damage": "185",
+      "difficulty": "Medium",
+      "description": "Eraser Cannon — зелёный энергошар",
+      "category": "combo"
+    },
+    {
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух",
+      "category": "combo"
+    },
+    {
+      "name": "Berserk Route",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Gigantic Strike финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Gigantic Roar",
+      "input": "□ □ ○ ○ △, ↗ □ ○ △ ✕, ↓ ↘ → ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "BnB в Gigantic Roar (SA) — максимальный урон",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Gigantic Roar (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — максимальный урон в игре"
+    }
+  ],
+  "Trunks": [
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая пятиударная цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "Burning Attack",
+      "input": "↓ ↘ → □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Burning Attack — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "combo",
+      "name": "Sword Route",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕ , ↓ ↘ → ○",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Heat Dome Attack"
+    },
+    {
+      "category": "super",
+      "name": "Heat Dome (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → ○",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — удар мечом с разворота"
+    }
+  ],
+  "Gotenks": [
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "Super Ghost",
+      "input": "↓ ↙ ← □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Super Ghost Kamikaze — призрак снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "combo",
+      "name": "Ghost Route",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕ , ↓ ↙ ← □",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Ghost Attack"
+    },
+    {
+      "category": "super",
+      "name": "Splitting Headache (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — взрывной финиш"
+    }
+  ],
+  "Nappa": [
+    {
+      "category": "combo",
+      "name": "Break Strike",
+      "input": "□ □ ○ ○ △",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Базовая мощная цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "Blazing Storm",
+      "input": "↓ ↘ → □",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Blazing Storm — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Saibamen",
+      "input": "↓ ↙ ← □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Saibamen Set — вызов сайбаменов"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Giant Storm (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — гигантская форма"
+    }
+  ],
+  "Hit": [
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "145",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "Flash Fist",
+      "input": "↓ ↘ → □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Flash Fist Crush — рывок атака"
+    },
+    {
+      "category": "combo",
+      "name": "Time Skip",
+      "input": "↓ ↙ ← □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Time Skip — замедление времени"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Pure Progress (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — убийственная эффективность"
+    }
+  ],
+  "Beerus": [
+    {
+      "category": "combo",
+      "name": "God of Destruction",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "Sphere of Destruction",
+      "input": "↓ ↘ → □",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Sphere of Destruction — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Hakai",
+      "input": "↓ ↙ ← □",
+      "damage": "200",
+      "difficulty": "Easy",
+      "description": "Hakai — разрушающий удар"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Universe of Destruction (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — планетарное разрушение"
+    }
+  ],
+  "Adult Gohan": [
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "Senko Blast",
+      "input": "↓ ↘ → □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Senko Blast — быстрый снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "combo",
+      "name": "Unlock Potential",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕ , ↓ ↘ → △",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "BnB, Super Dash, Explosive Madan"
+    },
+    {
+      "category": "super",
+      "name": "Ultimate Gohan Charge (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — финальный заряд взрослого Гохана"
+    }
+  ],
+  "Bardock": [
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "Rebellion Spear",
+      "input": "↓ ↘ → □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Rebellion Spear — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Revenger (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — Final Spirit Cannon"
+    }
+  ],
+  "Zamasu": [
+    {
+      "category": "combo",
+      "name": "Holy Light",
+      "input": "↓ ↘ → □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Holy Light Grenade — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Divine Wrath (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — божественный гнев"
+    }
+  ],
+  "Gogeta": [
+    {
+      "category": "combo",
+      "name": "Stardust Fall",
+      "input": "↓ ↘ → □",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Stardust Fall — мощный снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Soul Punisher (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "430",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — Stardust Breaker"
+    }
+  ],
+  "Vegito": [
+    {
+      "category": "combo",
+      "name": "Spirit Sword",
+      "input": "↓ ↘ → □",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Sword of Hope — Ki лезвие"
+    },
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Final Kamehameha (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "430",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — Final Kamehameha"
+    }
+  ],
+  "Cooler": [
+    {
+      "category": "combo",
+      "name": "Supernova",
+      "input": "↓ ↘ → □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Supernova — мощный снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Death Flash (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "410",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — финальная смерть"
+    }
+  ],
+  "Kefla": [
+    {
+      "category": "combo",
+      "name": "Gigantic Blast",
+      "input": "↓ ↘ → □",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Gigantic Blast — мощный снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "152",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Gigantic Rage (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "415",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — сила двух саянок"
+    }
+  ],
+  "Goku Black": [
+    {
+      "category": "combo",
+      "name": "Divine Slash",
+      "input": "↓ ↘ → □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Slash — Ki лезвие"
+    },
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Holy Wrath (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "410",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — Holy Light Grenade максимум"
+    }
+  ],
+  "Android 21": [
+    {
+      "category": "combo",
+      "name": "Conquer Ball",
+      "input": "↓ ↙ ← □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Conquer Ball — кражет способности"
+    },
+    {
+      "category": "combo",
+      "name": "Basic BnB",
+      "input": "□ □ ○ ○ △",
+      "damage": "148",
+      "difficulty": "Easy",
+      "description": "Базовая цепочка"
+    },
+    {
+      "category": "combo",
+      "name": "SD Confirm",
+      "input": "□ □ ○ ○ △ , ↗ □ ○ △ ✕",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "BnB, Super Dash, воздух"
+    },
+    {
+      "category": "super",
+      "name": "Sweet Tooth (Lvl3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "415",
+      "difficulty": "Hard",
+      "description": "Супер Lvl3 — превращает в мармелад"
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+{
+  "Ryu": [
+    {
+      "name": "Solar Plexus",
+      "input": "→ □ □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Два Solar Plexus Strike — быстрый пандж",
+      "category": "combo"
+    },
+    {
+      "name": "Tatsu Ender",
+      "input": "↓ ○, ↓ ↙ ← △",
+      "damage": "180",
+      "difficulty": "Easy",
+      "description": "cr.MK кансел в Tatsumaki",
+      "category": "combo"
+    },
+    {
+      "name": "Hadoken BnB",
+      "input": "↓ ○, ↓ ↘ → □",
+      "damage": "200",
+      "difficulty": "Easy",
+      "description": "cr.MK кансел в Hadoken — базовый маршрут",
+      "category": "combo"
+    },
+    {
+      "name": "Shoryuken Punish",
+      "input": "□ □, → ↓ ↘ △",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Строка в Shoryuken — стандартный пандж",
+      "category": "combo"
+    },
+    {
+      "name": "Hashogeki Launch",
+      "input": "↓ ○, ↓ ↘ → □ + ○, → ↓ ↘ △",
+      "damage": "290",
+      "difficulty": "Medium",
+      "description": "cr.MK, Hashogeki, Shoryuken финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Super Art Combo",
+      "input": "□ □, ↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Строка, кансел в Shinku Hadoken (SA1)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Shinku Hadoken (SA1)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Easy",
+      "description": "Супер арт 1 — мощная Hadoken, кансел из строк"
+    },
+    {
+      "category": "super",
+      "name": "Shin Shoryuken (SA3)",
+      "input": "→ ↓ ↘ → ↓ ↘ □",
+      "damage": "450",
+      "difficulty": "Hard",
+      "description": "Супер арт 3 — мощный Shoryuken, пандж финиш"
+    }
+  ],
+  "Ken": [
+    {
+      "name": "Dragonlash",
+      "input": "↓ ↙ ← △",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Dragonlash Kick — безопасный зоннинг",
+      "category": "combo"
+    },
+    {
+      "name": "Hadoken Close",
+      "input": "↓ ○, ↓ ↘ → □",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "cr.MK кансел в Hadoken",
+      "category": "combo"
+    },
+    {
+      "name": "Shoryuken Rush",
+      "input": "○ □, → ↓ ↘ △",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "Строка, Shoryuken финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Jinrai Follow",
+      "input": "↓ ↘ → △, △ △",
+      "damage": "260",
+      "difficulty": "Medium",
+      "description": "Jinrai Kick с двойным продолжением",
+      "category": "combo"
+    },
+    {
+      "name": "Drive Rush BnB",
+      "input": "↓ ○, ↓ ↘ → □, → ↓ ↘ △",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "Drive Rush, cr.MK, Hadoken, Shoryuken",
+      "category": "combo"
+    },
+    {
+      "name": "Full Corner",
+      "input": "□ □, ↓ ↘ → ↓ ↘ → △",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Угловой маршрут в Shinryuken (SA3)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Shinryuken (SA3)",
+      "input": "↓ ↘ → ↓ ↘ → △",
+      "damage": "450",
+      "difficulty": "Hard",
+      "description": "Супер арт 3 — вращающийся Shoryuken"
+    }
+  ],
+  "Chun-Li": [
+    {
+      "name": "Lightning Legs",
+      "input": "△ △ △ △ △",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "Hyakuretsukyaku — серия быстрых ударов",
+      "category": "combo"
+    },
+    {
+      "name": "Kikoken Zone",
+      "input": "← ↙ ↓ ↘ → □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Kikoken — базовый зоннинг снарядом",
+      "category": "combo"
+    },
+    {
+      "name": "Spinning Bird",
+      "input": "↓ (держи) ↑ △",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "Spinning Bird Kick — стартер атаки",
+      "category": "combo"
+    },
+    {
+      "name": "Hazanshu Launch",
+      "input": "↓ ↙ ← △, □ □",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Hazanshu, подхват, строка",
+      "category": "combo"
+    },
+    {
+      "name": "Legs Cancel",
+      "input": "↓ ○, △ △ △ △ △, → ↓ ↘ □",
+      "damage": "285",
+      "difficulty": "Hard",
+      "description": "cr.MK кансел в Lightning Legs, Shoryuken",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "□, ↓ (держи) ↑ △, △ △ △ △ △, ↓ ↘ → ↓ ↘ → □",
+      "damage": "350",
+      "difficulty": "Hard",
+      "description": "SBK, Legs, Kikosho (SA1) финиш",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Kikosho (SA1)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "380",
+      "difficulty": "Easy",
+      "description": "Супер арт 1 — энергетический шар вблизи"
+    }
+  ],
+  "Cammy": [
+    {
+      "name": "Spiral Arrow",
+      "input": "↓ ↘ → △",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Spiral Arrow — основной пандж инструмент",
+      "category": "combo"
+    },
+    {
+      "name": "Cannon Spike",
+      "input": "→ ↓ ↘ △",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Cannon Spike — анти-эйр / пробив",
+      "category": "combo"
+    },
+    {
+      "name": "Arrow BnB",
+      "input": "↓ ○, ↓ ↘ → △",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "cr.MK кансел в Spiral Arrow",
+      "category": "combo"
+    },
+    {
+      "name": "Quick Combo",
+      "input": "○ □, ↓ ↘ → △",
+      "damage": "245",
+      "difficulty": "Medium",
+      "description": "Строка в Spiral Arrow финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Spike Ender",
+      "input": "↓ ○, ↓ ↘ → △, → ↓ ↘ △",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "cr.MK, Spiral Arrow, Cannon Spike",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "□ ○, ↓ ↘ → △, → ↓ ↘ → ↓ ↘ → □",
+      "damage": "355",
+      "difficulty": "Hard",
+      "description": "Строка, Arrow, Delta Red Assault (SA2)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Delta Red Assault (SA2)",
+      "input": "↓ ↙ ← ↓ ↙ ← □",
+      "damage": "380",
+      "difficulty": "Medium",
+      "description": "Супер арт 2 — серия ударов Spiral Arrow"
+    }
+  ],
+  "Zangief": [
+    {
+      "name": "Lariat",
+      "input": "□ + △",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Spinning Lariat — вращение кулаками",
+      "category": "combo"
+    },
+    {
+      "name": "Screw Pile",
+      "input": "↙ ↓ ↘ → ↗ ↑ ↖ ← □",
+      "damage": "180",
+      "difficulty": "Easy",
+      "description": "SPD — базовый захват командой",
+      "category": "combo"
+    },
+    {
+      "name": "Headbutt Setup",
+      "input": "↓ ○, ↑ □",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "cr.MK в Headbutt — антизоннинг",
+      "category": "combo"
+    },
+    {
+      "name": "Lariat Combo",
+      "input": "□ □, □ + △",
+      "damage": "250",
+      "difficulty": "Medium",
+      "description": "Строка в Lariat финиш",
+      "category": "combo"
+    },
+    {
+      "name": "SPD Mixup",
+      "input": "□ □, ↙ ↓ ↘ → ↗ ↑ ↖ ← □",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "Строка, миксап в SPD",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "↑ □, □ □, ↙ ↓ ↘ → ↗ ↑ ↖ ← △",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Headbutt, строка, Giant SPD финиш",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Bolshoi Storm Buster (SA2)",
+      "input": "↙ ↓ ↘ → ↙ ↓ ↘ → □",
+      "damage": "420",
+      "difficulty": "Hard",
+      "description": "Супер арт 2 — гигантский SPD захват"
+    }
+  ],
+  "Guile": [
+    {
+      "name": "Sonic Boom",
+      "input": "← (держи) → □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "Sonic Boom — базовый снаряд",
+      "category": "combo"
+    },
+    {
+      "name": "Flash Kick",
+      "input": "↓ (держи) ↑ △",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Flash Kick — анти-эйр / пробив",
+      "category": "combo"
+    },
+    {
+      "name": "Boom BnB",
+      "input": "↓ ○, ← (держи) → □",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "cr.MK кансел в Sonic Boom",
+      "category": "combo"
+    },
+    {
+      "name": "Flash Punish",
+      "input": "□ □, ↓ (держи) ↑ △",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Строка в Flash Kick финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Boom Corner",
+      "input": "← □, ↓ ○, ← → □, ↓ ↑ △",
+      "damage": "285",
+      "difficulty": "Hard",
+      "description": "Sonic Boom, cr.MK, повторный Boom, Flash Kick",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "□ □, ← → □, ↓ ↑ △, ← → ← → □",
+      "damage": "355",
+      "difficulty": "Hard",
+      "description": "Строка, Boom, Flash Kick, Solid Puncher (SA1)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Solid Puncher (SA1)",
+      "input": "← → ← → □",
+      "damage": "380",
+      "difficulty": "Medium",
+      "description": "Супер арт 1 — серия Sonic Boom"
+    }
+  ],
+  "Luke": [
+    {
+      "name": "Flash Knuckle",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Flash Knuckle — базовый пандж инструмент",
+      "category": "combo"
+    },
+    {
+      "name": "Sand Blaster",
+      "input": "↓ ↘ → △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Sand Blaster — снаряд ближнего боя",
+      "category": "combo"
+    },
+    {
+      "name": "Knuckle BnB",
+      "input": "↓ ○, ↓ ↘ → □",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "cr.MK кансел в Flash Knuckle",
+      "category": "combo"
+    },
+    {
+      "name": "Aerial Launcher",
+      "input": "□ □, ↑ ↓ ↘ → □",
+      "damage": "245",
+      "difficulty": "Medium",
+      "description": "Строка, Air Knuckle лаунч",
+      "category": "combo"
+    },
+    {
+      "name": "Drive Counter",
+      "input": "↓ ○, ↓ ↘ → △, ↓ ↘ → □",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "cr.MK, Sand Blaster, Flash Knuckle финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "□ □, ↓ ↘ → □, ↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Строка, Knuckle, Final Strike (SA3)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Final Strike (SA3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "450",
+      "difficulty": "Hard",
+      "description": "Супер арт 3 — мощный Flash Knuckle финиш"
+    }
+  ],
+  "Juri": [
+    {
+      "name": "Fuhajin Store",
+      "input": "↓ ↘ → △",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "Fuhajin — зарядить/выпустить снаряд",
+      "category": "combo"
+    },
+    {
+      "name": "Senpusha",
+      "input": "↓ ↙ ← △",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Senpusha — вращающийся удар ногой",
+      "category": "combo"
+    },
+    {
+      "name": "Divekick BnB",
+      "input": "↑ ↘ △, ↓ ○, ↓ ↙ ← △",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "Dive Kick, cr.MK, Senpusha",
+      "category": "combo"
+    },
+    {
+      "name": "Fuha Combo",
+      "input": "□ ○, ↓ ↘ → △ (release)",
+      "damage": "250",
+      "difficulty": "Medium",
+      "description": "Строка, выброс Fuhajin",
+      "category": "combo"
+    },
+    {
+      "name": "Legs Rush",
+      "input": "↓ ○, ↓ ↙ ← △, ↑ ↘ △, ↓ ↙ ← △",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "cr.MK, Senpusha, Divekick, Senpusha финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "□ ○, ↓ ↘ → △, ↓ ↙ ← ↓ ↙ ← △",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Строка, Fuha выброс, Sakura Surging Fist (SA2)",
+      "category": "combo"
+    },
+    {
+      "category": "super",
+      "name": "Feng Shui Engine (SA2)",
+      "input": "↓ ↘ → ↓ ↘ → △",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Супер арт 2 — усиливает все удары ногой"
+    }
+  ],
+  "Kimberly": [
+    {
+      "category": "combo",
+      "name": "Sprint Slasher",
+      "input": "↓ ○ , ↓ ↘ → △",
+      "damage": "190",
+      "difficulty": "Easy",
+      "description": "cr.MK, Vagabond Edge (QCF+K)"
+    },
+    {
+      "category": "combo",
+      "name": "Nishikyu BnB",
+      "input": "□ ○ , ↓ ↘ → □",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "строка, Nishikyu снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Run Combo",
+      "input": "↓ ○ , → → △ , □",
+      "damage": "255",
+      "difficulty": "Medium",
+      "description": "cr.MK, Run, строка"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ ○ , ↓ ↘ → △ , → ↓ ↘ □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "Строка, Vagabond Edge, Shoryuken"
+    },
+    {
+      "category": "super",
+      "name": "Ultra Kimberly (SA2)",
+      "input": "↓ ↙ ← ↓ ↙ ← △",
+      "damage": "390",
+      "difficulty": "Hard",
+      "description": "SA2 — серия спринт атак"
+    }
+  ],
+  "Dee Jay": [
+    {
+      "category": "combo",
+      "name": "Machine Gun Jab",
+      "input": "□ □ □ □ □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Джеб серия — базовый прессинг"
+    },
+    {
+      "category": "combo",
+      "name": "Dreadnought BnB",
+      "input": "↓ ○ , ← (держи) → □",
+      "damage": "205",
+      "difficulty": "Medium",
+      "description": "cr.MK, Air Slasher снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Jackknife BnB",
+      "input": "□ ○ , ↓ (держи) ↑ △",
+      "damage": "245",
+      "difficulty": "Medium",
+      "description": "Строка, Jackknife Maximum"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ ○ , ← → □ , ↓ ↑ △",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "Строка, Air Slasher, Jackknife"
+    },
+    {
+      "category": "super",
+      "name": "EX Carnival (SA3)",
+      "input": "← ↙ ↓ ↘ → ← ↙ ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "SA3 — Rythm Rumble"
+    }
+  ],
+  "Manon": [
+    {
+      "category": "combo",
+      "name": "Medal Chain",
+      "input": "□ △ , ↓ ↘ → □",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "Строка, Rond-point снаряд — копит медали"
+    },
+    {
+      "category": "combo",
+      "name": "Dégagé BnB",
+      "input": "↓ ○ , ↓ ↙ ← △",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "cr.MK, Dégagé удар ногой"
+    },
+    {
+      "category": "combo",
+      "name": "Jete Combo",
+      "input": "□ △ , ↓ ↘ → □ , → ↓ ↘ △",
+      "damage": "260",
+      "difficulty": "Hard",
+      "description": "Строка, Rond-point, Jete удар"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ↓ ↙ ← △ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "SA1 — Grand Fouetté"
+    },
+    {
+      "category": "super",
+      "name": "Grand Fouetté (SA1)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "SA1 — мощное вращение с медалями"
+    }
+  ],
+  "Marisa": [
+    {
+      "category": "combo",
+      "name": "Gladius Strike",
+      "input": "□ △ , ↓ ↘ → □",
+      "damage": "200",
+      "difficulty": "Easy",
+      "description": "5LP, 5HP, Gladius (236LP) — рывок"
+    },
+    {
+      "category": "combo",
+      "name": "Scutum Punish",
+      "input": "□ △ , ← □",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "Строка, Scutum (B+LP) — щит"
+    },
+    {
+      "category": "combo",
+      "name": "Phalanx BnB",
+      "input": "□ △ , ↓ ↘ → □ , → ↓ ↘ △",
+      "damage": "275",
+      "difficulty": "Hard",
+      "description": "Gladius, Dimachaerus финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , □ △ , ↓ ↘ → □ , → ↓ ↘ △",
+      "damage": "315",
+      "difficulty": "Hard",
+      "description": "cr.MK, строка, Gladius, DP"
+    },
+    {
+      "category": "super",
+      "name": "Goddess of the Hunt (SA2)",
+      "input": "↓ ↙ ← ↓ ↙ ← □",
+      "damage": "410",
+      "difficulty": "Hard",
+      "description": "SA2 — мощный заряженный удар"
+    }
+  ],
+  "JP": [
+    {
+      "category": "combo",
+      "name": "Thorn Trap",
+      "input": "↓ ↘ → □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Предмет ловушка — зоннинг"
+    },
+    {
+      "category": "combo",
+      "name": "Amnesia BnB",
+      "input": "□ △ , ↓ ↘ → ○",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "Строка, Amnesia удар тростью"
+    },
+    {
+      "category": "combo",
+      "name": "Portal Combo",
+      "input": "↓ ↘ → □ , □ △ , ↓ ↘ → ○",
+      "damage": "255",
+      "difficulty": "Hard",
+      "description": "Ловушка, строка, Amnesia"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ △ , ↓ ↘ → △ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "Строка, Departure, Survive (SA1)"
+    },
+    {
+      "category": "super",
+      "name": "Survive (SA1)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "390",
+      "difficulty": "Hard",
+      "description": "SA1 — телепорт-удар через весь экран"
+    }
+  ],
+  "Blanka": [
+    {
+      "category": "combo",
+      "name": "Electric Slide",
+      "input": "□ + □ (держи)",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Electric Thunder — базовый прессинг"
+    },
+    {
+      "category": "combo",
+      "name": "Rolling BnB",
+      "input": "↓ ○ , ← (держи) → □",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "cr.MK, Rolling Attack"
+    },
+    {
+      "category": "combo",
+      "name": "Vertical Roll",
+      "input": "□ △ , ↓ (держи) ↑ △",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "Строка, Vertical Rolling Attack"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ← → □ , ↓ ↑ △ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "Rolling, Vertical, Ground Shave (SA2)"
+    },
+    {
+      "category": "super",
+      "name": "Ground Shave Rolling (SA2)",
+      "input": "↓ ↙ ← ↓ ↙ ← □",
+      "damage": "390",
+      "difficulty": "Hard",
+      "description": "SA2 — массивный роллинг"
+    }
+  ],
+  "Dhalsim": [
+    {
+      "category": "combo",
+      "name": "Yoga Flame",
+      "input": "← ↙ ↓ ↘ → □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Yoga Flame — ближний огонь"
+    },
+    {
+      "category": "combo",
+      "name": "Yoga Fire BnB",
+      "input": "↓ ↘ → □ , □ △",
+      "damage": "185",
+      "difficulty": "Medium",
+      "description": "Yoga Fire снаряд, строка"
+    },
+    {
+      "category": "combo",
+      "name": "Teleport Mix",
+      "input": "↓ ↘ → □ , ↙ ↓ ↘ → □",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "Yoga Fire, Yoga Teleport подход"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ← ↙ ↓ ↘ → □ , □ △ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "cr.MK, Yoga Flame, строка, SA1"
+    },
+    {
+      "category": "super",
+      "name": "Yoga Catastrophe (SA1)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "390",
+      "difficulty": "Hard",
+      "description": "SA1 — огромный огненный шар"
+    }
+  ],
+  "Rashid": [
+    {
+      "category": "combo",
+      "name": "Whirlwind BnB",
+      "input": "↓ ○ , ↓ ↘ → △",
+      "damage": "190",
+      "difficulty": "Easy",
+      "description": "cr.MK, Spinning Mixer (QCF+K)"
+    },
+    {
+      "category": "combo",
+      "name": "Eagle Spike",
+      "input": "↑ ↘ △ , ↓ ○ , ↓ ↘ → △",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "Dive Kick подтверждение"
+    },
+    {
+      "category": "combo",
+      "name": "Rolling Combo",
+      "input": "□ ○ , ↓ ↘ → △ , ↓ ↘ → □",
+      "damage": "270",
+      "difficulty": "Hard",
+      "description": "Строка, Mixer, снаряд финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↑ ↘ △ , □ ○ , ↓ ↘ → △ , ↓ ↘ → ↓ ↘ → △",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Dive Kick BnB в Supreme Ace (SA2)"
+    },
+    {
+      "category": "super",
+      "name": "Supreme Ace (SA2)",
+      "input": "↓ ↙ ← ↓ ↙ ← △",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "SA2 — вихревой маршрут атаки"
+    }
+  ],
+  "Ed": [
+    {
+      "category": "combo",
+      "name": "Psycho Flicker",
+      "input": "↓ ↘ → □",
+      "damage": "145",
+      "difficulty": "Easy",
+      "description": "Psycho Flicker — быстрый снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Psycho BnB",
+      "input": "□ △ , ↓ ↘ → □",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "Строка, Psycho Flicker финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Bolt Combo",
+      "input": "□ △ , ↓ ↘ → △ , ↓ ↘ → □",
+      "damage": "250",
+      "difficulty": "Hard",
+      "description": "Строка, Psycho Bolt, Flicker"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , □ △ , ↓ ↘ → △ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "cr.MK, строка, SA3 финиш"
+    },
+    {
+      "category": "super",
+      "name": "Psycho Barrage (SA3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "410",
+      "difficulty": "Hard",
+      "description": "SA3 — серия Psycho Power ударов"
+    }
+  ],
+  "Akuma": [
+    {
+      "category": "combo",
+      "name": "Hadoken BnB",
+      "input": "↓ ○ , ↓ ↘ → □",
+      "damage": "195",
+      "difficulty": "Easy",
+      "description": "cr.MK, Gohadoken — стандартный пандж"
+    },
+    {
+      "category": "combo",
+      "name": "Shoryuken Punish",
+      "input": "□ ○ , → ↓ ↘ □",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Строка, Goshoryuken финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Tatsu Combo",
+      "input": "↓ ○ , ↓ ↙ ← △ , → ↓ ↘ □",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "cr.MK, Tatsumaki, Shoryuken"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ ○ , ↓ ↘ → □ , → ↓ ↘ □ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "330",
+      "difficulty": "Hard",
+      "description": "Строка, Goha, Shoryuken, Shun Goku Satsu"
+    },
+    {
+      "category": "super",
+      "name": "Shun Goku Satsu (SA3)",
+      "input": "← → ← → □",
+      "damage": "500",
+      "difficulty": "Hard",
+      "description": "SA3 — Raging Demon. Непробиваемый"
+    }
+  ],
+  "Jamie": [
+    {
+      "category": "combo",
+      "name": "Swagger Step",
+      "input": "→ △ ~ ↓ ↘ → △",
+      "damage": "185",
+      "difficulty": "Easy",
+      "description": "f+HK, Freeflow Kick — рывок атака"
+    },
+    {
+      "category": "combo",
+      "name": "Drunk BnB",
+      "input": "↓ ○ , ↓ ↘ → △",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "cr.MK, Freeflow Kick кансел"
+    },
+    {
+      "category": "combo",
+      "name": "Level Up Combo",
+      "input": "□ ○ , ↓ ↘ → □ , ↓ ↘ → △",
+      "damage": "255",
+      "difficulty": "Hard",
+      "description": "Строка, снаряд, Freeflow Kick"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ↓ ↘ → □ , ↓ ↘ → △ , ↓ ↘ → ↓ ↘ → △",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "cr.MK в Super Art"
+    },
+    {
+      "category": "super",
+      "name": "Gale Force (SA2)",
+      "input": "↓ ↙ ← ↓ ↙ ← △",
+      "damage": "395",
+      "difficulty": "Hard",
+      "description": "SA2 — вихревая серия ударов"
+    }
+  ],
+  "Lily": [
+    {
+      "category": "combo",
+      "name": "Condor Dive",
+      "input": "↑ ↘ △",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Condor Dive — прыжок атака"
+    },
+    {
+      "category": "combo",
+      "name": "Wind BnB",
+      "input": "↓ ○ , ↓ ↘ → △",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "cr.MK, Condor Spire (QCF+K)"
+    },
+    {
+      "category": "combo",
+      "name": "Tomahawk Buster",
+      "input": "□ ○ , → ↓ ↘ □",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Строка, Tomahawk Buster DP"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ↓ ↘ → △ , → ↓ ↘ □ , ↓ ↘ → ↓ ↘ → △",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "cr.MK, Spire, Buster, SA3"
+    },
+    {
+      "category": "super",
+      "name": "Thunderbird (SA3)",
+      "input": "↓ ↘ → ↓ ↘ → △",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "SA3 — стремительный дух птицы"
+    }
+  ],
+  "Honda": [
+    {
+      "category": "combo",
+      "name": "Hundred Hands",
+      "input": "□ □ □ □ □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Hyakuretsu Harite — серия ладоней"
+    },
+    {
+      "category": "combo",
+      "name": "Headbutt BnB",
+      "input": "↓ ○ , ↑ □",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "cr.MK, Sumo Headbutt"
+    },
+    {
+      "category": "combo",
+      "name": "Super BnB",
+      "input": "□ □ , ↑ □ , ↓ ↑ □",
+      "damage": "245",
+      "difficulty": "Hard",
+      "description": "Строка, Headbutt, Onimusou финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ↑ □ , ↓ ↑ ↓ ↑ □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "cr.MK, Headbutt, Super Headbutt (SA1)"
+    },
+    {
+      "category": "super",
+      "name": "Onimusou (SA1)",
+      "input": "↓ ↑ ↓ ↑ □",
+      "damage": "390",
+      "difficulty": "Hard",
+      "description": "SA1 — серия сокрушительных хедбатов"
+    }
+  ],
+  "AKI": [
+    {
+      "category": "combo",
+      "name": "Scythe Slash",
+      "input": "↓ ↘ → □",
+      "damage": "145",
+      "difficulty": "Easy",
+      "description": "Scatter (236P) — ядовитый снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Flit BnB",
+      "input": "↓ ○ , ↓ ↘ → □",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "cr.MK, Scatter снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Poison Dance",
+      "input": "□ ○ , ↓ ↘ → △ , ↓ ↘ → □",
+      "damage": "250",
+      "difficulty": "Hard",
+      "description": "Строка, Assault, Scatter"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ↓ ↘ → △ , → ↓ ↘ □ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "cr.MK в SA3 финиш"
+    },
+    {
+      "category": "super",
+      "name": "Cruel Fate (SA3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "410",
+      "difficulty": "Hard",
+      "description": "SA3 — смертоносная ядовитая атака"
+    }
+  ],
+  "M. Bison": [
+    {
+      "category": "combo",
+      "name": "Psycho Crusher",
+      "input": "← (держи) → □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Psycho Crusher — классика"
+    },
+    {
+      "category": "combo",
+      "name": "Scissor Kick BnB",
+      "input": "↓ ○ , ← → △",
+      "damage": "205",
+      "difficulty": "Medium",
+      "description": "cr.MK, Double Knee Press"
+    },
+    {
+      "category": "combo",
+      "name": "Head Press",
+      "input": "↑ , ↓ □",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "Head Stomp — прыжок-топтание"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ← → △ , ← (держи) → □ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "cr.MK, Scissors, Crusher, SA финиш"
+    },
+    {
+      "category": "super",
+      "name": "Nightmare Booster (SA2)",
+      "input": "↓ ↙ ← ↓ ↙ ← □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "SA2 — телепорт-удар мощью Psycho Power"
+    }
+  ],
+  "Terry (SF6)": [
+    {
+      "category": "combo",
+      "name": "Burn Knuckle",
+      "input": "↓ ↙ ← □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Burn Knuckle — рывок кулаком"
+    },
+    {
+      "category": "combo",
+      "name": "Power Wave BnB",
+      "input": "↓ ↘ → □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Power Wave — снаряд по земле"
+    },
+    {
+      "category": "combo",
+      "name": "Crack Shoot BnB",
+      "input": "□ ○ , ↓ ↙ ← ✕",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "Строка, Crack Shoot (214HK)"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ↓ ↙ ← □ , → ↓ ↘ ✕ , ↓ ↙ ← ↓ ↙ ← □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "cr.MK, Burn Knuckle, Power Dunk, SA2"
+    },
+    {
+      "category": "super",
+      "name": "Rising Tackle (SA2)",
+      "input": "↓ ↑ ↓ ↑ □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "SA2 — мощный Rising Tackle финиш"
+    }
+  ],
+  "Mai (SF6)": [
+    {
+      "category": "combo",
+      "name": "Ryuuenbu",
+      "input": "↓ ↘ → □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Ryuuenbu — рывок с огнём"
+    },
+    {
+      "category": "combo",
+      "name": "Hana Arashi",
+      "input": "↓ ↙ ← △",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Hana Arashi — рывок удар ногой"
+    },
+    {
+      "category": "combo",
+      "name": "Fan BnB",
+      "input": "□ ○ , ↓ ↘ → □ , ↓ ↙ ← △",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "Строка, Ryuuenbu, Hana Arashi"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ○ , ↓ ↘ → □ , ↓ ↙ ← △ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "cr.MK в SA финиш"
+    },
+    {
+      "category": "super",
+      "name": "Kagerou no Mai (SA3)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "410",
+      "difficulty": "Hard",
+      "description": "SA3 — танцующий огненный финиш"
+    }
+  ],
+  "Elena": [
+    {
+      "category": "combo",
+      "name": "Mallet Smash",
+      "input": "→ △",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "f+HP — мощный удар сверху"
+    },
+    {
+      "category": "combo",
+      "name": "Rhino Horn",
+      "input": "→ ✕",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "f+HK — удар рогом буйвола"
+    },
+    {
+      "category": "combo",
+      "name": "Scratch Wheel BnB",
+      "input": "↓ ○ , → ↓ ↘ △",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "cr.MK, Scratch Wheel (DP+K)"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ ○ , ↓ ↘ → △ , → ↓ ↘ △ , ↓ ↘ → ↓ ↘ → △",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "Строка, Mallet/Rhino, Scratch Wheel, SA3"
+    },
+    {
+      "category": "super",
+      "name": "Healing (SA1)",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "0",
+      "difficulty": "Hard",
+      "description": "SA1 — уникальное лечение HP"
+    }
+  ]
+}

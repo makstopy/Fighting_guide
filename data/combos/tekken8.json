@@ -1,0 +1,1726 @@
+{
+  "Jin Kazama": [
+    {
+      "name": "Twin Jabs",
+      "input": "□ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая двухударная строка",
+      "category": "combo"
+    },
+    {
+      "name": "Laser Scraper",
+      "input": "→ → □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "ff+2 — рывок апперкот",
+      "category": "combo"
+    },
+    {
+      "name": "WGF Launch",
+      "input": "→ N ↓ ↘ □",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "Wind God Fist — основной лаунчер",
+      "category": "combo"
+    },
+    {
+      "name": "F2 String",
+      "input": "→ □ □",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "f+2,1 — мощная двухударная строка",
+      "category": "combo"
+    },
+    {
+      "name": "Combo Route",
+      "input": "→ N ↓ ↘ □, □ □, → → □",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "WGF лаунч, джеб строка, Laser Scraper финиш",
+      "category": "combo"
+    },
+    {
+      "name": "EWGF Route",
+      "input": "→ N ↓ ↘ □ (perfect), ↓ △, □ □, → N ↓ ↘ □",
+      "damage": "340",
+      "difficulty": "Hard",
+      "description": "Идеальный EWGF, d+3, строка, WGF финиш",
+      "category": "combo"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — супер атака при низком HP, имеет броню"
+    }
+  ],
+  "Kazuya": [
+    {
+      "name": "Gut Punch",
+      "input": "□ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая строка",
+      "category": "combo"
+    },
+    {
+      "name": "Demon's Paw",
+      "input": "← □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "b+2 — боковой удар рукой",
+      "category": "combo"
+    },
+    {
+      "name": "WGF Launch",
+      "input": "→ N ↓ ↘ □",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "Wind God Fist — основной лаунчер",
+      "category": "combo"
+    },
+    {
+      "name": "Twin Pistons",
+      "input": "→ N ↓ ↘ □ □",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "Twin Pistons после WGF",
+      "category": "combo"
+    },
+    {
+      "name": "EWGF Route",
+      "input": "→ N ↓ ↘ □ (perfect), □ □, → N ↓ ↘ □",
+      "damage": "285",
+      "difficulty": "Hard",
+      "description": "EWGF, строка, WGF финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "→ N ↓ ↘ □ (perfect), □ □, → N ↓ ↘ □ (perfect), □ □",
+      "damage": "345",
+      "difficulty": "Hard",
+      "description": "Двойной EWGF маршрут — максимальный урон",
+      "category": "combo"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — Devil трансформация, броня"
+    }
+  ],
+  "Paul Phoenix": [
+    {
+      "name": "Shredder",
+      "input": "→ □ □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "f+1,2 — базовая рашдаун строка",
+      "category": "combo"
+    },
+    {
+      "name": "Death Fist",
+      "input": "↓ ↙ ← □",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "qcb+2 — мощный удар одним кулаком",
+      "category": "combo"
+    },
+    {
+      "name": "Hammer Launch",
+      "input": "↓ □",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "d+1 — нижний удар в лаунчер",
+      "category": "combo"
+    },
+    {
+      "name": "Shredder Combo",
+      "input": "→ □ □, ↓ ↙ ← □",
+      "damage": "255",
+      "difficulty": "Medium",
+      "description": "Shredder строка в Death Fist финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Barge Route",
+      "input": "→ → □, □ □, ↓ ↙ ← □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "ff+1 рывок, строка, Death Fist",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "□, ↓ □, □ □, ↓ ↙ ← □",
+      "damage": "350",
+      "difficulty": "Hard",
+      "description": "Анти-эйр d+1, строка, Death Fist",
+      "category": "combo"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — мощный удар кулаком с бронёй"
+    }
+  ],
+  "Nina Williams": [
+    {
+      "name": "Slap Combo",
+      "input": "□ □ □",
+      "damage": "115",
+      "difficulty": "Easy",
+      "description": "1,2,1 — базовая быстрая строка",
+      "category": "combo"
+    },
+    {
+      "name": "Blonde Bomb",
+      "input": "→ □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "f+2 — боковой удар с пушбэком",
+      "category": "combo"
+    },
+    {
+      "name": "Knee Launch",
+      "input": "↓ → △",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "df+3 — удар коленом в лаунчер",
+      "category": "combo"
+    },
+    {
+      "name": "Grasp Setup",
+      "input": "□ □, ← + □ ○",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "Строка в командный захват",
+      "category": "combo"
+    },
+    {
+      "name": "Nina Route",
+      "input": "↓ → △, □ □ □, → □",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "Knee лаунч, строка, Blonde Bomb",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "→ □, ↓ → △, □ □ □, ← + □ ○",
+      "damage": "335",
+      "difficulty": "Hard",
+      "description": "f+2, Knee лаунч, строка, захват финиш",
+      "category": "combo"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — серия быстрых ударов с бронёй"
+    }
+  ],
+  "King": [
+    {
+      "name": "Jab String",
+      "input": "□ □ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2,1 — быстрая основная строка",
+      "category": "combo"
+    },
+    {
+      "name": "Jaguar Step",
+      "input": "→ → △",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "ff+3 — рывок удар ногой",
+      "category": "combo"
+    },
+    {
+      "name": "Giant Swing",
+      "input": "↙ ↓ ↘ → ↗ ↑ □",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "Giant Swing — командный захват",
+      "category": "combo"
+    },
+    {
+      "name": "Power Launch",
+      "input": "↓ ↘ → □",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "df+2 — апперкот лаунчер",
+      "category": "combo"
+    },
+    {
+      "name": "Combo Throw",
+      "input": "↓ ↘ → □, □ □, ↙ ↓ ↘ → ↗ ↑ □",
+      "damage": "285",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Giant Swing финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "□ □ □, ↓ ↘ → □, □ □, ↙ ↓ ↘ → ↗ ↑ □",
+      "damage": "340",
+      "difficulty": "Hard",
+      "description": "Строка, лаунч, продолжение, Giant Swing",
+      "category": "combo"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — захват с бронёй"
+    }
+  ],
+  "Hwoarang": [
+    {
+      "name": "Flamingo Kick",
+      "input": "△ △",
+      "damage": "110",
+      "difficulty": "Easy",
+      "description": "3,3 — базовая пара ударов ногой",
+      "category": "combo"
+    },
+    {
+      "name": "Hunting Hawk",
+      "input": "→ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "f+3 — удар с переходом в Flamingo",
+      "category": "combo"
+    },
+    {
+      "name": "Sky Rocket",
+      "input": "↑ △",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "u+3 — прыжок лаунчер",
+      "category": "combo"
+    },
+    {
+      "name": "Backlash",
+      "input": "← △ △",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "b+3,3 — двойной удар назад",
+      "category": "combo"
+    },
+    {
+      "name": "Rush Route",
+      "input": "→ △, △ △, ↑ △",
+      "damage": "275",
+      "difficulty": "Hard",
+      "description": "Hunting Hawk, серия, Sky Rocket",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "↑ △, △ △, → △, △ △, ↑ △",
+      "damage": "335",
+      "difficulty": "Hard",
+      "description": "Лаунч, серии Flamingo, Sky Rocket финиш",
+      "category": "combo"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — серия ударов ногой с бронёй"
+    }
+  ],
+  "Devil Jin": [
+    {
+      "name": "Laser Spam",
+      "input": "← ← □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "bb+1 — лазерный выстрел",
+      "category": "combo"
+    },
+    {
+      "name": "Hunting Fang",
+      "input": "□ □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая строка",
+      "category": "combo"
+    },
+    {
+      "name": "EWGF",
+      "input": "→ N ↓ ↘ □ (perfect timing)",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "Electric Wind God Fist — лаунчер",
+      "category": "combo"
+    },
+    {
+      "name": "Wing Combo",
+      "input": "↑ □, □ □",
+      "damage": "235",
+      "difficulty": "Medium",
+      "description": "Воздушная атака, продолжение строкой",
+      "category": "combo"
+    },
+    {
+      "name": "Devil Route",
+      "input": "→ N ↓ ↘ □, □ □, ← ← □",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "EWGF, строка, лазер финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "→ N ↓ ↘ □, □ □, → N ↓ ↘ □, □ □",
+      "damage": "345",
+      "difficulty": "Hard",
+      "description": "Двойной EWGF маршрут",
+      "category": "combo"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — Devil лазер с бронёй"
+    }
+  ],
+  "Xiaoyu": [
+    {
+      "name": "Rain Dance",
+      "input": "□ □ □",
+      "damage": "110",
+      "difficulty": "Easy",
+      "description": "1,2,1 — базовая быстрая строка",
+      "category": "combo"
+    },
+    {
+      "name": "AOP Stance",
+      "input": "← + □ + △",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Переход в Art of Phoenix стойку",
+      "category": "combo"
+    },
+    {
+      "name": "Spin Lunge",
+      "input": "→ □",
+      "damage": "185",
+      "difficulty": "Medium",
+      "description": "f+2 — рывок кулаком",
+      "category": "combo"
+    },
+    {
+      "name": "Cartwheel",
+      "input": "↓ △ △",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "d+3,3 — удар с переворотом",
+      "category": "combo"
+    },
+    {
+      "name": "Phoenix Mix",
+      "input": "← + □ + △, □, □ □ □",
+      "damage": "270",
+      "difficulty": "Hard",
+      "description": "AOP стойка, атаки из неё, строка",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "→ □, □ □ □, ← + □ + △, □ □",
+      "damage": "325",
+      "difficulty": "Hard",
+      "description": "Рывок, строка, AOP продолжение",
+      "category": "combo"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — AOP атака с бронёй"
+    }
+  ],
+  "Jun Kazama": [
+    {
+      "category": "combo",
+      "name": "Heavenly Strike",
+      "input": "□ □ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2,1 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Aura Launch",
+      "input": "↓ ↘ → □",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "df+2 — апперкот лаунчер"
+    },
+    {
+      "category": "combo",
+      "name": "Nature's Wrath",
+      "input": "← □ □",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "b+1,2 — двойной удар"
+    },
+    {
+      "category": "combo",
+      "name": "Jun BnB",
+      "input": "↓ ↘ → □ , □ □ , ← □ □",
+      "damage": "275",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Nature's Wrath"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — серия с бронёй"
+    }
+  ],
+  "Reina": [
+    {
+      "category": "combo",
+      "name": "Shoryuken Rush",
+      "input": "□ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Electric Sting",
+      "input": "→ N ↓ ↘ □",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "WGF — лаунчер Mishima-стиль"
+    },
+    {
+      "category": "combo",
+      "name": "Teleport Strike",
+      "input": "↓ ↙ ← □",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "Instant Move — телепорт удар"
+    },
+    {
+      "category": "combo",
+      "name": "Reina BnB",
+      "input": "→ N ↓ ↘ □ , □ □ , ↓ ↙ ← □",
+      "damage": "285",
+      "difficulty": "Hard",
+      "description": "WGF лаунч, строка, телепорт"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — с бронёй"
+    }
+  ],
+  "Jack-8": [
+    {
+      "category": "combo",
+      "name": "Piston Punch",
+      "input": "□ □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "1,2 — мощные базовые удары"
+    },
+    {
+      "category": "combo",
+      "name": "Giant Swing",
+      "input": "↙ ↓ ↘ → ↗ ↑ □",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "360+1 захват"
+    },
+    {
+      "category": "combo",
+      "name": "Megaton Punch",
+      "input": "→ → △",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "ff+2 — сильный рывок удар"
+    },
+    {
+      "category": "combo",
+      "name": "Jack BnB",
+      "input": "↓ ↘ → □ , □ □ , → → △",
+      "damage": "285",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Megaton"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "260",
+      "difficulty": "Easy",
+      "description": "Rage Art — механический финиш"
+    }
+  ],
+  "Lars": [
+    {
+      "category": "combo",
+      "name": "Orbital Heel",
+      "input": "→ ✕",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "f+4 — вращающийся удар ногой"
+    },
+    {
+      "category": "combo",
+      "name": "Lightning Glare",
+      "input": "□ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Burning Fang",
+      "input": "→ □ □",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "f+1,2 — агрессивная строка"
+    },
+    {
+      "category": "combo",
+      "name": "Lars BnB",
+      "input": "→ □ □ , ↑ ✕ , □ □",
+      "damage": "280",
+      "difficulty": "Hard",
+      "description": "f+1,2, u+4 лаунч, строка"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — с бронёй"
+    }
+  ],
+  "Lili": [
+    {
+      "category": "combo",
+      "name": "Rose Dance",
+      "input": "□ △ □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "1,2,1 — изящная базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Knee Launch",
+      "input": "↓ ↘ → △",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "df+2 — удар коленом лаунчер"
+    },
+    {
+      "category": "combo",
+      "name": "Waltz BnB",
+      "input": "↓ ↘ → △ , □ △ □ , ↓ ✕",
+      "damage": "270",
+      "difficulty": "Hard",
+      "description": "Knee лаунч, строка, d+4"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → △ , □ △ □ , → △ , ↓ ✕",
+      "damage": "315",
+      "difficulty": "Hard",
+      "description": "Knee, строка, f+3, финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — грациозный финиш"
+    }
+  ],
+  "Asuka": [
+    {
+      "category": "combo",
+      "name": "Counter Hit",
+      "input": "□ □ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2,1 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Shintsu Strike",
+      "input": "↓ □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "d+1 — нижний удар"
+    },
+    {
+      "category": "combo",
+      "name": "Reverse Arm BnB",
+      "input": "↓ ↘ → □ , □ □ □ , ↓ ↘ → □",
+      "damage": "270",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, df+2 финиш"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , ← □ □ , ↓ ↘ → □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, боковой удар"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — захват с контратакой"
+    }
+  ],
+  "Law": [
+    {
+      "category": "combo",
+      "name": "Dragon Sign",
+      "input": "□ □ □",
+      "damage": "115",
+      "difficulty": "Easy",
+      "description": "1,2,1 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Dragon Tail",
+      "input": "← ✕",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "b+4 — удар с разворота"
+    },
+    {
+      "category": "combo",
+      "name": "Dragon BnB",
+      "input": "→ □ □ , □ □ □ , ← ✕",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "f+1,2, строка, Dragon Tail"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → □ □ , ← ✕",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Dragon Tail финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — Nunchaku финиш"
+    }
+  ],
+  "Steve": [
+    {
+      "category": "combo",
+      "name": "Flicker Jab",
+      "input": "□ □",
+      "damage": "110",
+      "difficulty": "Easy",
+      "description": "1,2 — быстрые джебы"
+    },
+    {
+      "category": "combo",
+      "name": "Sway Step",
+      "input": "← □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "b+1 — уклон и удар"
+    },
+    {
+      "category": "combo",
+      "name": "Peekaboo BnB",
+      "input": "↓ □ , □ □ , ← △ △",
+      "damage": "255",
+      "difficulty": "Hard",
+      "description": "d+1, строка, Albatross"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ , ← △ △ , □ □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Albatross финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — финальный боксёрский финиш"
+    }
+  ],
+  "Bryan": [
+    {
+      "category": "combo",
+      "name": "Mach Breaker",
+      "input": "← △",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "b+2 — мощный удар кулаком"
+    },
+    {
+      "category": "combo",
+      "name": "Snake Edge",
+      "input": "← + ↓ + ✕",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Подсечка — опасный лоу"
+    },
+    {
+      "category": "combo",
+      "name": "Jet Combo",
+      "input": "□ □ □",
+      "damage": "125",
+      "difficulty": "Easy",
+      "description": "1,2,1 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Bryan BnB",
+      "input": "↓ ↘ → □ , □ □ □ , ← △ , □ □",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Mach Breaker"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "260",
+      "difficulty": "Easy",
+      "description": "Rage Art — сумасшедший смех + серия"
+    }
+  ],
+  "Leroy": [
+    {
+      "category": "combo",
+      "name": "Staff Strike",
+      "input": "□ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2 — удары тростью"
+    },
+    {
+      "category": "combo",
+      "name": "Cane Trap",
+      "input": "↓ □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "d+1 — нижний удар тростью"
+    },
+    {
+      "category": "combo",
+      "name": "Wing Chun BnB",
+      "input": "→ □ □ , □ □ , ↓ ↘ → □",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "f+1,2 строка, лаунч, df+2"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ , → □ □ , ↓ ↘ → □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Wing Chun финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — серия ударов тростью"
+    }
+  ],
+  "Alisa": [
+    {
+      "category": "combo",
+      "name": "Rocket Punch",
+      "input": "→ □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "f+1 — ракетный удар кулаком"
+    },
+    {
+      "category": "combo",
+      "name": "Chainsaw Dance",
+      "input": "↓ □ + △",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "d+1+2 — двойная бензопила"
+    },
+    {
+      "category": "combo",
+      "name": "Alisa BnB",
+      "input": "↓ ↘ → □ , □ □ , → □",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, f+1"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ , □ + △ , □ □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Chainsaw, строка"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — взрыв ракет с бронёй"
+    }
+  ],
+  "Feng": [
+    {
+      "category": "combo",
+      "name": "Quick Jab",
+      "input": "□ □",
+      "damage": "115",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Shen Mi Quan",
+      "input": "↓ ↙ ← □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "qcb+1 — рывок кулаком"
+    },
+    {
+      "category": "combo",
+      "name": "Feng BnB",
+      "input": "↓ ↘ → □ , □ □ , ↓ ↙ ← □",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Shen Mi"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , ↓ ↙ ← □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — мощная серия с бронёй"
+    }
+  ],
+  "Dragunov": [
+    {
+      "category": "combo",
+      "name": "White Fang",
+      "input": "□ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Sledgehammer",
+      "input": "→ △",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "f+2 — мощный удар кулаком"
+    },
+    {
+      "category": "combo",
+      "name": "Dragunov BnB",
+      "input": "↓ ↘ → □ , □ □ , → △",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Sledgehammer"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → △ , □ □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Лаунч, три удара, Sledgehammer"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — гусарская атака с бронёй"
+    }
+  ],
+  "Yoshimitsu": [
+    {
+      "category": "combo",
+      "name": "Sword Stab",
+      "input": "↓ + □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "d+1 — удар мечом вниз"
+    },
+    {
+      "category": "combo",
+      "name": "Flea Stance",
+      "input": "↑ + □ + △",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "u+1+2 — стойка блохи"
+    },
+    {
+      "category": "combo",
+      "name": "Yoshi BnB",
+      "input": "↓ ↘ → □ , □ □ , ↓ □",
+      "damage": "255",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, d+1"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ , ↑ + □ + △ , □",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Flea атака"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — телепорт-удар мечом"
+    }
+  ],
+  "Zafina": [
+    {
+      "category": "combo",
+      "name": "Tarantula Step",
+      "input": "← □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "b+1 — акробатический удар"
+    },
+    {
+      "category": "combo",
+      "name": "Mantis Stance",
+      "input": "↓ ← □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "db+1 — переход в стойку Mantis"
+    },
+    {
+      "category": "combo",
+      "name": "Zafina BnB",
+      "input": "↓ ↘ → □ , □ □ , ← □",
+      "damage": "260",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, b+1"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , ↓ ← □ , □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Mantis продолжение"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — мистическая атака с бронёй"
+    }
+  ],
+  "Claudio": [
+    {
+      "category": "combo",
+      "name": "Starburst",
+      "input": "□ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Shining Fist",
+      "input": "→ □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "f+1 — удар с белым светом"
+    },
+    {
+      "category": "combo",
+      "name": "Claudio BnB",
+      "input": "↓ ↘ → □ , □ □ , → □",
+      "damage": "260",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Shining Fist"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → □ , □ □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Shining Fist финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — экзорцизм с бронёй"
+    }
+  ],
+  "Lee": [
+    {
+      "category": "combo",
+      "name": "Silver Sting",
+      "input": "□ □",
+      "damage": "115",
+      "difficulty": "Easy",
+      "description": "1,2 — быстрая базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Acid Rain",
+      "input": "△ △ △ △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "2,2,2,2 — серия ударов рукой"
+    },
+    {
+      "category": "combo",
+      "name": "Lee BnB",
+      "input": "↓ ↘ → □ , □ □ , △ △ △",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Acid Rain"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , △ △ △ △",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, полная Acid Rain"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — элегантная серия с бронёй"
+    }
+  ],
+  "Raven": [
+    {
+      "category": "combo",
+      "name": "Shadow Step",
+      "input": "← □",
+      "damage": "145",
+      "difficulty": "Easy",
+      "description": "b+1 — теневой шаг удар"
+    },
+    {
+      "category": "combo",
+      "name": "Teleport Strike",
+      "input": "↓ ↙ ← □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "qcb+1 — телепорт атака"
+    },
+    {
+      "category": "combo",
+      "name": "Raven BnB",
+      "input": "↓ ↘ → □ , □ □ , ↓ ↙ ← □",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Teleport"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , ↓ ↙ ← □ , □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, телепорт финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — теневая атака с бронёй"
+    }
+  ],
+  "Azucena": [
+    {
+      "category": "combo",
+      "name": "Coffee Rush",
+      "input": "□ □",
+      "damage": "115",
+      "difficulty": "Easy",
+      "description": "1,2 — быстрая кофейная строка"
+    },
+    {
+      "category": "combo",
+      "name": "Flower Kick",
+      "input": "→ ✕",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "f+4 — удар ногой с прыжком"
+    },
+    {
+      "category": "combo",
+      "name": "Azucena BnB",
+      "input": "↓ ↘ → □ , □ □ , → ✕",
+      "damage": "260",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Flower Kick"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → ✕ , □ □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Flower Kick финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — латиноамериканский финиш"
+    }
+  ],
+  "Shaheen": [
+    {
+      "category": "combo",
+      "name": "Sand Storm",
+      "input": "□ □",
+      "damage": "115",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Desert Falcon",
+      "input": "→ ✕",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "f+4 — удар пяткой сверху"
+    },
+    {
+      "category": "combo",
+      "name": "Shaheen BnB",
+      "input": "↓ ↘ → □ , □ □ , → ✕",
+      "damage": "260",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Desert Falcon"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → ✕ , □ □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — атака с бронёй"
+    }
+  ],
+  "Victor": [
+    {
+      "category": "combo",
+      "name": "Fencing Thrust",
+      "input": "□ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2 — фехтовальная строка"
+    },
+    {
+      "category": "combo",
+      "name": "Cavalier",
+      "input": "→ □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "f+1 — выпад вперёд"
+    },
+    {
+      "category": "combo",
+      "name": "Victor BnB",
+      "input": "↓ ↘ → □ , □ □ , → □",
+      "damage": "260",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Cavalier"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → □ , □ □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Cavalier финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — элегантная французская атака"
+    }
+  ],
+  "Kuma": [
+    {
+      "category": "combo",
+      "name": "Bear Swipe",
+      "input": "□ □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "1,2 — удары медвежьими лапами"
+    },
+    {
+      "category": "combo",
+      "name": "Salmon Hunter",
+      "input": "→ □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "f+1 — удар лапой вперёд"
+    },
+    {
+      "category": "combo",
+      "name": "Bear BnB",
+      "input": "↓ ↘ → □ , □ □ , → □",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Hunter"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → □ , □ □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "255",
+      "difficulty": "Easy",
+      "description": "Rage Art — медвежья ярость с бронёй"
+    }
+  ],
+  "Panda": [
+    {
+      "category": "combo",
+      "name": "Panda Slap",
+      "input": "□ □",
+      "damage": "125",
+      "difficulty": "Easy",
+      "description": "1,2 — удары панды"
+    },
+    {
+      "category": "combo",
+      "name": "Bamboo Strike",
+      "input": "→ □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "f+1 — удар вперёд"
+    },
+    {
+      "category": "combo",
+      "name": "Panda BnB",
+      "input": "↓ ↘ → □ , □ □ , → □",
+      "damage": "260",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Bamboo Strike"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → □ , □ □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — атака панды с бронёй"
+    }
+  ],
+  "Eddy": [
+    {
+      "category": "combo",
+      "name": "Capoeira Step",
+      "input": "△ △",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "2,2 — capoeira базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Ginga Spin",
+      "input": "← + △",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "b+2 — удар с разворота"
+    },
+    {
+      "category": "combo",
+      "name": "Eddy BnB",
+      "input": "↓ ↘ → □ , △ △ , ← + △",
+      "damage": "255",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, capoeira строка, Ginga"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , △ △ △ , ← + △ , △",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "Лаунч, capoeira серия, финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — capoeira вихрь с бронёй"
+    }
+  ],
+  "Heihachi": [
+    {
+      "category": "combo",
+      "name": "Iron Palm",
+      "input": "□ □",
+      "damage": "125",
+      "difficulty": "Easy",
+      "description": "1,2 — базовая Mishima строка"
+    },
+    {
+      "category": "combo",
+      "name": "EWGF",
+      "input": "→ N ↓ ↘ □ (perfect)",
+      "damage": "200",
+      "difficulty": "Hard",
+      "description": "Electric Wind God Fist — основной лаунчер"
+    },
+    {
+      "category": "combo",
+      "name": "WGF Route",
+      "input": "→ N ↓ ↘ □ , □ □ , ← □",
+      "damage": "275",
+      "difficulty": "Hard",
+      "description": "WGF лаунч, строка, b+1"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "→ N ↓ ↘ □ (perfect) , □ □ , → N ↓ ↘ □ (perfect) , □ □",
+      "damage": "340",
+      "difficulty": "Hard",
+      "description": "Двойной EWGF маршрут"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "260",
+      "difficulty": "Easy",
+      "description": "Rage Art — огненный Mishima финиш"
+    }
+  ],
+  "Anna": [
+    {
+      "category": "combo",
+      "name": "Slap Rush",
+      "input": "□ □ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "1,2,1 — быстрая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Blonde Bomb",
+      "input": "→ □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "f+2 — боковой удар"
+    },
+    {
+      "category": "combo",
+      "name": "Anna BnB",
+      "input": "↓ → △ , □ □ □ , → □",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "df+3 лаунч, строка, Blonde Bomb"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ → △ , □ □ □ , → □ , ← + □ ○",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Knee лаунч, строка, командный захват"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — смертоносная грация"
+    }
+  ],
+  "Lidia": [
+    {
+      "category": "combo",
+      "name": "Katana Slash",
+      "input": "□ □",
+      "damage": "125",
+      "difficulty": "Easy",
+      "description": "1,2 — удары катаной"
+    },
+    {
+      "category": "combo",
+      "name": "Seiken Strike",
+      "input": "→ □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "f+1 — мощный рывок удар"
+    },
+    {
+      "category": "combo",
+      "name": "Lidia BnB",
+      "input": "↓ ↘ → □ , □ □ , → □",
+      "damage": "265",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Seiken"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → □ , □ □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "Лаунч, полная строка, финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "250",
+      "difficulty": "Easy",
+      "description": "Rage Art — польская катана с бронёй"
+    }
+  ],
+  "Clive": [
+    {
+      "category": "combo",
+      "name": "Phoenix Blaze",
+      "input": "□ □",
+      "damage": "125",
+      "difficulty": "Easy",
+      "description": "1,2 — огненная базовая строка"
+    },
+    {
+      "category": "combo",
+      "name": "Ignition",
+      "input": "→ □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "f+1 — огненный рывок удар"
+    },
+    {
+      "category": "combo",
+      "name": "Clive BnB",
+      "input": "↓ ↘ → □ , □ □ , → □",
+      "damage": "270",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Ignition"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → □ , □ □",
+      "damage": "315",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Phoenix финиш"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "260",
+      "difficulty": "Easy",
+      "description": "Rage Art — Phoenix призыв с бронёй"
+    }
+  ],
+  "Armor King": [
+    {
+      "category": "combo",
+      "name": "Shoulder Tackle",
+      "input": "→ → □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "ff+1 — рывок захват"
+    },
+    {
+      "category": "combo",
+      "name": "Dark Upper",
+      "input": "↓ ↘ → □",
+      "damage": "195",
+      "difficulty": "Medium",
+      "description": "df+2 — апперкот лаунчер"
+    },
+    {
+      "category": "combo",
+      "name": "Armor BnB",
+      "input": "↓ ↘ → □ , □ □ □ , → → □",
+      "damage": "275",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Shoulder"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , ↙ ↓ ↘ → ↗ ↑ □",
+      "damage": "320",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Tijuana Twister захват"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "255",
+      "difficulty": "Easy",
+      "description": "Rage Art — черный захват с бронёй"
+    }
+  ],
+  "Fahkumram": [
+    {
+      "category": "combo",
+      "name": "Muay Thai Combo",
+      "input": "□ □ □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "1,2,1 — тайский бокс строка"
+    },
+    {
+      "category": "combo",
+      "name": "Heel Drop",
+      "input": "↑ ✕",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "u+4 — удар каблуком сверху"
+    },
+    {
+      "category": "combo",
+      "name": "Fahkumram BnB",
+      "input": "↓ ↘ → □ , □ □ □ , ↑ ✕",
+      "damage": "270",
+      "difficulty": "Hard",
+      "description": "df+2 лаунч, строка, Heel Drop"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ ↘ → □ , □ □ □ , ↑ ✕ , □ □ □",
+      "damage": "315",
+      "difficulty": "Hard",
+      "description": "Лаунч, строка, Heel Drop продолжение"
+    },
+    {
+      "category": "rage",
+      "name": "Rage Art",
+      "input": "← + □ + ✕",
+      "damage": "255",
+      "difficulty": "Easy",
+      "description": "Rage Art — разъярённый Muay Thai"
+    }
+  ]
+}

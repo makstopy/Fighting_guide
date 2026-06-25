@@ -1,0 +1,1248 @@
+{
+  "Sol Badguy": [
+    {
+      "name": "Gun Flame",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Gun Flame — базовый снаряд",
+      "category": "combo"
+    },
+    {
+      "name": "Viper Launch",
+      "input": "→ ↓ ↘ ○",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Volcanic Viper — анти-эйр лаунчер",
+      "category": "combo"
+    },
+    {
+      "name": "cS Route",
+      "input": "↓ □ ○, → ↓ ↘ ○",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "c.S, 5HS, Volcanic Viper финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Fafnir Combo",
+      "input": "□ ○, ↙ ← ↖ ↑ → ○",
+      "damage": "250",
+      "difficulty": "Medium",
+      "description": "5S, 5HS, Fafnir финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Air Confirm",
+      "input": "↑ □ ↑ ○, ↓ □ ○, → ↓ ↘ ○",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "j.S, j.HS, подтверждение, Viper финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "↓ □ ○, ↑ □ ↑ ○, ↓ □ ○, → ↓ ↘ ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Tyrant Rave",
+      "category": "combo"
+    },
+    {
+      "category": "overdrive",
+      "name": "Tyrant Rave",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Medium",
+      "description": "Overdrive — мощный огненный удар"
+    }
+  ],
+  "Ky Kiske": [
+    {
+      "name": "Stun Edge",
+      "input": "↓ ↘ → ○",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "Stun Edge — базовый снаряд",
+      "category": "combo"
+    },
+    {
+      "name": "Vapor Thrust",
+      "input": "→ ↓ ↘ ○",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Vapor Thrust — анти-эйр",
+      "category": "combo"
+    },
+    {
+      "name": "cS Starter",
+      "input": "↓ □ ○, ↓ ↘ → ○",
+      "damage": "205",
+      "difficulty": "Medium",
+      "description": "c.S, 5HS, Stun Edge финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Dipper Confirm",
+      "input": "↓ □, ↓ ↘ → △",
+      "damage": "240",
+      "difficulty": "Medium",
+      "description": "c.S, Stun Dipper кансел",
+      "category": "combo"
+    },
+    {
+      "name": "Air Route",
+      "input": "↑ □ ↑ ○, ↓ □ ○, → ↓ ↘ ○",
+      "damage": "285",
+      "difficulty": "Hard",
+      "description": "j.S, j.HS, c.S, 5HS, Vapor Thrust",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "↓ □ ○, ↑ □ ↑ ○, ↓ □ ○, ↓ ↘ → ↓ ↘ → ○",
+      "damage": "355",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Ride the Lightning (SA)",
+      "category": "combo"
+    },
+    {
+      "category": "overdrive",
+      "name": "Ride the Lightning",
+      "input": "↓ ↘ → ↓ ↘ → ○",
+      "damage": "360",
+      "difficulty": "Medium",
+      "description": "Overdrive — молниеносный рывок"
+    }
+  ],
+  "May": [
+    {
+      "name": "Mr Dolphin H",
+      "input": "↓ ↘ → ○",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Mr. Dolphin Horizontal — рывок атака",
+      "category": "combo"
+    },
+    {
+      "name": "Anchor Toss",
+      "input": "↓ ↙ ← □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Overhead Kiss — бросок якорем",
+      "category": "combo"
+    },
+    {
+      "name": "Dolphin Combo",
+      "input": "□ ○, ↓ ↘ → ○",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "5S, 5HS, Mr. Dolphin финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Air Dolphin",
+      "input": "↑ □, ↓ ↘ → ○, □ ○",
+      "damage": "250",
+      "difficulty": "Medium",
+      "description": "j.S, Dolphin, подтверждение",
+      "category": "combo"
+    },
+    {
+      "name": "Whale Launch",
+      "input": "↓ □ ○, ↓ ↙ ← ↙ ↓ ↘ → ○",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "c.S, 5HS, Giant Baleen финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "↑ □ ↑ ○, ↓ □ ○, ↓ ↙ ← ↙ ↓ ↘ → ○",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "j.S, j.HS, c.S, Giant Baleen",
+      "category": "combo"
+    },
+    {
+      "category": "overdrive",
+      "name": "Great Yamada Attack",
+      "input": "↓ ↙ ← ↓ ↙ ← ○",
+      "damage": "360",
+      "difficulty": "Medium",
+      "description": "Overdrive — гигантский дельфин"
+    }
+  ],
+  "Faust": [
+    {
+      "name": "Pogo Stance",
+      "input": "↓ ↓ □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "Pogo — уникальная стойка на скальпеле",
+      "category": "combo"
+    },
+    {
+      "name": "Snip Snip",
+      "input": "□ □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "5P, 5P — базовые быстрые удары",
+      "category": "combo"
+    },
+    {
+      "name": "Item Toss",
+      "input": "↓ ↘ → □",
+      "damage": "110",
+      "difficulty": "Easy",
+      "description": "What Could This Be? — бросок предмета",
+      "category": "combo"
+    },
+    {
+      "name": "Long Reach",
+      "input": "○, ↓ ↘ → □",
+      "damage": "200",
+      "difficulty": "Medium",
+      "description": "5HS, Item Toss кансел",
+      "category": "combo"
+    },
+    {
+      "name": "Scalpel Combo",
+      "input": "□ ○, ↓ ↓ □, □",
+      "damage": "245",
+      "difficulty": "Hard",
+      "description": "5S, 5HS, Pogo, продолжение",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "↑ □, ○, ↓ ↘ → ↓ ↘ → □",
+      "damage": "340",
+      "difficulty": "Hard",
+      "description": "j.P, 5HS, Stimulating Fists of Annihilation",
+      "category": "combo"
+    },
+    {
+      "category": "overdrive",
+      "name": "Stimulating Fists",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Medium",
+      "description": "Overdrive — серия безумных ударов"
+    }
+  ],
+  "Giovanna": [
+    {
+      "name": "Septem Voices",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Septem Voices — рывок атака",
+      "category": "combo"
+    },
+    {
+      "name": "Sol Nascente",
+      "input": "→ ↓ ↘ □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Sol Nascente — DP атака",
+      "category": "combo"
+    },
+    {
+      "name": "cS BnB",
+      "input": "↓ □ ○, ↓ ↘ → □",
+      "damage": "205",
+      "difficulty": "Medium",
+      "description": "c.S, 5HS, Septem Voices финиш",
+      "category": "combo"
+    },
+    {
+      "name": "Wolf Combo",
+      "input": "□ ○, ↓ ↘ → □, □ ○",
+      "damage": "245",
+      "difficulty": "Medium",
+      "description": "5S, 5HS, Septem, подтверждение",
+      "category": "combo"
+    },
+    {
+      "name": "Air Route",
+      "input": "↑ □ ↑ ○, ↓ □ ○, ↓ ↘ → □",
+      "damage": "290",
+      "difficulty": "Hard",
+      "description": "j.S, j.HS, c.S, Septem Voices",
+      "category": "combo"
+    },
+    {
+      "name": "Full BnB",
+      "input": "↓ □ ○, ↑ □ ↑ ○, ↓ □ ○, ↓ ↘ → ↓ ↘ → □",
+      "damage": "355",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Ventus Ire (SA)",
+      "category": "combo"
+    },
+    {
+      "category": "overdrive",
+      "name": "Ventus Ire",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Medium",
+      "description": "Overdrive — волк-атака"
+    }
+  ],
+  "Millia Rage": [
+    {
+      "category": "combo",
+      "name": "Tandem Top",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Tandem Top — шпилька ловушка"
+    },
+    {
+      "category": "combo",
+      "name": "Lust Shaker",
+      "input": "↓ ↙ ← □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Lust Shaker — серия волосяных ударов"
+    },
+    {
+      "category": "combo",
+      "name": "cS BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , → ↓ ↘ ○",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "c.S,5HS, Tandem, Septem"
+    },
+    {
+      "category": "combo",
+      "name": "Air Combo",
+      "input": "↑ □ ↑ ○ , ↓ □ ○ , ↓ ↙ ← □",
+      "damage": "255",
+      "difficulty": "Hard",
+      "description": "j.S,j.HS, c.S, Lust Shaker"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "330",
+      "difficulty": "Hard",
+      "description": "SA финиш — Iron Savior"
+    },
+    {
+      "category": "overdrive",
+      "name": "Iron Savior",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "350",
+      "difficulty": "Hard",
+      "description": "Overdrive — гигантская шпилька"
+    }
+  ],
+  "Zato-1": [
+    {
+      "category": "combo",
+      "name": "Eddie Call",
+      "input": "□",
+      "damage": "100",
+      "difficulty": "Easy",
+      "description": "Вызов Эдди — основа играстиля"
+    },
+    {
+      "category": "combo",
+      "name": "Break The Law",
+      "input": "↓ ↘ → □",
+      "damage": "145",
+      "difficulty": "Easy",
+      "description": "Break The Law — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Drunkard Shade",
+      "input": "↓ ↙ ← □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Drunkard Shade — отражение"
+    },
+    {
+      "category": "combo",
+      "name": "Eddie BnB",
+      "input": "□ , ↓ □ ○ , ↓ ↘ → □ , ↓ □ ○",
+      "damage": "240",
+      "difficulty": "Hard",
+      "description": "Eddie активен, c.S BnB"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "□ , ↓ □ ○ , ↑ □ ↑ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "315",
+      "difficulty": "Hard",
+      "description": "Eddie, c.S, j.S, SA финиш"
+    },
+    {
+      "category": "overdrive",
+      "name": "Amorphous",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "370",
+      "difficulty": "Hard",
+      "description": "Overdrive — массивная тень Эдди"
+    }
+  ],
+  "Ramlethal": [
+    {
+      "category": "combo",
+      "name": "Sword Toss",
+      "input": "↓ ↘ → □",
+      "damage": "135",
+      "difficulty": "Easy",
+      "description": "Bajoneto — бросок меча снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Sildo Detruo",
+      "input": "↓ ↙ ← ○",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Sildo Detruo — нижний меч удар"
+    },
+    {
+      "category": "combo",
+      "name": "cS BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , ↓ ↙ ← ○",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Bajoneto,Sildo"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Calvados"
+    },
+    {
+      "category": "overdrive",
+      "name": "Calvados",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Overdrive — двойной меч финиш"
+    }
+  ],
+  "Leo": [
+    {
+      "category": "combo",
+      "name": "Brynhildr",
+      "input": "→ □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "f+P — рывок удар"
+    },
+    {
+      "category": "combo",
+      "name": "Zweites Kaltes",
+      "input": "↓ ↘ → □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Zweites Kaltes Gestöber — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "cS BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , → □",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,снаряд,Brynhildr"
+    },
+    {
+      "category": "combo",
+      "name": "BTL BnB",
+      "input": "← ← , □ ○ , ↓ ↘ → □ , → □",
+      "damage": "255",
+      "difficulty": "Hard",
+      "description": "Backturn строка, снаряд, Brynhildr"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "325",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Turbulenz"
+    },
+    {
+      "category": "overdrive",
+      "name": "Turbulenz",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Overdrive — мощный меч финиш"
+    }
+  ],
+  "Nagoriyuki": [
+    {
+      "category": "combo",
+      "name": "Fukyo Dash",
+      "input": "↓ ↘ → □",
+      "damage": "145",
+      "difficulty": "Easy",
+      "description": "Fukyo — рывок вперёд с ударом"
+    },
+    {
+      "category": "combo",
+      "name": "Shizuriyuki",
+      "input": "↓ ↘ → ○",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Shizuriyuki — кровяной снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "cS BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , ↓ ↘ → ○",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Fukyo,Shizuriyuki"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "315",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Zansetsu"
+    },
+    {
+      "category": "overdrive",
+      "name": "Zansetsu",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "380",
+      "difficulty": "Hard",
+      "description": "Overdrive — гигантский кровяной удар"
+    }
+  ],
+  "Potemkin": [
+    {
+      "category": "combo",
+      "name": "Hammer Fall",
+      "input": "→ (держи) □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Hammer Fall — рывок с бронёй"
+    },
+    {
+      "category": "combo",
+      "name": "Garuda Impact",
+      "input": "↓ ↙ ← △",
+      "damage": "175",
+      "difficulty": "Easy",
+      "description": "Garuda Impact — мощный удар рукой"
+    },
+    {
+      "category": "combo",
+      "name": "PRC BnB",
+      "input": "□ ○ , ↓ ↘ → □ , ↓ ↙ ← ↙ ↓ ↘ → □",
+      "damage": "230",
+      "difficulty": "Medium",
+      "description": "5P,5HS,снаряд,Slide Head"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Heavenly Potemkin Buster"
+    },
+    {
+      "category": "overdrive",
+      "name": "Heavenly P.B.",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "400",
+      "difficulty": "Hard",
+      "description": "Overdrive — гигантский захват"
+    }
+  ],
+  "Chipp": [
+    {
+      "category": "combo",
+      "name": "Alpha Blade",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Alpha Blade — рывок атака"
+    },
+    {
+      "category": "combo",
+      "name": "Beta Blade",
+      "input": "→ ↓ ↘ □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Beta Blade — DP атака"
+    },
+    {
+      "category": "combo",
+      "name": "cS BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , → ↓ ↘ □",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Alpha,Beta"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Zansei Rouga"
+    },
+    {
+      "category": "overdrive",
+      "name": "Zansei Rouga",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "355",
+      "difficulty": "Hard",
+      "description": "Overdrive — финальный ниндзя клон"
+    }
+  ],
+  "Axl Low": [
+    {
+      "category": "combo",
+      "name": "Sickle Flash",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Sickle Flash — цепь снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Snail",
+      "input": "↓ ↙ ← □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Winter Mantis — нижний удар цепью"
+    },
+    {
+      "category": "combo",
+      "name": "Rensen Route",
+      "input": "□ ○ , ↓ ↘ → □ , ↓ ↘ → □",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "5P,5HS, двойной Sickle"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Sauhoubugeki"
+    },
+    {
+      "category": "overdrive",
+      "name": "Sauhoubugeki",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Overdrive — серия ударов цепями"
+    }
+  ],
+  "I-No": [
+    {
+      "category": "combo",
+      "name": "Stroke The Big Tree",
+      "input": "↓ ↘ → □",
+      "damage": "135",
+      "difficulty": "Easy",
+      "description": "Stroke The Big Tree — воздушный снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Chemical Love",
+      "input": "↓ ↙ ← □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Chemical Love — горизонтальный снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "H.C.T BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ ↘ → □",
+      "damage": "225",
+      "difficulty": "Medium",
+      "description": "c.S,j.S,j.HS,Stroke снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "320",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Megalomania"
+    },
+    {
+      "category": "overdrive",
+      "name": "Megalomania",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "380",
+      "difficulty": "Hard",
+      "description": "Overdrive — рок-концерт удар"
+    }
+  ],
+  "Goldlewis": [
+    {
+      "category": "combo",
+      "name": "Behemoth Typhoon",
+      "input": "↓ ↘ → □",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Behemoth Typhoon — секретный гроб"
+    },
+    {
+      "category": "combo",
+      "name": "Down With The System",
+      "input": "↓ ↙ ← □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Down With The System — кулачный удар"
+    },
+    {
+      "category": "combo",
+      "name": "Coffin BnB",
+      "input": "□ ○ , ↓ ↘ → □ , ↓ ↘ → □",
+      "damage": "235",
+      "difficulty": "Hard",
+      "description": "5P,5HS, двойной Typhoon"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Burn It Down"
+    },
+    {
+      "category": "overdrive",
+      "name": "Burn It Down",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "390",
+      "difficulty": "Hard",
+      "description": "Overdrive — НЛО финальный удар"
+    }
+  ],
+  "Jack-O": [
+    {
+      "category": "combo",
+      "name": "Servant Summon",
+      "input": "↓ ↘ → □",
+      "damage": "120",
+      "difficulty": "Easy",
+      "description": "Summon Servant — призвать слугу"
+    },
+    {
+      "category": "combo",
+      "name": "Cheer Turn",
+      "input": "↓ ↙ ← □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Cheer Turn Spin — удар с разворота"
+    },
+    {
+      "category": "combo",
+      "name": "Servant BnB",
+      "input": "↓ ↘ → □ , ↓ □ ○ , ↓ ↘ → ○",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "Слуга, c.S,5HS,Throw"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Heaven or Hell"
+    },
+    {
+      "category": "overdrive",
+      "name": "Heaven or Hell",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "365",
+      "difficulty": "Hard",
+      "description": "Overdrive — армия слуг финиш"
+    }
+  ],
+  "Happy Chaos": [
+    {
+      "category": "combo",
+      "name": "Steady Aim",
+      "input": "↓ ↘ → □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Gunshot — базовый выстрел из пистолета"
+    },
+    {
+      "category": "combo",
+      "name": "Focus",
+      "input": "↓ ↘ → ○",
+      "damage": "100",
+      "difficulty": "Easy",
+      "description": "Focus — перезарядка и усиление"
+    },
+    {
+      "category": "combo",
+      "name": "Gun BnB",
+      "input": "□ ○ , ↓ ↘ → □ , ↓ ↘ → □",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "5P,5HS, двойной выстрел"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Conclusion"
+    },
+    {
+      "category": "overdrive",
+      "name": "Conclusion",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "380",
+      "difficulty": "Hard",
+      "description": "Overdrive — финальный хаотичный выстрел"
+    }
+  ],
+  "Testament": [
+    {
+      "category": "combo",
+      "name": "Exe Beast",
+      "input": "↓ ↘ → □",
+      "damage": "135",
+      "difficulty": "Easy",
+      "description": "Exe Beast — вызов зверя снаряда"
+    },
+    {
+      "category": "combo",
+      "name": "Unholy Diver",
+      "input": "→ ↓ ↘ □",
+      "damage": "160",
+      "difficulty": "Easy",
+      "description": "Unholy Diver — атака с воздуха"
+    },
+    {
+      "category": "combo",
+      "name": "Stain Route",
+      "input": "↓ □ ○ , ↓ ↘ → □ , → ↓ ↘ □",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "c.S,5HS, Exe Beast, Unholy Diver"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "315",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Calamity One"
+    },
+    {
+      "category": "overdrive",
+      "name": "Calamity One",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "370",
+      "difficulty": "Hard",
+      "description": "Overdrive — тёмный зверь финиш"
+    }
+  ],
+  "Baiken": [
+    {
+      "category": "combo",
+      "name": "Tatami Gaeshi",
+      "input": "↓ ↙ ← ○",
+      "damage": "145",
+      "difficulty": "Easy",
+      "description": "Tatami Gaeshi — нижний удар татами"
+    },
+    {
+      "category": "combo",
+      "name": "Youzansen",
+      "input": "→ ↓ ↘ □",
+      "damage": "165",
+      "difficulty": "Easy",
+      "description": "Youzansen — диагональный воздушный удар"
+    },
+    {
+      "category": "combo",
+      "name": "cS BnB",
+      "input": "↓ □ ○ , ↓ ↙ ← ○ , → ↓ ↘ □",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Tatami,Youzansen"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Kenjyu"
+    },
+    {
+      "category": "overdrive",
+      "name": "Kenjyu",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Overdrive — массивный меч финиш"
+    }
+  ],
+  "Bridget": [
+    {
+      "category": "combo",
+      "name": "Stop And Dash",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Stop And Dash — йо-йо атака"
+    },
+    {
+      "category": "combo",
+      "name": "Roger",
+      "input": "↓ ↙ ← □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Roger — медведь бросок"
+    },
+    {
+      "category": "combo",
+      "name": "Yo-Yo BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , ↓ ↙ ← □",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Stop And Dash,Roger"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Mighty Roger"
+    },
+    {
+      "category": "overdrive",
+      "name": "Mighty Roger",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Overdrive — гигантский медведь"
+    }
+  ],
+  "Sin Kiske": [
+    {
+      "category": "combo",
+      "name": "Hawk Baker",
+      "input": "↓ ↘ → □",
+      "damage": "145",
+      "difficulty": "Easy",
+      "description": "Hawk Baker — горизонтальный удар флагом"
+    },
+    {
+      "category": "combo",
+      "name": "Beak Driver",
+      "input": "→ ↓ ↘ □",
+      "damage": "170",
+      "difficulty": "Easy",
+      "description": "Beak Driver — DP атака флагом"
+    },
+    {
+      "category": "combo",
+      "name": "cS BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , → ↓ ↘ □",
+      "damage": "220",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Hawk Baker,Beak Driver"
+    },
+    {
+      "category": "combo",
+      "name": "Meat BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → □",
+      "damage": "260",
+      "difficulty": "Hard",
+      "description": "c.S, воздушная строка, Hawk Baker"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "320",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Tyrant Blast"
+    },
+    {
+      "category": "overdrive",
+      "name": "Tyrant Blast",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "375",
+      "difficulty": "Hard",
+      "description": "Overdrive — взрывной финиш флагом"
+    }
+  ],
+  "Bedman?": [
+    {
+      "category": "combo",
+      "name": "Auferstehung",
+      "input": "↓ ↘ → □",
+      "damage": "135",
+      "difficulty": "Easy",
+      "description": "Auferstehung — кровать рывок"
+    },
+    {
+      "category": "combo",
+      "name": "Neugier",
+      "input": "↓ ↙ ← □",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Neugier — нижний удар кроватью"
+    },
+    {
+      "category": "combo",
+      "name": "Ruhig BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , ↓ ↙ ← □",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Auferstehung,Neugier"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Ruhig Ruhig"
+    },
+    {
+      "category": "overdrive",
+      "name": "Ruhig Ruhig",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Overdrive — кровать-вихрь финиш"
+    }
+  ],
+  "Asuka R#": [
+    {
+      "category": "combo",
+      "name": "Auto Spell",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Auto Spell — случайное заклинание"
+    },
+    {
+      "category": "combo",
+      "name": "Bookmark",
+      "input": "↓ ↙ ← □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Bookmark — удар книгой"
+    },
+    {
+      "category": "combo",
+      "name": "Spell BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , ↓ ↙ ← □",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Auto Spell,Bookmark"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "300",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Code: Egg"
+    },
+    {
+      "category": "overdrive",
+      "name": "Code: Egg",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "370",
+      "difficulty": "Hard",
+      "description": "Overdrive — магический финиш"
+    }
+  ],
+  "Queen Dizzy": [
+    {
+      "category": "combo",
+      "name": "Gamma Ray",
+      "input": "↓ ↘ → □",
+      "damage": "140",
+      "difficulty": "Easy",
+      "description": "Gamma Ray — луч энергии снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "Ice Field",
+      "input": "↓ ↙ ← □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Ice Field — ледяная ловушка"
+    },
+    {
+      "category": "combo",
+      "name": "cS BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , ↓ ↙ ← □",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Gamma Ray,Ice Field"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "310",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Gamma Burst"
+    },
+    {
+      "category": "overdrive",
+      "name": "Gamma Burst",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "380",
+      "difficulty": "Hard",
+      "description": "Overdrive — крылатый энергетический взрыв"
+    }
+  ],
+  "Venom": [
+    {
+      "category": "combo",
+      "name": "Ball Formation",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Ball — расстановка бильярдных шаров"
+    },
+    {
+      "category": "combo",
+      "name": "Carcass Raid",
+      "input": "↓ ↙ ← □",
+      "damage": "155",
+      "difficulty": "Easy",
+      "description": "Carcass Raid — удар по шару"
+    },
+    {
+      "category": "combo",
+      "name": "Ball BnB",
+      "input": "↓ ↘ → □ , ↓ □ ○ , ↓ ↙ ← □",
+      "damage": "215",
+      "difficulty": "Medium",
+      "description": "Ball расстановка, c.S,5HS,Carcass"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "305",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Stinger Aim"
+    },
+    {
+      "category": "overdrive",
+      "name": "Stinger Aim",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "365",
+      "difficulty": "Hard",
+      "description": "Overdrive — шары со всех сторон"
+    }
+  ],
+  "Elphelt": [
+    {
+      "category": "combo",
+      "name": "Miss Charlotte",
+      "input": "↓ ↘ → □",
+      "damage": "130",
+      "difficulty": "Easy",
+      "description": "Miss Charlotte — выстрел дробовиком"
+    },
+    {
+      "category": "combo",
+      "name": "Trias!",
+      "input": "↓ ↙ ← ○",
+      "damage": "150",
+      "difficulty": "Easy",
+      "description": "Trias! — удар букетом цветов"
+    },
+    {
+      "category": "combo",
+      "name": "Shotgun BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , ↓ ↙ ← ○",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Miss Charlotte,Trias"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Bomb Throw"
+    },
+    {
+      "category": "overdrive",
+      "name": "Red Hail",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Overdrive — бомбовый дождь"
+    }
+  ],
+  "Unika": [
+    {
+      "category": "combo",
+      "name": "Light Slash",
+      "input": "□",
+      "damage": "100",
+      "difficulty": "Easy",
+      "description": "P — базовый быстрый удар"
+    },
+    {
+      "category": "combo",
+      "name": "Energy Ball",
+      "input": "↓ ↘ → □",
+      "damage": "135",
+      "difficulty": "Easy",
+      "description": "Energy Ball — снаряд"
+    },
+    {
+      "category": "combo",
+      "name": "cS BnB",
+      "input": "↓ □ ○ , ↓ ↘ → □ , → ↓ ↘ □",
+      "damage": "210",
+      "difficulty": "Medium",
+      "description": "c.S,5HS,Energy Ball,DP"
+    },
+    {
+      "category": "combo",
+      "name": "Full BnB",
+      "input": "↓ □ ○ , ↑ □ ↑ ○ , ↓ □ ○ , ↓ ↘ → ↓ ↘ → □",
+      "damage": "295",
+      "difficulty": "Hard",
+      "description": "c.S BnB в Overdrive"
+    },
+    {
+      "category": "overdrive",
+      "name": "Overdrive",
+      "input": "↓ ↘ → ↓ ↘ → □",
+      "damage": "360",
+      "difficulty": "Hard",
+      "description": "Overdrive — финальный удар Unika"
+    }
+  ]
+}

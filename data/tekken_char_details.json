@@ -1,0 +1,230 @@
+{
+  "Alisa": {
+    "title": "Bosconovitch Android",
+    "country": "Russia",
+    "style": "High-mobility thruster attacks",
+    "bio": "An android created by the brilliant Dr. Bosconovitch. She fights with chainsaws and thrusters to protect those she loves."
+  },
+  "Anna": {
+    "title": "Cold-Blooded Assassin",
+    "country": "Ireland",
+    "style": "Assassination Martial Arts",
+    "bio": "The younger, rival sister of Nina Williams. She uses lethal strikes and deception to crush her enemies."
+  },
+  "Armor King": {
+    "title": "Evil Flower of the Ring",
+    "country": "Unknown",
+    "style": "Pro Wrestling",
+    "bio": "A mysterious masked wrestler who seeks vengeance and thrives in brutal, high-stakes matches."
+  },
+  "Asuka": {
+    "title": "Spunky Temple Assistant",
+    "country": "Japan",
+    "style": "Kazama Style Traditional Martial Arts",
+    "bio": "A hot-headed girl who fights to keep the peace in Osaka. Her defensive counters are second to none."
+  },
+  "Azucena": {
+    "title": "Coffee Queen",
+    "country": "Peru",
+    "style": "Mixed Martial Arts (Striking)",
+    "bio": "The only daughter of the owner of Ortiz Farm. She fights to promote her family's special coffee blend."
+  },
+  "Bryan": {
+    "title": "Harbinger of Chaos",
+    "country": "USA",
+    "style": "Kickboxing",
+    "bio": "A cybernetic zombie cop who lives only for destruction and violence. His heavy punches devastate opponents."
+  },
+  "Claudio": {
+    "title": "Banisher of Evil",
+    "country": "Italy",
+    "style": "Sirius Exorcism Sorcery",
+    "bio": "Leader of the Sirius Marksmen. He uses holy starburst energy to purge demonic threats."
+  },
+  "Clive": {
+    "title": "Blazing Vanguard",
+    "country": "Unknown",
+    "style": "Royal Swordplay",
+    "bio": "A mysterious newcomer whose fierce and elegant fighting style keeps opponents guessing."
+  },
+  "Devil Jin": {
+    "title": "Dark Angel of Death",
+    "country": "Unknown",
+    "style": "Advanced Mishima Karate & Devil Gene Powers",
+    "bio": "Jin Kazama consumed by the Devil Gene. He unleashes laser beams and wings of pure darkness."
+  },
+  "Dragunov": {
+    "title": "White Angel of Death",
+    "country": "Russia",
+    "style": "Commando Sambo",
+    "bio": "A silent military officer who executes cold, calculated grapple moves and heavy strikes."
+  },
+  "Eddy": {
+    "title": "Indomitable Rhythm",
+    "country": "Brazil",
+    "style": "Capoeira",
+    "bio": "A master of the rhythmic Brazilian martial art Capoeira, combining acrobatic kicks with deceptive dancing."
+  },
+  "Fahkumram": {
+    "title": "Titan of Muay Thai",
+    "country": "Thailand",
+    "style": "Muay Thai",
+    "bio": "A towering champion forced to fight to protect his family. His bone-crushing kicks strike with lightning speed."
+  },
+  "Feng": {
+    "title": "God Fist",
+    "country": "China",
+    "style": "Chinese Martial Arts",
+    "bio": "A martial arts fanatic obsessed with becoming the strongest warrior on Earth."
+  },
+  "Heihachi": {
+    "title": "King of the Iron Fist",
+    "country": "Japan",
+    "style": "Mishima Style Fighting Karate",
+    "bio": "The legendary patriarch of the Mishima Zaibatsu. His devastating electric attacks strike with god-like power."
+  },
+  "Hwoarang": {
+    "title": "Blood Talon",
+    "country": "South Korea",
+    "style": "Taekwondo",
+    "bio": "A cocky Taekwondo master who fights using complex, rapid kick combinations."
+  },
+  "Jack-8": {
+    "title": "Ultimate Weapon",
+    "country": "Unknown",
+    "style": "Brute Force",
+    "bio": "The newest model of the Jack series androids. He crushes enemies with high-powered heavy cannons."
+  },
+  "Jin Kazama": {
+    "title": "Lightning of Fate",
+    "country": "Japan",
+    "style": "Traditional Karate",
+    "bio": "A young warrior seeking to destroy the Mishima bloodline and end the Devil Gene curse."
+  },
+  "Jun Kazama": {
+    "title": "Light of Hope",
+    "country": "Japan",
+    "style": "Kazama Style Traditional Martial Arts",
+    "bio": "Jin's mother, who uses pure sacred light and peaceful techniques to purge darkness."
+  },
+  "Kazuya": {
+    "title": "Cold-Blooded Overlord",
+    "country": "Japan",
+    "style": "Mishima Style Fighting Karate",
+    "bio": "The ruthless CEO of G Corporation. He commands the Devil Gene to annihilate all opposition."
+  },
+  "King": {
+    "title": "Anger of the Beast",
+    "country": "Mexico",
+    "style": "Pro Wrestling",
+    "bio": "A legendary masked priest who wrestles to support orphans around the world."
+  },
+  "Kuma": {
+    "title": "Raging Grizzly",
+    "country": "Japan",
+    "style": "Heihachi Style Shinken",
+    "bio": "Heihachi's loyal pet bear and student. He fights using funny but heavy claw attacks."
+  },
+  "Lars": {
+    "title": "Lion of the Rebellion",
+    "country": "Sweden",
+    "style": "Military Martial Arts",
+    "bio": "Leader of the Yggdrasil rebel army, fighting to bring peace back to the warring world."
+  },
+  "Law": {
+    "title": "Legendary Dragon",
+    "country": "USA",
+    "style": "Marshall Martial Arts",
+    "bio": "A martial artist and restaurant owner who fights to pay off his massive debts."
+  },
+  "Lee": {
+    "title": "Silver Demon",
+    "country": "Japan",
+    "style": "Martial Arts",
+    "bio": "An elegant businessman and fighter who values grace and style above all else."
+  },
+  "Leroy": {
+    "title": "Grandmaster of Wing Chun",
+    "country": "USA",
+    "style": "Wing Chun",
+    "bio": "A legendary master who cleaned up the streets of New York with elegant rapid punches."
+  },
+  "Lidia": {
+    "title": "Prime Minister of Poland",
+    "country": "Poland",
+    "style": "Traditional Karate",
+    "bio": "A noble leader who fights in the tournament to protect her homeland from G Corporation."
+  },
+  "Lili": {
+    "title": "Elegant Heiress",
+    "country": "Monaco",
+    "style": "Street Fighting & Gymnastics",
+    "bio": "A wealthy girl who loves street fighting. She views Asuka Kazama as her lifelong rival."
+  },
+  "Xiaoyu": {
+    "title": "Dancing Phoenix",
+    "country": "China",
+    "style": "Chinese Martial Arts",
+    "bio": "A cheerful girl who uses agile phoenix stances to evade and strike her opponents."
+  },
+  "Nina Williams": {
+    "title": "Silent Assassin",
+    "country": "Ireland",
+    "style": "Assassination Martial Arts",
+    "bio": "A deadly assassin and merc who uses lethal locks and quick strikes to eliminate targets."
+  },
+  "Panda": {
+    "title": "Pretty Protector",
+    "country": "China",
+    "style": "Heihachi Style Shinken",
+    "bio": "Xiaoyu's loyal pet panda and bodyguard. She fights using adorable but powerful paw swings."
+  },
+  "Paul Phoenix": {
+    "title": "Hot-Blooded American",
+    "country": "USA",
+    "style": "Judo & Karate",
+    "bio": "A tough biker who aims to prove he is the strongest fighter in the universe."
+  },
+  "Raven": {
+    "title": "Shadow Agent",
+    "country": "Unknown",
+    "style": "Ninjutsu",
+    "bio": "A secret agent who uses advanced shadow clones and ninjutsu to perform tactical strikes."
+  },
+  "Reina": {
+    "title": "Purple Lightning",
+    "country": "Unknown",
+    "style": "Taido & Mishima Karate",
+    "bio": "Meet Reina, the mysterious fighter who uses lightning-quick moves to overwhelm anyone who dares face her. Other than the fact she's a student of the Mishima Polytechnical School, everything else about her is shrouded in mystery."
+  },
+  "Shaheen": {
+    "title": "Desert Falcon",
+    "country": "Saudi Arabia",
+    "style": "Military Grappling",
+    "bio": "A bodyguard who seeks justice and truth behind the suspicious death of his close friend."
+  },
+  "Steve": {
+    "title": "Counter-Punching Prodigy",
+    "country": "United Kingdom",
+    "style": "Boxing",
+    "bio": "A world-champion boxer who fights using rapid weaving, slips, and heavy counter-hooks."
+  },
+  "Victor": {
+    "title": "Refined Founder",
+    "country": "France",
+    "style": "Super Spy CQB & Blades",
+    "bio": "A classy founder of the UN forces. He uses high-tech active swords, pistols, and teleportation."
+  },
+  "Yoshimitsu": {
+    "title": "Space Ninja",
+    "country": "Japan",
+    "style": "Manji Ninjutsu",
+    "bio": "Leader of the Manji Clan. He fights using two swords, flying stances, and funny self-healing tricks."
+  },
+  "Zafina": {
+    "title": "Stargazer",
+    "country": "Egypt",
+    "style": "Ancient Assassination Arts",
+    "bio": "A spiritual protector who sealed the evil spirit Azazel in her left hand to save the world."
+  }
+}

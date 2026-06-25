@@ -1,20 +1,23 @@
 import { useFonts } from 'expo-font';
-import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
+import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { ControlProvider } from '../components/ControlContext';
 
-import { useColorScheme } from '@/components/useColorScheme';
+import {
+  Rajdhani_400Regular,
+  Rajdhani_600SemiBold,
+  Rajdhani_700Bold
+} from '@expo-google-fonts/rajdhani';
+import { BlackOpsOne_400Regular } from '@expo-google-fonts/black-ops-one';
+import { ShareTechMono_400Regular } from '@expo-google-fonts/share-tech-mono';
 
 export {
   // Catch any errors thrown by the Layout component.
   ErrorBoundary,
 } from 'expo-router';
-
-export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: '(tabs)',
-};
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -22,6 +25,11 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const [loaded, error] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'Rajdhani-Regular': Rajdhani_400Regular,
+    'Rajdhani-SemiBold': Rajdhani_600SemiBold,
+    'Rajdhani-Bold': Rajdhani_700Bold,
+    'BlackOpsOne-Regular': BlackOpsOne_400Regular,
+    'ShareTechMono-Regular': ShareTechMono_400Regular,
   });
 
   // Expo Router uses Error Boundaries to catch errors in the navigation tree.
@@ -43,14 +51,15 @@ export default function RootLayout() {
 }
 
 function RootLayoutNav() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-      </Stack>
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ControlProvider>
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="index" />
+          <Stack.Screen name="characters" />
+          <Stack.Screen name="combos" />
+        </Stack>
+      </ControlProvider>
+    </SafeAreaProvider>
   );
 }
