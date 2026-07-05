@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
+import Animated, { useSharedValue, useAnimatedStyle, withTiming, withSequence } from 'react-native-reanimated';
 import ComboInput from './ComboInput';
 import { ControlType } from './ControlContext';
 import { useFavoritesContext } from './FavoritesContext';
@@ -64,9 +64,10 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
   const animStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.value }] }));
 
   const handleFavPress = () => {
-    scale.value = withSpring(1.4, { damping: 6, stiffness: 300 }, () => {
-      scale.value = withSpring(1, { damping: 8, stiffness: 200 });
-    });
+    scale.value = withSequence(
+      withTiming(1.2, { duration: 80 }),
+      withTiming(1, { duration: 80 })
+    );
     toggleFavorite(comboKey);
   };
 
@@ -208,7 +209,6 @@ const styles = StyleSheet.create({
   contentWrapper: {
     paddingHorizontal: 18,
     paddingVertical: 16,
-    paddingRight: 44, // leave room for the star button
   },
   headerRow: {
     flexDirection: 'row',
@@ -258,16 +258,16 @@ const styles = StyleSheet.create({
   },
   favButton: {
     position: 'absolute',
-    top: 10,
-    right: 10,
+    bottom: 8,
+    right: 8,
     zIndex: 10,
-    width: 32,
-    height: 32,
+    width: 36,
+    height: 36,
     alignItems: 'center',
     justifyContent: 'center',
   },
   favIcon: {
-    fontSize: 20,
+    fontSize: 26,
     color: '#444',
   },
   favIconActive: {
