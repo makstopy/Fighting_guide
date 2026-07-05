@@ -1,8 +1,10 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
 import ComboInput from './ComboInput';
 import { ControlType } from './ControlContext';
+import { useFavoritesContext } from './FavoritesContext';
 
 interface ComboType {
   name: string;
@@ -17,6 +19,7 @@ interface ComboType {
 interface ComboCardProps {
   combo: ComboType;
   controlType: ControlType;
+  comboKey: string;
 }
 
 const CATEGORY_COLORS: Record<string, [string, string]> = {
@@ -52,7 +55,21 @@ const CATEGORY_COLORS: Record<string, [string, string]> = {
   'Moves While Opponent is Down': ['#64748b', '#94a3b8']
 };
 
-export default function ComboCard({ combo, controlType }: ComboCardProps) {
+export default function ComboCard({ combo, controlType, comboKey }: ComboCardProps) {
+  const { isFavorite, toggleFavorite } = useFavoritesContext();
+  const fav = isFavorite(comboKey);
+
+  // Spring scale animation for the star button
+  const scale = useSharedValue(1);
+  const animStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.value }] }));
+
+  const handleFavPress = () => {
+    scale.value = withSpring(1.4, { damping: 6, stiffness: 300 }, () => {
+      scale.value = withSpring(1, { damping: 8, stiffness: 200 });
+    });
+    toggleFavorite(comboKey);
+  };
+
   // Left border gradient colors selection
   const grad = CATEGORY_COLORS[combo.category] || ['#e63b2e', '#ff8c00'];
 
@@ -121,6 +138,18 @@ export default function ComboCard({ combo, controlType }: ComboCardProps) {
         end={{ x: 0, y: 1 }}
       />
 
+      {/* Favorite star button — top right */}
+      <TouchableOpacity
+        style={styles.favButton}
+        onPress={handleFavPress}
+        hitSlop={{ top: 10, right: 10, bottom: 10, left: 10 }}
+        activeOpacity={0.7}
+      >
+        <Animated.Text style={[styles.favIcon, fav && styles.favIconActive, animStyle]}>
+          {fav ? '★' : '☆'}
+        </Animated.Text>
+      </TouchableOpacity>
+
       <View style={styles.contentWrapper}>
         {/* Title and Badges */}
         <View style={styles.headerRow}>
@@ -179,6 +208,7 @@ const styles = StyleSheet.create({
   contentWrapper: {
     paddingHorizontal: 18,
     paddingVertical: 16,
+    paddingRight: 44, // leave room for the star button
   },
   headerRow: {
     flexDirection: 'row',
@@ -225,5 +255,22 @@ const styles = StyleSheet.create({
   },
   damageHighlight: {
     color: '#ff8c00',
+  },
+  favButton: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    zIndex: 10,
+    width: 32,
+    height: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  favIcon: {
+    fontSize: 20,
+    color: '#444',
+  },
+  favIconActive: {
+    color: '#FFD700',
   },
 });

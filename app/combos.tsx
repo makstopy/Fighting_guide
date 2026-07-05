@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, ScrollView, TouchableOpacity, FlatList, Platform } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { useControl } from '../components/ControlContext';
+import { useFavoritesContext, makeComboKey } from '../components/FavoritesContext';
 import Header from '../components/Header';
 import CharacterHeaderCard from '../components/CharacterHeaderCard';
 import ComboCard from '../components/ComboCard';
@@ -128,7 +129,12 @@ const ComboSkeleton = () => (
 export default function CombosScreen() {
   const { game, char } = useLocalSearchParams<{ game: string; char: string }>();
   const { controlType } = useControl();
-  const [activeCategory, setActiveCategory] = useState('all');
+  const { favoriteIds, hasFavoritesFor } = useFavoritesContext();
+
+  // Default to 'favorite' if character already has saved favorites, otherwise 'all'
+  const [activeCategory, setActiveCategory] = useState<string>(() =>
+    hasFavoritesFor(game, char) ? 'favorite' : 'all'
+  );
   const [combos, setCombos] = useState<any[]>([]);
   const [isTransitionFinished, setIsTransitionFinished] = useState(Platform.OS === 'web');
 
@@ -250,7 +256,20 @@ export default function CombosScreen() {
   // Filter combos by selected category tab
   const filteredCombos = activeCategory === 'all'
     ? combos
-    : combos.filter(c => c.category === activeCategory);
+    : activeCategory === 'favorite'
+      ? combos.filter(c => favoriteIds.has(makeComboKey(game, char, c.name, c.input)))
+      : combos.filter(c => c.category === activeCategory);
+
+  // Empty state for Favorite tab
+  const EmptyFavorites = () => (
+    <View style={styles.emptyFavContainer}>
+      <Text style={styles.emptyFavStar}>☆</Text>
+      <Text style={styles.emptyFavTitle}>Нет избранных комбо</Text>
+      <Text style={styles.emptyFavHint}>
+        Нажми ★ на карточке комбо,{`\n`}чтобы добавить его в избранное
+      </Text>
+    </View>
+  );
 
   const renderHeader = () => (
     <View>
@@ -270,6 +289,27 @@ export default function CombosScreen() {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.categoriesScroll}
         >
+          {/* Favorite tab — always first */}
+          {(() => {
+            const isActive = activeCategory === 'favorite';
+            return (
+              <TouchableOpacity
+                key="favorite"
+                onPress={() => setActiveCategory('favorite')}
+                style={[
+                  styles.categoryTab,
+                  isActive
+                    ? { backgroundColor: '#FFD70022', borderColor: '#FFD700' }
+                    : styles.categoryTabInactive,
+                ]}
+                activeOpacity={0.8}
+              >
+                <Text style={[styles.categoryTabText, isActive ? { color: '#FFD700' } : styles.categoryTabInactiveText]}>
+                  ⭐ Избранное
+                </Text>
+              </TouchableOpacity>
+            );
+          })()}
           {GAME_CATS[game].map(([key, label]) => {
             const isActive = activeCategory === key;
             const col = CATEGORY_COLORS[key] || '#e63b2e';
@@ -298,10 +338,23 @@ export default function CombosScreen() {
     if (!isTransitionFinished) {
       return <ComboSkeleton />;
     }
-    return <ComboCard combo={item} controlType={controlType} />;
+    const key = makeComboKey(game, char, item.name, item.input);
+    return <ComboCard combo={item} controlType={controlType} comboKey={key} />;
   };
 
   const listData = isTransitionFinished ? filteredCombos : [1, 2, 3];
+
+  // Determine ListEmptyComponent: special state for favorite, generic for others
+  const emptyComponent = isTransitionFinished
+    ? activeCategory === 'favorite'
+      ? <EmptyFavorites />
+      : (
+        <View style={styles.emptyContainer}>
+          <Text style={styles.emptyIcon}>📋</Text>
+          <Text style={styles.emptyText}>Нет записей в этой категории</Text>
+        </View>
+      )
+    : null;
 
   return (
     <View style={styles.container}>
@@ -312,14 +365,7 @@ export default function CombosScreen() {
         keyExtractor={(item, index) => (isTransitionFinished ? `${item.name || index}_${index}` : `skeleton_${index}`)}
         contentContainerStyle={styles.scrollContent}
         ListHeaderComponent={renderHeader}
-        ListEmptyComponent={
-          isTransitionFinished ? (
-            <View style={styles.emptyContainer}>
-              <Text style={styles.emptyIcon}>📋</Text>
-              <Text style={styles.emptyText}>Нет записей в этой категории</Text>
-            </View>
-          ) : null
-        }
+        ListEmptyComponent={emptyComponent}
         initialNumToRender={8}
         maxToRenderPerBatch={8}
         windowSize={5}
@@ -417,6 +463,32 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'Rajdhani-SemiBold',
     color: '#444',
+  },
+  emptyFavContainer: {
+    alignItems: 'center',
+    paddingVertical: 60,
+    paddingHorizontal: 30,
+  },
+  emptyFavStar: {
+    fontSize: 52,
+    color: '#FFD700',
+    marginBottom: 12,
+    opacity: 0.6,
+  },
+  emptyFavTitle: {
+    fontFamily: 'Rajdhani-Bold',
+    fontSize: 18,
+    color: '#888',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+    marginBottom: 8,
+  },
+  emptyFavHint: {
+    fontFamily: 'Rajdhani-SemiBold',
+    fontSize: 13,
+    color: '#555',
+    textAlign: 'center',
+    lineHeight: 20,
   },
   cardContainer: {
     borderWidth: 1,

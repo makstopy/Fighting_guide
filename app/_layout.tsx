@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ControlProvider } from '../components/ControlContext';
+import { FavoritesProvider } from '../components/FavoritesContext';
 import { View } from 'react-native';
 
 import {
@@ -54,15 +55,17 @@ export default function RootLayout() {
 function RootLayoutNav() {
   return (
     <SafeAreaProvider>
-      <ControlProvider>
-        <View style={{ flex: 1, backgroundColor: '#0a0a0f' }}>
-          <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: '#0a0a0f' } }}>
-            <Stack.Screen name="index" />
-            <Stack.Screen name="characters" />
-            <Stack.Screen name="combos" />
-          </Stack>
-        </View>
-      </ControlProvider>
+      <FavoritesProvider>
+        <ControlProvider>
+          <View style={{ flex: 1, backgroundColor: '#0a0a0f' }}>
+            <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: '#0a0a0f' } }}>
+              <Stack.Screen name="index" />
+              <Stack.Screen name="characters" />
+              <Stack.Screen name="combos" />
+            </Stack>
+          </View>
+        </ControlProvider>
+      </FavoritesProvider>
     </SafeAreaProvider>
   );
 }
