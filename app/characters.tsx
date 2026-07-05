@@ -1,13 +1,14 @@
-import React from 'react';
-import { StyleSheet, View, Text, FlatList, TouchableOpacity, Image, Dimensions } from 'react-native';
-import { useLocalSearchParams, useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import React, { useState, useEffect } from 'react';
+import { Dimensions, FlatList, Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import Svg, { Defs, Ellipse, RadialGradient, Stop } from 'react-native-svg';
 import Header from '../components/Header';
+import CHAR_DATA from '../data/char_data.json';
 import FIGHTERS_DB from '../data/fighters_db.json';
 import MK1_PORTRAITS from '../data/mk1_portraits.json';
 import SF6_PORTRAITS from '../data/sf6_portraits.json';
 import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
-import CHAR_DATA from '../data/char_data.json';
 
 import { resolveImageUri } from '../constants/ImageHelper';
 
@@ -19,9 +20,47 @@ const charData: Record<string, { bg: [string, string]; icon: string; label: stri
 const { width } = Dimensions.get('window');
 const CARD_WIDTH = (width - 52) / 2; // 2 columns grid with padding/margins
 
+const CharacterSkeleton = () => (
+  <View style={styles.card}>
+    <View style={[StyleSheet.absoluteFill, { backgroundColor: '#1a1a2e', opacity: 0.4 }]} />
+    <LinearGradient
+      colors={['transparent', 'rgba(0,0,0,0.85)', '#050505']}
+      style={styles.gradient}
+    />
+    <View style={styles.skeletonCharName} />
+  </View>
+);
+
 export default function CharactersScreen() {
   const router = useRouter();
   const { game } = useLocalSearchParams<{ game: string }>();
+  const [isTransitionFinished, setIsTransitionFinished] = useState(Platform.OS === 'web');
+
+  useEffect(() => {
+    if (Platform.OS === 'web') return;
+
+    let idleId: any;
+    let fallbackTimer: any;
+
+    if (typeof requestIdleCallback !== 'undefined') {
+      idleId = requestIdleCallback(() => {
+        setIsTransitionFinished(true);
+      });
+    } else {
+      fallbackTimer = setTimeout(() => {
+        setIsTransitionFinished(true);
+      }, 250);
+    }
+
+    return () => {
+      if (idleId && typeof cancelIdleCallback !== 'undefined') {
+        cancelIdleCallback(idleId);
+      }
+      if (fallbackTimer) {
+        clearTimeout(fallbackTimer);
+      }
+    };
+  }, []);
 
   const info = (FIGHTERS_DB as any)[game];
   const characters: string[] = info ? info.characters : [];
@@ -46,11 +85,53 @@ export default function CharactersScreen() {
           onPress={() => handleSelectChar(char)}
           activeOpacity={0.8}
         >
-          <Image
-            source={{ uri: imgUrl }}
-            style={styles.cardImage}
-            resizeMode="cover"
-          />
+          {/* Radial glow behind portrait — works on web/iOS/Android */}
+          <Svg
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            width={CARD_WIDTH}
+            height={CARD_WIDTH * 1.25}
+          >
+            <Defs>
+              <RadialGradient
+                id={`cg_${char.replace(/\s/g, '_')}`}
+                cx="50%" cy="80%" r="50%"
+                fx="50%" fy="80%"
+              >
+                <Stop offset="0%" stopColor={c0} stopOpacity={0.6} />
+                <Stop offset="40%" stopColor={c0} stopOpacity={0.3} />
+                <Stop offset="70%" stopColor={c0} stopOpacity={0.1} />
+                <Stop offset="100%" stopColor={c0} stopOpacity={0} />
+              </RadialGradient>
+            </Defs>
+            <Ellipse
+              cx="50%"
+              cy="25%"
+              rx={CARD_WIDTH * 0.75}
+              ry={CARD_WIDTH * 0.75}
+              fill={`url(#cg_${char.replace(/\s/g, '_')})`}
+            />
+          </Svg>
+          {Platform.OS === 'web' ? (
+            <img
+              src={imgUrl}
+              alt={char}
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'top',
+              } as React.CSSProperties}
+            />
+          ) : (
+            <Image
+              source={{ uri: imgUrl }}
+              style={styles.cardImage}
+              resizeMode="cover"
+            />
+          )}
           {/* Smooth dark gradient fade at the bottom where name sits */}
           <LinearGradient
             colors={['transparent', 'rgba(0,0,0,0.85)', '#050505']}
@@ -86,17 +167,30 @@ export default function CharactersScreen() {
     );
   };
 
+  const listData = isTransitionFinished ? characters : [1, 2, 3, 4, 5, 6];
+
+  const renderCharacterItem = ({ item }: { item: any }) => {
+    if (!isTransitionFinished) {
+      return <CharacterSkeleton />;
+    }
+    return renderItem({ item });
+  };
+
   return (
     <View style={styles.container}>
       <Header showBack gameTitle={game} />
       <FlatList
-        data={characters}
-        renderItem={renderItem}
-        keyExtractor={(item) => item}
+        data={listData}
+        renderItem={renderCharacterItem}
+        keyExtractor={(item, index) => (isTransitionFinished ? item : `skeleton_${index}`)}
         numColumns={2}
         columnWrapperStyle={styles.row}
         contentContainerStyle={styles.scrollContent}
         ListHeaderComponent={<Text style={styles.sectionTitle}>Выбери персонажа</Text>}
+        initialNumToRender={6}
+        maxToRenderPerBatch={6}
+        windowSize={3}
+        removeClippedSubviews={Platform.OS === 'android'}
       />
     </View>
   );
@@ -174,5 +268,15 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textTransform: 'uppercase',
     letterSpacing: 0.5,
+  },
+  skeletonCharName: {
+    position: 'absolute',
+    bottom: 14,
+    left: '20%',
+    right: '20%',
+    height: 12,
+    backgroundColor: '#222',
+    borderRadius: 4,
+    zIndex: 2,
   },
 });

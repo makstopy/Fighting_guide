@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ControlProvider } from '../components/ControlContext';
+import { View } from 'react-native';
 
 import {
   Rajdhani_400Regular,
@@ -54,11 +55,13 @@ function RootLayoutNav() {
   return (
     <SafeAreaProvider>
       <ControlProvider>
-        <Stack screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="index" />
-          <Stack.Screen name="characters" />
-          <Stack.Screen name="combos" />
-        </Stack>
+        <View style={{ flex: 1, backgroundColor: '#0a0a0f' }}>
+          <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: '#0a0a0f' } }}>
+            <Stack.Screen name="index" />
+            <Stack.Screen name="characters" />
+            <Stack.Screen name="combos" />
+          </Stack>
+        </View>
       </ControlProvider>
     </SafeAreaProvider>
   );

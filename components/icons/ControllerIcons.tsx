@@ -101,7 +101,7 @@ export function DirArrow({ dir, size = 20 }: { dir: string; size?: number }) {
     "↑": "M12 17 L12 7 M7 12 L12 7 L17 12",
     "↓": "M12 7 L12 17 M7 12 L12 17 L17 12",
     "←": "M17 12 L7 12 M7 12 L12 7 M7 12 L12 17",
-    "→": "M7 12 L17 12 M17 12 L12 7 M17 12 L17 12"
+    "→": "M7 12 L17 12 M17 12 L12 7 M17 12 L12 17"
   };
   const diag: Record<string, string> = {
     "↗": "M8 16 L16 8 M10 8 L16 8 L16 14",

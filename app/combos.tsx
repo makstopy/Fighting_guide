@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Text, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, ScrollView, TouchableOpacity, FlatList, Platform } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { useControl } from '../components/ControlContext';
 import Header from '../components/Header';
@@ -109,11 +109,54 @@ const CATEGORY_COLORS: Record<string, string> = {
   'Moves While Opponent is Down': '#64748b'
 };
 
+const ComboSkeleton = () => (
+  <View style={styles.cardContainer}>
+    <View style={[StyleSheet.absoluteFill, { backgroundColor: '#1a1a2e', opacity: 0.4 }]} />
+    <View style={[styles.accentBar, { backgroundColor: '#333' }]} />
+    <View style={styles.contentWrapper}>
+      <View style={styles.headerRow}>
+        <View style={styles.skeletonTitle} />
+        <View style={styles.skeletonBadge} />
+      </View>
+      <View style={styles.skeletonInput} />
+      <View style={styles.skeletonNumpad} />
+      <View style={styles.skeletonDesc} />
+    </View>
+  </View>
+);
+
 export default function CombosScreen() {
   const { game, char } = useLocalSearchParams<{ game: string; char: string }>();
   const { controlType } = useControl();
   const [activeCategory, setActiveCategory] = useState('all');
   const [combos, setCombos] = useState<any[]>([]);
+  const [isTransitionFinished, setIsTransitionFinished] = useState(Platform.OS === 'web');
+
+  useEffect(() => {
+    if (Platform.OS === 'web') return;
+
+    let idleId: any;
+    let fallbackTimer: any;
+
+    if (typeof requestIdleCallback !== 'undefined') {
+      idleId = requestIdleCallback(() => {
+        setIsTransitionFinished(true);
+      });
+    } else {
+      fallbackTimer = setTimeout(() => {
+        setIsTransitionFinished(true);
+      }, 250);
+    }
+
+    return () => {
+      if (idleId && typeof cancelIdleCallback !== 'undefined') {
+        cancelIdleCallback(idleId);
+      }
+      if (fallbackTimer) {
+        clearTimeout(fallbackTimer);
+      }
+    };
+  }, []);
 
   // Function to load and transform combos based on active controller type
   const loadCombos = (gameName: string, character: string, control: string) => {
@@ -209,60 +252,79 @@ export default function CombosScreen() {
     ? combos
     : combos.filter(c => c.category === activeCategory);
 
+  const renderHeader = () => (
+    <View>
+      {/* Character bio card */}
+      <CharacterHeaderCard game={game} char={char} />
+
+      {/* Controller inputs legend banner */}
+      <View style={styles.legendBanner}>
+        {controlType === 'PS' ? <PSLegend /> : controlType === 'Xbox' ? <XboxLegend /> : <ArcadeLegend />}
+        <Text style={styles.legendFooter}>, = кансел  ·  + одновременно</Text>
+      </View>
+
+      {/* Category tabs */}
+      {game && GAME_CATS[game] && (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.categoriesScroll}
+        >
+          {GAME_CATS[game].map(([key, label]) => {
+            const isActive = activeCategory === key;
+            const col = CATEGORY_COLORS[key] || '#e63b2e';
+            return (
+              <TouchableOpacity
+                key={key}
+                onPress={() => setActiveCategory(key)}
+                style={[
+                  styles.categoryTab,
+                  isActive ? { backgroundColor: `${col}22`, borderColor: col } : styles.categoryTabInactive
+                ]}
+                activeOpacity={0.8}
+              >
+                <Text style={[styles.categoryTabText, isActive ? { color: col } : styles.categoryTabInactiveText]}>
+                  {label}
+                </Text>
+              </TouchableOpacity>
+            );
+          })}
+        </ScrollView>
+      )}
+    </View>
+  );
+
+  const renderItem = ({ item }: { item: any }) => {
+    if (!isTransitionFinished) {
+      return <ComboSkeleton />;
+    }
+    return <ComboCard combo={item} controlType={controlType} />;
+  };
+
+  const listData = isTransitionFinished ? filteredCombos : [1, 2, 3];
+
   return (
     <View style={styles.container}>
       <Header showBack gameTitle={game} charName={char} />
-      <ScrollView contentContainerStyle={styles.scrollContent}>
-        {/* Character bio card */}
-        <CharacterHeaderCard game={game} char={char} />
-
-        {/* Controller inputs legend banner */}
-        <View style={styles.legendBanner}>
-          {controlType === 'PS' ? <PSLegend /> : controlType === 'Xbox' ? <XboxLegend /> : <ArcadeLegend />}
-          <Text style={styles.legendFooter}>, = кансел  ·  + одновременно</Text>
-        </View>
-
-        {/* Category tabs */}
-        {game && GAME_CATS[game] && (
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.categoriesScroll}
-          >
-            {GAME_CATS[game].map(([key, label]) => {
-              const isActive = activeCategory === key;
-              const col = CATEGORY_COLORS[key] || '#e63b2e';
-              return (
-                <TouchableOpacity
-                  key={key}
-                  onPress={() => setActiveCategory(key)}
-                  style={[
-                    styles.categoryTab,
-                    isActive ? { backgroundColor: `${col}22`, borderColor: col } : styles.categoryTabInactive
-                  ]}
-                  activeOpacity={0.8}
-                >
-                  <Text style={[styles.categoryTabText, isActive ? { color: col } : styles.categoryTabInactiveText]}>
-                    {label}
-                  </Text>
-                </TouchableOpacity>
-              );
-            })}
-          </ScrollView>
-        )}
-
-        {/* Filtered combos list */}
-        {filteredCombos.length === 0 ? (
-          <View style={styles.emptyContainer}>
-            <Text style={styles.emptyIcon}>📋</Text>
-            <Text style={styles.emptyText}>Нет записей в этой категории</Text>
-          </View>
-        ) : (
-          filteredCombos.map((combo, i) => (
-            <ComboCard key={i} combo={combo} controlType={controlType} />
-          ))
-        )}
-      </ScrollView>
+      <FlatList
+        data={listData}
+        renderItem={renderItem}
+        keyExtractor={(item, index) => (isTransitionFinished ? `${item.name || index}_${index}` : `skeleton_${index}`)}
+        contentContainerStyle={styles.scrollContent}
+        ListHeaderComponent={renderHeader}
+        ListEmptyComponent={
+          isTransitionFinished ? (
+            <View style={styles.emptyContainer}>
+              <Text style={styles.emptyIcon}>📋</Text>
+              <Text style={styles.emptyText}>Нет записей в этой категории</Text>
+            </View>
+          ) : null
+        }
+        initialNumToRender={8}
+        maxToRenderPerBatch={8}
+        windowSize={5}
+        removeClippedSubviews={Platform.OS === 'android'}
+      />
     </View>
   );
 }
@@ -355,5 +417,64 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'Rajdhani-SemiBold',
     color: '#444',
+  },
+  cardContainer: {
+    borderWidth: 1,
+    borderColor: 'rgba(230, 59, 46, 0.2)',
+    borderRadius: 12,
+    marginBottom: 12,
+    position: 'relative',
+    overflow: 'hidden',
+  },
+  accentBar: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: 3,
+    height: '100%',
+    zIndex: 2,
+  },
+  contentWrapper: {
+    paddingHorizontal: 18,
+    paddingVertical: 16,
+  },
+  headerRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  skeletonTitle: {
+    height: 16,
+    width: '40%',
+    backgroundColor: '#222',
+    borderRadius: 4,
+  },
+  skeletonBadge: {
+    height: 16,
+    width: 50,
+    backgroundColor: '#222',
+    borderRadius: 8,
+  },
+  skeletonInput: {
+    height: 24,
+    width: '70%',
+    backgroundColor: '#222',
+    borderRadius: 6,
+    marginTop: 8,
+  },
+  skeletonNumpad: {
+    height: 10,
+    width: '30%',
+    backgroundColor: '#222',
+    borderRadius: 4,
+    marginTop: 6,
+  },
+  skeletonDesc: {
+    height: 14,
+    width: '90%',
+    backgroundColor: '#222',
+    borderRadius: 4,
+    marginTop: 8,
   },
 });

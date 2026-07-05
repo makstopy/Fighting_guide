@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Image, Dimensions, Platform } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import Svg, { Defs, RadialGradient, Stop, Ellipse } from 'react-native-svg';
 import CHAR_DATA from '../data/char_data.json';
 import TEKKEN8_CHAR_DETAILS from '../data/tekken_char_details.json';
 import MK1_PORTRAITS from '../data/mk1_portraits.json';
@@ -41,19 +42,56 @@ export default function CharacterHeaderCard({ game, char }: CharacterHeaderCardP
 
   return (
     <View style={styles.container}>
-      {/* Background radial soft light glow based on character's signature color */}
-      <View style={[styles.glow, { backgroundColor: `${accentColor}33` }]} />
+      {/* Soft radial glow — SVG RadialGradient, works on web/iOS/Android */}
+      <Svg
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: 360 }}
+        width="100%"
+        height={360}
+      >
+        <Defs>
+          <RadialGradient
+            id={`rg_${char.replace(/\s/g, '_')}`}
+            cx="50%" cy="50%" r="50%"
+            fx="50%" fy="50%"
+          >
+            <Stop offset="0%"   stopColor={accentColor} stopOpacity={0.55} />
+            <Stop offset="35%"  stopColor={accentColor} stopOpacity={0.30} />
+            <Stop offset="65%"  stopColor={accentColor} stopOpacity={0.10} />
+            <Stop offset="100%" stopColor={accentColor} stopOpacity={0}    />
+          </RadialGradient>
+        </Defs>
+        <Ellipse
+          cx="50%"
+          cy={160}
+          rx={180}
+          ry={160}
+          fill={`url(#rg_${char.replace(/\s/g, '_')})`}
+        />
+      </Svg>
 
       {/* Large character render image with no border/sticker background */}
       <View style={styles.imageWrapper}>
-        <Image
-          source={{ uri: imgUrl }}
-          style={[
-            styles.charImage,
-            game === "Street Fighter 6" ? styles.containImage : styles.coverImage
-          ]}
-          resizeMode={game === "Street Fighter 6" ? "contain" : "cover"}
-        />
+        {Platform.OS === 'web' ? (
+          <img
+            src={imgUrl}
+            alt={char}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'contain',
+              objectPosition: 'top center',
+            } as React.CSSProperties}
+          />
+        ) : (
+          <Image
+            source={{ uri: imgUrl }}
+            style={styles.charImage}
+            resizeMode="contain"
+          />
+        )}
         {/* Transparent bottom gradient to fade character legs into background */}
         <LinearGradient
           colors={['transparent', 'rgba(10, 10, 15, 0.5)', '#0a0a0f']}
@@ -104,18 +142,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     overflow: 'hidden',
   },
-  glow: {
+  nativeGlowWrapper: {
     position: 'absolute',
-    top: 50,
-    width: 250,
-    height: 250,
-    borderRadius: 125,
-    opacity: 0.6,
-    zIndex: 0,
+    top: 20,
+    left: 0,
+    right: 0,
+    height: 280,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   imageWrapper: {
     position: 'relative',
-    width: width,
+    width: '100%',
     height: 360,
     justifyContent: 'flex-end',
     alignItems: 'center',
@@ -125,12 +163,6 @@ const styles = StyleSheet.create({
   charImage: {
     width: '100%',
     height: '100%',
-  },
-  coverImage: {
-    // top aligned positioning
-  },
-  containImage: {
-    // bottom centered
   },
   bottomGradient: {
     position: 'absolute',

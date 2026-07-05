@@ -7,10 +7,13 @@
     "icon": "./assets/images/icon.png",
     "scheme": "fightingguideexpo",
     "userInterfaceStyle": "automatic",
+    "backgroundColor": "#0a0a0f",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "backgroundColor": "#0a0a0f"
     },
     "android": {
+      "backgroundColor": "#0a0a0f",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -31,7 +34,7 @@
         {
           "image": "./assets/images/splash-icon.png",
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#0a0a0f"
         }
       ]
     ],

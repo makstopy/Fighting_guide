@@ -78,8 +78,11 @@ const styles = StyleSheet.create({
     position: 'relative',
   },
   portrait: {
-    width: '100%',
-    height: '100%',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '120%',
   },
   labelOverlay: {
     position: 'absolute',
