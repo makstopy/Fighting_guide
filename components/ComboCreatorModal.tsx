@@ -1,14 +1,14 @@
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import {
   StyleSheet,
   View,
   Text,
   TextInput,
   Pressable,
-  Modal,
   ScrollView,
   KeyboardAvoidingView,
   Platform,
+  BackHandler,
 } from 'react-native';
 import Animated, {
   useSharedValue,
@@ -17,7 +17,10 @@ import Animated, {
   withSpring,
   withSequence,
   FadeIn,
+  FadeOut,
   SlideInDown,
+  SlideOutDown,
+  Easing,
 } from 'react-native-reanimated';
 import { ControlType } from './ControlContext';
 import ComboInput from './ComboInput';
@@ -204,185 +207,203 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
 
   const canSave = name.trim().length > 0 && tokens.length > 0;
 
+  useEffect(() => {
+    if (!visible) return;
+    const backAction = () => {
+      handleClose();
+      return true;
+    };
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', backAction);
+    return () => backHandler.remove();
+  }, [visible, handleClose]);
+
+  if (!visible) return null;
+
   return (
-    <Modal
-      visible={visible}
-      transparent
-      animationType="slide"
-      statusBarTranslucent
-      onRequestClose={handleClose}
-    >
-      <View style={styles.overlay}>
-        <View style={styles.backdrop}>
-          <Pressable style={StyleSheet.absoluteFill} onPress={handleClose} />
-        </View>
+    <View style={styles.rootContainer}>
+      <Animated.View
+        entering={FadeIn.duration(200)}
+        exiting={FadeOut.duration(200)}
+        style={styles.backdrop}
+      >
+        <Pressable style={StyleSheet.absoluteFill} onPress={handleClose} />
+      </Animated.View>
 
-        <KeyboardAvoidingView
-          behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-          style={styles.keyboardAvoid}
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        style={styles.keyboardAvoid}
+      >
+        <Animated.View
+          entering={SlideInDown.duration(250).easing(Easing.out(Easing.quad))}
+          exiting={SlideOutDown.duration(200).easing(Easing.in(Easing.quad))}
+          style={styles.modalContainer}
         >
-          <View style={styles.modalContainer}>
-            <ScrollView
-              style={styles.scrollView}
-              contentContainerStyle={styles.scrollContent}
-              keyboardShouldPersistTaps="handled"
-              showsVerticalScrollIndicator={false}
-            >
-              {/* Header */}
-              <View style={styles.modalHeader}>
-                <Pressable onPress={handleClose} hitSlop={12}>
-                  <Text style={styles.closeBtn}>✕</Text>
+          <ScrollView
+            style={styles.scrollView}
+            contentContainerStyle={styles.scrollContent}
+            keyboardShouldPersistTaps="handled"
+            showsVerticalScrollIndicator={false}
+          >
+            {/* Header */}
+            <View style={styles.modalHeader}>
+              <Pressable onPress={handleClose} hitSlop={12}>
+                <Text style={styles.closeBtn}>✕</Text>
+              </Pressable>
+              <Text style={styles.modalTitle}>НОВОЕ КОМБО</Text>
+              <View style={{ width: 28 }} />
+            </View>
+
+            {/* Name input */}
+            <Text style={styles.fieldLabel}>НАЗВАНИЕ</Text>
+            <TextInput
+              style={styles.textInput}
+              value={name}
+              onChangeText={setName}
+              placeholder="Моё комбо..."
+              placeholderTextColor="#444"
+              maxLength={60}
+              autoCorrect={false}
+            />
+
+            {/* Live preview */}
+            <Text style={styles.fieldLabel}>ПРЕВЬЮ</Text>
+            <View style={styles.previewContainer}>
+              {tokens.length > 0 ? (
+                <>
+                  <ComboInput input={previewInputString} controlType={controlType} />
+                  <Text style={styles.rawInputText}>{previewInputString}</Text>
+                </>
+              ) : (
+                <Text style={styles.previewPlaceholder}>
+                  Нажимай кнопки ниже для ввода комбо
+                </Text>
+              )}
+            </View>
+
+            {/* Action buttons keyboard */}
+            <Text style={styles.fieldLabel}>
+              {controlType === 'PS' ? 'PLAYSTATION' : controlType === 'Xbox' ? 'XBOX' : '🕹️ ARCADE'} КНОПКИ
+            </Text>
+            <View style={styles.actionButtonsGrid}>
+              {actionButtons.map((btn) => (
+                <Pressable
+                  key={btn.label}
+                  style={({ pressed }) => [
+                    styles.keyBtn,
+                    styles.actionKeyBtn,
+                    pressed && styles.keyBtnPressed,
+                  ]}
+                  onPress={() => addToken(btn.token)}
+                >
+                  {renderButtonIcon(controlType, btn.label, 30)}
                 </Pressable>
-                <Text style={styles.modalTitle}>НОВОЕ КОМБО</Text>
-                <View style={{ width: 28 }} />
-              </View>
+              ))}
+            </View>
 
-              {/* Name input */}
-              <Text style={styles.fieldLabel}>НАЗВАНИЕ</Text>
-              <TextInput
-                style={styles.textInput}
-                value={name}
-                onChangeText={setName}
-                placeholder="Моё комбо..."
-                placeholderTextColor="#444"
-                maxLength={60}
-                autoCorrect={false}
-              />
-
-              {/* Live preview */}
-              <Text style={styles.fieldLabel}>ПРЕВЬЮ</Text>
-              <View style={styles.previewContainer}>
-                {tokens.length > 0 ? (
-                  <>
-                    <ComboInput input={previewInputString} controlType={controlType} />
-                    <Text style={styles.rawInputText}>{previewInputString}</Text>
-                  </>
-                ) : (
-                  <Text style={styles.previewPlaceholder}>
-                    Нажимай кнопки ниже для ввода комбо
-                  </Text>
-                )}
-              </View>
-
-              {/* Action buttons keyboard */}
-              <Text style={styles.fieldLabel}>
-                {controlType === 'PS' ? 'PLAYSTATION' : controlType === 'Xbox' ? 'XBOX' : '🕹️ ARCADE'} КНОПКИ
-              </Text>
-              <View style={styles.actionButtonsGrid}>
-                {actionButtons.map((btn) => (
-                  <Pressable
-                    key={btn.label}
-                    style={({ pressed }) => [
-                      styles.keyBtn,
-                      styles.actionKeyBtn,
-                      pressed && styles.keyBtnPressed,
-                    ]}
-                    onPress={() => addToken(btn.token)}
-                  >
-                    {renderButtonIcon(controlType, btn.label, 30)}
-                  </Pressable>
+            {/* Direction pad */}
+            <Text style={styles.fieldLabel}>НАПРАВЛЕНИЯ</Text>
+            <View style={styles.dpadContainer}>
+              <View style={styles.dpadGrid}>
+                {DIRECTION_BUTTONS.map((btn, i) => (
+                  btn.token === '' ? (
+                    <View key={`empty_${i}`} style={styles.dpadBtn} />
+                  ) : (
+                    <Pressable
+                      key={btn.token}
+                      style={({ pressed }) => [
+                        styles.dpadBtn,
+                        styles.dpadBtnActive,
+                        pressed && styles.keyBtnPressed,
+                      ]}
+                      onPress={() => addToken(btn.token)}
+                    >
+                      {renderDirectionIcon(controlType, btn.label, 24)}
+                    </Pressable>
+                  )
                 ))}
               </View>
+            </View>
 
-              {/* Direction pad */}
-              <Text style={styles.fieldLabel}>НАПРАВЛЕНИЯ</Text>
-              <View style={styles.dpadContainer}>
-                <View style={styles.dpadGrid}>
-                  {DIRECTION_BUTTONS.map((btn, i) => (
-                    btn.token === '' ? (
-                      <View key={`empty_${i}`} style={styles.dpadBtn} />
-                    ) : (
-                      <Pressable
-                        key={btn.token}
-                        style={({ pressed }) => [
-                          styles.dpadBtn,
-                          styles.dpadBtnActive,
-                          pressed && styles.keyBtnPressed,
-                        ]}
-                        onPress={() => addToken(btn.token)}
-                      >
-                        {renderDirectionIcon(controlType, btn.label, 24)}
-                      </Pressable>
-                    )
-                  ))}
-                </View>
-              </View>
+            {/* Modifiers & controls */}
+            <Text style={styles.fieldLabel}>МОДИФИКАТОРЫ</Text>
+            <View style={styles.modifiersRow}>
+              <Pressable
+                style={({ pressed }) => [styles.modBtn, styles.modBtnComma, pressed && styles.keyBtnPressed]}
+                onPress={() => addToken(',')}
+              >
+                <Text style={styles.modBtnText}>,</Text>
+                <Text style={styles.modBtnHint}>далее</Text>
+              </Pressable>
+              <Pressable
+                style={({ pressed }) => [styles.modBtn, styles.modBtnPlus, pressed && styles.keyBtnPressed]}
+                onPress={() => addToken('+')}
+              >
+                <Text style={styles.modBtnText}>+</Text>
+                <Text style={styles.modBtnHint}>вместе</Text>
+              </Pressable>
+              <Pressable
+                style={({ pressed }) => [styles.modBtn, styles.modBtnBackspace, pressed && styles.keyBtnPressed]}
+                onPress={removeLastToken}
+              >
+                <Text style={styles.modBtnText}>⌫</Text>
+                <Text style={styles.modBtnHint}>назад</Text>
+              </Pressable>
+              <Pressable
+                style={({ pressed }) => [styles.modBtn, styles.modBtnClear, pressed && styles.keyBtnPressed]}
+                onPress={clearTokens}
+              >
+                <Text style={styles.modBtnText}>✕</Text>
+                <Text style={styles.modBtnHint}>очистить</Text>
+              </Pressable>
+            </View>
 
-              {/* Modifiers & controls */}
-              <Text style={styles.fieldLabel}>МОДИФИКАТОРЫ</Text>
-              <View style={styles.modifiersRow}>
-                <Pressable
-                  style={({ pressed }) => [styles.modBtn, styles.modBtnComma, pressed && styles.keyBtnPressed]}
-                  onPress={() => addToken(',')}
-                >
-                  <Text style={styles.modBtnText}>,</Text>
-                  <Text style={styles.modBtnHint}>далее</Text>
-                </Pressable>
-                <Pressable
-                  style={({ pressed }) => [styles.modBtn, styles.modBtnPlus, pressed && styles.keyBtnPressed]}
-                  onPress={() => addToken('+')}
-                >
-                  <Text style={styles.modBtnText}>+</Text>
-                  <Text style={styles.modBtnHint}>вместе</Text>
-                </Pressable>
-                <Pressable
-                  style={({ pressed }) => [styles.modBtn, styles.modBtnBackspace, pressed && styles.keyBtnPressed]}
-                  onPress={removeLastToken}
-                >
-                  <Text style={styles.modBtnText}>⌫</Text>
-                  <Text style={styles.modBtnHint}>назад</Text>
-                </Pressable>
-                <Pressable
-                  style={({ pressed }) => [styles.modBtn, styles.modBtnClear, pressed && styles.keyBtnPressed]}
-                  onPress={clearTokens}
-                >
-                  <Text style={styles.modBtnText}>✕</Text>
-                  <Text style={styles.modBtnHint}>очистить</Text>
-                </Pressable>
-              </View>
+            {/* Description */}
+            <Text style={styles.fieldLabel}>ЗАМЕТКА (ОПЦИОНАЛЬНО)</Text>
+            <TextInput
+              style={[styles.textInput, styles.descInput]}
+              value={description}
+              onChangeText={setDescription}
+              placeholder="Описание, заметки..."
+              placeholderTextColor="#444"
+              maxLength={200}
+              multiline
+              numberOfLines={2}
+              autoCorrect={false}
+            />
 
-              {/* Description */}
-              <Text style={styles.fieldLabel}>ЗАМЕТКА (ОПЦИОНАЛЬНО)</Text>
-              <TextInput
-                style={[styles.textInput, styles.descInput]}
-                value={description}
-                onChangeText={setDescription}
-                placeholder="Описание, заметки..."
-                placeholderTextColor="#444"
-                maxLength={200}
-                multiline
-                numberOfLines={2}
-                autoCorrect={false}
-              />
-
-              {/* Save button */}
-              <Animated.View style={saveAnimStyle}>
-                <Pressable
-                  style={({ pressed }) => [
-                    styles.saveBtn,
-                    !canSave && styles.saveBtnDisabled,
-                    pressed && canSave && { opacity: 0.8 },
-                  ]}
-                  onPress={handleSave}
-                  disabled={!canSave}
-                >
-                  <Text style={[styles.saveBtnText, !canSave && styles.saveBtnTextDisabled]}>
-                    💾  СОХРАНИТЬ КОМБО
-                  </Text>
-                </Pressable>
-              </Animated.View>
-            </ScrollView>
-          </View>
-        </KeyboardAvoidingView>
-      </View>
-    </Modal>
+            {/* Save button */}
+            <Animated.View style={saveAnimStyle}>
+              <Pressable
+                style={({ pressed }) => [
+                  styles.saveBtn,
+                  !canSave && styles.saveBtnDisabled,
+                  pressed && canSave && { opacity: 0.8 },
+                ]}
+                onPress={handleSave}
+                disabled={!canSave}
+              >
+                <Text style={[styles.saveBtnText, !canSave && styles.saveBtnTextDisabled]}>
+                  💾  СОХРАНИТЬ КОМБО
+                </Text>
+              </Pressable>
+            </Animated.View>
+          </ScrollView>
+        </Animated.View>
+      </KeyboardAvoidingView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  overlay: {
-    flex: 1,
+  rootContainer: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 1000,
     justifyContent: 'flex-end',
+    alignItems: 'center',
   },
   backdrop: {
     position: 'absolute',
@@ -395,6 +416,8 @@ const styles = StyleSheet.create({
   keyboardAvoid: {
     flex: 1,
     justifyContent: 'flex-end',
+    width: '100%',
+    alignItems: 'center',
   },
   modalContainer: {
     backgroundColor: '#12121f',
@@ -403,9 +426,11 @@ const styles = StyleSheet.create({
     maxHeight: '92%',
     borderTopWidth: 1,
     borderColor: '#10b98144',
+    width: '100%',
+    flexShrink: 1,
   },
   scrollView: {
-    flex: 1,
+    width: '100%',
   },
   scrollContent: {
     padding: 20,
