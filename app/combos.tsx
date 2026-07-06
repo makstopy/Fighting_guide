@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { StyleSheet, View, Text, ScrollView, Pressable, FlatList, Platform } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { useControl } from '../components/ControlContext';
@@ -140,8 +140,13 @@ export default function CombosScreen() {
   // Controls whether real cards or skeletons are shown for the current category
   const [isCategoryReady, setIsCategoryReady] = useState(true);
   const SKELETON_COUNT = 8;
+  // Guards async callbacks after unmount
+  const isMountedRef = useRef(false);
+  // Skips skeleton phase on initial data load (isTransitionFinished handles that)
+  const isFirstMountRef = useRef(true);
 
   useEffect(() => {
+    isMountedRef.current = true;
     if (Platform.OS === 'web') return;
 
     let idleId: any;
@@ -149,21 +154,18 @@ export default function CombosScreen() {
 
     if (typeof requestIdleCallback !== 'undefined') {
       idleId = requestIdleCallback(() => {
-        setIsTransitionFinished(true);
+        if (isMountedRef.current) setIsTransitionFinished(true);
       });
     } else {
       fallbackTimer = setTimeout(() => {
-        setIsTransitionFinished(true);
+        if (isMountedRef.current) setIsTransitionFinished(true);
       }, 250);
     }
 
     return () => {
-      if (idleId && typeof cancelIdleCallback !== 'undefined') {
-        cancelIdleCallback(idleId);
-      }
-      if (fallbackTimer) {
-        clearTimeout(fallbackTimer);
-      }
+      isMountedRef.current = false;
+      if (idleId && typeof cancelIdleCallback !== 'undefined') cancelIdleCallback(idleId);
+      if (fallbackTimer) clearTimeout(fallbackTimer);
     };
   }, []);
 
@@ -213,6 +215,13 @@ export default function CombosScreen() {
 
   useEffect(() => {
     if (game && char) {
+      if (isFirstMountRef.current) {
+        // On first mount, skip skeleton phase — isTransitionFinished already handles initial load
+        isFirstMountRef.current = false;
+      } else {
+        // User changed controlType: show skeletons immediately
+        setIsCategoryReady(false);
+      }
       setCombos(loadCombos(game, char, controlType));
     }
   }, [game, char, controlType]);
@@ -229,7 +238,7 @@ export default function CombosScreen() {
     if (isCategoryReady) return;
     // Wait for the skeleton frame to paint, then swap in real cards
     const rafId = requestAnimationFrame(() => {
-      setIsCategoryReady(true);
+      if (isMountedRef.current) setIsCategoryReady(true);
     });
     return () => cancelAnimationFrame(rafId);
   }, [isCategoryReady]);
