@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo, useEffect } from 'react';
+import React, { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import {
   StyleSheet,
   View,
@@ -6,9 +6,10 @@ import {
   TextInput,
   Pressable,
   ScrollView,
-  KeyboardAvoidingView,
   Platform,
   BackHandler,
+  Keyboard,
+  useWindowDimensions,
 } from 'react-native';
 import Animated, {
   useSharedValue,
@@ -148,6 +149,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
   const [name, setName] = useState('');
   const [tokens, setTokens] = useState<string[]>([]);
   const [description, setDescription] = useState('');
+  const scrollViewRef = useRef<ScrollView>(null);
 
   // Animated save button scale
   const saveScale = useSharedValue(1);
@@ -207,6 +209,8 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
 
   const canSave = name.trim().length > 0 && tokens.length > 0;
 
+  const [keyboardHeight, setKeyboardHeight] = useState(0);
+
   useEffect(() => {
     if (!visible) return;
     const backAction = () => {
@@ -214,13 +218,32 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
       return true;
     };
     const backHandler = BackHandler.addEventListener('hardwareBackPress', backAction);
-    return () => backHandler.remove();
+
+    // Track keyboard height manually to avoid native layout bugs on Android
+    const showEvent = Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow';
+    const hideEvent = Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDidHide';
+
+    const showSubscription = Keyboard.addListener(showEvent, (e) => {
+      setKeyboardHeight(e.endCoordinates.height);
+    });
+    const hideSubscription = Keyboard.addListener(hideEvent, () => {
+      setKeyboardHeight(0);
+    });
+
+    return () => {
+      backHandler.remove();
+      showSubscription.remove();
+      hideSubscription.remove();
+      setKeyboardHeight(0);
+    };
   }, [visible, handleClose]);
+
+  const { height: windowHeight, width: windowWidth } = useWindowDimensions();
 
   if (!visible) return null;
 
   return (
-    <View style={styles.rootContainer}>
+    <View style={[styles.rootContainer, { width: windowWidth, height: windowHeight }]}>
       <Animated.View
         entering={FadeIn.duration(200)}
         exiting={FadeOut.duration(200)}
@@ -229,9 +252,8 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
         <Pressable style={StyleSheet.absoluteFill} onPress={handleClose} />
       </Animated.View>
 
-      <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-        style={styles.keyboardAvoid}
+      <View
+        style={[styles.keyboardAvoid, { paddingBottom: keyboardHeight }]}
       >
         <Animated.View
           entering={SlideInDown.duration(250).easing(Easing.out(Easing.quad))}
@@ -239,6 +261,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
           style={styles.modalContainer}
         >
           <ScrollView
+            ref={scrollViewRef}
             style={styles.scrollView}
             contentContainerStyle={styles.scrollContent}
             keyboardShouldPersistTaps="handled"
@@ -369,6 +392,11 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
               multiline
               numberOfLines={2}
               autoCorrect={false}
+              onFocus={() => {
+                setTimeout(() => {
+                  scrollViewRef.current?.scrollToEnd({ animated: true });
+                }, 250);
+              }}
             />
 
             {/* Save button */}
@@ -389,7 +417,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
             </Animated.View>
           </ScrollView>
         </Animated.View>
-      </KeyboardAvoidingView>
+      </View>
     </View>
   );
 }
@@ -434,7 +462,7 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     padding: 20,
-    paddingBottom: 40,
+    paddingBottom: 120,
   },
   modalHeader: {
     flexDirection: 'row',
