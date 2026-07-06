@@ -12,6 +12,8 @@ import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
 
 import { resolveImageUri } from '../constants/ImageHelper';
 
+import { useSQLiteContext } from 'expo-sqlite';
+
 const mk1Portraits: Record<string, string> = MK1_PORTRAITS;
 const sf6Portraits: Record<string, string> = SF6_PORTRAITS;
 const tekken8Portraits: Record<string, string> = TEKKEN8_PORTRAITS;
@@ -35,6 +37,12 @@ export default function CharactersScreen() {
   const router = useRouter();
   const { game } = useLocalSearchParams<{ game: string }>();
   const [isTransitionFinished, setIsTransitionFinished] = useState(Platform.OS === 'web');
+  const isWeb = Platform.OS === 'web';
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const db = isWeb ? null : useSQLiteContext();
+
+  const [characters, setCharacters] = useState<string[]>([]);
 
   useEffect(() => {
     if (Platform.OS === 'web') return;
@@ -62,8 +70,30 @@ export default function CharactersScreen() {
     };
   }, []);
 
-  const info = (FIGHTERS_DB as any)[game];
-  const characters: string[] = info ? info.characters : [];
+  useEffect(() => {
+    if (!game) return;
+
+    if (isWeb) {
+      // Web fallback
+      const info = (FIGHTERS_DB as any)[game];
+      setCharacters(info ? info.characters : []);
+    } else if (db) {
+      // Native SQLite query
+      db.getAllAsync<{ name: string }>(
+        `SELECT name FROM characters WHERE game_id = ? ORDER BY name ASC;`,
+        [game]
+      )
+        .then((rows) => {
+          setCharacters(rows.map((r) => r.name));
+        })
+        .catch((err) => {
+          console.error('[CharactersScreen] Error loading characters from SQLite:', err);
+          // Fallback
+          const info = (FIGHTERS_DB as any)[game];
+          setCharacters(info ? info.characters : []);
+        });
+    }
+  }, [game, isWeb, db]);
 
   const handleSelectChar = (char: string) => {
     router.push({

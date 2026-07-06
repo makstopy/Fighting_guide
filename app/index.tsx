@@ -1,17 +1,56 @@
-import React from 'react';
-import { StyleSheet, View, Text, ScrollView, TouchableOpacity } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, View, Text, ScrollView, TouchableOpacity, Platform } from 'react-native';
 import { useRouter } from 'expo-router';
 import Header from '../components/Header';
 import GameCover from '../components/GameCover';
 import FIGHTERS_DB from '../data/fighters_db.json';
+import { useSQLiteContext } from 'expo-sqlite';
 
 export default function HomeScreen() {
   const router = useRouter();
+  const isWeb = Platform.OS === 'web';
+  
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const db = isWeb ? null : useSQLiteContext();
 
-  // Filter games from database matching Vite app selection
-  const games = Object.entries(FIGHTERS_DB).filter(([game]) =>
-    ['Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8'].includes(game)
-  );
+  const [games, setGames] = useState<[string, any][]>([]);
+
+  useEffect(() => {
+    if (isWeb) {
+      // Web fallback
+      const filtered = Object.entries(FIGHTERS_DB).filter(([game]) =>
+        ['Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8'].includes(game)
+      );
+      setGames(filtered);
+    } else if (db) {
+      // Native SQLite query
+      db.getAllAsync<any>(
+        `SELECT id, platform, cover_grad, cover_label, cover_emoji 
+         FROM games 
+         WHERE id IN ('Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8');`
+      )
+        .then((rows) => {
+          const formatted: [string, any][] = rows.map((r) => [
+            r.id,
+            {
+              platform: r.platform,
+              coverGrad: JSON.parse(r.cover_grad || '[]'),
+              coverLabel: r.cover_label,
+              coverEmoji: r.cover_emoji,
+            },
+          ]);
+          setGames(formatted);
+        })
+        .catch((err) => {
+          console.error('[HomeScreen] Error loading games from SQLite:', err);
+          // Fallback to static if SQLite query fails
+          const filtered = Object.entries(FIGHTERS_DB).filter(([game]) =>
+            ['Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8'].includes(game)
+          );
+          setGames(filtered);
+        });
+    }
+  }, [isWeb, db]);
 
   const handleSelectGame = (game: string) => {
     router.push({

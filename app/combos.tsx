@@ -10,6 +10,7 @@ import ComboCard from '../components/ComboCard';
 import ComboCreatorModal from '../components/ComboCreatorModal';
 import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming, withSequence, withSpring, Easing } from 'react-native-reanimated';
 import COMBOS_DB from '../data/combos/index';
+import { useSQLiteContext } from 'expo-sqlite';
 
 import {
   PSSquare,
@@ -175,10 +176,13 @@ export default function CombosScreen() {
     };
   }, []);
 
+  const isWeb = Platform.OS === 'web';
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const db = isWeb ? null : useSQLiteContext();
+
   // Function to load and transform combos based on active controller type
-  const loadCombos = (gameName: string, character: string, control: string) => {
-    const raw = (COMBOS_DB as any)[gameName]?.[character] || [];
-    
+  const mapCombosByControl = useCallback((raw: any[], control: string) => {
     if (control === 'Xbox') {
       const map: Record<string, string> = {
         "□": "X", "△": "Y", "○": "B", "✕": "A",
@@ -217,7 +221,7 @@ export default function CombosScreen() {
     }
 
     return raw;
-  };
+  }, []);
 
   useEffect(() => {
     if (game && char) {
@@ -228,9 +232,31 @@ export default function CombosScreen() {
         // User changed controlType: show skeletons immediately
         setIsCategoryReady(false);
       }
-      setCombos(loadCombos(game, char, controlType));
+
+      if (isWeb) {
+        const raw = (COMBOS_DB as any)[game]?.[char] || [];
+        setCombos(mapCombosByControl(raw, controlType));
+      } else if (db) {
+        db.getAllAsync<any>(
+          `SELECT name, input, damage, difficulty, description, category 
+           FROM combos 
+           WHERE character_id = ? AND is_custom = 0;`,
+          [`${game}::${char}`]
+        )
+          .then((rows) => {
+            if (isMountedRef.current) {
+              setCombos(mapCombosByControl(rows, controlType));
+            }
+          })
+          .catch((err) => {
+            console.error('[CombosScreen] Error loading combos from SQLite:', err);
+            // Fallback
+            const raw = (COMBOS_DB as any)[game]?.[char] || [];
+            setCombos(mapCombosByControl(raw, controlType));
+          });
+      }
     }
-  }, [game, char, controlType]);
+  }, [game, char, controlType, isWeb, db, mapCombosByControl]);
 
   // When category changes: phase 1 = skeletons shown immediately,
   // phase 2 = real cards rendered after one animation frame

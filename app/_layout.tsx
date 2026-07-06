@@ -1,13 +1,17 @@
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import 'react-native-reanimated';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ControlProvider } from '../components/ControlContext';
 import { FavoritesProvider } from '../components/FavoritesContext';
 import { CustomCombosProvider } from '../components/CustomCombosContext';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
+import { SQLiteProvider } from 'expo-sqlite';
+import { initializeDatabase } from '../services/db';
+import { StatusBar } from 'expo-status-bar';
+import { NavigationBar } from 'expo-navigation-bar';
 
 import {
   Rajdhani_400Regular,
@@ -54,21 +58,37 @@ export default function RootLayout() {
 }
 
 function RootLayoutNav() {
+  const content = (
+    <FavoritesProvider>
+      <CustomCombosProvider>
+        <ControlProvider>
+          <View style={{ flex: 1, backgroundColor: '#0a0a0f' }}>
+            <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: '#0a0a0f' } }}>
+              <Stack.Screen name="index" />
+              <Stack.Screen name="characters" />
+              <Stack.Screen name="combos" />
+            </Stack>
+          </View>
+        </ControlProvider>
+      </CustomCombosProvider>
+    </FavoritesProvider>
+  );
+
   return (
     <SafeAreaProvider>
-      <FavoritesProvider>
-        <CustomCombosProvider>
-          <ControlProvider>
-            <View style={{ flex: 1, backgroundColor: '#0a0a0f' }}>
-              <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: '#0a0a0f' } }}>
-                <Stack.Screen name="index" />
-                <Stack.Screen name="characters" />
-                <Stack.Screen name="combos" />
-              </Stack>
-            </View>
-          </ControlProvider>
-        </CustomCombosProvider>
-      </FavoritesProvider>
+      <StatusBar style="light" />
+      {Platform.OS === 'android' && (
+        <NavigationBar style="light" />
+      )}
+      {Platform.OS === 'web' ? (
+        content
+      ) : (
+        <Suspense fallback={<View style={{ flex: 1, backgroundColor: '#0a0a0f' }} />}>
+          <SQLiteProvider databaseName="fighters.db" onInit={initializeDatabase}>
+            {content}
+          </SQLiteProvider>
+        </Suspense>
+      )}
     </SafeAreaProvider>
   );
 }

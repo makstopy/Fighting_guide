@@ -8,6 +8,15 @@
     "scheme": "fightingguideexpo",
     "userInterfaceStyle": "automatic",
     "backgroundColor": "#0a0a0f",
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#0a0a0f"
+    },
+    "androidNavigationBar": {
+      "visible": "sticky-immersive",
+      "backgroundColor": "#0a0a0f",
+      "barStyle": "light-content"
+    },
     "ios": {
       "supportsTablet": true,
       "backgroundColor": "#0a0a0f"
@@ -36,7 +45,8 @@
           "resizeMode": "contain",
           "backgroundColor": "#0a0a0f"
         }
-      ]
+      ],
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true
