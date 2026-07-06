@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Text, ScrollView, TouchableOpacity, FlatList, Platform } from 'react-native';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { StyleSheet, View, Text, ScrollView, Pressable, FlatList, Platform } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { useControl } from '../components/ControlContext';
 import { useFavoritesContext, makeComboKey } from '../components/FavoritesContext';
@@ -137,6 +137,9 @@ export default function CombosScreen() {
   );
   const [combos, setCombos] = useState<any[]>([]);
   const [isTransitionFinished, setIsTransitionFinished] = useState(Platform.OS === 'web');
+  // Controls whether real cards or skeletons are shown for the current category
+  const [isCategoryReady, setIsCategoryReady] = useState(true);
+  const SKELETON_COUNT = 8;
 
   useEffect(() => {
     if (Platform.OS === 'web') return;
@@ -214,6 +217,23 @@ export default function CombosScreen() {
     }
   }, [game, char, controlType]);
 
+  // When category changes: phase 1 = skeletons shown immediately,
+  // phase 2 = real cards rendered after one animation frame
+  const handleCategoryPress = useCallback((key: string) => {
+    if (key === activeCategory) return;
+    setIsCategoryReady(false);   // immediately show skeletons
+    setActiveCategory(key);      // highlight tab right away
+  }, [activeCategory]);
+
+  useEffect(() => {
+    if (isCategoryReady) return;
+    // Wait for the skeleton frame to paint, then swap in real cards
+    const rafId = requestAnimationFrame(() => {
+      setIsCategoryReady(true);
+    });
+    return () => cancelAnimationFrame(rafId);
+  }, [isCategoryReady]);
+
   const PSLegend = () => (
     <View style={styles.legendIconsContainer}>
       <PSSquare size={20} /><PSTriangle size={20} /><PSCircle size={20} /><PSCross size={20} />
@@ -254,11 +274,12 @@ export default function CombosScreen() {
   );
 
   // Filter combos by selected category tab
-  const filteredCombos = activeCategory === 'all'
-    ? combos
-    : activeCategory === 'favorite'
-      ? combos.filter(c => favoriteIds.has(makeComboKey(game, char, c.name, c.input)))
-      : combos.filter(c => c.category === activeCategory);
+  const filteredCombos = useMemo(() => {
+    if (activeCategory === 'all') return combos;
+    if (activeCategory === 'favorite')
+      return combos.filter(c => favoriteIds.has(makeComboKey(game, char, c.name, c.input)));
+    return combos.filter(c => c.category === activeCategory);
+  }, [activeCategory, combos, favoriteIds, game, char]);
 
   // Empty state for Favorite tab
   const EmptyFavorites = () => (
@@ -271,7 +292,7 @@ export default function CombosScreen() {
     </View>
   );
 
-  const renderHeader = () => (
+  const renderHeader = useCallback(() => (
     <View>
       {/* Character bio card */}
       <CharacterHeaderCard game={game} char={char} />
@@ -284,68 +305,47 @@ export default function CombosScreen() {
 
       {/* Category tabs */}
       {game && GAME_CATS[game] && (
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.categoriesScroll}
-        >
+        <View style={styles.categoriesWrap}>
           {/* Favorite tab — always first */}
-          {(() => {
-            const isActive = activeCategory === 'favorite';
+          {[['favorite', '⭐ Избранное', '#FFD700'] as [string, string, string], ...GAME_CATS[game].map(([k, l]) => [k, l, CATEGORY_COLORS[k] || '#e63b2e'] as [string, string, string])].map(([key, label, col]) => {
+            const isActive = activeCategory === key;
             return (
-              <TouchableOpacity
-                key="favorite"
-                onPress={() => setActiveCategory('favorite')}
-                style={[
+              <Pressable
+                key={key}
+                onPress={() => handleCategoryPress(key)}
+                style={({ pressed }) => [
                   styles.categoryTab,
                   isActive
-                    ? { backgroundColor: '#FFD70022', borderColor: '#FFD700' }
+                    ? { backgroundColor: `${col}33`, borderColor: col }
                     : styles.categoryTabInactive,
+                  pressed && { opacity: 0.6, transform: [{ scale: 0.95 }] },
                 ]}
-                activeOpacity={0.8}
-              >
-                <Text style={[styles.categoryTabText, isActive ? { color: '#FFD700' } : styles.categoryTabInactiveText]}>
-                  ⭐ Избранное
-                </Text>
-              </TouchableOpacity>
-            );
-          })()}
-          {GAME_CATS[game].map(([key, label]) => {
-            const isActive = activeCategory === key;
-            const col = CATEGORY_COLORS[key] || '#e63b2e';
-            return (
-              <TouchableOpacity
-                key={key}
-                onPress={() => setActiveCategory(key)}
-                style={[
-                  styles.categoryTab,
-                  isActive ? { backgroundColor: `${col}22`, borderColor: col } : styles.categoryTabInactive
-                ]}
-                activeOpacity={0.8}
               >
                 <Text style={[styles.categoryTabText, isActive ? { color: col } : styles.categoryTabInactiveText]}>
                   {label}
                 </Text>
-              </TouchableOpacity>
+              </Pressable>
             );
           })}
-        </ScrollView>
+        </View>
       )}
     </View>
-  );
+  ), [game, char, controlType, activeCategory]);
 
-  const renderItem = ({ item }: { item: any }) => {
-    if (!isTransitionFinished) {
+  const renderItem = useCallback(({ item }: { item: any }) => {
+    if (!isTransitionFinished || !isCategoryReady) {
       return <ComboSkeleton />;
     }
     const key = makeComboKey(game, char, item.name, item.input);
     return <ComboCard combo={item} controlType={controlType} comboKey={key} />;
-  };
+  }, [isTransitionFinished, isCategoryReady, game, char, controlType]);
 
-  const listData = isTransitionFinished ? filteredCombos : [1, 2, 3];
+  // Phase 1: show fixed-count skeletons; Phase 2: show real filtered combos
+  const showingSkeletons = !isTransitionFinished || !isCategoryReady;
+  const listData = showingSkeletons ? Array(SKELETON_COUNT).fill(null) : filteredCombos;
 
-  // Determine ListEmptyComponent: special state for favorite, generic for others
-  const emptyComponent = isTransitionFinished
+  // Determine ListEmptyComponent: only show when real cards are loaded and list is empty
+  const emptyComponent = (!showingSkeletons)
     ? activeCategory === 'favorite'
       ? <EmptyFavorites />
       : (
@@ -362,7 +362,7 @@ export default function CombosScreen() {
       <FlatList
         data={listData}
         renderItem={renderItem}
-        keyExtractor={(item, index) => (isTransitionFinished ? `${item.name || index}_${index}` : `skeleton_${index}`)}
+        keyExtractor={(_, index) => (showingSkeletons ? `skeleton_${index}` : `${(listData[index] as any)?.name || index}_${index}`)}
         contentContainerStyle={styles.scrollContent}
         ListHeaderComponent={renderHeader}
         ListEmptyComponent={emptyComponent}
@@ -426,8 +426,9 @@ const styles = StyleSheet.create({
     color: '#555',
     fontFamily: 'Rajdhani-SemiBold',
   },
-  categoriesScroll: {
+  categoriesWrap: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: 6,
     marginBottom: 14,
     paddingVertical: 4,
