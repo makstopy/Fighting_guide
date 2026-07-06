@@ -3,9 +3,12 @@ import { StyleSheet, View, Text, ScrollView, Pressable, FlatList, Platform } fro
 import { useLocalSearchParams } from 'expo-router';
 import { useControl } from '../components/ControlContext';
 import { useFavoritesContext, makeComboKey } from '../components/FavoritesContext';
+import { useCustomCombosContext } from '../components/CustomCombosContext';
 import Header from '../components/Header';
 import CharacterHeaderCard from '../components/CharacterHeaderCard';
 import ComboCard from '../components/ComboCard';
+import ComboCreatorModal from '../components/ComboCreatorModal';
+import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming, withSequence, withSpring, Easing } from 'react-native-reanimated';
 import COMBOS_DB from '../data/combos/index';
 
 import {
@@ -91,6 +94,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   overdrive: '#06b6d4',
   taunt: '#22d3ee',
   breaker: '#fb7185',
+  custom: '#10b981',
 
   // Tekken 8 categories
   'Main Techniques': '#e63b2e',
@@ -129,7 +133,9 @@ const ComboSkeleton = () => (
 export default function CombosScreen() {
   const { game, char } = useLocalSearchParams<{ game: string; char: string }>();
   const { controlType } = useControl();
-  const { favoriteIds, hasFavoritesFor } = useFavoritesContext();
+  const { favoriteIds, hasFavoritesFor, toggleFavorite } = useFavoritesContext();
+  const { getCustomCombos, addCustomCombo } = useCustomCombosContext();
+  const [isCreatorVisible, setIsCreatorVisible] = useState(false);
 
   // Default to 'favorite' if character already has saved favorites, otherwise 'all'
   const [activeCategory, setActiveCategory] = useState<string>(() =>
@@ -282,13 +288,45 @@ export default function CombosScreen() {
     </View>
   );
 
+  // Convert a single combo's input from PS notation to current controlType
+  const convertComboInput = useCallback((combo: any, control: string) => {
+    if (control === 'Xbox') {
+      const map: Record<string, string> = {
+        "□": "X", "△": "Y", "○": "B", "✕": "A",
+        "L1": "LB", "L2": "LT", "R1": "RB", "R2": "RT",
+      };
+      return {
+        ...combo,
+        input: combo.input.split(/(\s+|,)/).map((t: string) => map[t] || t).join("")
+      };
+    }
+    if (control === 'Arcade') {
+      const dirMap: Record<string, string> = {
+        "↖": "7", "↑": "8", "↗": "9",
+        "←": "4", "→": "6",
+        "↙": "1", "↓": "2", "↘": "3"
+      };
+      return {
+        ...combo,
+        inputNumpad: combo.input.split("").map((ch: string) => dirMap[ch] || ch).join("")
+      };
+    }
+    return combo;
+  }, []);
+
+  // Merge custom combos with DB combos (applying controlType conversion)
+  const allCombos = useMemo(() => {
+    const custom = getCustomCombos(game, char).map(c => convertComboInput(c, controlType));
+    return [...combos, ...custom];
+  }, [combos, game, char, getCustomCombos, controlType, convertComboInput]);
+
   // Filter combos by selected category tab
   const filteredCombos = useMemo(() => {
-    if (activeCategory === 'all') return combos;
+    if (activeCategory === 'all') return allCombos;
     if (activeCategory === 'favorite')
-      return combos.filter(c => favoriteIds.has(makeComboKey(game, char, c.name, c.input)));
-    return combos.filter(c => c.category === activeCategory);
-  }, [activeCategory, combos, favoriteIds, game, char]);
+      return allCombos.filter(c => favoriteIds.has(makeComboKey(game, char, c.name, c.input)));
+    return allCombos.filter(c => c.category === activeCategory);
+  }, [activeCategory, allCombos, favoriteIds, game, char]);
 
   // Empty state for Favorite tab
   const EmptyFavorites = () => (
@@ -315,8 +353,12 @@ export default function CombosScreen() {
       {/* Category tabs */}
       {game && GAME_CATS[game] && (
         <View style={styles.categoriesWrap}>
-          {/* Favorite tab — always first */}
-          {[['favorite', '⭐ Избранное', '#FFD700'] as [string, string, string], ...GAME_CATS[game].map(([k, l]) => [k, l, CATEGORY_COLORS[k] || '#e63b2e'] as [string, string, string])].map(([key, label, col]) => {
+          {/* Favorite tab — always first, Custom tab — after favorites */}
+          {[
+            ['favorite', '⭐ Избранное', '#FFD700'] as [string, string, string],
+            ['custom', '🛠 Custom', '#10b981'] as [string, string, string],
+            ...GAME_CATS[game].map(([k, l]) => [k, l, CATEGORY_COLORS[k] || '#e63b2e'] as [string, string, string])
+          ].map(([key, label, col]) => {
             const isActive = activeCategory === key;
             return (
               <Pressable
@@ -365,6 +407,32 @@ export default function CombosScreen() {
       )
     : null;
 
+  // FAB pulse animation
+  const fabScale = useSharedValue(1);
+  useEffect(() => {
+    fabScale.value = withRepeat(
+      withSequence(
+        withTiming(1.08, { duration: 1200, easing: Easing.inOut(Easing.ease) }),
+        withTiming(1, { duration: 1200, easing: Easing.inOut(Easing.ease) })
+      ),
+      -1,
+      true
+    );
+  }, []);
+  const fabAnimStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: fabScale.value }],
+  }));
+
+  const handleSaveCustomCombo = useCallback((name: string, input: string, description: string) => {
+    const combo = addCustomCombo(game, char, name, input, description);
+    // Auto-add to favorites
+    const key = makeComboKey(game, char, combo.name, combo.input);
+    toggleFavorite(key);
+    setIsCreatorVisible(false);
+    // Switch to Custom category to show the newly created combo
+    handleCategoryPress('custom');
+  }, [game, char, addCustomCombo, toggleFavorite, handleCategoryPress]);
+
   return (
     <View style={styles.container}>
       <Header showBack gameTitle={game} charName={char} />
@@ -379,6 +447,27 @@ export default function CombosScreen() {
         maxToRenderPerBatch={8}
         windowSize={5}
         removeClippedSubviews={Platform.OS === 'android'}
+      />
+
+      {/* FAB — Add Custom Combo */}
+      <Animated.View style={[styles.fabContainer, fabAnimStyle]}>
+        <Pressable
+          style={({ pressed }) => [
+            styles.fab,
+            pressed && styles.fabPressed,
+          ]}
+          onPress={() => setIsCreatorVisible(true)}
+        >
+          <Text style={styles.fabIcon}>+</Text>
+        </Pressable>
+      </Animated.View>
+
+      {/* Creator Modal */}
+      <ComboCreatorModal
+        visible={isCreatorVisible}
+        onClose={() => setIsCreatorVisible(false)}
+        onSave={handleSaveCustomCombo}
+        controlType={controlType}
       />
     </View>
   );
@@ -558,5 +647,36 @@ const styles = StyleSheet.create({
     backgroundColor: '#222',
     borderRadius: 4,
     marginTop: 8,
+  },
+  fabContainer: {
+    position: 'absolute',
+    bottom: 28,
+    right: 20,
+    zIndex: 100,
+  },
+  fab: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    backgroundColor: '#10b981',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#10b981',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 12,
+    elevation: 8,
+    borderWidth: 2,
+    borderColor: '#34d39955',
+  },
+  fabPressed: {
+    backgroundColor: '#059669',
+    transform: [{ scale: 0.92 }],
+  },
+  fabIcon: {
+    color: '#fff',
+    fontSize: 30,
+    fontWeight: '300',
+    marginTop: -2,
   },
 });

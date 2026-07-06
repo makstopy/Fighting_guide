@@ -6,6 +6,7 @@ import 'react-native-reanimated';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ControlProvider } from '../components/ControlContext';
 import { FavoritesProvider } from '../components/FavoritesContext';
+import { CustomCombosProvider } from '../components/CustomCombosContext';
 import { View } from 'react-native';
 
 import {
@@ -56,15 +57,17 @@ function RootLayoutNav() {
   return (
     <SafeAreaProvider>
       <FavoritesProvider>
-        <ControlProvider>
-          <View style={{ flex: 1, backgroundColor: '#0a0a0f' }}>
-            <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: '#0a0a0f' } }}>
-              <Stack.Screen name="index" />
-              <Stack.Screen name="characters" />
-              <Stack.Screen name="combos" />
-            </Stack>
-          </View>
-        </ControlProvider>
+        <CustomCombosProvider>
+          <ControlProvider>
+            <View style={{ flex: 1, backgroundColor: '#0a0a0f' }}>
+              <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: '#0a0a0f' } }}>
+                <Stack.Screen name="index" />
+                <Stack.Screen name="characters" />
+                <Stack.Screen name="combos" />
+              </Stack>
+            </View>
+          </ControlProvider>
+        </CustomCombosProvider>
       </FavoritesProvider>
     </SafeAreaProvider>
   );
