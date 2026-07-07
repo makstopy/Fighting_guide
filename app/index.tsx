@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Text, ScrollView, TouchableOpacity, Platform } from 'react-native';
+import { StyleSheet, View, Text, ScrollView, TouchableOpacity, Platform, Image } from 'react-native';
 import { useRouter } from 'expo-router';
+import { LinearGradient } from 'expo-linear-gradient';
 import Header from '../components/Header';
-import GameCover from '../components/GameCover';
 import FIGHTERS_DB from '../data/fighters_db.json';
 import { useSQLiteContext } from 'expo-sqlite';
+
+const GAME_LOGOS: Record<string, any> = {
+  'Mortal Kombat 1': require('../assets/images/mk1-de-logo-white.webp'),
+  'Street Fighter 6': require('../assets/images/SF6_logo.png'),
+  'Tekken 8': require('../assets/images/tekken8-logo-sm.png'),
+};
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -64,20 +70,44 @@ export default function HomeScreen() {
       <Header />
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <Text style={styles.sectionTitle}>Выбери файтинг</Text>
-        {games.map(([game, info]: [string, any], index) => (
-          <TouchableOpacity
-            key={game}
-            style={styles.gameCard}
-            onPress={() => handleSelectGame(game)}
-            activeOpacity={0.7}
-          >
-            <View style={styles.gameInfo}>
-              <Text style={styles.gameTitle}>{game}</Text>
-              <Text style={styles.gamePlatform}>{info.platform}</Text>
-            </View>
-            <GameCover game={game} />
-          </TouchableOpacity>
-        ))}
+        {games.map(([game, info]: [string, any]) => {
+          const logoSource = GAME_LOGOS[game];
+          const colors = info.coverGrad && info.coverGrad.length >= 2 
+            ? info.coverGrad 
+            : ['#16213e', '#0f172a'];
+
+          return (
+            <TouchableOpacity
+              key={game}
+              onPress={() => handleSelectGame(game)}
+              activeOpacity={0.85}
+              style={styles.cardContainer}
+            >
+              <LinearGradient
+                colors={colors}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+                style={styles.gameCard}
+              >
+                <View style={styles.cardGloss} />
+
+                {logoSource ? (
+                  <Image
+                    source={logoSource}
+                    style={styles.gameLogo}
+                    resizeMode="contain"
+                  />
+                ) : (
+                  <Text style={styles.gameTitle}>{game}</Text>
+                )}
+
+                <View style={styles.platformBadge}>
+                  <Text style={styles.gamePlatform}>{info.platform}</Text>
+                </View>
+              </LinearGradient>
+            </TouchableOpacity>
+          );
+        })}
       </ScrollView>
     </View>
   );
@@ -100,32 +130,61 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     textTransform: 'uppercase',
   },
+  cardContainer: {
+    width: '100%',
+    marginBottom: 16,
+    borderRadius: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
+    elevation: 5,
+  },
   gameCard: {
     width: '100%',
-    backgroundColor: '#16213e',
-    borderWidth: 1,
-    borderColor: 'rgba(230, 59, 46, 0.13)',
-    borderRadius: 12,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    marginBottom: 12,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    height: 130,
+    borderRadius: 16,
+    padding: 16,
+    justifyContent: 'center',
     alignItems: 'center',
+    position: 'relative',
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
   },
-  gameInfo: {
-    flex: 1,
-    marginRight: 12,
+  cardGloss: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '50%',
+    backgroundColor: 'rgba(255, 255, 255, 0.03)',
+  },
+  gameLogo: {
+    width: '80%',
+    height: 55,
   },
   gameTitle: {
     fontFamily: 'Rajdhani-Bold',
-    fontSize: 16,
+    fontSize: 22,
     color: '#fff',
-    marginBottom: 4,
+    textTransform: 'uppercase',
+    letterSpacing: 2,
+  },
+  platformBadge: {
+    position: 'absolute',
+    bottom: 8,
+    right: 12,
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 6,
   },
   gamePlatform: {
     fontFamily: 'Rajdhani-SemiBold',
-    fontSize: 11,
-    color: '#666',
+    fontSize: 9,
+    color: 'rgba(255, 255, 255, 0.8)',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
   },
 });
