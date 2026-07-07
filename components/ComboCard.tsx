@@ -37,6 +37,9 @@ const CATEGORY_COLORS: Record<string, [string, string]> = {
   taunt: ['#22d3ee', '#3b82f6'],
   breaker: ['#fb7185', '#dc2626'],
   custom: ['#10b981', '#34d399'],
+  'Super Arts': ['#f59e0b', '#fbbf24'],
+  'Unique Attacks': ['#3b82f6', '#60a5fa'],
+  'Common Moves': ['#64748b', '#94a3b8'],
 
   // Tekken 8 categories
   'Main Techniques': ['#e63b2e', '#ff8c00'],
@@ -92,6 +95,9 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
       taunt: ['Taunt', '#22d3ee'],
       breaker: ['Breaker', '#fb7185'],
       custom: ['Custom', '#10b981'],
+      'Super Arts': ['Super Art', '#f59e0b'],
+      'Unique Attacks': ['Unique', '#3b82f6'],
+      'Common Moves': ['Common', '#64748b'],
 
       // Tekken 8 categories
       'Main Techniques': ['Main', '#e63b2e'],

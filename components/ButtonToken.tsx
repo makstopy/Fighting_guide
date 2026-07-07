@@ -28,6 +28,19 @@ const MOVE_ICONS: Record<string, any> = {
   "tornado-move": require('../assets/images/tornado-move.avif'),
 };
 
+const SF6_BUTTON_ICONS: Record<string, any> = {
+  "[[LP]]": require('../public/icon_punch_l.png'),
+  "[[MP]]": require('../public/icon_punch_m.png'),
+  "[[HP]]": require('../public/icon_punch_h.png'),
+  "[[P]]": require('../public/icon_punch.png'),
+  "[[LK]]": require('../public/icon_kick_l.png'),
+  "[[MK]]": require('../public/icon_kick_m.png'),
+  "[[HK]]": require('../public/icon_kick_h.png'),
+  "[[K]]": require('../public/icon_kick.png'),
+  "[[N]]": require('../public/key-nutral.png'),
+  "N": require('../public/key-nutral.png'),
+};
+
 const ARCADE_DOT_MAP: Record<string, number[]> = {
   "□": [1, 0, 0, 0],
   "△": [0, 1, 0, 0],
@@ -59,6 +72,37 @@ interface ButtonTokenProps {
 
 export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
   const s = 22;
+
+  // ── SF6 Controller mappings ──
+  if (controlType === 'PS') {
+    if (token === '[[LP]]') return <PSSquare size={s} />;
+    if (token === '[[MP]]') return <PSTriangle size={s} />;
+    if (token === '[[HP]]') return <PSBumper label="R1" size={s} />;
+    if (token === '[[LK]]') return <PSCross size={s} />;
+    if (token === '[[MK]]') return <PSCircle size={s} />;
+    if (token === '[[HK]]') return <PSBumper label="R2" size={s} />;
+  }
+
+  if (controlType === 'Xbox') {
+    if (token === '[[LP]]') return <XboxX size={s} />;
+    if (token === '[[MP]]') return <XboxY size={s} />;
+    if (token === '[[HP]]') return <XboxBumper label="RB" size={s} />;
+    if (token === '[[LK]]') return <XboxA size={s} />;
+    if (token === '[[MK]]') return <XboxB size={s} />;
+    if (token === '[[HK]]') return <XboxBumper label="RT" size={s} />;
+  }
+
+  // ── SF6 Native Icons (Arcade mode & non-colored punches/kicks) ──
+  if (SF6_BUTTON_ICONS[token]) {
+    const isArcade = controlType === 'Arcade';
+    return (
+      <Image
+        source={SF6_BUTTON_ICONS[token]}
+        style={isArcade ? styles.sf6ArcadeIcon : styles.sf6Icon}
+        resizeMode="contain"
+      />
+    );
+  }
 
   // ── Arcade mode ─────────────────────────────────────────────────────────────
   if (controlType === 'Arcade') {
@@ -247,5 +291,15 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: 'ShareTechMono-Regular',
     marginHorizontal: 1,
+  },
+  sf6Icon: {
+    width: 22,
+    height: 22,
+    marginHorizontal: 2,
+  },
+  sf6ArcadeIcon: {
+    width: 35,
+    height: 35,
+    marginHorizontal: 2,
   },
 });

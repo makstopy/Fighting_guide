@@ -1,6 +1,7 @@
 // Static combos database index for React Native (no import.meta.glob)
 
 const sf6Combos = require('./sf6.json');
+sf6Combos["AKI"] = require('./sf6_combos/aki.json');
 const ggStriveCombos = require('./ggstrive.json');
 const dbfzCombos = require('./dbfz.json');
 const fatalFuryCombos = require('./fatalfury.json');

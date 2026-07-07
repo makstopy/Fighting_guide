@@ -42,8 +42,11 @@ const GAME_CATS: Record<string, [string, string][]> = {
   ],
   "Street Fighter 6": [
     ["all", "Все"],
-    ["combo", "Комбо"],
-    ["super", "Суперы"]
+    ["Special Moves", "Special Moves"],
+    ["Super Arts", "Super Arts"],
+    ["Unique Attacks", "Unique Attacks"],
+    ["Throws", "Throws"],
+    ["Common Moves", "Common Moves"]
   ],
   "Tekken 8": [
     ["all", "Все"],
@@ -96,6 +99,9 @@ const CATEGORY_COLORS: Record<string, string> = {
   taunt: '#22d3ee',
   breaker: '#fb7185',
   custom: '#10b981',
+  'Super Arts': '#f59e0b',
+  'Unique Attacks': '#3b82f6',
+  'Common Moves': '#64748b',
 
   // Tekken 8 categories
   'Main Techniques': '#e63b2e',
