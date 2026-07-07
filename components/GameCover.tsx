@@ -24,7 +24,7 @@ export default function GameCover({ game }: { game: string }) {
       <View style={styles.imageContainer}>
         <Image
           source={require('../assets/images/logo_mark.png')}
-          style={styles.image}
+          style={styles.sf6Image}
           resizeMode="contain"
         />
       </View>
@@ -74,12 +74,16 @@ const styles = StyleSheet.create({
     width: 80,
     height: 100,
     borderRadius: 8,
-    overflow: 'hidden',
     backgroundColor: 'transparent',
   },
   image: {
     width: '100%',
     height: '100%',
+  },
+  sf6Image: {
+    width: '100%',
+    height: '100%',
+    transform: [{ scale: 1.25 }],
   },
   svgContainer: {
     width: 80,
