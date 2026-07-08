@@ -1,24 +1,23 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
+import { ControlType } from './ControlContext';
 import {
+  ArcadeArrow,
+  ArcadeButton,
+  ArcadeSep,
+  DirArrow,
+  DotGrid,
+  PSBumper,
+  PSCircle,
+  PSCross,
   PSSquare,
   PSTriangle,
-  PSCross,
-  PSCircle,
-  PSBumper,
   XboxA,
   XboxB,
-  XboxX,
-  XboxY,
   XboxBumper,
-  DirArrow,
-  ArcadeDir,
-  ArcadeButton,
-  ArcadeArrow,
-  ArcadeSep,
-  DotGrid
+  XboxX,
+  XboxY
 } from './icons/ControllerIcons';
-import { ControlType } from './ControlContext';
 
 const MOVE_ICONS: Record<string, any> = {
   "heat-engager": require('../assets/images/heat-engager.avif'),
@@ -289,8 +288,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 1,
   },
   smallMoveIcon: {
-    width: 20,
-    height: 20,
+    width: 30,
+    height: 30,
     marginHorizontal: 2,
   },
   smallIconFallback: {

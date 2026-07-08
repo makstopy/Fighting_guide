@@ -1,46 +1,46 @@
-import React, { useState, useCallback, useMemo, useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
-  StyleSheet,
-  View,
-  Text,
-  TextInput,
-  Pressable,
-  ScrollView,
-  Platform,
   BackHandler,
   Keyboard,
+  Platform,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
   useWindowDimensions,
+  View,
 } from 'react-native';
 import Animated, {
-  useSharedValue,
-  useAnimatedStyle,
-  withTiming,
-  withSpring,
-  withSequence,
+  Easing,
   FadeIn,
   FadeOut,
   SlideInDown,
   SlideOutDown,
-  Easing,
+  useAnimatedStyle,
+  useSharedValue,
+  withSequence,
+  withSpring,
+  withTiming,
 } from 'react-native-reanimated';
-import { ControlType } from './ControlContext';
-import ComboInput from './ComboInput';
 import ButtonToken from './ButtonToken';
+import ComboInput from './ComboInput';
+import { ControlType } from './ControlContext';
 import {
-  PSSquare,
-  PSTriangle,
+  ArcadeArrow,
+  ArcadeButton,
+  ArcadeSep,
+  DirArrow,
+  PSBumper,
   PSCircle,
   PSCross,
-  PSBumper,
+  PSSquare,
+  PSTriangle,
   XboxA,
   XboxB,
+  XboxBumper,
   XboxX,
   XboxY,
-  XboxBumper,
-  ArcadeButton,
-  ArcadeArrow,
-  DirArrow,
-  ArcadeSep,
 } from './icons/ControllerIcons';
 
 interface ComboCreatorModalProps {
