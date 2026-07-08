@@ -8,7 +8,7 @@ import SF6_PORTRAITS from '../data/sf6_portraits.json';
 import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
 import COMBOS_DB from '../data/combos/index';
 
-const DB_VERSION = 9;
+const DB_VERSION = 10;
 
 export interface SQLiteCombo {
   id: string;

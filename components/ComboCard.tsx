@@ -187,7 +187,7 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
 
         {/* Damage and description */}
         <Text style={styles.descriptionText}>
-          {combo.damage !== '-' && (
+          {combo.damage && combo.damage !== '-' && (
             <Text style={styles.damageHighlight}>💥 {combo.damage} dmg  ·  </Text>
           )}
           {combo.description}

@@ -151,7 +151,7 @@ export default function CharactersScreen() {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                objectFit: 'cover',
+                objectFit: game === 'Street Fighter 6' ? 'contain' : 'cover',
                 objectPosition: 'top',
               } as React.CSSProperties}
             />
@@ -159,7 +159,7 @@ export default function CharactersScreen() {
             <Image
               source={{ uri: imgUrl }}
               style={styles.cardImage}
-              resizeMode="cover"
+              resizeMode={game === 'Street Fighter 6' ? 'contain' : 'cover'}
             />
           )}
           {/* Smooth dark gradient fade at the bottom where name sits */}
