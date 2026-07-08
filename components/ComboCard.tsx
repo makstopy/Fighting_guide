@@ -213,7 +213,8 @@ const styles = StyleSheet.create({
   },
   contentWrapper: {
     paddingHorizontal: 18,
-    paddingVertical: 16,
+    paddingTop: 16,
+    paddingBottom: 40, // Space reserved at the bottom for the absolute star button
   },
   headerRow: {
     flexDirection: 'row',
