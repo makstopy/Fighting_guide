@@ -112,5 +112,10 @@
   "Cell": { "bg": ["#1B5E20", "#F9A825"], "icon": "🧬", "label": "CL" },
   "Piccolo": { "bg": ["#1B5E20", "#C62828"], "icon": "👂", "label": "PC" },
   "Android 18": { "bg": ["#1565C0", "#F8BBD0"], "icon": "🤖", "label": "18" },
-  "Broly": { "bg": ["#1B5E20", "#212121"], "icon": "💚", "label": "BR" }
+  "Broly": { "bg": ["#1B5E20", "#212121"], "icon": "💚", "label": "BR" },
+  "Alex": { "bg": ["#1565C0", "#37474F"], "icon": "💪", "label": "ALX" },
+  "Ed": { "bg": ["#7B1FA2", "#37474F"], "icon": "⚡", "label": "ED" },
+  "C. Viper": { "bg": ["#C62828", "#FF6F00"], "icon": "🔥", "label": "CVP" },
+  "Ingrid": { "bg": ["#F9A825", "#FF8F00"], "icon": "☀️", "label": "ING" },
+  "Sagat": { "bg": ["#FF6F00", "#212121"], "icon": "🐅", "label": "SGT" }
 }

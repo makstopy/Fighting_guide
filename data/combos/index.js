@@ -1,7 +1,5 @@
 // Static combos database index for React Native (no import.meta.glob)
 
-const sf6Combos = require('./sf6.json');
-sf6Combos["AKI"] = require('./sf6_combos/aki.json');
 const ggStriveCombos = require('./ggstrive.json');
 const dbfzCombos = require('./dbfz.json');
 const fatalFuryCombos = require('./fatalfury.json');
@@ -43,6 +41,54 @@ const mk1Combos = {
   "Takeda": require("./mk1_combos/takeda.json"),
   "Tanya": require("./mk1_combos/tanya.json"),
 };
+
+// SF6 Combos (from individual character files)
+const rawSf6Combos = {
+  "AKI": require("./sf6_combos/aki.json"),
+  "Alex": require("./sf6_combos/alex.json"),
+  "Akuma": require("./sf6_combos/akuma.json"),
+  "Blanka": require("./sf6_combos/blanka.json"),
+  "C. Viper": require("./sf6_combos/cviper.json"),
+  "Cammy": require("./sf6_combos/cammy.json"),
+  "Chun-Li": require("./sf6_combos/chun-li.json"),
+  "Dee Jay": require("./sf6_combos/dee-jay.json"),
+  "Dhalsim": require("./sf6_combos/dhalsim.json"),
+  "Ed": require("./sf6_combos/ed.json"),
+  "Honda": require("./sf6_combos/edmond-honda.json"),
+  "Elena": require("./sf6_combos/elena.json"),
+  "Guile": require("./sf6_combos/guile.json"),
+  "Ingrid": require("./sf6_combos/ingrid.json"),
+  "Jamie": require("./sf6_combos/jamie-siu.json"),
+  "JP": require("./sf6_combos/johan-jp-petrovic.json"),
+  "Juri": require("./sf6_combos/juri-han.json"),
+  "Ken": require("./sf6_combos/ken-masters.json"),
+  "Kimberly": require("./sf6_combos/kimberly-jackson.json"),
+  "Lily": require("./sf6_combos/lily-hawk.json"),
+  "Luke": require("./sf6_combos/luke-sullivan.json"),
+  "M. Bison": require("./sf6_combos/m-bison.json"),
+  "Mai (SF6)": require("./sf6_combos/mai-shiranui.json"),
+  "Manon": require("./sf6_combos/manon.json"),
+  "Marisa": require("./sf6_combos/marisa.json"),
+  "Rashid": require("./sf6_combos/rashid.json"),
+  "Ryu": require("./sf6_combos/ryu.json"),
+  "Sagat": require("./sf6_combos/sagat.json"),
+  "Terry (SF6)": require("./sf6_combos/terry-bogard.json"),
+  "Zangief": require("./sf6_combos/zangief.json"),
+};
+
+const sf6Combos = {};
+for (const [charName, data] of Object.entries(rawSf6Combos)) {
+  if (Array.isArray(data)) {
+    sf6Combos[charName] = data.map(move => ({
+      name: move.name,
+      input: move.input,
+      damage: move.damage || "-",
+      difficulty: move.difficulty || "-",
+      description: move.description || "",
+      category: move.category || "Special Moves"
+    }));
+  }
+}
 
 // Tekken 8 Combos (Requires mapping at import time if not mapped in json)
 const rawTekken8Combos = {
