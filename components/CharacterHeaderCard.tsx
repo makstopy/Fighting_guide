@@ -32,6 +32,7 @@ export default function CharacterHeaderCard({ game, char }: CharacterHeaderCardP
 
 
   const accentColor = c0 !== "#FFFFFF" && c0 !== "#ffffff" && c0 !== "#000000" ? c0 : "#e63b2e";
+  const cleanId = char.replace(/[^a-zA-Z0-9]/g, '_');
 
   return (
     <View style={styles.container}>
@@ -43,7 +44,7 @@ export default function CharacterHeaderCard({ game, char }: CharacterHeaderCardP
       >
         <Defs>
           <RadialGradient
-            id={`rg_${char.replace(/\s/g, '_')}`}
+            id={`rg_${cleanId}`}
             cx="50%" cy="50%" r="50%"
             fx="50%" fy="50%"
           >
@@ -58,7 +59,7 @@ export default function CharacterHeaderCard({ game, char }: CharacterHeaderCardP
           cy={160}
           rx={180}
           ry={160}
-          fill={`url(#rg_${char.replace(/\s/g, '_')})`}
+          fill={`url(#rg_${cleanId})`}
         />
       </Svg>
 

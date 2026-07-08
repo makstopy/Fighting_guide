@@ -37,7 +37,10 @@ const GAME_CATS: Record<string, [string, string][]> = {
     ["special", "Special"],
     ["combo", "Combo"],
     ["fatal_blow", "Fatal Blow"],
+    ["breaker", "Breaker"],
+    ["taunt", "Taunt"],
     ["brutality", "Brutality"],
+    ["animality", "Animality"],
     ["fatality", "Fatality"]
   ],
   "Street Fighter 6": [
@@ -64,7 +67,8 @@ const GAME_CATS: Record<string, [string, string][]> = {
     ["Moves During Backup", "Moves During Backup"],
     ["Throws", "Throws"],
     ["Attack Reversals", "Attack Reversals"],
-    ["Moves While Opponent is Down", "Moves While Opponent is Down"]
+    ["Moves While Opponent is Down", "Moves While Opponent is Down"],
+    ["Unknown", "Other"]
   ],
   "Guilty Gear Strive": [
     ["all", "Все"],
@@ -93,6 +97,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   fatal_blow: '#eab308',
   brutality: '#9333ea',
   fatality: '#dc2626',
+  animality: '#ec4899',
   super: '#f59e0b',
   rage: '#ef4444',
   overdrive: '#06b6d4',
@@ -118,7 +123,8 @@ const CATEGORY_COLORS: Record<string, string> = {
   'Moves During Backup': '#6366f1',
   'Throws': '#f97316',
   'Attack Reversals': '#ec4899',
-  'Moves While Opponent is Down': '#64748b'
+  'Moves While Opponent is Down': '#64748b',
+  'Unknown': '#64748b'
 };
 
 const ComboSkeleton = () => (
@@ -509,7 +515,7 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     paddingHorizontal: 20,
-    paddingTop: 16,
+    paddingTop: 0,
     paddingBottom: 100,
   },
   legendBanner: {

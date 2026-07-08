@@ -1,17 +1,5 @@
 [
   {
-    "name": "Sento Stance",
-    "input": "",
-    "damage": "-",
-    "type": "-",
-    "startup": "-",
-    "active": "-",
-    "recovery": "-",
-    "block_advantage": "-",
-    "description": "",
-    "category": ""
-  },
-  {
     "name": "Sheath Slap",
     "input": "□",
     "damage": "20.00",

@@ -31,6 +31,7 @@ const CATEGORY_COLORS: Record<string, [string, string]> = {
   fatal_blow: ['#eab308', '#fbbf24'],
   brutality: ['#9333ea', '#c026d3'],
   fatality: ['#dc2626', '#ff0000'],
+  animality: ['#ec4899', '#f472b6'],
   super: ['#f59e0b', '#fbbf24'],
   rage: ['#ef4444', '#f97316'],
   overdrive: ['#06b6d4', '#0ea5e9'],
@@ -56,7 +57,8 @@ const CATEGORY_COLORS: Record<string, [string, string]> = {
   'Moves During Backup': ['#6366f1', '#818cf8'],
   'Throws': ['#f97316', '#fb923c'],
   'Attack Reversals': ['#ec4899', '#f472b6'],
-  'Moves While Opponent is Down': ['#64748b', '#94a3b8']
+  'Moves While Opponent is Down': ['#64748b', '#94a3b8'],
+  'Unknown': ['#64748b', '#94a3b8']
 };
 
 export default function ComboCard({ combo, controlType, comboKey }: ComboCardProps) {
@@ -89,6 +91,7 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
       fatal_blow: ['Fatal Blow', '#eab308'],
       brutality: ['Brutality', '#9333ea'],
       fatality: ['Fatality', '#dc2626'],
+      animality: ['Animality', '#ec4899'],
       super: ['Super', '#f59e0b'],
       rage: ['Rage', '#ef4444'],
       overdrive: ['OD', '#06b6d4'],
@@ -114,7 +117,8 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
       'Moves During Backup': ['Backup', '#6366f1'],
       'Throws': ['Throw', '#f97316'],
       'Attack Reversals': ['Reversal', '#ec4899'],
-      'Moves While Opponent is Down': ['Ondown', '#64748b']
+      'Moves While Opponent is Down': ['Ondown', '#64748b'],
+      'Unknown': ['Other', '#64748b']
     };
     return cfg[cat] || [cat || '?', '#666'];
   };

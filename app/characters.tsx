@@ -107,6 +107,8 @@ export default function CharactersScreen() {
     const imgUrl = resolveImageUri(rawImgUrl);
     const d = charData[char] || { bg: ["#1a1a2e", "#333"], icon: "🥷", label: char.slice(0, 2).toUpperCase() };
     const [c0, c1] = d.bg;
+    const glowColor = c0 !== "#FFFFFF" && c0 !== "#ffffff" && c0 !== "#000000" ? c0 : "#e63b2e";
+    const cleanId = char.replace(/[^a-zA-Z0-9]/g, '_');
 
     if (imgUrl) {
       return (
@@ -123,14 +125,14 @@ export default function CharactersScreen() {
           >
             <Defs>
               <RadialGradient
-                id={`cg_${char.replace(/\s/g, '_')}`}
+                id={`cg_${cleanId}`}
                 cx="50%" cy="80%" r="50%"
                 fx="50%" fy="80%"
               >
-                <Stop offset="0%" stopColor={c0} stopOpacity={0.6} />
-                <Stop offset="40%" stopColor={c0} stopOpacity={0.3} />
-                <Stop offset="70%" stopColor={c0} stopOpacity={0.1} />
-                <Stop offset="100%" stopColor={c0} stopOpacity={0} />
+                <Stop offset="0%" stopColor={glowColor} stopOpacity={0.6} />
+                <Stop offset="40%" stopColor={glowColor} stopOpacity={0.3} />
+                <Stop offset="70%" stopColor={glowColor} stopOpacity={0.1} />
+                <Stop offset="100%" stopColor={glowColor} stopOpacity={0} />
               </RadialGradient>
             </Defs>
             <Ellipse
@@ -138,7 +140,7 @@ export default function CharactersScreen() {
               cy="25%"
               rx={CARD_WIDTH * 0.75}
               ry={CARD_WIDTH * 0.75}
-              fill={`url(#cg_${char.replace(/\s/g, '_')})`}
+              fill={`url(#cg_${cleanId})`}
             />
           </Svg>
           {Platform.OS === 'web' ? (
