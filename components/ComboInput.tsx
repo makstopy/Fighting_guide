@@ -29,11 +29,15 @@ export function tokeniseInput(input: string): string[] {
       return;
     }
     if (part.text) {
-      // Split text on spaces, treat "," as its own token
-      const raw = part.text.split(/(\s+|,)/).filter(s => s && s.trim());
+      // Split text on spaces, treat "," and ">" as their own tokens
+      const raw = part.text.split(/(\s+|[,>])/).filter(s => s && s.trim());
       raw.forEach(segment => {
         if (segment === ',') {
           tokens.push(',');
+          return;
+        }
+        if (segment === '>') {
+          tokens.push('>');
           return;
         }
         const chars = [...segment];

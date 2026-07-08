@@ -73,6 +73,8 @@ interface ButtonTokenProps {
 export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
   const s = 22;
 
+  if (token === '>') return <ArcadeSep />;
+
   // ── SF6 Controller mappings ──
   if (controlType === 'PS') {
     if (token === '[[LP]]') return <PSSquare size={s} />;

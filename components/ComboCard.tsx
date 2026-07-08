@@ -180,10 +180,7 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
         {/* Input tokens row */}
         <ComboInput input={combo.input} controlType={controlType} />
 
-        {/* Numpad notation or raw input representation */}
-        <Text style={styles.numpadText}>
-          {controlType === 'Arcade' && combo.inputNumpad ? combo.inputNumpad : combo.input}
-        </Text>
+
 
         {/* Damage and description */}
         <Text style={styles.descriptionText}>
@@ -248,13 +245,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Rajdhani-Bold',
     textTransform: 'uppercase',
   },
-  numpadText: {
-    fontFamily: 'ShareTechMono-Regular',
-    fontSize: 11,
-    color: '#444',
-    marginTop: 2,
-    marginBottom: 6,
-  },
+
   descriptionText: {
     fontSize: 12,
     color: '#888',

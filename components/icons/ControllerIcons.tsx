@@ -220,7 +220,7 @@ export function ArcadeArrow({ dir, size = 28 }: { dir: string; size?: number }) 
 // ─── Arcade Separator SVG ─────────────────────────────────────────────────────
 export function ArcadeSep() {
   return (
-    <Svg width={14} height={20} viewBox="0 0 14 20" fill="none">
+    <Svg width={14} height={20} viewBox="0 0 14 20" fill="none" style={{ marginLeft: 3 }}>
       <Polygon points="2,4 12,10 2,16" fill="#22c55e" />
     </Svg>
   );
