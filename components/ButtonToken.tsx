@@ -71,7 +71,7 @@ interface ButtonTokenProps {
 }
 
 export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
-  const s = 22;
+  const s = 35;
 
   if (token === '>') return <ArcadeSep />;
 
@@ -274,18 +274,19 @@ const styles = StyleSheet.create({
     transform: [{ rotate: '-15deg' }],
   },
   arcadePlus: {
-    color: '#22c55e',
+    color: '#ff8c00',
     fontSize: 14,
     fontWeight: '700',
-    marginHorizontal: 2,
+    marginHorizontal: 1,
     fontFamily: 'System',
     lineHeight: 22,
     transform: [{ translateY: -1 }],
   },
   arcadeTokenFallback: {
-    color: '#aaa',
+    color: '#eae7e7',
     fontSize: 16,
-    fontFamily: 'System',
+    fontFamily: 'ShareTechMono-Regular',
+    marginHorizontal: 1,
   },
   smallMoveIcon: {
     width: 20,
@@ -327,8 +328,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 1,
   },
   sf6Icon: {
-    width: 22,
-    height: 22,
+    width: 35,
+    height: 35,
     marginHorizontal: 2,
   },
   sf6ArcadeIcon: {
