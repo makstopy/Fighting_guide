@@ -3,7 +3,6 @@ import { StyleSheet, View, Text, Image, Dimensions, Platform } from 'react-nativ
 import { LinearGradient } from 'expo-linear-gradient';
 import Svg, { Defs, RadialGradient, Stop, Ellipse } from 'react-native-svg';
 import CHAR_DATA from '../data/char_data.json';
-import TEKKEN8_CHAR_DETAILS from '../data/tekken_char_details.json';
 import MK1_PORTRAITS from '../data/mk1_portraits.json';
 import SF6_PORTRAITS from '../data/sf6_portraits.json';
 import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
@@ -14,7 +13,6 @@ const mk1Portraits: Record<string, string> = MK1_PORTRAITS;
 const sf6Portraits: Record<string, string> = SF6_PORTRAITS;
 const tekken8Portraits: Record<string, string> = TEKKEN8_PORTRAITS;
 const charData: Record<string, { bg: [string, string]; icon: string; label: string }> = CHAR_DATA as any;
-const tekkenDetails: Record<string, { title: string; country: string; style: string; bio: string }> = TEKKEN8_CHAR_DETAILS as any;
 
 const { width } = Dimensions.get('window');
 
@@ -31,12 +29,7 @@ export default function CharacterHeaderCard({ game, char }: CharacterHeaderCardP
 
   if (!imgUrl) return null;
 
-  const details = (game === "Tekken 8" && tekkenDetails[char]) || {
-    title: "Legendary Fighter",
-    country: "Unknown",
-    style: "Unknown",
-    bio: `Meet ${char}, a powerful warrior in the world of ${game}. Master their combos and dominate the arena!`
-  };
+
 
   const accentColor = c0 !== "#FFFFFF" && c0 !== "#ffffff" && c0 !== "#000000" ? c0 : "#e63b2e";
 
@@ -105,30 +98,6 @@ export default function CharacterHeaderCard({ game, char }: CharacterHeaderCardP
         <Text style={[styles.charName, { color: accentColor }]}>
           {char}
         </Text>
-
-        {/* Title/Subtitle */}
-        <Text style={styles.charTitle}>
-          {details.title}
-        </Text>
-
-        {/* Key-Value Info block */}
-        <View style={styles.keyValBlock}>
-          <Text style={styles.infoRow}>
-            <Text style={styles.infoKey}>Country of origin: </Text>
-            <Text style={[styles.infoVal, { color: accentColor }]}>{details.country}</Text>
-          </Text>
-          <Text style={styles.infoRow}>
-            <Text style={styles.infoKey}>Fighting style: </Text>
-            <Text style={[styles.infoVal, { color: accentColor }]}>{details.style}</Text>
-          </Text>
-        </View>
-
-        {/* Description Bio text */}
-        <View style={[styles.bioContainer, { borderLeftColor: accentColor }]}>
-          <Text style={styles.bioText}>
-            {details.bio}
-          </Text>
-        </View>
       </View>
     </View>
   );

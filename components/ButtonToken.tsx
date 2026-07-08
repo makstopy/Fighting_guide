@@ -177,6 +177,20 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
       'LP+RP+LK+RK': <PSBumper label="R2" size={s} />,
     };
     if (tekkenPS[token]) return <>{tekkenPS[token]}</>;
+
+    if (token.includes('+')) {
+      const parts = token.split('+');
+      return (
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 2 }}>
+          {parts.map((p, idx) => (
+            <React.Fragment key={idx}>
+              {idx > 0 && <Text style={styles.plus}>+</Text>}
+              <ButtonToken token={p} controlType={controlType} />
+            </React.Fragment>
+          ))}
+        </View>
+      );
+    }
   }
 
   // ── Xbox mode ────────────────────────────────────────────────────────────────
@@ -202,6 +216,20 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
       'LP+RP+LK+RK': <XboxBumper label="RT" size={s} />,
     };
     if (tekkenXbox[token]) return <>{tekkenXbox[token]}</>;
+
+    if (token.includes('+')) {
+      const parts = token.split('+');
+      return (
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 2 }}>
+          {parts.map((p, idx) => (
+            <React.Fragment key={idx}>
+              {idx > 0 && <Text style={styles.plus}>+</Text>}
+              <ButtonToken token={p} controlType={controlType} />
+            </React.Fragment>
+          ))}
+        </View>
+      );
+    }
   }
 
   // ── Move-type icons ([[ICON:xxx]]) ──────────────────────────────────────────
@@ -251,6 +279,8 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     marginHorizontal: 2,
     fontFamily: 'System',
+    lineHeight: 22,
+    transform: [{ translateY: -1 }],
   },
   arcadeTokenFallback: {
     color: '#aaa',
@@ -280,6 +310,8 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     marginHorizontal: 1,
     fontFamily: 'System',
+    lineHeight: 22,
+    transform: [{ translateY: -1 }],
   },
   comma: {
     color: '#fff',

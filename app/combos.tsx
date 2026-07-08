@@ -314,8 +314,6 @@ export default function CombosScreen() {
         {["↑", "↓", "←", "→", "↗", "↘", "↙", "↖"].map(d => (
           <ArcadeArrow key={d} dir={d} size={22} />
         ))}
-        <ArcadeSep />
-        <Text style={styles.arcadeNextText}>= следующий</Text>
       </View>
     </View>
   );
@@ -379,7 +377,6 @@ export default function CombosScreen() {
       {/* Controller inputs legend banner */}
       <View style={styles.legendBanner}>
         {controlType === 'PS' ? <PSLegend /> : controlType === 'Xbox' ? <XboxLegend /> : <ArcadeLegend />}
-        <Text style={styles.legendFooter}>, = кансел  ·  + одновременно</Text>
       </View>
 
       {/* Category tabs */}
@@ -526,6 +523,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 6,
     alignItems: 'center',
+    justifyContent: 'center',
     flexWrap: 'wrap',
   },
   legendFooter: {
@@ -548,6 +546,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 4,
     alignItems: 'center',
+    justifyContent: 'center',
     flexWrap: 'wrap',
     marginTop: 4,
   },

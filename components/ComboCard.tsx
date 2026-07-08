@@ -162,7 +162,7 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
       <View style={styles.contentWrapper}>
         {/* Title and Badges */}
         <View style={styles.headerRow}>
-          <Text style={styles.comboName} numberOfLines={1}>{combo.name}</Text>
+          <Text style={styles.comboName}>{combo.name}</Text>
           <View style={styles.badgeContainer}>
             {/* Category badge */}
             <View style={[styles.badge, { backgroundColor: `${badgeColor}22`, borderColor: `${badgeColor}44` }]}>
@@ -185,7 +185,7 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
         {/* Damage and description */}
         <Text style={styles.descriptionText}>
           {combo.damage && combo.damage !== '-' && (
-            <Text style={styles.damageHighlight}>💥 {combo.damage} dmg  ·  </Text>
+            <Text style={styles.damageHighlight}>💥 {combo.damage} dmg </Text>
           )}
           {combo.description}
         </Text>
@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
   headerRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     marginBottom: 6,
   },
   comboName: {
