@@ -356,6 +356,17 @@ export default function CombosScreen() {
     return [...combos, ...custom];
   }, [combos, game, char, getCustomCombos, controlType, convertComboInput]);
 
+  // Determine which categories actually contain combos for the current character
+  const presentCategories = useMemo(() => {
+    const set = new Set<string>();
+    allCombos.forEach(c => {
+      if (c.category) {
+        set.add(c.category);
+      }
+    });
+    return set;
+  }, [allCombos]);
+
   // Filter combos by selected category tab
   const filteredCombos = useMemo(() => {
     if (activeCategory === 'all') return allCombos;
@@ -392,7 +403,9 @@ export default function CombosScreen() {
           {[
             ['favorite', '⭐ Избранное', '#FFD700'] as [string, string, string],
             ['custom', '🛠 Custom', '#10b981'] as [string, string, string],
-            ...GAME_CATS[game].map(([k, l]) => [k, l, CATEGORY_COLORS[k] || '#e63b2e'] as [string, string, string])
+            ...GAME_CATS[game]
+              .filter(([k]) => k === 'all' || presentCategories.has(k))
+              .map(([k, l]) => [k, l, CATEGORY_COLORS[k] || '#e63b2e'] as [string, string, string])
           ].map(([key, label, col]) => {
             const isActive = activeCategory === key;
             return (
