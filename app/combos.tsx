@@ -429,7 +429,7 @@ export default function CombosScreen() {
         </View>
       )}
     </View>
-  ), [game, char, controlType, activeCategory]);
+  ), [game, char, controlType, activeCategory, presentCategories]);
 
   const renderItem = useCallback(({ item }: { item: any }) => {
     if (!isTransitionFinished || !isCategoryReady) {

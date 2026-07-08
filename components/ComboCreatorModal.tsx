@@ -39,6 +39,7 @@ import {
   ArcadeButton,
   ArcadeArrow,
   DirArrow,
+  ArcadeSep,
 } from './icons/ControllerIcons';
 
 interface ComboCreatorModalProps {
@@ -354,7 +355,11 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
                 style={({ pressed }) => [styles.modBtn, styles.modBtnComma, pressed && styles.keyBtnPressed]}
                 onPress={() => addToken(',')}
               >
-                <Text style={styles.modBtnText}>,</Text>
+                {controlType === 'Arcade' ? (
+                  <ArcadeSep />
+                ) : (
+                  <Text style={styles.modBtnText}>,</Text>
+                )}
                 <Text style={styles.modBtnHint}>далее</Text>
               </Pressable>
               <Pressable
