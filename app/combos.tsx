@@ -195,6 +195,8 @@ export default function CombosScreen() {
 
   // Function to load and transform combos based on active controller type
   const mapCombosByControl = useCallback((raw: any[], control: string) => {
+    const rawWithOriginal = raw.map((c: any) => ({ ...c, rawInput: c.rawInput || c.input }));
+
     if (control === 'Xbox') {
       const map: Record<string, string> = {
         "□": "X", "△": "Y", "○": "B", "✕": "A",
@@ -202,7 +204,7 @@ export default function CombosScreen() {
         "LP": "X", "RP": "Y", "LK": "B", "RK": "A",
         "LP+RP": "LB", "LK+RK": "LT", "RP+LK": "RB", "LP+RP+LK+RK": "RT"
       };
-      return raw.map((c: any) => ({
+      return rawWithOriginal.map((c: any) => ({
         ...c,
         input: c.input.split(/(\s+|,)/).map((t: string) => map[t] || t).join("")
       }));
@@ -214,7 +216,7 @@ export default function CombosScreen() {
         "LP": "□", "RP": "△", "LK": "○", "RK": "✕",
         "LP+RP": "L1", "LK+RK": "L2", "RP+LK": "R1", "LP+RP+LK+RK": "R2"
       };
-      return raw.map((c: any) => ({
+      return rawWithOriginal.map((c: any) => ({
         ...c,
         input: c.input.split(/(\s+|,)/).map((t: string) => map[t] || t).join("")
       }));
@@ -226,13 +228,13 @@ export default function CombosScreen() {
         "←": "4", "→": "6",
         "↙": "1", "↓": "2", "↘": "3"
       };
-      return raw.map((c: any) => ({
+      return rawWithOriginal.map((c: any) => ({
         ...c,
         inputNumpad: c.input.split("").map((ch: string) => dirMap[ch] || ch).join("")
       }));
     }
 
-    return raw;
+    return rawWithOriginal;
   }, []);
 
   useEffect(() => {
@@ -304,36 +306,31 @@ export default function CombosScreen() {
   );
 
   const ArcadeLegend = () => (
-    <View>
-      <View style={[styles.legendIconsContainer, { marginBottom: 6 }]}>
-        {[
-          ["□", "LP"], ["△", "RP"], ["○", "LK"], ["✕", "RK"],
-          ["L1", "1+2"], ["L2", "3+4"], ["R1", "2+3"], ["R2", "ALL"]
-        ].map(([sym, lbl]) => (
-          <View key={sym} style={styles.arcadeLegendItem}>
-            <ArcadeButton label={sym} size={28} />
-            <Text style={styles.arcadeLegendLabel}>{lbl}</Text>
-          </View>
-        ))}
-      </View>
-      <View style={styles.legendDirectionsRow}>
-        {["↑", "↓", "←", "→", "↗", "↘", "↙", "↖"].map(d => (
-          <ArcadeArrow key={d} dir={d} size={22} />
-        ))}
-      </View>
+    <View style={styles.legendIconsContainer}>
+      {[
+        ["□", "LP"], ["△", "RP"], ["○", "LK"], ["✕", "RK"],
+        ["L1", "1+2"], ["L2", "3+4"], ["R1", "2+3"], ["R2", "ALL"]
+      ].map(([sym, lbl]) => (
+        <View key={sym} style={styles.arcadeLegendItem}>
+          <ArcadeButton label={sym} size={28} />
+          <Text style={styles.arcadeLegendLabel}>{lbl}</Text>
+        </View>
+      ))}
     </View>
   );
 
   // Convert a single combo's input from PS notation to current controlType
   const convertComboInput = useCallback((combo: any, control: string) => {
+    const rawWithOriginal = { ...combo, rawInput: combo.rawInput || combo.input };
+
     if (control === 'Xbox') {
       const map: Record<string, string> = {
         "□": "X", "△": "Y", "○": "B", "✕": "A",
         "L1": "LB", "L2": "LT", "R1": "RB", "R2": "RT",
       };
       return {
-        ...combo,
-        input: combo.input.split(/(\s+|,)/).map((t: string) => map[t] || t).join("")
+        ...rawWithOriginal,
+        input: rawWithOriginal.input.split(/(\s+|,)/).map((t: string) => map[t] || t).join("")
       };
     }
     if (control === 'Arcade') {
@@ -343,11 +340,11 @@ export default function CombosScreen() {
         "↙": "1", "↓": "2", "↘": "3"
       };
       return {
-        ...combo,
-        inputNumpad: combo.input.split("").map((ch: string) => dirMap[ch] || ch).join("")
+        ...rawWithOriginal,
+        inputNumpad: rawWithOriginal.input.split("").map((ch: string) => dirMap[ch] || ch).join("")
       };
     }
-    return combo;
+    return rawWithOriginal;
   }, []);
 
   // Merge custom combos with DB combos (applying controlType conversion)
@@ -371,7 +368,7 @@ export default function CombosScreen() {
   const filteredCombos = useMemo(() => {
     if (activeCategory === 'all') return allCombos;
     if (activeCategory === 'favorite')
-      return allCombos.filter(c => favoriteIds.has(makeComboKey(game, char, c.name, c.input)));
+      return allCombos.filter(c => favoriteIds.has(makeComboKey(game, char, c.name, c.input, c.rawInput)));
     return allCombos.filter(c => c.category === activeCategory);
   }, [activeCategory, allCombos, favoriteIds, game, char]);
 
@@ -435,7 +432,7 @@ export default function CombosScreen() {
     if (!isTransitionFinished || !isCategoryReady) {
       return <ComboSkeleton />;
     }
-    const key = makeComboKey(game, char, item.name, item.input);
+    const key = makeComboKey(game, char, item.name, item.input, item.rawInput);
     return <ComboCard combo={item} controlType={controlType} comboKey={key} />;
   }, [isTransitionFinished, isCategoryReady, game, char, controlType]);
 
@@ -474,7 +471,7 @@ export default function CombosScreen() {
   const handleSaveCustomCombo = useCallback((name: string, input: string, description: string) => {
     const combo = addCustomCombo(game, char, name, input, description);
     // Auto-add to favorites
-    const key = makeComboKey(game, char, combo.name, combo.input);
+    const key = makeComboKey(game, char, combo.name, combo.input, combo.input);
     toggleFavorite(key);
     setIsCreatorVisible(false);
     // Switch to Custom category to show the newly created combo
@@ -516,6 +513,7 @@ export default function CombosScreen() {
         onClose={() => setIsCreatorVisible(false)}
         onSave={handleSaveCustomCombo}
         controlType={controlType}
+        game={game}
       />
     </View>
   );

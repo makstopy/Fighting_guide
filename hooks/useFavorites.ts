@@ -13,9 +13,11 @@ export function makeComboKey(
   game: string,
   char: string,
   comboName: string,
-  comboInput: string
+  comboInput: string,
+  rawInput?: string
 ): string {
-  return game + '::' + char + '::' + comboName + '::' + comboInput;
+  const finalInput = rawInput || comboInput;
+  return game + '::' + char + '::' + comboName + '::' + finalInput;
 }
 
 interface UseFavoritesReturn {

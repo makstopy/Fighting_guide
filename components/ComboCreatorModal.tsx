@@ -25,6 +25,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { ControlType } from './ControlContext';
 import ComboInput from './ComboInput';
+import ButtonToken from './ButtonToken';
 import {
   PSSquare,
   PSTriangle,
@@ -47,6 +48,7 @@ interface ComboCreatorModalProps {
   onClose: () => void;
   onSave: (name: string, input: string, description: string) => void;
   controlType: ControlType;
+  game?: string;
 }
 
 // Button definitions per controller layout
@@ -57,7 +59,7 @@ interface ButtonDef {
   render?: React.ReactNode;
 }
 
-function getActionButtons(controlType: ControlType): ButtonDef[] {
+function getConsoleButtons(controlType: ControlType): ButtonDef[] {
   if (controlType === 'Xbox') {
     return [
       { label: 'X', token: '□' },
@@ -93,6 +95,23 @@ function getActionButtons(controlType: ControlType): ButtonDef[] {
     { label: 'R1', token: 'R1' },
     { label: 'R2', token: 'R2' },
   ];
+}
+
+function getGameButtons(game?: string): ButtonDef[] {
+  if (game === 'Street Fighter 6') {
+    return [
+      { label: '[[LP]]', token: '[[LP]]' },
+      { label: '[[MP]]', token: '[[MP]]' },
+      { label: '[[HP]]', token: '[[HP]]' },
+      { label: '[[P]]', token: '[[P]]' },
+      { label: '[[LK]]', token: '[[LK]]' },
+      { label: '[[MK]]', token: '[[MK]]' },
+      { label: '[[HK]]', token: '[[HK]]' },
+      { label: '[[K]]', token: '[[K]]' },
+      { label: '[[N]]', token: '[[N]]' },
+    ];
+  }
+  return [];
 }
 
 const DIRECTION_BUTTONS: { label: string; token: string }[] = [
@@ -146,7 +165,7 @@ function renderDirectionIcon(controlType: ControlType, dir: string, size: number
   return <DirArrow dir={dir} size={size} />;
 }
 
-export default function ComboCreatorModal({ visible, onClose, onSave, controlType }: ComboCreatorModalProps) {
+export default function ComboCreatorModal({ visible, onClose, onSave, controlType, game }: ComboCreatorModalProps) {
   const [name, setName] = useState('');
   const [tokens, setTokens] = useState<string[]>([]);
   const [description, setDescription] = useState('');
@@ -206,7 +225,8 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
     onClose();
   }, [onClose]);
 
-  const actionButtons = useMemo(() => getActionButtons(controlType), [controlType]);
+  const consoleButtons = useMemo(() => getConsoleButtons(controlType), [controlType]);
+  const gameButtons = useMemo(() => getGameButtons(game), [game]);
 
   const canSave = name.trim().length > 0 && tokens.length > 0;
 
@@ -309,7 +329,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
               {controlType === 'PS' ? 'PLAYSTATION' : controlType === 'Xbox' ? 'XBOX' : '🕹️ ARCADE'} КНОПКИ
             </Text>
             <View style={styles.actionButtonsGrid}>
-              {actionButtons.map((btn) => (
+              {consoleButtons.map((btn) => (
                 <Pressable
                   key={btn.label}
                   style={({ pressed }) => [
@@ -323,6 +343,28 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
                 </Pressable>
               ))}
             </View>
+
+            {/* Game buttons keyboard (colored strikes) */}
+            {gameButtons.length > 0 && (
+              <>
+                <Text style={styles.fieldLabel}>ИГРОВЫЕ КНОПКИ (УДАРЫ)</Text>
+                <View style={styles.actionButtonsGrid}>
+                  {gameButtons.map((btn) => (
+                    <Pressable
+                      key={btn.label}
+                      style={({ pressed }) => [
+                        styles.keyBtn,
+                        styles.actionKeyBtn,
+                        pressed && styles.keyBtnPressed,
+                      ]}
+                      onPress={() => addToken(btn.token)}
+                    >
+                      <ButtonToken token={btn.token} controlType="Arcade" />
+                    </Pressable>
+                  ))}
+                </View>
+              </>
+            )}
 
             {/* Direction pad */}
             <Text style={styles.fieldLabel}>НАПРАВЛЕНИЯ</Text>
