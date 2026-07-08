@@ -375,10 +375,10 @@ export default function CombosScreen() {
   // Empty state for Favorite tab
   const EmptyFavorites = () => (
     <View style={styles.emptyFavContainer}>
-      <Text style={styles.emptyFavStar}>☆</Text>
+      <Text style={styles.emptyFavStar}>♥</Text>
       <Text style={styles.emptyFavTitle}>Нет избранных комбо</Text>
       <Text style={styles.emptyFavHint}>
-        Нажми ★ на карточке комбо,{`\n`}чтобы добавить его в избранное
+        Нажми ♥ на карточке комбо,{`\n`}чтобы добавить его в избранное
       </Text>
     </View>
   );
@@ -398,7 +398,7 @@ export default function CombosScreen() {
         <View style={styles.categoriesWrap}>
           {/* Favorite tab — always first, Custom tab — after favorites */}
           {[
-            ['favorite', '⭐ Избранное', '#FFD700'] as [string, string, string],
+            ['favorite', '❤️ Избранное', '#ef4444'] as [string, string, string],
             ['custom', '🛠 Custom', '#10b981'] as [string, string, string],
             ...GAME_CATS[game]
               .filter(([k]) => k === 'all' || presentCategories.has(k))
@@ -618,9 +618,9 @@ const styles = StyleSheet.create({
   },
   emptyFavStar: {
     fontSize: 52,
-    color: '#FFD700',
+    color: '#ef4444',
     marginBottom: 12,
-    opacity: 0.6,
+    opacity: 0.25,
   },
   emptyFavTitle: {
     fontFamily: 'Rajdhani-Bold',

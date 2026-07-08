@@ -159,7 +159,7 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
         activeOpacity={0.7}
       >
         <Animated.Text style={[styles.favIcon, fav && styles.favIconActive, animStyle]}>
-          {fav ? '★' : '☆'}
+          ♥
         </Animated.Text>
       </TouchableOpacity>
 
@@ -272,9 +272,9 @@ const styles = StyleSheet.create({
   },
   favIcon: {
     fontSize: 26,
-    color: '#444',
+    color: 'rgba(255, 255, 255, 0.15)',
   },
   favIconActive: {
-    color: '#FFD700',
+    color: '#ef4444',
   },
 });
