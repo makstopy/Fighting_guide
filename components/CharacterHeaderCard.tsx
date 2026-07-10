@@ -81,7 +81,7 @@ export default function CharacterHeaderCard({ game, char }: CharacterHeaderCardP
           />
         ) : (
           <Image
-            source={{ uri: imgUrl }}
+            source={typeof imgUrl === 'string' ? { uri: imgUrl } : imgUrl}
             style={styles.charImage}
             resizeMode="contain"
           />

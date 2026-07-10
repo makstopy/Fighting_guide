@@ -22,7 +22,7 @@ export default function CharPortrait({ char, game, size = 80 }: { char: string; 
     return (
       <View style={[styles.container, { width: size, height: size }]}>
         <Image
-          source={{ uri: imgUrl }}
+          source={typeof imgUrl === 'string' ? { uri: imgUrl } : imgUrl}
           style={styles.portrait}
           resizeMode="cover"
         />

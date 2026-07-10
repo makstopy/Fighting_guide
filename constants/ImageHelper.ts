@@ -1,8 +1,13 @@
 import { Platform } from 'react-native';
 import Constants from 'expo-constants';
+import { ImageMap } from './ImageMap';
 
-export function resolveImageUri(path: string | null): string | undefined {
+export function resolveImageUri(path: string | null): any {
   if (!path) return undefined;
+
+  if (ImageMap[path]) {
+    return ImageMap[path];
+  }
 
   // On Web, relative paths like /avatars/... resolve correctly automatically
   if (Platform.OS === 'web') {

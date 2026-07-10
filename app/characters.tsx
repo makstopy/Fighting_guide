@@ -159,7 +159,7 @@ export default function CharactersScreen() {
             />
           ) : (
             <Image
-              source={{ uri: imgUrl }}
+              source={typeof imgUrl === 'string' ? { uri: imgUrl } : imgUrl}
               style={styles.cardImage}
               resizeMode={game === 'Street Fighter 6' ? 'contain' : 'cover'}
             />
