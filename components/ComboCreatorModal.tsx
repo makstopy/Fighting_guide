@@ -293,24 +293,24 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
               <Pressable onPress={handleClose} hitSlop={12}>
                 <Text style={styles.closeBtn}>✕</Text>
               </Pressable>
-              <Text style={styles.modalTitle}>НОВОЕ КОМБО</Text>
+              <Text style={styles.modalTitle}>NEW COMBO</Text>
               <View style={{ width: 28 }} />
             </View>
 
             {/* Name input */}
-            <Text style={styles.fieldLabel}>НАЗВАНИЕ</Text>
+            <Text style={styles.fieldLabel}>NAME</Text>
             <TextInput
               style={styles.textInput}
               value={name}
               onChangeText={setName}
-              placeholder="Моё комбо..."
+              placeholder="My combo..."
               placeholderTextColor="#444"
               maxLength={60}
               autoCorrect={false}
             />
 
             {/* Live preview */}
-            <Text style={styles.fieldLabel}>ПРЕВЬЮ</Text>
+            <Text style={styles.fieldLabel}>PREVIEW</Text>
             <View style={styles.previewContainer}>
               {tokens.length > 0 ? (
                 <>
@@ -319,14 +319,14 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
                 </>
               ) : (
                 <Text style={styles.previewPlaceholder}>
-                  Нажимай кнопки ниже для ввода комбо
+                  Press buttons below to enter combo
                 </Text>
               )}
             </View>
 
             {/* Action buttons keyboard */}
             <Text style={styles.fieldLabel}>
-              {controlType === 'PS' ? 'PLAYSTATION' : controlType === 'Xbox' ? 'XBOX' : '🕹️ ARCADE'} КНОПКИ
+              {controlType === 'PS' ? 'PLAYSTATION' : controlType === 'Xbox' ? 'XBOX' : '🕹️ ARCADE'} BUTTONS
             </Text>
             <View style={styles.actionButtonsGrid}>
               {consoleButtons.map((btn) => (
@@ -347,7 +347,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
             {/* Game buttons keyboard (colored strikes) */}
             {gameButtons.length > 0 && (
               <>
-                <Text style={styles.fieldLabel}>ИГРОВЫЕ КНОПКИ (УДАРЫ)</Text>
+                <Text style={styles.fieldLabel}>ИГРОВЫЕ BUTTONS (УДАРЫ)</Text>
                 <View style={styles.actionButtonsGrid}>
                   {gameButtons.map((btn) => (
                     <Pressable
@@ -367,7 +367,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
             )}
 
             {/* Direction pad */}
-            <Text style={styles.fieldLabel}>НАПРАВЛЕНИЯ</Text>
+            <Text style={styles.fieldLabel}>DIRECTIONS</Text>
             <View style={styles.dpadContainer}>
               <View style={styles.dpadGrid}>
                 {DIRECTION_BUTTONS.map((btn, i) => (
@@ -391,7 +391,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
             </View>
 
             {/* Modifiers & controls */}
-            <Text style={styles.fieldLabel}>МОДИФИКАТОРЫ</Text>
+            <Text style={styles.fieldLabel}>MODIFIERS</Text>
             <View style={styles.modifiersRow}>
               <Pressable
                 style={({ pressed }) => [styles.modBtn, styles.modBtnComma, pressed && styles.keyBtnPressed]}
@@ -402,38 +402,38 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
                 ) : (
                   <Text style={styles.modBtnText}>,</Text>
                 )}
-                <Text style={styles.modBtnHint}>далее</Text>
+                <Text style={styles.modBtnHint}>next</Text>
               </Pressable>
               <Pressable
                 style={({ pressed }) => [styles.modBtn, styles.modBtnPlus, pressed && styles.keyBtnPressed]}
                 onPress={() => addToken('+')}
               >
                 <Text style={styles.modBtnText}>+</Text>
-                <Text style={styles.modBtnHint}>вместе</Text>
+                <Text style={styles.modBtnHint}>together</Text>
               </Pressable>
               <Pressable
                 style={({ pressed }) => [styles.modBtn, styles.modBtnBackspace, pressed && styles.keyBtnPressed]}
                 onPress={removeLastToken}
               >
                 <Text style={styles.modBtnText}>⌫</Text>
-                <Text style={styles.modBtnHint}>назад</Text>
+                <Text style={styles.modBtnHint}>back</Text>
               </Pressable>
               <Pressable
                 style={({ pressed }) => [styles.modBtn, styles.modBtnClear, pressed && styles.keyBtnPressed]}
                 onPress={clearTokens}
               >
                 <Text style={styles.modBtnText}>✕</Text>
-                <Text style={styles.modBtnHint}>очистить</Text>
+                <Text style={styles.modBtnHint}>clear</Text>
               </Pressable>
             </View>
 
             {/* Description */}
-            <Text style={styles.fieldLabel}>ЗАМЕТКА (ОПЦИОНАЛЬНО)</Text>
+            <Text style={styles.fieldLabel}>NOTE (OPTIONAL)</Text>
             <TextInput
               style={[styles.textInput, styles.descInput]}
               value={description}
               onChangeText={setDescription}
-              placeholder="Описание, заметки..."
+              placeholder="Description, notes..."
               placeholderTextColor="#444"
               maxLength={200}
               multiline
@@ -458,7 +458,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
                 disabled={!canSave}
               >
                 <Text style={[styles.saveBtnText, !canSave && styles.saveBtnTextDisabled]}>
-                  💾  СОХРАНИТЬ КОМБО
+                  💾  SAVE COMBO
                 </Text>
               </Pressable>
             </Animated.View>

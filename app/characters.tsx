@@ -218,7 +218,7 @@ export default function CharactersScreen() {
         numColumns={2}
         columnWrapperStyle={styles.row}
         contentContainerStyle={styles.scrollContent}
-        ListHeaderComponent={<Text style={styles.sectionTitle}>Выбери персонажа</Text>}
+        ListHeaderComponent={<Text style={styles.sectionTitle}>Choose a character</Text>}
         initialNumToRender={6}
         maxToRenderPerBatch={6}
         windowSize={3}

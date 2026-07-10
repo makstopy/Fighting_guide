@@ -69,7 +69,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Header />
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <Text style={styles.sectionTitle}>Выбери файтинг</Text>
+        <Text style={styles.sectionTitle}>Choose a fighting game</Text>
         {games.map(([game, info]: [string, any]) => {
           const logoSource = GAME_LOGOS[game];
           const colors = info.coverGrad && info.coverGrad.length >= 2 

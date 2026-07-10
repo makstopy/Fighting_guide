@@ -44,7 +44,7 @@ const GAME_CATS: Record<string, [string, string][]> = {
     ["fatality", "Fatality"]
   ],
   "Street Fighter 6": [
-    ["all", "Все"],
+    ["all", "All"],
     ["Special Moves", "Special Moves"],
     ["Super Arts", "Super Arts"],
     ["Unique Attacks", "Unique Attacks"],
@@ -52,7 +52,7 @@ const GAME_CATS: Record<string, [string, string][]> = {
     ["Common Moves", "Common Moves"]
   ],
   "Tekken 8": [
-    ["all", "Все"],
+    ["all", "All"],
     ["Main Techniques", "Main Techniques"],
     ["Heat Moves", "Heat Moves"],
     ["Rage Moves", "Rage Moves"],
@@ -71,20 +71,20 @@ const GAME_CATS: Record<string, [string, string][]> = {
     ["Unknown", "Other"]
   ],
   "Guilty Gear Strive": [
-    ["all", "Все"],
-    ["combo", "Комбо"],
+    ["all", "All"],
+    ["combo", "Combo"],
     ["overdrive", "Overdrive"]
   ],
   "Dragon Ball FighterZ": [
-    ["all", "Все"],
-    ["combo", "Комбо"],
-    ["super", "Суперы"]
+    ["all", "All"],
+    ["combo", "Combo"],
+    ["super", "Supers"]
   ],
   "Fatal Fury: City of the Wolves": [
-    ["all", "Все"],
-    ["combo", "Комбо"],
+    ["all", "All"],
+    ["combo", "Combo"],
     ["rev_art", "REV Arts"],
-    ["super", "Супер"]
+    ["super", "Super"]
   ]
 };
 
@@ -376,9 +376,9 @@ export default function CombosScreen() {
   const EmptyFavorites = () => (
     <View style={styles.emptyFavContainer}>
       <Text style={styles.emptyFavStar}>♥</Text>
-      <Text style={styles.emptyFavTitle}>Нет избранных комбо</Text>
+      <Text style={styles.emptyFavTitle}>No favorite combos</Text>
       <Text style={styles.emptyFavHint}>
-        Нажми ♥ на карточке комбо,{`\n`}чтобы добавить его в избранное
+        Press ♥ on a combo card,{`\n`}to add it to favorites
       </Text>
     </View>
   );
@@ -398,7 +398,7 @@ export default function CombosScreen() {
         <View style={styles.categoriesWrap}>
           {/* Favorite tab — always first, Custom tab — after favorites */}
           {[
-            ['favorite', '❤️ Избранное', '#ef4444'] as [string, string, string],
+            ['favorite', '❤️ Favorites', '#ef4444'] as [string, string, string],
             ['custom', '🛠 Custom', '#10b981'] as [string, string, string],
             ...GAME_CATS[game]
               .filter(([k]) => k === 'all' || presentCategories.has(k))
@@ -447,7 +447,7 @@ export default function CombosScreen() {
       : (
         <View style={styles.emptyContainer}>
           <Text style={styles.emptyIcon}>📋</Text>
-          <Text style={styles.emptyText}>Нет записей в этой категории</Text>
+          <Text style={styles.emptyText}>No entries in this category</Text>
         </View>
       )
     : null;
