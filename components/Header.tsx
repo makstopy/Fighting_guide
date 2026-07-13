@@ -37,9 +37,10 @@ export default function Header({ showBack = false, gameTitle, charName }: Header
           </TouchableOpacity>
         )}
         <View style={styles.logoContainer}>
-          <Text style={styles.logoText}>
-            FIGHTING<Text style={styles.logoHighlight}>GUIDE</Text>
-          </Text>
+          <View style={{ flexDirection: 'row', alignItems: 'baseline' }}>
+            <Text style={[styles.logoText, { includeFontPadding: false }]}>FIGHTING </Text>
+            <Text style={[styles.logoText, styles.logoHighlight, { includeFontPadding: false, top: 1 }]}>GUIDE</Text>
+          </View>
           {(gameTitle || charName) && (
             <Text style={styles.subtitle} numberOfLines={1}>
               {gameTitle}
