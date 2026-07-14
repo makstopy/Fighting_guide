@@ -8,7 +8,7 @@ import SF6_PORTRAITS from '../data/sf6_portraits.json';
 import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
 import COMBOS_DB from '../data/combos/index';
 
-const DB_VERSION = 10;
+export const DB_VERSION = 14;
 
 export interface SQLiteCombo {
   id: string;
@@ -48,30 +48,45 @@ export const isWeb = Platform.OS === 'web';
  * Initializes the SQLite Database schema and seeds static content.
  * Also performs migration of Favorites and Custom Combos from AsyncStorage.
  */
-export async function initializeDatabase(db: SQLiteDatabase) {
-  if (isWeb) return;
+/**
+ * Initializes the SQLite Database schema and seeds static content.
+ * Returns true if initialization/migration was performed (first launch or upgrade),
+ * false if the database was already up to date.
+ */
+export async function initializeDatabase(db: SQLiteDatabase): Promise<boolean> {
+  if (isWeb) return false;
 
   try {
-    // 1. Enable Foreign Key Constraints
+    // Always-safe pragma: enforce FK constraints on every connection
     await db.execAsync('PRAGMA foreign_keys = ON;');
 
-    // 2. Check Database Version
+    // Check Database Version
     const versionResult = await db.getFirstAsync<{ user_version: number }>('PRAGMA user_version;');
     const currentVersion = versionResult?.user_version ?? 0;
 
     console.log(`[Database] Current SQLite user_version = ${currentVersion}, target version = ${DB_VERSION}`);
 
     if (currentVersion < DB_VERSION) {
+      // Set performance pragmas only during initialization (safe on fresh/new DB)
+      await db.execAsync('PRAGMA journal_mode = WAL;');
+      await db.execAsync('PRAGMA cache_size = -8000;');
+      await db.execAsync('PRAGMA synchronous = NORMAL;');
+
       await setupSchema(db);
       await seedData(db);
       await migrateFromAsyncStorage(db);
       await db.execAsync(`PRAGMA user_version = ${DB_VERSION};`);
       console.log(`[Database] Database initialized and updated to version ${DB_VERSION}`);
+      return true;
     }
+
+    return false;
   } catch (error) {
     console.error('[Database] Error initializing database:', error);
+    return false;
   }
 }
+
 
 /**
  * Creates DB tables if they do not exist.
@@ -119,6 +134,10 @@ async function setupSchema(db: SQLiteDatabase) {
       created_at INTEGER,
       FOREIGN KEY (combo_id) REFERENCES combos (id) ON DELETE CASCADE
     );
+
+    CREATE INDEX IF NOT EXISTS idx_combos_game_char ON combos(game_id, character_id);
+    CREATE INDEX IF NOT EXISTS idx_combos_is_custom ON combos(is_custom);
+    CREATE INDEX IF NOT EXISTS idx_characters_game ON characters(game_id);
   `);
 }
 
@@ -131,47 +150,54 @@ async function seedData(db: SQLiteDatabase) {
   // Wrap all seeds in a transaction for speed and safety
   await db.execAsync('BEGIN TRANSACTION;');
   try {
-    // 1. Seed Games
-    for (const [gameName, info] of Object.entries(FIGHTERS_DB)) {
-      const g = info as any;
-      await db.runAsync(
-        `INSERT OR REPLACE INTO games (id, platform, cover_grad, cover_label, cover_emoji) 
-         VALUES (?, ?, ?, ?, ?);`,
-        [
+    // 1. Seed Games — prepare statement once, execute many times
+    const gameStmt = await db.prepareAsync(
+      `INSERT OR REPLACE INTO games (id, platform, cover_grad, cover_label, cover_emoji) VALUES (?, ?, ?, ?, ?);`
+    );
+    try {
+      for (const [gameName, info] of Object.entries(FIGHTERS_DB)) {
+        const g = info as any;
+        await gameStmt.executeAsync([
           gameName,
           g.platform || '',
           JSON.stringify(g.coverGrad || []),
           g.coverLabel || '',
           g.coverEmoji || ''
-        ]
-      );
+        ]);
+      }
+    } finally {
+      await gameStmt.finalizeAsync();
+    }
 
-      // 2. Seed Characters for this game
-      const charactersList = g.characters || [];
-      for (const charName of charactersList) {
-        const charId = `${gameName}::${charName}`;
-        
-        // Resolve portrait image
-        let portrait: string | null = null;
-        if (gameName === 'Mortal Kombat 1') {
-          portrait = (MK1_PORTRAITS as any)[charName] || null;
-        } else if (gameName === 'Street Fighter 6') {
-          portrait = (SF6_PORTRAITS as any)[charName] || null;
-        } else if (gameName === 'Tekken 8') {
-          portrait = (TEKKEN8_PORTRAITS as any)[charName] || null;
-        }
+    // 2. Seed Characters — prepare statement once
+    const charStmt = await db.prepareAsync(
+      `INSERT OR REPLACE INTO characters (id, game_id, name, portrait_uri, bg_grad, icon, label) VALUES (?, ?, ?, ?, ?, ?, ?);`
+    );
+    try {
+      for (const [gameName, info] of Object.entries(FIGHTERS_DB)) {
+        const g = info as any;
+        const charactersList = g.characters || [];
+        for (const charName of charactersList) {
+          const charId = `${gameName}::${charName}`;
 
-        // Get design parameters from char_data.json
-        const charDesign = (CHAR_DATA as any)[charName] || {
-          bg: ['#1a1a2e', '#333333'],
-          icon: '🥷',
-          label: charName.slice(0, 2).toUpperCase()
-        };
+          // Resolve portrait image
+          let portrait: string | null = null;
+          if (gameName === 'Mortal Kombat 1') {
+            portrait = (MK1_PORTRAITS as any)[charName] || null;
+          } else if (gameName === 'Street Fighter 6') {
+            portrait = (SF6_PORTRAITS as any)[charName] || null;
+          } else if (gameName === 'Tekken 8') {
+            portrait = (TEKKEN8_PORTRAITS as any)[charName] || null;
+          }
 
-        await db.runAsync(
-          `INSERT OR REPLACE INTO characters (id, game_id, name, portrait_uri, bg_grad, icon, label)
-           VALUES (?, ?, ?, ?, ?, ?, ?);`,
-          [
+          // Get design parameters from char_data.json
+          const charDesign = (CHAR_DATA as any)[charName] || {
+            bg: ['#1a1a2e', '#333333'],
+            icon: '🥷',
+            label: charName.slice(0, 2).toUpperCase()
+          };
+
+          await charStmt.executeAsync([
             charId,
             gameName,
             charName,
@@ -179,31 +205,30 @@ async function seedData(db: SQLiteDatabase) {
             JSON.stringify(charDesign.bg),
             charDesign.icon,
             charDesign.label
-          ]
-        );
+          ]);
+        }
       }
+    } finally {
+      await charStmt.finalizeAsync();
     }
 
     // 3. Clear existing static combos to prevent duplicates/stale data on upgrade
     await db.execAsync('DELETE FROM combos WHERE is_custom = 0;');
 
-    // 4. Seed Combos from COMBOS_DB
-    for (const [gameName, gameCombos] of Object.entries(COMBOS_DB)) {
-      for (const [charName, combosList] of Object.entries(gameCombos as any)) {
-        if (!Array.isArray(combosList)) continue;
-
-        const charId = `${gameName}::${charName}`;
-
-        for (let i = 0; i < combosList.length; i++) {
-          const c = combosList[i] as any;
-          
-          // Generate a deterministic unique ID for static combo using its index
-          const comboId = `static::${gameName}::${charName}::${i}`;
-
-          await db.runAsync(
-            `INSERT INTO combos (id, character_id, game_id, name, input, damage, difficulty, description, category, is_custom)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 0);`,
-            [
+    // 4. Seed Combos — prepare statement once for all combos
+    const comboStmt = await db.prepareAsync(
+      `INSERT INTO combos (id, character_id, game_id, name, input, damage, difficulty, description, category, is_custom)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 0);`
+    );
+    try {
+      for (const [gameName, gameCombos] of Object.entries(COMBOS_DB)) {
+        for (const [charName, combosList] of Object.entries(gameCombos as any)) {
+          if (!Array.isArray(combosList)) continue;
+          const charId = `${gameName}::${charName}`;
+          for (let i = 0; i < combosList.length; i++) {
+            const c = combosList[i] as any;
+            const comboId = `static::${gameName}::${charName}::${i}`;
+            await comboStmt.executeAsync([
               comboId,
               charId,
               gameName,
@@ -213,10 +238,12 @@ async function seedData(db: SQLiteDatabase) {
               c.difficulty || '-',
               c.description || '',
               c.category || 'combo'
-            ]
-          );
+            ]);
+          }
         }
       }
+    } finally {
+      await comboStmt.finalizeAsync();
     }
 
     await db.execAsync('COMMIT;');
