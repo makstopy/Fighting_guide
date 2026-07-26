@@ -6,9 +6,10 @@ import CHAR_DATA from '../data/char_data.json';
 import MK1_PORTRAITS from '../data/mk1_portraits.json';
 import SF6_PORTRAITS from '../data/sf6_portraits.json';
 import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
+import FATAL_FURY_PORTRAITS from '../data/fatal_fury_portraits.json';
 import COMBOS_DB from '../data/combos/index';
 
-export const DB_VERSION = 22;
+export const DB_VERSION = 24;
 
 export interface SQLiteCombo {
   id: string;
@@ -201,6 +202,8 @@ async function seedData(db: SQLiteDatabase) {
             portrait = (SF6_PORTRAITS as any)[charName] || null;
           } else if (gameName === 'Tekken 8') {
             portrait = (TEKKEN8_PORTRAITS as any)[charName] || null;
+          } else if (gameName === 'Fatal Fury: City of the Wolves') {
+            portrait = (FATAL_FURY_PORTRAITS as any)[charName] || null;
           }
 
           // Get design parameters from char_data.json

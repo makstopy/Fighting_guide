@@ -4,6 +4,7 @@ import Svg, { Defs, LinearGradient, Stop, Rect, Line, Text as SvgText } from 're
 import MK1_PORTRAITS from '../data/mk1_portraits.json';
 import SF6_PORTRAITS from '../data/sf6_portraits.json';
 import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
+import FATAL_FURY_PORTRAITS from '../data/fatal_fury_portraits.json';
 import CHAR_DATA from '../data/char_data.json';
 
 import { resolveImageUri } from '../constants/ImageHelper';
@@ -11,10 +12,11 @@ import { resolveImageUri } from '../constants/ImageHelper';
 const mk1Portraits: Record<string, string> = MK1_PORTRAITS;
 const sf6Portraits: Record<string, string> = SF6_PORTRAITS;
 const tekken8Portraits: Record<string, string> = TEKKEN8_PORTRAITS;
+const fatalFuryPortraits: Record<string, string> = FATAL_FURY_PORTRAITS;
 const charData: Record<string, { bg: [string, string]; icon: string; label: string }> = CHAR_DATA as any;
 
 export default function CharPortrait({ char, game, size = 80 }: { char: string; game: string; size?: number }) {
-  const rawImgUrl = game === "Tekken 8" ? tekken8Portraits[char] : game === "Mortal Kombat 1" ? mk1Portraits[char] : game === "Street Fighter 6" ? sf6Portraits[char] : null;
+  const rawImgUrl = game === "Tekken 8" ? tekken8Portraits[char] : game === "Mortal Kombat 1" ? mk1Portraits[char] : game === "Street Fighter 6" ? sf6Portraits[char] : game === "Fatal Fury: City of the Wolves" ? fatalFuryPortraits[char] : null;
   const imgUrl = resolveImageUri(rawImgUrl);
   const d = charData[char] || { bg: ["#1a1a2e", "#333"], icon: "🥷", label: char.slice(0, 2).toUpperCase() };
 

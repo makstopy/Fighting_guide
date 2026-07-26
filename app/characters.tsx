@@ -9,6 +9,7 @@ import FIGHTERS_DB from '../data/fighters_db.json';
 import MK1_PORTRAITS from '../data/mk1_portraits.json';
 import SF6_PORTRAITS from '../data/sf6_portraits.json';
 import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
+import FATAL_FURY_PORTRAITS from '../data/fatal_fury_portraits.json';
 
 import { resolveImageUri } from '../constants/ImageHelper';
 
@@ -17,6 +18,7 @@ import { useSQLiteContext } from 'expo-sqlite';
 const mk1Portraits: Record<string, string> = MK1_PORTRAITS;
 const sf6Portraits: Record<string, string> = SF6_PORTRAITS;
 const tekken8Portraits: Record<string, string> = TEKKEN8_PORTRAITS;
+const fatalFuryPortraits: Record<string, string> = FATAL_FURY_PORTRAITS;
 const charData: Record<string, { bg: [string, string]; icon: string; label: string }> = CHAR_DATA as any;
 
 const { width } = Dimensions.get('window');
@@ -103,7 +105,7 @@ export default function CharactersScreen() {
   };
 
   const renderItem = ({ item: char }: { item: string }) => {
-    const rawImgUrl = game === "Tekken 8" ? tekken8Portraits[char] : game === "Mortal Kombat 1" ? mk1Portraits[char] : game === "Street Fighter 6" ? sf6Portraits[char] : null;
+    const rawImgUrl = game === "Tekken 8" ? tekken8Portraits[char] : game === "Mortal Kombat 1" ? mk1Portraits[char] : game === "Street Fighter 6" ? sf6Portraits[char] : game === "Fatal Fury: City of the Wolves" ? fatalFuryPortraits[char] : null;
     const imgUrl = resolveImageUri(rawImgUrl);
     const d = charData[char] || { bg: ["#1a1a2e", "#333"], icon: "🥷", label: char.slice(0, 2).toUpperCase() };
     const [c0, c1] = d.bg;
@@ -153,7 +155,7 @@ export default function CharactersScreen() {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                objectFit: game === 'Street Fighter 6' ? 'contain' : 'cover',
+                objectFit: game === 'Street Fighter 6' || game === 'Fatal Fury: City of the Wolves' ? 'contain' : 'cover',
                 objectPosition: 'top',
               } as React.CSSProperties}
             />
