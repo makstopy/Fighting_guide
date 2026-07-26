@@ -155,14 +155,20 @@ export default function CharactersScreen() {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                objectFit: game === 'Street Fighter 6' || game === 'Fatal Fury: City of the Wolves' ? 'contain' : 'cover',
-                objectPosition: 'top',
+                objectFit: game === 'Street Fighter 6' ? 'contain' : 'cover',
+                objectPosition: 'top center',
               } as React.CSSProperties}
             />
           ) : (
             <Image
               source={typeof imgUrl === 'string' ? { uri: imgUrl } : imgUrl}
-              style={styles.cardImage}
+              style={[
+                styles.cardImage,
+                {
+                  objectFit: game === 'Street Fighter 6' ? 'contain' : 'cover',
+                  objectPosition: 'top',
+                } as any,
+              ]}
               resizeMode={game === 'Street Fighter 6' ? 'contain' : 'cover'}
             />
           )}
