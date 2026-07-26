@@ -1,0 +1,152 @@
+{
+  "arcade": [
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 1",
+      "input": "[In air] [[FF:LP]] > [[FF:HP]]",
+      "damage": "30",
+      "description": "Only available from full jumps."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 2",
+      "input": "[[FF:LK]] > [[FF:HK]]",
+      "damage": "40",
+      "description": "Rev Blow ender only available in S.P.G."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Shippuu Gadankou",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Damage value factors in SPG bonus."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Hiei Ken",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "132 (66x2)",
+      "description": "Faster than average air Rev Blow with downwards movement, making it yet another way Andy can mess with anti-airs. Easy to combo into off of Andy's airborne specials, and it has very high corner carry compared to most. Damage value factors in SPG bonus."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Hishou Ken",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 60 / C: 60 / AC: 110 (30x3+20)",
+      "description": "A regular hadouken that disappears before going fullscreen. Has THE shortest recovery of any slow fireball in the game to compensate. EX version is a slower close range orb with 3 hits that's always plus, good in combos and for oki. All versions have a shockingly large hitbox and are very active, will often catch jumping opponents."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Kuu Hishou Ken",
+      "input": "[In air] ↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 60 / C: 60 / AC: 110 (30x2+50)",
+      "description": "All versions halt Andy's jump momentum, EX version sends him backwards after the attack. Meterless versions can only be done from a neutral or forward jump/hop but can be very plus. EX version can be done from a backjump or even backdash , usually safe or plus."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Zan'ei Ken BR",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 60 / C: 60 / AC: 60",
+      "description": "Has variable startup and duration depending on distance from the opponent or brake timing."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Zan'ei Ken : Kyoukyuu",
+      "input": "↓ ↘ → + [[FF:HP]] > → + [[FF:HP]]",
+      "damage": "C > 6C: 40 / AC > 6C: 60",
+      "description": "Hitconfirmable followup and combo ender/extender"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Zan'ei Ken : Sokuhou",
+      "input": "↓ ↘ → + [[FF:HP]] > → + [[FF:HK]]",
+      "damage": "C > 6D: 60 / AC > 6D: 80",
+      "description": "Frame trap tool to complement 236C/AC > C that always knocks down. Soft knockdown and cannot be combo'd from."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Shouryuu Dan BR",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 80 (50+10x3) / C: 100 (30+15x3+25) / AC: 120 (30+10x4+50)",
+      "description": "A version is a meterless reversal with subpar range and startup. B version is a core combo extender and an anti air if braked EX version is a damaging extender even without brake."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Kuuha Dan BR",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 80 (10+20x3+10) / D: 90 (20x4+10) / BD: 100 (20+10x3+20+30)",
+      "description": "All versions are mostly combo tools with decent corner carry. 236D and 236BD can be braked to make them safe on block or start a juggle."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Shin Gen'ei Shiranui",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: - / D: - / BD: -",
+      "description": "A mobility tool with followup attacks. Nicknamed \"Demon Flip\", a move with the same nickname belonging to Street Fighter's Akuma. B and D versions travel a set distance based on button used, it's not possible to cross up with 214B unless the opponent moves under you. 214BD always tracks the opponent, ensuring any followup will hit regardless of screen position."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Shira Ame",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:LK]]",
+      "damage": "B/D > B: 90 / BD > B: 100",
+      "description": "Fastest followup, can be plus on block depending on timing and tends to trade with or beat defensive air-to-airs. Very good if timed to be meaty, but it's easily reaction DP'd with no way to mix it up meterlessly. Has significant landing recovery, so it can't be made safe against most reversals."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Kuro Ame",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HP]]",
+      "damage": "B/D > C: 90 / BD > C: 100",
+      "description": "Similar to B but hits behind Andy, making it very niche on 214B. 214BD > C instead teleports behind the opponent, which is useful to make anti-airs whiff and for sideswitch routes."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Shibuki",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HK]]",
+      "damage": "B/D > D: 90 / BD > D: 100",
+      "description": "Hilariously active low slide. A very powerful meaty, and can easily be spaced in neutral to be safe or plus. In meaty setups, Andy can do an empty flip to bait reversals intended to beat slide. Can be mixed up with B, an overhead, but this is fuzzy blockable or DP'able."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Shin Kumo Garami",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:LP]]",
+      "damage": "B/D > A: 160 (40x2+80) / BD > A: 140 (40x2+60)",
+      "description": "Command grab. Metered version whiffs on crouchers, but can be mixed up with other options to open people up. Tends to beat high dodges and ill-timed DP brake anti-airs, but cannot hit airborne opponents. All versions are a hard knockdown, metered version can be cancelled into other EX moves on hit for a combo."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Zan'ei Shouha Ken",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "250 (60+20x4+110)",
+      "description": "Only the C version is invincible and can be braked. Neither version has exceptional range, but they're both easy to combo into. 236236A is generally Andy's best use of meter, it has good damage and corner carry. 236236C is maybe Andy's best reversal and still an okay combo ender. 236236C can be braked halfway through. Links into cl.D on counter hit or wild punish."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Zan'ei Shouha Ken",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "320 (20+40x2+10x5x+40+10x4+90)",
+      "description": "Only the C version is invincible and can be braked. Neither version has exceptional range, but they're both easy to combo into. 236236A is generally Andy's best use of meter, it has good damage and corner carry. 236236C is maybe Andy's best reversal and still an okay combo ender. 236236C can be braked halfway through. Links into cl.D on counter hit or wild punish."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Chou/Zetsu Reppa Dan",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "220 (40+20x5+80)",
+      "description": "Both version are invincible. Due to the slow startup, neither version is particularly good as a wakeup reversal, though they can definitely work. They both hit quite high and far, which actually gives them some utility in neutral as fireball punishes and they are preferred in a few pickups. 236236B has a situational use as a combo ender due to giving better frame advantage than 236236A and thus enabling much better mid screen okizeme in exchange for a little damage."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Chou/Zetsu Reppa Dan",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "290 (50+20x9+10+50)",
+      "description": "Both version are invincible. Due to the slow startup, neither version is particularly good as a wakeup reversal, though they can definitely work. They both hit quite high and far, which actually gives them some utility in neutral as fireball punishes and they are preferred in a few pickups. 236236B has a situational use as a combo ender due to giving better frame advantage than 236236A and thus enabling much better mid screen okizeme in exchange for a little damage."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Zetsu Tougai Narashi",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "451 (77+110+264)",
+      "description": "Resets the Rev meter to 0%, even during Overheat. Only available during S.P.G. Very weird compared to most Hidden Gears, usually won't hit on its first active frame on grounded opponents which can hurt it as a reversal."
+    }
+  ],
+  "smart": []
+}

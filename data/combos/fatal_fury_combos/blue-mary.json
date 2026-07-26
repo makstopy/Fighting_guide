@@ -1,0 +1,201 @@
+{
+  "arcade": [
+    {
+      "category": "Command Moves",
+      "name": "Heel Fall",
+      "input": "→ + [[FF:LK]]",
+      "damage": "50",
+      "description": "Your best option after this is 2B > 5B > command combo. Vertical Arrow is prone to whiffing at most ranges, and light slicer doesn't grant a hard knockdown."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 1",
+      "input": "[[FF:LK]] > [[FF:HK]]",
+      "damage": "Far B > D: 40 / Far B~D > D: 50",
+      "description": "The 2nd kick is largely similar to her far D but with a worse hitbox that will not hit crouching opponents even if close. It is +3 on block for some reason. However, if the initial far B hits, the 2nd kick will hit crouching opponents. It can also be slightly delayed, allowing extra time for hit-confirms or the ability to mess up an opponent's JD/HD timing. However, if the initial far B hits, the 2nd kick will hit crouching opponents. It can also be slightly delayed, allowing extra time for hit-confirms or the ability to mess up an opponent's JD/HD timing."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 2",
+      "input": "[[FF:HK]] > [[FF:HK]]",
+      "damage": "50",
+      "description": "Only comes out if far D hit or was blocked. While it helps to have your pokes do more damage, this Command Combo has a lot of problems. It’s always unsafe on block, you’re never in throw range on hit, and doing it means you lose out on far D’s excellent Counter Hit or Wild Punish conversions. It’s good for when far D Counter Hits an airborne or backdashing opponent, but that’s about it."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 3",
+      "input": "[In air] [[FF:LP]] > [[FF:LK]]",
+      "damage": "30",
+      "description": "Can only be done during a full jump. Hitting it on an airborne opponent while descending allows you to or Quick Step under the opponent to go to the other side. Slightly delaying the dash fakes this cross-under and keeps you same side."
+    },
+    {
+      "category": "REV Blows",
+      "name": "M. Spinning Kick",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "It really struggles to hit anyone in the air, the hitbox is not good. Travels super far forward before coming out, making it easy to whiff punish and easier to grab. Hits OTG, and is in fact Mary’s most damaging OTG by a mile when it’s available. Use it when your sweep Wild Punishes."
+    },
+    {
+      "category": "REV Blows",
+      "name": "M. Spider: R",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "132 (77+55)",
+      "description": "Does not go into the hitgrab if it hits an airborne opponent, but the full damage of the REV Blow will instead be on the first hit. Also does not go into the hitgrab on counter hit, but does not deal full damage on grounded opponents."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Spin Fall",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 60 / D: 50 / BD: 70",
+      "description": "placeholder Plus on block if the opponent crouches. Always plus on block."
+    },
+    {
+      "category": "Special Moves",
+      "name": "M. Spider",
+      "input": "↓ ↘ → + [[FF:HK]] > ← or → + [[FF:K]]",
+      "damage": "D: 60 / BD: 70",
+      "description": "Even though the move list says this follow-up requires a 4/6K motion, it is also possible to do perform it using 2K. This is probably to make the Quick Step -> Slicer follow up more intuitive to do."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Straight Slicer BR",
+      "input": "←(charge) → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 70 / D: 60 / BD: 80",
+      "description": "Mary slides across the screen at quick speed. NOT A LOW placeholder"
+    },
+    {
+      "category": "Special Moves",
+      "name": "M. Crab Clutch",
+      "input": "←(charge) → + [[FF:HK]] > ← or → + [[FF:K]]",
+      "damage": "D: 70 / BD: 60 (40 + 20)",
+      "description": "Even though the move list says this follow-up requires a 4/6K motion, it is also possible to do perform it using 2K. This is probably to make the Quick Step -> Slicer follow up more intuitive to do."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Vertical Arrow BR",
+      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 70 (20+50) / D: 40 (20x2) / BD: 100 10 + 20 + 10 + 20 + 40",
+      "description": "Only the D version allows a manual follow-up, while BD triggers it automatically if not braked. Not invincible on startup except to air attacks. One of the slower brakeable DPs in the game at 9 frames but launches the opponent unusually high. Usually followed with a charged (i.e. non-dash) D Straight Slicer, which can be juggled into any of her non-command grab supers, or a 623B. Mary can even combo into a ground REV blow off of this due to the juggle height. Usually followed with a charged (i.e. non-dash) D Straight Slicer, which can be juggled into any of her non-command grab supers, or a 623B. Mary can even combo into a ground REV blow off of this due to the juggle height. Cannot be braked on whiff and is air unblockable."
+    },
+    {
+      "category": "Special Moves",
+      "name": "M. Snatch",
+      "input": "→ ↓ ↘ + [[FF:HK]] > ← or → + [[FF:K]]",
+      "damage": "60",
+      "description": "Even though the move list says this follow-up requires a 4/6K motion, it is also possible to do perform it using 2K. This is probably to make the Quick Step -> Slicer follow up more intuitive to do."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Real Counter",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B/D: - / BD: -",
+      "description": "Both versions can be cancelled into her command grab follow-up placeholder"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Backdrop Real",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > ← or → + [[FF:P]]",
+      "damage": "B/D: 140 [160] / BD: 160 [140]",
+      "description": "Values in brackets apply when used after a Quick Step > Real Counter."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Quick Step: A",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C: - / AC: - / 3: Mary takes a single swift step forwards. During Quick step, Mary can cancel into any of her \"Quick\" specials or any version of her M. Arrest: D. These \"Quick\" specials are enhanced with better damage and/or frame advantage. Quick Step's travel distance is slightly cut short if cancelled. 236A/C : Lasts exactly as many frames as her regular forward dash (23) but travels further. Cancellable on frame 14. Any move -4 or better on block will be uninterruptible/gapless if cancelled into Quick Step: A > Quick Counter. (See table below) 236AC : Travels even further than regular versions and has 4 fewer total frames. Cancellable on frame 13. Any move -7 or better on block will be uninterruptible/gapless if cancelled into REV Quick Step: A > REV Quick Counter. (See table below) Frame advantage on Quick Step cancels Move On Hit On Block On Hit (REV) On Block (REV) cl. A -13 -14 -9 -10 cl. B -10 -14 -6 -10 cl. C +1 -4 +5 +0 cl. D +2 -2 +6 +2 f. C -3 -7 +1 -3 2A -12 -14 -8 -10 2C -2 -7 +2 -3 REV Slicer - - KD +0 / Move: On Hit / 5: cl. A / 6: cl. B / 7: cl. C / 8: cl. D / 9: f. C / 10: 2A / 11: 2C / 12: REV Slicer",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Quick Step: D",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C: - / AC: -",
+      "description": "placeholder"
+    },
+    {
+      "category": "Special Moves",
+      "name": "M. Arrest",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > → + [[FF:P]]",
+      "damage": "A/C: 140 / AC: 140 (40+100)",
+      "description": "placeholder"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Quick Step: D",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > ← + [[FF:P]]",
+      "damage": "-",
+      "description": "All versions result in a non-EX Quick Step (even the AC version). Cannot be cancelled into Quick Step: A."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Quick Step: A",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > → + [[FF:P]]",
+      "damage": "-",
+      "description": "All versions result in a non-EX Quick Step (even the AC version). Cannot be cancelled into Quick Step: D."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Quick Counter",
+      "input": "↓ ↙ ← or ↓ ↘ → + [[FF:LP]] or [[FF:HP]] > ← + [[FF:K]]",
+      "damage": "A/C: - / AC: -",
+      "description": "placeholder"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Quick Fall",
+      "input": "↓ ↙ ← or ↓ ↘ → + [[FF:LP]] or [[FF:HP]] > → + [[FF:K]]",
+      "damage": "A/C: 70 / AC: 80",
+      "description": "placeholder"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Quick Slicer",
+      "input": "↓ ↙ ← or ↓ ↘ → + [[FF:LP]] or [[FF:HP]] > ↓ + [[FF:K]]",
+      "damage": "A/C: 80 / AC: 100",
+      "description": "placeholder"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Quick Arrow",
+      "input": "↓ ↙ ← or ↓ ↘ → + [[FF:LP]] or [[FF:HP]] > ↘ + [[FF:K]]",
+      "damage": "A/C: 60 (30x2) / AC: 100 10 + 20 + 10 + 20 +40",
+      "description": "placeholder"
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "M. Arrest: D",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "280",
+      "description": "Both versions have invincibility on startup. Unlike other grab supers in CotW , you can combo into this super on the ground by cancelling Quick Step into it, allowing her to combo from cl.C, cl.D, and 2C. Opponents can jump the basic version after the super flash, but not the Redline version."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "M. Arrest: D",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "320 (100+220)",
+      "description": "Both versions have invincibility on startup. Unlike other grab supers in CotW , you can combo into this super on the ground by cancelling Quick Step into it, allowing her to combo from cl.C, cl.D, and 2C. Opponents can jump the basic version after the super flash, but not the Redline version."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "M. Dynamite Swing",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "260 0 + 70 + 30x3 + 100",
+      "description": "Both versions have generous invincibility on startup. Switches sides on hit. Becomes an unblockable air grab if it doesn’t hit on the early active frames. Taking into account her other command grab super - if used as a reversal, this forces her opponent into a quick reaction check to either block or jump in order to not get hit."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "M. Dynamite Swing",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "350 0 + 70 + 20x5 + 180",
+      "description": "Both versions have generous invincibility on startup. Switches sides on hit. Becomes an unblockable air grab if it doesn’t hit on the early active frames. Taking into account her other command grab super - if used as a reversal, this forces her opponent into a quick reaction check to either block or jump in order to not get hit."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "M. Sky Rose",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "418 55 + 33x6 + 22x2 + 33 + 88",
+      "description": "Only available during S.P.G. Resets the Rev meter to 0%, even during Overheat. Hits from half-screen, making some attacks punishable exclusively by this move."
+    }
+  ],
+  "smart": []
+}

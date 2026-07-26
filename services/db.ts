@@ -8,7 +8,7 @@ import SF6_PORTRAITS from '../data/sf6_portraits.json';
 import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
 import COMBOS_DB from '../data/combos/index';
 
-export const DB_VERSION = 14;
+export const DB_VERSION = 22;
 
 export interface SQLiteCombo {
   id: string;
@@ -21,6 +21,7 @@ export interface SQLiteCombo {
   description: string;
   category: string;
   is_custom: number;
+  control_style: string; // 'arcade' | 'smart' | '' (empty for non-FF games)
 }
 
 export interface SQLiteCharacter {
@@ -124,6 +125,7 @@ async function setupSchema(db: SQLiteDatabase) {
       difficulty TEXT DEFAULT '-',
       description TEXT DEFAULT '',
       category TEXT NOT NULL,
+      control_style TEXT DEFAULT '',
       is_custom INTEGER DEFAULT 0,
       FOREIGN KEY (character_id) REFERENCES characters (id) ON DELETE CASCADE,
       FOREIGN KEY (game_id) REFERENCES games (id) ON DELETE CASCADE
@@ -139,6 +141,17 @@ async function setupSchema(db: SQLiteDatabase) {
     CREATE INDEX IF NOT EXISTS idx_combos_is_custom ON combos(is_custom);
     CREATE INDEX IF NOT EXISTS idx_characters_game ON characters(game_id);
   `);
+
+  // Migration guard: add control_style column to existing DBs that were created
+  // before version 16. CREATE TABLE IF NOT EXISTS won't modify existing tables,
+  // so we need an explicit ALTER TABLE. SQLite doesn't support ADD COLUMN IF NOT EXISTS,
+  // so we silently ignore the error if the column already exists (fresh install path).
+  try {
+    await db.execAsync(`ALTER TABLE combos ADD COLUMN control_style TEXT DEFAULT '';`);
+    console.log('[Database] Migrated: added control_style column to combos table.');
+  } catch {
+    // Column already exists (fresh install created the table with it inline) — ignore.
+  }
 }
 
 /**
@@ -217,28 +230,57 @@ async function seedData(db: SQLiteDatabase) {
 
     // 4. Seed Combos — prepare statement once for all combos
     const comboStmt = await db.prepareAsync(
-      `INSERT INTO combos (id, character_id, game_id, name, input, damage, difficulty, description, category, is_custom)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 0);`
+      `INSERT INTO combos (id, character_id, game_id, name, input, damage, difficulty, description, category, control_style, is_custom)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0);`
     );
     try {
       for (const [gameName, gameCombos] of Object.entries(COMBOS_DB)) {
-        for (const [charName, combosList] of Object.entries(gameCombos as any)) {
-          if (!Array.isArray(combosList)) continue;
+        for (const [charName, charData] of Object.entries(gameCombos as any)) {
           const charId = `${gameName}::${charName}`;
-          for (let i = 0; i < combosList.length; i++) {
-            const c = combosList[i] as any;
-            const comboId = `static::${gameName}::${charName}::${i}`;
-            await comboStmt.executeAsync([
-              comboId,
-              charId,
-              gameName,
-              c.name || '',
-              c.input || '',
-              c.damage || '-',
-              c.difficulty || '-',
-              c.description || '',
-              c.category || 'combo'
-            ]);
+
+          // Fatal Fury uses nested { arcade: [...], smart: [...] } structure
+          if (charData && typeof charData === 'object' && !Array.isArray(charData) &&
+              ('arcade' in (charData as any) || 'smart' in (charData as any))) {
+            const ffChar = charData as { arcade?: any[]; smart?: any[] };
+            for (const style of ['arcade', 'smart'] as const) {
+              const styleList = ffChar[style] || [];
+              for (let i = 0; i < styleList.length; i++) {
+                const c = styleList[i] as any;
+                const comboId = `static::${gameName}::${charName}::${style}::${i}`;
+                await comboStmt.executeAsync([
+                  comboId,
+                  charId,
+                  gameName,
+                  c.name || '',
+                  c.input || '',
+                  c.damage || '-',
+                  c.difficulty || '-',
+                  c.description || '',
+                  c.category || 'combo',
+                  style
+                ]);
+              }
+            }
+          } else {
+            // Standard flat array for all other games
+            const combosList = charData as any[];
+            if (!Array.isArray(combosList)) continue;
+            for (let i = 0; i < combosList.length; i++) {
+              const c = combosList[i] as any;
+              const comboId = `static::${gameName}::${charName}::${i}`;
+              await comboStmt.executeAsync([
+                comboId,
+                charId,
+                gameName,
+                c.name || '',
+                c.input || '',
+                c.damage || '-',
+                c.difficulty || '-',
+                c.description || '',
+                c.category || 'combo',
+                ''
+              ]);
+            }
           }
         }
       }

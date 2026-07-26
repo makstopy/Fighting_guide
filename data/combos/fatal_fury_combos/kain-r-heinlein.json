@@ -1,0 +1,110 @@
+{
+  "arcade": [
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 1",
+      "input": "↓ + [[FF:LP]] or [[FF:LK]] > ↓ + [[FF:HP]]",
+      "damage": "72",
+      "description": "Though not an amazing string on its own, it still sees use in certain Schwarzes Rondo setups as a solid low meaty."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 2",
+      "input": "↓ + [[FF:HP]] [[FF:REV]] > [[FF:HP]]",
+      "damage": "33",
+      "description": "An interesting string off Kain's 2CRev. Gives extra combo opportunities depending on where it is used. Does not come out on block, making it punishable. Limited by the usefulness of 2CRev"
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 2",
+      "input": "[In air] [[FF:LP]] > [[FF:LK]]",
+      "damage": "55, 41 (96)",
+      "description": "Usually overlooked, as the two hits add extra scaling to combos started with this."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Schwarzer Stoß",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Kain's SPG attack covers a large amount of screen space, making it a serious threat once Kain has it. It can be spaced to have more advantage than usual, even as far as becoming + on block. Like all SPG attacks, it loses to early throws and High Evade attacks."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Schwarzer Stoß - Luft",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Similar to Kain's grounded SPG, but aimed downwards in the air. Can have slightly more frame advantage than 5CD depending on how deep it is connected. Finally, it can be used as an OTG at the end of certain combos (ex. corner combos ending in 236236A), letting you squeeze just a little more damage out in specific scenarios."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Schwarze Flamme",
+      "input": "↓ ↘ → + [[FF:P]]",
+      "damage": "A: 55 / C: 55 / AC: 44, 55 (99)",
+      "description": "Kain's iconic fireball returns as a zoning and combo tool. Has a feint that looks similar to the fireball and still backsteps. All versions cause Kain to backstep, which can get you out of sticky situations, but can lead Kain to making combos harder or cornering himself in neutral if used improperly. A version fires horizontally, C version fires diagonally upwards. REV version covers both angles. All versions are useful in corner combos, but the REV version is particularly useful for both midscreen and corner routes."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Schwarzer Panzer",
+      "input": "↓ ↘ → + [[FF:K]]",
+      "damage": "B: 88 / D: 5x3, 104 (119) / BD: 110",
+      "description": "Fairly reasonable combo tool. All versions are identically unsafe on block. B version starts traveling fastest, D version does the most damage and has a few starting hits, and the REV version can be cancelled into 28BD to make it + on block. All versions have a brake, but only the B version properly brakes at point blank. None of the brakes work after a connect. The REV version is most used as a combo extender off juggles or heavies, while the B and D version are used as combo enders and work on lights (though the D version can fall out at range). The D version is Kain's best meterless guard cancel option without down charge."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Schwarze Lanze BR",
+      "input": "↓(charge) ↑ + [[FF:K]]",
+      "damage": "B: 60, 20 (80) / D: 50, 40 (90) / BD: 30, 30, 40 (100)",
+      "description": "Kain's flashkick is a versatile tool, usable as a combo starter, extender, ender, anti-air, pressure tool, and reversal. Being the only character currently with a flashkick in the game, Kain has an advantage in reacting to certain moves with invincibility. He makes up for this with needing down charge to do reversals, which limits his guard cancels and movement in neutral if he wants to use this move. The B version is a decently fast reversal, the D version is a solid anti-air with a brake. The REV version is a combo extender, and can be braked to become + on block. If possible, the D version (and its respective brake) is usually Kain's best Guard cancel after JD/HD, though could prove difficult to execute. Even if the fireball connects on a grounded opponent, Kain is at major disadvantage, so only use it in situations where the first hit can connect."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Schwarzes Rondo",
+      "input": "↓ ↙ ← + [[FF:P]]",
+      "damage": "P: 50 / AC: 40, 40 (80)",
+      "description": "Kain's new mine special compliments both Kain's pressure and space control, making it a versatile move. The B and D versions create a mine at 2 different distances, and the REV version creates both mines. All versions will automatically detonate with a delay, or can be input again to manually detonate. The REV version will detonate both mines at the same time automatically, but will stagger and combo if done manually. All versions can compliment Kain's Schwarze Flamme, putting another thing on the screen for the opponent to worry about. Most combos Kain scores, along with his throw, can lead to him placing a Schwarzes Rondo on top of the opponent. This gives Kain looping pressure if he desires, which usually leaves him majorly plus if the opponent blocks it successfully."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Schwarzes Rondo (Detonate)",
+      "input": "↓ ↙ ← + [[FF:P]]",
+      "damage": "P: - / AC: -",
+      "description": "Manual detonation is great for opponents who try to slip past the mine or for staggering the REV version. On a grounded connect, manually detonating the opponent on the first mine of the REV version can lead Kain to dash back up and do a cl.D on hit, causing staggering damage. For meterless verions, Kain is usually +8, which gives him a f.C instead."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Himmlischer Atem Neo",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "250",
+      "description": "Decent reversal tool and combo ender. Usually outclassed by using 236236B during a combo, but useful to add damage in combos if needed. Most routes into 236236A require dashes or Schwarze Panzer feints to get the super to connect properly."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Himmlische Seele",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "180",
+      "description": "An incredible use of Kain's meter, and one of the best Ignition gears in the game. Starts up fast enough, covers a solid amount of the screen, and is +8 point blank on block, making it Kain's turn no matter where this connects on the opponent. Launches on hit, giving Kain extended juggles anywhere. This can cause Kain's damage to absolutely skyrocket with meter. Though expensive, this can be thrown out semi-randomly at mid range if desired, forcing a reaction or + frames from the opponent. Does considerable chip/REV damage, and slows down significantly on JD/HD, which can be worse for the opponent if they guess wrong after. Because of this, Kain can lead the opponent to checkmate scenarios where they have to DP/JD/REV guard for their life at low health on burnout/high REV gauge with enough meter."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Himmlischer Atem Neo",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "320",
+      "description": "Though useful as a high-damage reversal, it loses versatility in combos, as Kain can combo from his 236236B into his 236236A, which usually leads to more damage."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Himmlische Seele BR",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "280",
+      "description": "Though incredibly strong, it is generally overshadowed by using both Ignition Gears in combos, and two 236236Bs in pressure. Really funny for combo videos and pressure, though."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Himmlischer Edelstein",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "440",
+      "description": "Similar issue to Kain's Redline gears in that he usually gets better damage using his two ignition gears together. However, Kain's Hidden Gear still sees use as a way to reset his REV gauge and for easier, more stable confirms."
+    }
+  ],
+  "smart": []
+}

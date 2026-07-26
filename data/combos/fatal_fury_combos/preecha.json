@@ -1,0 +1,159 @@
+{
+  "arcade": [
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 1",
+      "input": "[[FF:LK]] > [[FF:HK]]",
+      "damage": "50",
+      "description": "Improves far B as a poke, if you don't have a confirm this is completely safe to go for unless the opponent is able to hyper defense through it. Pretty unrewarding outside of that, but still better than a standalone far B."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 2",
+      "input": "[In air] [[FF:LP]] > [[FF:LK]]",
+      "damage": "40",
+      "description": "Only available during jump A, hop A is not cancellable. j.B follow-up is not an overhead. 2nd hit does not combo on normal hit. Needs an aerial counter hit or wild punish to connect Fairly good and fast air to air option, gives alot of plus frames on hit and allows her to start her offense"
+    },
+    {
+      "category": "REV Blows",
+      "name": "Flame Upper",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Slow, but far-reaching and safe Rev Blow Can be used as a way to close in, especially against Billy or characters throwing fireballs mid-range. Staggers the enemy on counter-hit, allowing for a combo after. Quite situational to use with not many uses in neutral. Avoid using it too much as opponents can high dodge attack or grab on reaction Combos only from 236AB(LAST HIT) and 236BD( FIRST HIT)"
+    },
+    {
+      "category": "REV Blows",
+      "name": "Electronic Heel Drop",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "A mid, despite looking like an overhead. Available after 214BD, 214AC > 6D, and 623BD (in place of 623BD > 6B/D) to secure a stronger knockdown with added damage.Note that in long juggles, 623BD into Air rev blow has a HIGH tendency to not connect. Preecha's only jumping Guard Cancel, but not particularly good at beating anti-airs or hitting grounded opponents because of its poor hitbox and halted downwards momentum."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Sine-Cosine BR",
+      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 40 (20+20) / D: 40 (30+10) / BD: 60 (50+10)",
+      "description": "B version has full invulnerability and can go through most fireballs, except for a few slower ones. (like Mai’s 236A or Kain’s 236236B) D/REV versions can be cancelled using brake. Braked D version is the ideal anti-air since it allows you to follow-up and remain safer if it's Just Defended. Braked D version is used to combo off of light confirms or extend juggles. Preecha's DP break is one of the best in the game with great range, even allowing her to connect it from a 3 light attack string Braked D version is the ideal anti-air since it allows you to follow-up and remain safer if it's Just Defended. Braked D version is used to combo off of light confirms or extend juggles. Preecha's DP break is one of the best in the game with great range, even allowing her to connect it from a 3 light attack string"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Tangent",
+      "input": "→ ↓ ↘ + [[FF:LK]] > ← or → + [[FF:K]]",
+      "damage": "B: 40 / D: 50 / BD: 50",
+      "description": "Adds a bit of damage to your DP's, After 623BD you can do a rev blow to get a hard knockdown Worse knockdown than 623B/D midscreen, but near the corner they're about the same so there's little reason not to use this. In patch 1.7.2, added a ground bounce property on the final hit of 623BD >4/6k which allows combo extensions."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Circular Step",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C: - / AC: -",
+      "description": "On its own, can be used to keep yourself safe, or bait a button or reversal. Can be used as a sort of backdash that can be done as a guard cancel to escape weaker pressure sequences or avoid getting locked down by a projectile. Best used as a meaty, but Rev Circular Step takes noticably less time before its followups come out, which makes it better in blockstrings."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Parabola Knee",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > ← or → + [[FF:HK]]",
+      "damage": "A/C: 100 / AC: 120",
+      "description": "Used mainly for combos, as it's unsafe on block and doesn't offer any mix, unlike Preecha's other follow-ups In midscreen combos, it can connect only by REV cancelling REV Screw Leg (236BD) On counter hit launches the opponent high for a full combo"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Arc Elbow",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > ← or → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C: 60 / AC: 70",
+      "description": "Useful option to open up an opponent that crouchblocks constantly. Can start a combo if you link with 2A, but some setups can make it up to +6 on hit, which links into c.C. Rev version is +2 at worst on block, but on hit it's identical to the meterless version. Can be made more plus as a meaty. One of Preecha's most powerful moves as it is a meterless safe overhead that gives a combo on hit"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Low Angle Kick",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > ← or → + [[FF:LK]]",
+      "damage": "A/C: 120 (30+20x2+50) / AC: 130 (40+20x2+50)",
+      "description": "Normal version can't be combo'd out of, Rev version can be followed after with any rev special for a combo even after the knee strike animation. Sometimes starting a combo from the rev version is harder than expected so be sure to practice combos after the rev version connects in training mode. The followup animation only plays out on grounded opponents, on air hits Preecha whiffs a throwing animation. It's still possible to cancel the Rev version before this comes out. Faster than the overhead but still unlikely to ever be fuzzy blocked. The normal version is sometimes punishable and the Rev one is safe but minus, both can still be hit meaty to improve frame advantage."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Screw Leg BR",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 60 / D: 80 (40x2) / BD: 80 (40+10x2+20)",
+      "description": "All versions stay on screen for a very long time, good for getting in or for oki, but quite bad at actually zoning since it does not go full screen. The windup of the D and B+D versions already form a projectile hitbox that eats others without stopping Preecha's tornado from coming out, which can potentially cover your approach for up to two fireballs from the opponent. D version is combo-friendly and allows consistent links into Preecha's P = mc2 super D and B+D versions can be braked after the first tornado appears. This is useful point-blank to squeeze in a throw when the opponent is expecting the second tornado, or to make the first hit plus with spacing or a meaty timing. Avoid using D and B+D versions in neutral as the start-up and recovery are extremely long. Use the B version for screen control and zoning. The D and B+D versions could be used in fireball wars, but use them only to absorb an opponent's fireball as doing them raw is very risky. When executing this move after a forward dash, input a Tiger Knee motion (2369) to avoid accidentally doing a DP. The D version is Preecha's best blockstring ender. Due to being safe and frame trapping off lights,and even setting up a small RPS situation on block with breaking the second hit. The BD version is great to set up Circular step mixups on block."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Hyperbolic Kick",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 80 / D: 100 (20+80) / 50 cross-up / BD: 100 (20+80)",
+      "description": "Can be used to jump over grounded projectiles, but not traditional fireballs. Has to be preemptive as it doesn't have projectile invulnerability on start up. All versions are safe, B+D version is actually plus and a combo starter/extender against airborne opponents or on CH/WP. B version doesn't have much uses in Preecha's gameplay. Stick to using the D and BD versions instead. D version can crossup, while the B and B+D versions are always same side, but this is pretty gimmicky outside of Overheat because of Rev Guard. Additionally, the D version is 0 on hit and leaves Preecha outside the reach of her 4 frame 2A, so in reality, even a successful usage of 214D achieves very little beyond its damage. D version starts a small combo on both counter hit and wild punish(+5 advantage which links to Far A). The B+D version is Preecha's best \"Neutral Skip\" but it doesn't have much range and has alot of recovery on whiff."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Preecha's Combination",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C: 20 / AC: 20",
+      "description": "An indispensable move, used in combos, pressure, setups and guard crushes. The meterless version is -5 on block with no delay window on its followups, a good opponent will punish this a majority of the time. The first block of the Rev version is the only one that grants you frame advantage (+3). Very useful pressure reset as it's unreactable and leaves you decently close to the opponent. A skillful opponent can Hyper Defend and punish the follow-ups, so be careful when using them for pressure. In patch 1.7.2, allowed this move to combo from lights making it a great ender for 3 hit light strings. Combo ender, always a true block string when canceled from, not a good blockstring ender."
+    },
+    {
+      "category": "Special Moves",
+      "name": "1st punch follow-up",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:P]]",
+      "damage": "A/C > P: 15 / AC > P: 15",
+      "description": "First Preecha's Combination follow-up."
+    },
+    {
+      "category": "Special Moves",
+      "name": "2nd punch follow-up",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:P]] [[FF:P]]",
+      "damage": "A/C > PP: 15 / AC > PP: 15",
+      "description": "Second Preecha's Combination follow-up."
+    },
+    {
+      "category": "Special Moves",
+      "name": "3rd punch follow-up",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:P]] [[FF:P]] [[FF:P]]",
+      "damage": "A/C > PPP: 15 / AC > PPP: 15",
+      "description": "Third Preecha's Combination follow-up."
+    },
+    {
+      "category": "Special Moves",
+      "name": "4th punch follow-up",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:P]] [[FF:P]] [[FF:P]] [[FF:P]]",
+      "damage": "A/C > PPPP: 45 / AC > PPPP: 55",
+      "description": "Final Preecha's Combination follow-up, really unsafe on block. Never end a blockstring with this move"
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Screw Archimedes Spiral",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "250 (50+40+20x4+80)",
+      "description": "Good as an anti-air but painfully unreliable as a reversal, it has a random chance to forego the tornados on the first two uppercuts, which increases the damage but basically halves its range and makes it drop against extended hurtboxes. Airborne opponents sometimes drop out of the tornado in specific angles, so even as an anti-air it can be annoying to use. Sometimes Preecha's highest damage one-bar ender, when it feels like it. On top of the lower frame advantage in comparison to 236236B and just how much more consistent that super is, you're probably better off not using this one outside of reversaling through blockstrings and some anti-airing. Similar to 236236A, has a random chance to do higher damage for no reason. Thankfully its hitboxes remain intact, and are significantly larger, so it's much better for defense. The randomly stronger version also has slightly better frame advantage (+34 from +33 against grounded opponents), which is variable in the first place against airborne opponents. It's hard to tell the versions apart as well, so don't use this for setups. Regardless of the varied advantage, it keeps the corner and leaves you +33 at the very least, which makes it preferable to 236236D as a cashout that won't necessarily kill."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Screw Archimedes Spiral",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "220 (15x6+20x4+50)",
+      "description": "Good as an anti-air but painfully unreliable as a reversal, it has a random chance to forego the tornados on the first two uppercuts, which increases the damage but basically halves its range and makes it drop against extended hurtboxes. Airborne opponents sometimes drop out of the tornado in specific angles, so even as an anti-air it can be annoying to use. Sometimes Preecha's highest damage one-bar ender, when it feels like it. On top of the lower frame advantage in comparison to 236236B and just how much more consistent that super is, you're probably better off not using this one outside of reversaling through blockstrings and some anti-airing. Similar to 236236A, has a random chance to do higher damage for no reason. Thankfully its hitboxes remain intact, and are significantly larger, so it's much better for defense. The randomly stronger version also has slightly better frame advantage (+34 from +33 against grounded opponents), which is variable in the first place against airborne opponents. It's hard to tell the versions apart as well, so don't use this for setups. Regardless of the varied advantage, it keeps the corner and leaves you +33 at the very least, which makes it preferable to 236236D as a cashout that won't necessarily kill."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "P = mc2",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "220",
+      "description": "Is NOT projectile invulnerable. Still a useful punish or conversion super with its high range. Very easy to confirm, will connect from basically any normal cancel, and its reach can help pick up normally unrewarding hits like a distant fireball. While less damaging than 236236A can be, it can be used as an ender in combos where 236236A would miss, which generally net more damage on top of actually being consistent. +40 on most hits but +42 if combo'd after a 623D break. Both are consistent and useful for setting up a powerful meaty. Should use this super in 99% of Preecha's combos as it is very combo-friendly and is her highest damage 1 bar ender. Preecha's best reversal and a useful combo ender. A rewarding punish if you react to an opponent throwing a fireball or whiffing something with long recovery. Can be braked by pressing A+B right after the first hit connects. The following combo will do lower damage than the full super, but you can secure oki from it or keep the corner. Unlike 236236B, it ALWAYS sideswitches (even in the corner) provided you don't brake it."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "P = mc2",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "310 (100+210)",
+      "description": "Is NOT projectile invulnerable. Still a useful punish or conversion super with its high range. Very easy to confirm, will connect from basically any normal cancel, and its reach can help pick up normally unrewarding hits like a distant fireball. While less damaging than 236236A can be, it can be used as an ender in combos where 236236A would miss, which generally net more damage on top of actually being consistent. +40 on most hits but +42 if combo'd after a 623D break. Both are consistent and useful for setting up a powerful meaty. Should use this super in 99% of Preecha's combos as it is very combo-friendly and is her highest damage 1 bar ender. Preecha's best reversal and a useful combo ender. A rewarding punish if you react to an opponent throwing a fireball or whiffing something with long recovery. Can be braked by pressing A+B right after the first hit connects. The following combo will do lower damage than the full super, but you can secure oki from it or keep the corner. Unlike 236236B, it ALWAYS sideswitches (even in the corner) provided you don't brake it."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Preecha's Last Theorem",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "440 (55+33+55+77+220)",
+      "description": "Can only be executed with S.P.G active and two bars, but is your most damaging combo ender with the highest minimum damage. While its initial range is somewhat limited, it's still pretty easy to juggle into off of almost any special thanks to its speed. Does eventually go further but this is mostly irrelevant, if this is fast enough to punish something at range you probably have better options. Actually very active and technically possible to be made plus, which is completely useless but you can occasionally be funny with it and find meaty setups."
+    }
+  ],
+  "smart": []
+}

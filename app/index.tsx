@@ -25,7 +25,7 @@ export default function HomeScreen() {
     if (isWeb) {
       // Web fallback
       const filtered = Object.entries(FIGHTERS_DB).filter(([game]) =>
-        ['Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8'].includes(game)
+        ['Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8', 'Fatal Fury: City of the Wolves'].includes(game)
       );
       setGames(filtered);
     } else if (db) {
@@ -33,7 +33,7 @@ export default function HomeScreen() {
       db.getAllAsync<any>(
         `SELECT id, platform, cover_grad, cover_label, cover_emoji 
          FROM games 
-         WHERE id IN ('Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8');`
+         WHERE id IN ('Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8', 'Fatal Fury: City of the Wolves');`
       )
         .then((rows) => {
           const formatted: [string, any][] = rows.map((r) => [
@@ -51,7 +51,7 @@ export default function HomeScreen() {
           console.error('[HomeScreen] Error loading games from SQLite:', err);
           // Fallback to static if SQLite query fails
           const filtered = Object.entries(FIGHTERS_DB).filter(([game]) =>
-            ['Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8'].includes(game)
+            ['Mortal Kombat 1', 'Street Fighter 6', 'Tekken 8', 'Fatal Fury: City of the Wolves'].includes(game)
           );
           setGames(filtered);
         });

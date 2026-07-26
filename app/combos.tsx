@@ -82,9 +82,13 @@ const GAME_CATS: Record<string, [string, string][]> = {
   ],
   "Fatal Fury: City of the Wolves": [
     ["all", "All"],
-    ["combo", "Combo"],
-    ["rev_art", "REV Arts"],
-    ["super", "Super"]
+    ["Command Moves", "Command Moves"],
+    ["Command Combos", "Command Combos"],
+    ["Special Moves", "Special Moves"],
+    ["REV Blows", "REV Blows"],
+    ["Ignition Gears", "Ignition Gears"],
+    ["Redline Gears", "Redline Gears"],
+    ["Hidden Gear", "Hidden Gear"]
   ]
 };
 
@@ -101,6 +105,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   super: '#f59e0b',
   rage: '#ef4444',
   overdrive: '#06b6d4',
+  rev_art: '#06b6d4',
   taunt: '#22d3ee',
   breaker: '#fb7185',
   custom: '#10b981',
@@ -155,6 +160,9 @@ export default function CombosScreen() {
     hasFavoritesFor(game, char) ? 'favorite' : 'all'
   );
   const [combos, setCombos] = useState<any[]>([]);
+  // Arcade/Smart style toggle — only relevant for Fatal Fury: City of the Wolves
+  const [inputStyle, setInputStyle] = useState<'arcade' | 'smart'>('arcade');
+  const isFatalFury = game === 'Fatal Fury: City of the Wolves';
   const [isTransitionFinished, setIsTransitionFinished] = useState(Platform.OS === 'web');
   // Controls whether real cards or skeletons are shown for the current category
   const [isCategoryReady, setIsCategoryReady] = useState(true);
@@ -240,37 +248,59 @@ export default function CombosScreen() {
   useEffect(() => {
     if (game && char) {
       if (isFirstMountRef.current) {
-        // On first mount, skip skeleton phase — isTransitionFinished already handles initial load
         isFirstMountRef.current = false;
       } else {
-        // User changed controlType: show skeletons immediately
         setIsCategoryReady(false);
       }
 
       if (isWeb) {
-        const raw = (COMBOS_DB as any)[game]?.[char] || [];
+        // For FF: data is nested under arcade/smart keys
+        let raw: any[];
+        if (isFatalFury) {
+          raw = (COMBOS_DB as any)[game]?.[char]?.[inputStyle] || [];
+        } else {
+          raw = (COMBOS_DB as any)[game]?.[char] || [];
+        }
         setCombos(mapCombosByControl(raw, controlType));
       } else if (db) {
-        db.getAllAsync<any>(
-          `SELECT name, input, damage, difficulty, description, category 
-           FROM combos 
-           WHERE character_id = ? AND is_custom = 0;`,
-          [`${game}::${char}`]
-        )
-          .then((rows) => {
-            if (isMountedRef.current) {
-              setCombos(mapCombosByControl(rows, controlType));
-            }
-          })
-          .catch((err) => {
-            console.error('[CombosScreen] Error loading combos from SQLite:', err);
-            // Fallback
-            const raw = (COMBOS_DB as any)[game]?.[char] || [];
-            setCombos(mapCombosByControl(raw, controlType));
-          });
+        if (isFatalFury) {
+          db.getAllAsync<any>(
+            `SELECT name, input, damage, difficulty, description, category, control_style
+             FROM combos
+             WHERE character_id = ? AND is_custom = 0 AND control_style = ?;`,
+            [`${game}::${char}`, inputStyle]
+          )
+            .then((rows) => {
+              if (isMountedRef.current) {
+                setCombos(mapCombosByControl(rows, controlType));
+              }
+            })
+            .catch((err) => {
+              console.error('[CombosScreen] Error loading FF combos from SQLite:', err);
+              const raw = (COMBOS_DB as any)[game]?.[char]?.[inputStyle] || [];
+              setCombos(mapCombosByControl(raw, controlType));
+            });
+        } else {
+          db.getAllAsync<any>(
+            `SELECT name, input, damage, difficulty, description, category
+             FROM combos
+             WHERE character_id = ? AND is_custom = 0;`,
+            [`${game}::${char}`]
+          )
+            .then((rows) => {
+              if (isMountedRef.current) {
+                setCombos(mapCombosByControl(rows, controlType));
+              }
+            })
+            .catch((err) => {
+              console.error('[CombosScreen] Error loading combos from SQLite:', err);
+              const raw = (COMBOS_DB as any)[game]?.[char] || [];
+              setCombos(mapCombosByControl(raw, controlType));
+            });
+        }
       }
     }
-  }, [game, char, controlType, isWeb, db, mapCombosByControl]);
+  }, [game, char, controlType, inputStyle, isWeb, db, mapCombosByControl, isFatalFury]);
 
   // When category changes: phase 1 = skeletons shown immediately,
   // phase 2 = real cards rendered after one animation frame
@@ -383,6 +413,13 @@ export default function CombosScreen() {
     </View>
   );
 
+  const handleInputStyleChange = useCallback((style: 'arcade' | 'smart') => {
+    if (style === inputStyle) return;
+    setIsCategoryReady(false);
+    setActiveCategory('all');
+    setInputStyle(style);
+  }, [inputStyle]);
+
   const renderHeader = useCallback(() => (
     <View>
       {/* Character bio card */}
@@ -392,6 +429,38 @@ export default function CombosScreen() {
       <View style={styles.legendBanner}>
         {controlType === 'PS' ? <PSLegend /> : controlType === 'Xbox' ? <XboxLegend /> : <ArcadeLegend />}
       </View>
+
+      {/* Arcade / Smart style toggle — Fatal Fury COTW only */}
+      {isFatalFury && (
+        <View style={styles.inputStyleToggle}>
+          <Pressable
+            style={({ pressed }) => [
+              styles.styleBtn,
+              inputStyle === 'arcade' && styles.styleBtnActive,
+              pressed && { opacity: 0.75 },
+            ]}
+            onPress={() => handleInputStyleChange('arcade')}
+          >
+            <Text style={[
+              styles.styleBtnText,
+              inputStyle === 'arcade' && styles.styleBtnTextActive
+            ]}>🕹 Arcade</Text>
+          </Pressable>
+          <Pressable
+            style={({ pressed }) => [
+              styles.styleBtn,
+              inputStyle === 'smart' && styles.styleBtnActiveSmart,
+              pressed && { opacity: 0.75 },
+            ]}
+            onPress={() => handleInputStyleChange('smart')}
+          >
+            <Text style={[
+              styles.styleBtnText,
+              inputStyle === 'smart' && styles.styleBtnTextActiveSmart
+            ]}>⚡ Smart</Text>
+          </Pressable>
+        </View>
+      )}
 
       {/* Category tabs */}
       {game && GAME_CATS[game] && (
@@ -426,7 +495,7 @@ export default function CombosScreen() {
         </View>
       )}
     </View>
-  ), [game, char, controlType, activeCategory, presentCategories]);
+  ), [game, char, controlType, activeCategory, presentCategories, isFatalFury, inputStyle, handleInputStyleChange]);
 
   const renderItem = useCallback(({ item }: { item: any }) => {
     if (!isTransitionFinished || !isCategoryReady) {
@@ -597,6 +666,44 @@ const styles = StyleSheet.create({
   },
   categoryTabInactiveText: {
     color: '#555',
+  },
+  // Arcade / Smart style toggle
+  inputStyleToggle: {
+    flexDirection: 'row',
+    gap: 8,
+    marginBottom: 12,
+    paddingVertical: 4,
+  },
+  styleBtn: {
+    flex: 1,
+    paddingVertical: 10,
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: '#2a2a2a',
+    backgroundColor: '#111',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  styleBtnActive: {
+    backgroundColor: 'rgba(249, 115, 22, 0.18)',
+    borderColor: '#f97316',
+  },
+  styleBtnActiveSmart: {
+    backgroundColor: 'rgba(0, 196, 204, 0.18)',
+    borderColor: '#00c4cc',
+  },
+  styleBtnText: {
+    fontFamily: 'Rajdhani-Bold',
+    fontSize: 14,
+    letterSpacing: 1,
+    color: '#444',
+    textTransform: 'uppercase',
+  },
+  styleBtnTextActive: {
+    color: '#f97316',
+  },
+  styleBtnTextActiveSmart: {
+    color: '#00c4cc',
   },
   emptyContainer: {
     alignItems: 'center',

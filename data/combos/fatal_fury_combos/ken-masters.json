@@ -1,0 +1,222 @@
+{
+  "arcade": [
+    {
+      "category": "Command Moves",
+      "name": "Straight Punch",
+      "input": "→ + [[FF:HP]]",
+      "damage": "80",
+      "description": "Ken's stand HP from SF6. Still long, still active, but now much more negative on block. However, Ken can feint cancel to be +1, this being his primary use of feint in general. Leads to massive damage on Wild Punish even without having to invest a lot of resources, so it's great for whiff punishing."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Roundhouse Kick",
+      "input": "→ + [[FF:HK]]",
+      "damage": "90",
+      "description": "Ken's stand HK from SF6 and his longest wild punish normal. Can be cancelled into Quick Step but not other specials. Unique among all heavies in this game, on wild punish, this move launches the opponent. Hitstop on wild punish makes it much easier to confirm into run or supers Best to either follow with normal Quick Step ~ Dragonlash for damage or EX Quick Step ~ Tatsumaki for corner carry. Hitstop on wild punish makes it much easier to confirm into run or supers Best to either follow with normal Quick Step ~ Dragonlash for damage or EX Quick Step ~ Tatsumaki for corner carry."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Lifting Uppercut",
+      "input": "↘ + [[FF:HP]]",
+      "damage": "85",
+      "description": "An upwards hook and a pretty solid anti-air option. Ken's strongest DP punish starter and links into itself on counter hit feint. This can however be awkward to do as 3B+C or 3D+REV will not result in a feint. Also links to itself on wild punish at any range."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Low Spinning Sweep",
+      "input": "↘ + [[FF:HK]]",
+      "damage": "100",
+      "description": "Unlike the rest of the cast, Ken Sweep is tied to a command normal Good range but terrible on block. Ken will always be punishable on block even at max range but the opponent might require the use of meter to do so if the Sweep is spaced well."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Lightining Heel Kick",
+      "input": "→ + [[FF:LK]]",
+      "damage": "80 (40+40)",
+      "description": "Cancels into Shippu Jinrai-kyaku (236236K)"
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 1",
+      "input": "[[FF:HP]] > ← or → + [[FF:HP]]",
+      "damage": "30",
+      "description": "Chin Buster in some regional dialects. Ken's primary confirm route from a 6 frame button. Can be delayed or done on whiff. Uniquely scales damage by 10% instead of 5%. Forces stand on hit, which is useful for confirming into Jinrai snap kick. Should always be cancelled into a special or feint regardless if it connects on block or hit, when done raw it's punishable on block and even on hit."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 2",
+      "input": "[[FF:HK]] > [[FF:HK]] > [[FF:HK]]",
+      "damage": "D > D: 40 (78 total) / D~D > D: 50 (120 combo total)",
+      "description": "A situational but useful Command Combo starting from 5D. Uniquely scales damage by 10% instead of 5% on the second hit. Does better damage in combos than Command Combo 1 but 5D whiffing on crouch and 8F of startup relegate that fact to some longer ranged counterhit standing confirm of 2C or of a Jump-in hitting the opponent standing."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Flame Strike",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Only available during S.P.G"
+    },
+    {
+      "category": "REV Blows",
+      "name": "Dragon Flame Kick",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "132 (11x4+88)",
+      "description": "Only available during S.P.G Stops any air momentum Ken has and goes into an air tatsu. If cancelled from EX DP > EX Air Tatsu > (delay, close to ground) > Rev Blow, Ken recovers fast enough for a light DP, Hidden Gear or Shoryureppa."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Hadoken",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 60 / C: 60 / AC: 90 (40+50)",
+      "description": "The world famous fireball. All versions are gapless blockstrings when cancelled from 2D and all will combo on hit, even at tip range."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Shoryuken BR",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 70 / C: 90 (30x3) / AC: 110 30x2+10+40",
+      "description": "A version is fully invincible. C and AC versions are air invincible. Just like with Marco, there's never a reason to not brake the C version either for safety or combo extensions. At particular longer distances where the C version hits on the later frames, the juggle height is improved and it might become possible to combo into Shippu Jinrai-kyaku. Don't count on it however, because there's no surefire way to tell if the DP hits late enough. At particular longer distances where the C version hits on the later frames, the juggle height is improved and it might become possible to combo into Shippu Jinrai-kyaku. Don't count on it however, because there's no surefire way to tell if the DP hits late enough. AC version is only super cancellable on the second hit, but attempting to SC on the first hit will cause the SC to happen on the second hit anyways."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Tatsumaki Senpu-kyaku BR",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 70 20+50 / D: 80 20x2+40 / BD: 120 50+5x3+55",
+      "description": "B version launches on either hit, but no followups are possible unless it hits close. While it has a 4-frame startup and is technically Ken's fastest move, this only applies to the first hit, with the second part hitting on frame 14~16. That first hit also has limited range and doesn't hit airborne opponents, so it can struggle as an abare option. While it has a 4-frame startup and is technically Ken's fastest move, this only applies to the first hit, with the second part hitting on frame 14~16. That first hit also has limited range and doesn't hit airborne opponents, so it can struggle as an abare option. D version has good corner carry and can combo into light DP in the corner. BD version isn't very rewarding, but it combos from all of Ken cancellable normals, even lights from tip range. DB Brake generally scales combos more than its worth, however it can combo into 623C/AC, so it can open up meter dump routes from weak hits. DB Brake generally scales combos more than its worth, however it can combo into 623C/AC, so it can open up meter dump routes from weak hits."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Aerial Tatsumaki Senpu-kyaku",
+      "input": "[In air] ↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 30xhit / D: 80 (20x4) / BD: 100 (20x2+30x2) / 40 cross-up",
+      "description": "B version : Descends while keeping jump momentum. Can cross up, though this is unrewarding. D version : Flies straight horizontally. BD version : If used on ascent, increases upwards momentum momentum and keeps the same on descent. Increases forward momentum in any case, and it can crossup more effectively than j214B. Can be cancelled into from 623AC, which leads to Ken's most optimal combos into Hidden Gear. Can be cancelled into from 623AC, which leads to Ken's most optimal combos into Hidden Gear."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Dragonlash Kick",
+      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 80 / D: 100 / BD: 130 (80+50 vs airborne)",
+      "description": "The D and BD versions are +1 on block, a useful tool for both getting in on the opponent and pressure but also a risky one since the opponent can react to its long startup and hit Ken out of it. BD version switches sides if it hits an airborne opponent and groundbounces them for a juggle."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Jinrai Kick",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 30 / D: 30 / BD: 40",
+      "description": "Rekka with massive delay windows and high/low followups. Street Fighter 6 players' nightmare fuel. B version is best for pressure and combos from lights, 236D is a corner combo tool. BD version is Ken's preferred Rev combo starter."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Kazekama Shin Kick",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]] > → + [[FF:LK]]",
+      "damage": "B > 6B: 30 / D > 6B: 40 / BD > 6B: 30",
+      "description": "Low follow-up. A safe pressure ender with a delay window that can turn it into a frametrap. +6 on counterhit, can combo into 6B. By delaying the follow up off D Jinrai in the corner, the shin kick can hit meaty, which allows Ken to have anywhere between +5 to +8 of juggle potential. The +8 sweet spot allows him to link to a heavy DP brake for a powerful low-scaling combo into ignition Shoryureppa or Redline Shippu Jinrai-kyaku."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Gorai Axe Kick",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]] > ← + [[FF:HK]]",
+      "damage": "B > 4D: 50 / D > 4D: 60 / BD > 4D: 30",
+      "description": "Overhead follow-up. Always leaves a gap, but works as a functional mixup with 236K > 6B Identical on counterhit to Kazekama Shin Kick."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Senka Snap Kick",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]] > → + [[FF:HK]]",
+      "damage": "B > 6D: 50 / D > 6D: 60 / BD > 6D: 40",
+      "description": "B and D version whiff against crouch, relagating them to combo tools. BD version is Ken's primary choice for grounded combos. Usually cancelled into Kasai Thrust Kick, then another EX move. Causes a massive launch on Counterhit, so if you can manage to frametrap with it, you can go wild."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Kasai Thrust Kick",
+      "input": "↓ ↘ → + [[FF:LK]] [[FF:HK]] > ← or → + [[FF:HK]] or [[FF:K]] > ← or → + [[FF:HK]] or [[FF:K]]",
+      "damage": "BD~6B > 6B: 30 / BD~4D > 4D: 40 / BD~6D > 6D: 40",
+      "description": "Only available during REV Jinrai. Additional stagger tool and a confirming hit for Jinrai followups. All versions are mostly identical with small differences in frame data and damage, and they all combo from the move they follow up."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Quick Dash",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C: - / AC: -",
+      "description": "Runs with various follow-ups, can be stopped by pressing B (Emergency Stop follow-up)."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Emergency Stop",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:LK]]",
+      "damage": "A/C > B: - / AC > B: -",
+      "description": "Allows you to end the Quick Run, generally only used to convert a Wild Punish 6C/3C or to tick throw people. Can be used in neutral thanks to it's short duration, but it's still pretty risky."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Thunder Kick",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > ↓ + [[FF:HK]]",
+      "damage": "A/C > 2D: 80 / AC > 2D: 80",
+      "description": "Overhead follow-up, but with there being no low followup out of run this is generally very easy to block. The Rev run version can be cancelled into and out of very liberally, so it can occasionally work as mixup, and it's safer regardless."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Forward Step Kick",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:HK]]",
+      "damage": "A/C > D: 50 / AC > D: 50",
+      "description": "A stepkick, meterless version is safer when spaced, Rev version is always safe. Generally a poke with reward on counterhit, but it's also a frametrap from heavy normals."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Shoryuken BR",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C > 6P: 120 20+10+30x3 / AC > 6P: 140 20+30x4",
+      "description": "A stronger version of Shoryuken with more hits and damage, and incredible horizontal reach. Meterless Quick Dash always results in a boosted heavy Shoryuken, Rev Quick Dash always results in EX. While no version is fully invincible, this can still be used as a long range anti-air in neutral for jumps done against distant fireballs."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Tatsumaki Senpu-kyaku BR",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > ← + [[FF:HK]]",
+      "damage": "A/C > 4D: 100 20x5 / AC > 4D: 120 20x2+30x3",
+      "description": "A/C Quick Dash will always trigger the same version of the Tatsu. AC Quick Dash will trigger an EX version of this Tatsu."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Dragonlash Kick",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > → + [[FF:HK]]",
+      "damage": "A/C > 6D: 120 (30+90 airborne) / AC > 6D: 150 (60+90 airborne)",
+      "description": "A/C Quick Dash always results in an boosted heavy Dragonlash. AC Quick Dash always results in an boosted EX Dragonlash. All versions switches sides on an airborne opponent."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Shoryureppa",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "220 40x3+20x2+60",
+      "description": "Both version are invincible. A version is a double Shoryuken and C version a triple. C version does an embarrassingly low amount of damage, barely more than a level 1 Shippu Jinrai-kyaku."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Shoryureppa",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "270 10x5+30x5+70",
+      "description": "Both version are invincible. A version is a double Shoryuken and C version a triple. C version does an embarrassingly low amount of damage, barely more than a level 1 Shippu Jinrai-kyaku."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Shippu Jinrai-kyaku",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "260 30+20x3+50+10x3+90",
+      "description": "236236B is Ken's highest damage Ignition Gear, mainly done after sideswitch Dragonlash or cancelled into from EX moves like DP, Jinrai, or Hadouken. 236236D has full invincibility and can be Braked for a combo extension. As a general rule of thumb, if no EX moves (or REV blow counter starter) are used, going straight into this without a EX DP super cancel will do more damage."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Shippu Jinrai-kyaku BR",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "340 30+20x3+50+20x5+100",
+      "description": "236236B is Ken's highest damage Ignition Gear, mainly done after sideswitch Dragonlash or cancelled into from EX moves like DP, Jinrai, or Hadouken. 236236D has full invincibility and can be Braked for a combo extension. As a general rule of thumb, if no EX moves (or REV blow counter starter) are used, going straight into this without a EX DP super cancel will do more damage."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Shinryu Shoen Ha",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "451 88+11x6+55+11x12+110",
+      "description": "Costs 2 bars and only avaiable during S.P.G., displayed damage is with S.P.G. bonus. Resets the Rev meter to 0%, even during Overheat. Has the same animation as Ken's SF4 focus attack with some decent range."
+    }
+  ],
+  "smart": []
+}

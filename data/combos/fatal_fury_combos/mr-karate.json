@@ -1,0 +1,173 @@
+{
+  "arcade": [
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 1/2/3",
+      "input": "[[FF:HK]] > [[FF:HK]] > [[FF:HK]] > → + [[FF:HK]] > [[FF:HK]] > → + [[FF:LK]]",
+      "damage": "D: 10 / 6D: 80 / 6B: 60",
+      "description": "placeholder"
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 4",
+      "input": "[In air] [[FF:HK]] > [[FF:HK]]",
+      "damage": "50",
+      "description": "placeholder"
+    },
+    {
+      "category": "Command Moves",
+      "name": "Mule Kick",
+      "input": "[In air] ← + [[FF:HK]]",
+      "damage": "60",
+      "description": "placeholder"
+    },
+    {
+      "category": "Command Moves",
+      "name": "Wall Jump",
+      "input": "[In air] ← + [[FF:HK]]",
+      "damage": "-",
+      "description": "placeholder"
+    },
+    {
+      "category": "Command Moves",
+      "name": "Fall Kick",
+      "input": "[In air] ← + [[FF:HK]]",
+      "damage": "60",
+      "description": "placeholder"
+    },
+    {
+      "category": "Command Moves",
+      "name": "Spirit Charge",
+      "input": "[[FF:LP]] or [[FF:HP]]",
+      "damage": "-",
+      "description": "By holding down either Punch button when he has any amount of REV Gauge built up, Mr. Karate will begin focusing his ki. A mechanic taken from his home series Art of Fighting , Spirit Charge reduces the REV Gauge as long as it is held down. Mr. Karate can generally find an opportunity to Spirit Charge after a Heavy Hien Shippuu Kyaku if he doesn't use Dragon Burst, after a back throw, or after his command grab. Spirit Charge can't be used if Mr. Karate has 0% REV."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Razz",
+      "input": "[[FF:LP]] [[FF:LK]] [[FF:HP]]",
+      "damage": "-",
+      "description": "Begins increasing opponent's REV gauge at frame 22 and reaches 17% at frame 65. The REV Gauge increase will stop if Mr. Karate is hit during the taunt. The opponent's REV Gauge build up is unaffected by what S.P.G. Ratio they are currently in. No matter what, their REV Gauge will always increase by 17% as long as Mr. Karate can perform the taunt uninterrupted."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Toryuu Sen",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132 [120]",
+      "description": "-"
+    },
+    {
+      "category": "REV Blows",
+      "name": "Hien Genryuu Kyaku",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "[132] (50 + 2*5 + 60)",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Ryuugeki Ken BR",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 80 / A (Overheat): 70 / C: 90 / C (Overheat): 80 / AC: 120",
+      "description": "Has poor startup compared to other fireballs but make up for it with the ability to destroy other projectiles without being destroyed itself, making it an excellent tool for countering other Projectiles. Will not destroy REV or super projectiles. Functions largely like the A version but has an even slower startup, making it extremely vulnerable to being jumped. Travels faster than the A version. Can be cancelled into Dragon Burst on hit or block. Can be charged up to turn it into Haoh Shoukou Ken , making the projectile larger and more damaging. This is Mr. Karate's optimal DP punish starter for DPs -45 or worse. There is only one level of charge. Although Mr. Karate can charge the move past this point, it only delays the projectile and does not increase the damage further. Charging the fireball does not grant it the properties of a REV or a super projectile, despite its name and appearance. If Mr. Karate is roughly at full screen, he will recover before the Haoh Shoukou Ken hits the opponent and will thus be unable to cancel it into Dragon Burst. Cannot be done when overheat since Mr. Karate cannot charge this fireball when in that state. There is only one level of charge. Although Mr. Karate can charge the move past this point, it only delays the projectile and does not increase the damage further. Charging the fireball does not grant it the properties of a REV or a super projectile, despite its name and appearance. If Mr. Karate is roughly at full screen, he will recover before the Haoh Shoukou Ken hits the opponent and will thus be unable to cancel it into Dragon Burst. Cannot be done when overheat since Mr. Karate cannot charge this fireball when in that state. A shorter ranged blast of ki that launches the opponent and can be followed up with Dragon Burst."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Hien Shippuu Kyaku BR",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 90 / B (Overheat): 80 / D: 100 (40+60) / D (Overheat): 90 (40+50) / BD: 110 (40+70)",
+      "description": "Light confirm combo ender and works at any range from 2A or f.A. It can also be used as an advancing poke in neutral provided Mr. Karate spaces it right. It is punishable when used up close but can be made up to -2 when spaced enough. It is punishable when used up close but can be made up to -2 when spaced enough. Because Mr. Karate has outstanding launch juggle damage when compared to his lacklustre close/crouching heavies, this usually serves as his optimal DP punish starter. Your go-to bread and butter combo ender. It can be followed up with Dragon Burst and comboed into Light Ryuuga. If the opponent is launched high enough before they are hit with this move, Mr. Karate can also follow up with Heavy Ryuuga or Ryuuko Ranbu. If the opponent is launched high enough before they are hit with this move, Mr. Karate can also follow up with Heavy Ryuuga or Ryuuko Ranbu. Mostly the same as Heavy Shippuu Kyaku outside of being able to REV Accel it. Also launches the opponent slightly higher than the Heavy version, allowing a juggle into Heavy Ryuuga."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Ryuuga BR",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 60 [40] / A (Overheat): 60 [40] / C: 60 [170 (40 + 20*5 +30)] / C (Overheat): 60 / AC: 70 [180 (40 + 30 + 20*4 +30)]",
+      "description": "As usual, this version has full body invincibility like most light DPs. Only has air invincibility but can be Braked. Can be charged to turn it into Kyokugen Ryuuga , dealing more hits and more damage in exchange for longer startup. Mr. Karate maintains air invincibility for the entire duration of the charge up. When Braked, it launches the opponent higher than a normal Heavy Ryuuga Brake, allowing for additional combo opportunities. Mr. Karate maintains air invincibility for the entire duration of the charge up. When Braked, it launches the opponent higher than a normal Heavy Ryuuga Brake, allowing for additional combo opportunities. Essentially the same as the C version, except faster and usable in more juggle sitations, such as from a REV Shouran Kyaku. Does an astounding 180 base damage when fully charged, making it the highest damage non-grab REV special in the game. Mr. Karate can easily combo into a fully-charged REV Ryuuga off of a REV Accel and, if in SPG, can combo out of it using an air REV Blow to quickly bring him back to the ground. Mr. Karate can easily combo into a fully-charged REV Ryuuga off of a REV Accel and, if in SPG, can combo out of it using an air REV Blow to quickly bring him back to the ground."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Gen'ei Kyaku BR",
+      "input": "→ ← → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 130 (0+1*12+118) / B (Overheat): 120 (0+1*12+118) / D: 110 (0+1*18+92) / D (Overheat): 100 (0+1*18+82) / BD: 120 (0+1*18+102)",
+      "description": "Can be used as a combo ender after a juggle from a braked Heavy Ryuuga. It has less corner carry than Heavy Hien Shippuu Kyaku but does more damage in certain combos. Has slower startup but can be Dragon Bursted out of. Mr. Karate can only combo into a light Ryuuga from this move as it vacuums the opponent down into a fixed height on hit. Mr. Karate can only combo into a light Ryuuga from this move as it vacuums the opponent down into a fixed height on hit. Mr. Karate's main REV Accel combo starter. Can also be Dragon Bursted out, giving Mr. Karate the uncommon flexibility of spending just a single REV art for a decent combo."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Drago Supremo",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "K: - / BD: -",
+      "description": "REV Drago Supremo and its followups are mostly the same, but Mr. Karate gains the ability to Dragon Burst after Shouran Kyaku and can REV Accel after Dragon Roar and Dragon Howl . Mr. Karate also gains the ability to parry Lows and REV projectiles, though the stance will still lose to Throws, cross-ups, and super projectiles. If Mr. Karate parries a strike immediately after activating Drago Supremo, he will instead perform Dragon Howl , a stronger attack. Even if the opponent was airborne when they triggered Dragon Howl, they will be forced into a grounded state for the animation. REV Dragon Howl can be followed up with Dragon Burst or a REV Accel. This makes Drago Supremo a good option when attempting a Guard Cancel, as certain REV Accel blockstrings that blow up other Guard Cancel options like a REV Accel into a REV DP will be countered by Dragon Howl. If Mr. Karate parries a projectile immediately after activating Drago Supremo, he will reflect the projectile instead of destroying it."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Dragon Step",
+      "input": "↓ ↙ ← + [[FF:K]] > [[FF:LP]]",
+      "damage": "K: - / BD: -",
+      "description": "If the slowdown is cancelled into one of the other Drago Supremo follow-ups, they become enhanced; Dragon Return resolves significantly faster, while Shouran Kyaku and Dragon Roar become fully invincible. While Dragon Step doesn't cause a slowdown against air normals during its active frames, the enhanced follow-ups can still be used if it does successfully dodge them. This gives Mr. Karate a limited form of defence against sloppy attempts to hit him with a cross up. Has a longer dodge window and slightly shorter recovery when it doesn’t dodge something. Cancelling it into Shouran Kyaku or Dragon Roar gives you the REV versions, which are also fully invincible. You can REV Accel from them."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Dragon Return",
+      "input": "↓ ↙ ← + [[FF:K]] > [[FF:LK]]",
+      "damage": "K: - / BD: -",
+      "description": "Mr. Karate is in Wild Punish state for the entire duration. Identical to the regular versions."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Shouran Kyaku",
+      "input": "↓ ↙ ← + [[FF:K]] > [[FF:HP]]",
+      "damage": "K: 160 (5*7 + 125) / BD: 120 (5*8 + 80)",
+      "description": "Mr. Karate’s only hard knockdown besides the universal throws, REV Blow and supers. If done off a Dragon Step counter, gains a variable amount of full invincibility based on the remaining \"unused\" counter frames of said Dragon Step. This special Shouran Kyaku always loses its invincibility 4 frames before grabbing, which could cause it to lose to moves with many active frames. This special Shouran Kyaku always loses its invincibility 4 frames before grabbing, which could cause it to lose to moves with many active frames. Runs significantly faster and slightly further, and although it does less damage on its own, you can cancel it to Dragon Burst or REV Blow, overall increasing your damage from it. The special invincible version of REV Shouran Kyaku has exact the same caveats as the regular versions."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Dragon Roar",
+      "input": "↓ ↙ ← + [[FF:K]] > [[FF:HK]]",
+      "damage": "K: 80 / BD: 80",
+      "description": "Hold either the B or D button to immediately return to Drago Supremo. If Mr. Karate does this, this move become safe against strikes even though it's -5 otherwise. If Mr. Karate does this, this move become safe against strikes even though it's -5 otherwise. You will return to the regular stance regardless of whether you did the regular or REV stance beforehand. Has an optional follow-up, Dragon Roar: Ren . The startup has brief invincibility to low attacks, and any low that is dodged within this window will trigger a slowdown, easily letting you confirm the follow-up. Slowdown triggers against quick low attacks like 2B do not guarantee a punish due to Dragon Roar's slow startup. Mr. Karate can also link into 2A at most ranges it counters a low/throw attack. Slowdown triggers against quick low attacks like 2B do not guarantee a punish due to Dragon Roar's slow startup. Mr. Karate can also link into 2A at most ranges it counters a low/throw attack. Launches if they counter hit an airborne opponent, giving you big punishes against air REV Blows (or some moves like Terry’s Power Dunk). Becomes safe on block at -1, and you can REV Accel it. If Dragon Roar is done out of a Dragon Step counter, all versions gain full invincibility until the end of their active frames. If Dragon Roar automatically triggered via a Drago Supremo parry, all versions gain full invincibility until the end of their recovery frames. All versions otherwise retain their original properties and frame data."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Dragon Roar Ren",
+      "input": "↓ ↙ ← + [[FF:K]] > [[FF:HK]] > → + [[FF:HK]]",
+      "damage": "K: 60 / BD: 40",
+      "description": "The only difference between regular and REV is that you can REV Accel it, not only giving you additional combo opportunities but potentially saving you from how egregiously unsafe it is on block."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Dragon Howl",
+      "input": "↓ ↙ ← + [[FF:K]]",
+      "damage": "K: 180 (30 + 50 + 100) / BD: 140 (30 + 50 + 80)",
+      "description": "This counterattack is functionally a hitgrab; it will re-stand opponents it hits, even if they were airborne. REV Dragon Howl parries attacks even faster — on frame 3 instead of frame 5 — making it an excellent answer to frame traps and a highly effective (albeit costly) Guard Cancel option. While the counterattack does less damage, you can also cancel it to Dragon Burst or REV Accel it, giving you a combo from it in both cases, but the combo will have extra scaling. Against long-ranged hitboxes (e.g. from Billy), Dragon Howl's second hit may fail to combo. The resulting third hit will be -31 on block or -4 on REV Dragon Howl into Dragon Burst."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Dragon Dance",
+      "input": "↓ ↙ ← + [[FF:K]]",
+      "damage": "K: - / BD: -",
+      "description": "If done at any point during the stance following the initial parry frames, Mr. Karate will simply kick the projectile out of existence. However, to deal with REV projectiles, Mr. Karate will have to be in REV Drago Supremo . If a projectile makes contact with Mr. Karate during frames 5 to 7 of entering Drago Supremo (frames 3 to 5 for the REV version), he will instead reflect the projectile back at the opponent. Successful Dragon Dances can be cancelled to any of Drago Supremo’s input follow-ups, as well as Dragon Burst. If Mr. Karate doesn’t cancel the Dragon Dance, he will instead remain in Drago Supremo."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Super Haou Shoukou Ken",
+      "input": "↓ ↘ → ↓ → ↘ + [[FF:LK]]",
+      "damage": "240 [270]",
+      "description": "Deals more damage than his Ignition Ryuko Ranbu and is the preferred 1 bar ender in combos. If it hits high enough in the corner, Mr. Karate can often tack on at least a light Ryuuga. Destroys other non-super projectiles while travelling across the screen very quickly. This is useful for shutting down opponents attempting to counter zone Mr. Karate with REV projectiles. This is useful for shutting down opponents attempting to counter zone Mr. Karate with REV projectiles. If charged, Super Haou Shoukou Ken will deal more damage and have increased durability, allowing it to negate other uncharged Ignition projectiles but not Redline projectiles. Fires three fireballs instead of one, instantly dominating any fireball war. Can be cancelled into Dragon Burst on the second hit, which can be followed up with a Heavy Hien Shippuu Kyaku, even from full screen. Like the Ignition version, charging the Redline version will cause it to deal more damage and have increased durability. Each charged Redline Super Haou Shoukou Ken projectile negates all projectiles while clashing with other charged Redline projectiles (Kaiser Wave, Super Haou Shoukou Ken)."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Super Haou Shoukou Ken BR",
+      "input": "↓ ↘ → ↓ → ↘ + [[FF:HK]]",
+      "damage": "330 (70 + 70 + 190) [360 (70 + 70 + 220)]",
+      "description": "Deals more damage than his Ignition Ryuko Ranbu and is the preferred 1 bar ender in combos. If it hits high enough in the corner, Mr. Karate can often tack on at least a light Ryuuga. Destroys other non-super projectiles while travelling across the screen very quickly. This is useful for shutting down opponents attempting to counter zone Mr. Karate with REV projectiles. This is useful for shutting down opponents attempting to counter zone Mr. Karate with REV projectiles. If charged, Super Haou Shoukou Ken will deal more damage and have increased durability, allowing it to negate other uncharged Ignition projectiles but not Redline projectiles. Fires three fireballs instead of one, instantly dominating any fireball war. Can be cancelled into Dragon Burst on the second hit, which can be followed up with a Heavy Hien Shippuu Kyaku, even from full screen. Like the Ignition version, charging the Redline version will cause it to deal more damage and have increased durability. Each charged Redline Super Haou Shoukou Ken projectile negates all projectiles while clashing with other charged Redline projectiles (Kaiser Wave, Super Haou Shoukou Ken)."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Muei Ryuuou Kyaku",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "451 50*2 + 10*6 + 30 + 50*2 + 120",
+      "description": "placeholder"
+    }
+  ],
+  "smart": []
+}

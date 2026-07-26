@@ -1,0 +1,166 @@
+{
+  "arcade": [
+    {
+      "category": "Command Moves",
+      "name": "Step Low Kick",
+      "input": "→ + [[FF:LK]]",
+      "damage": "70",
+      "description": "Safe on block low with good range. Has similar range and startup to his universal overhead. Doesn't leave Joe close enough on hit to link cl.A, but he can frametrap with cl.D / 2C or go for a pressure reset."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Slide Kick",
+      "input": "↘ + [[FF:HK]]",
+      "damage": "90",
+      "description": "The long range and active frames can be used to preemptively stuff an opponent's pokes or forward movement. Safe-on-block sliding distance is a hair shorter than round-start spacing. Sadly, does not low-profile moves."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo",
+      "input": "[[FF:HK]] > [[FF:HK]] > [[FF:HK]]",
+      "damage": "D > D: 30 / D > D > D: 40",
+      "description": "Hit confirmable extension of Joe's poke for more damage and a knockdown."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Golden Hiji",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Joe does a lunging elbow uppercut."
+    },
+    {
+      "category": "REV Blows",
+      "name": "V-Tiger",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "132 (55+77)",
+      "description": "Joe does a diving knee in the air."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Hurricane Upper BR",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 60 / C: 80 (40x2) / AC: 30 (10x3) / AC > 6P: 90 (30x3)",
+      "description": "A version travels half screen C version launches two tornadoes that travel about 70% of the screen This version can be braked to launch only one tornado and be safer against jumps This version can be braked to launch only one tornado and be safer against jumps AC version launches a stationary 3-hit tornado which can be followed up with 6P to launch another 3-hit tornado that travels nearly full screen. The follow up can be delayed significantly and can be performed as long as the initial tornado hasn't disappeared. If the follow up is performed quickly, the follow up scales the combo as if were a separate EX move and massively reduces damage potential, especially in shorter combos. This may be a bug. The follow up can be delayed significantly and can be performed as long as the initial tornado hasn't disappeared. If the follow up is performed quickly, the follow up scales the combo as if were a separate EX move and massively reduces damage potential, especially in shorter combos. This may be a bug."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Slash Kick BR",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 80 / D: 120 (40+80) / BD: 100 (40+60)",
+      "description": "All versions can be braked before they hit. This can be useful for baiting reversals or approaching for throws. B version can technically be safe on block when spaced but very difficult in practice. Joe will more often than not be point blank and -5 or worse at most ranges this move is attempted from."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Tiger Kick BR",
+      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 80 / D: 110 (30+80) / BD: 130(70 BR) 20x2+30+60",
+      "description": "Good horizontal range for a DP and always hits as long as far A hits, which many other characters cannot do with their DPs. At longer ranges, the D version's brakeable frames end before it can hit. This happens if 3 lights are used before the DP or from a close D > far A link."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Bakurestu Ken",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C: 30 (5x6) / AC: 20 (5x4)",
+      "description": "Does low damage by itself but is safe on block and can be followed up on whiff or block during any of the 6 punches. While manually delaying the follow-up on the last hit leads to optimal damage, the opponent will begin to fall out of the move after the 5th hit, which can lead to the follow-up whiffing. While manually delaying the follow-up on the last hit leads to optimal damage, the opponent will begin to fall out of the move after the 5th hit, which can lead to the follow-up whiffing. AC version makes Joe step forwards before punching. He only performs 4 punches but it can be followed up on the last hit. No manual delay is necessary. AC version also cannot be followed up on whiff. AC version also cannot be followed up on whiff. Regular versions combo from lights and AC version combos from heavies."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Boom Punch",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]] > → + [[FF:LP]]",
+      "damage": "A/C > 6A: 80 (30+50) / AC > 6A: 60 (20+40)",
+      "description": "Does more damage than Boom Elbow and is safe on block. Has less range compared to Boom Elbow and tends to whiff in juggles if Bakuretsu Ken doesn't hit close."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Boom Elbow",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]] > → + [[FF:HP]]",
+      "damage": "70",
+      "description": "Knocks down on non-counter hit and launches on counter hit. Does not frame-trap on block, so Boom Elbow only counter hits if a Bakurestu Ken punch whiffs."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Bakuretsu Finish",
+      "input": "→ ↓ ↘ + [[FF:LP]] [[FF:HP]] > → + [[FF:HP]]",
+      "damage": "100 (30+70)",
+      "description": "A REV-only followup to Bakuretsu Ken and is the highest damage followup. If going for a REV Blow, perform it only after Joe is airborne."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Golden Tatsumaki",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 80 / D: 100 (40+60)/60 / BD: 140 (50+90)",
+      "description": "Has a bad air hitbox and oftens loses to jump ins and air to airs. Will fly above low attacks, which can counter opponents trying to break through Joe's Fearless Man stance. BD version is a great way to give Joe advantage on block. Can also REV accel out of failed stance mixups to make them safe."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Fearless Man",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C: - / AC: -",
+      "description": "AC version also covers low attacks. Has a bevy of followups that hit high/low as well as a command grab. The guard points do not work against supers."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Fearless: Tiger Claw",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > → + [[FF:HK]]",
+      "damage": "A/C > 6D: 70 / AC > 6D: 80",
+      "description": "A stepping low-sweep Furthest range of all follow-ups Great option that is safe on block and knocks down on hit, can be used as a mixup option in block strings but doesn't have much reward unless REV version is used"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Fearless: Tiger Wrath",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:HP]]",
+      "damage": "A/C > C: 60 / AC > C: 70",
+      "description": "A far range overhead elbow swing Not much reward unless counterhitting or spending meter Due to having 4 active frames, it can be used in meaty setups after hard knockdowns."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Fearless: Tiger Tempest",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:HK]]",
+      "damage": "A/C > D: 60 / AC > D: 70",
+      "description": "An ignorant kick that blows through other moves Only follow-up that retains guard points +-0 on normal hit and +5 on counter hit. In theory Joe can get a follow up, but oftentimes he can't link a fast normal due to the pushback."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Fearless: Tiger Torment",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:LP]] [[FF:LK]]",
+      "damage": "A/C > AB: 140 (40x2+60) / AC > AB: 100 (20+30+50)",
+      "description": "A side-swapping command grab with decent range Able to immediately tick-throw after 1 light normal, or a slight delay after far C REV version allows follow-ups as usual with REV enhanced command grabs"
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Screw Upper",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "230 100+10x3+20x5",
+      "description": "This is Joe's reversal super and is fully invincible and faster than his other super. Joe will be at close D range and +17 on a ground hit and +19 on a juggle after 2 dashes after the A version of this move."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Screw Upper",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "310 100+10x3+20x9",
+      "description": "This is Joe's reversal super and is fully invincible and faster than his other super. Joe will be at close D range and +17 on a ground hit and +19 on a juggle after 2 dashes after the A version of this move."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Screw Elbow",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "240/270 20x6+120/150",
+      "description": "The opponent ends up nearly at fullscreen distance and Joe gets no oki off of this. However, this may be work to his advantage because he can transition to his strong zoning game. However, this may be work to his advantage because he can transition to his strong zoning game. The D version of this move sets wallbounces like a AA counter REV blow and sets up a juggle. Joe can also perform a free follow-up with D. Simply holding down D will also cause this follow-up to occur. Charging the follow-up prevents the opponent from leaving the corner from the wallbounce. Joe can also perform a free follow-up with D. Simply holding down D will also cause this follow-up to occur. Charging the follow-up prevents the opponent from leaving the corner from the wallbounce."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Screw Elbow",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "170/200 20x6+50/80",
+      "description": "The opponent ends up nearly at fullscreen distance and Joe gets no oki off of this. However, this may be work to his advantage because he can transition to his strong zoning game. However, this may be work to his advantage because he can transition to his strong zoning game. The D version of this move sets wallbounces like a AA counter REV blow and sets up a juggle. Joe can also perform a free follow-up with D. Simply holding down D will also cause this follow-up to occur. Charging the follow-up prevents the opponent from leaving the corner from the wallbounce. Joe can also perform a free follow-up with D. Simply holding down D will also cause this follow-up to occur. Charging the follow-up prevents the opponent from leaving the corner from the wallbounce."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Tiger Festival",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "451 110+33+22+33x2+22x2+44+132",
+      "description": "VERY poor range, you won't be punishing any slighty spaced fireballs or moves with this. Can sometimes whiff after 3 Light normals if Joe is a bit too spaced out."
+    }
+  ],
+  "smart": []
+}

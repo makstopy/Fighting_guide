@@ -9,23 +9,23 @@ interface ComboInputProps {
 }
 
 export function tokeniseInput(input: string): string[] {
-  // First extract [[ICON:xxx]] tags as atomic tokens
-  const iconRegex = /\[\[ICON:([a-z0-9-]+)\]\]/g;
-  const parts: { icon?: string; text?: string }[] = [];
+  // Extract [[...]] tags (SF6, FF, ICON) and bracketed text like [In air] or [During S.P.G.] as atomic tokens
+  const bracketRegex = /(\[\[[^\]]+\]\]|\[[^\]]+\])/g;
+  const parts: { atomic?: string; text?: string }[] = [];
   let last = 0;
   let m;
 
-  while ((m = iconRegex.exec(input)) !== null) {
+  while ((m = bracketRegex.exec(input)) !== null) {
     if (m.index > last) parts.push({ text: input.slice(last, m.index) });
-    parts.push({ icon: m[1] });
+    parts.push({ atomic: m[1] });
     last = m.index + m[0].length;
   }
   if (last < input.length) parts.push({ text: input.slice(last) });
 
   const tokens: string[] = [];
   parts.forEach(part => {
-    if (part.icon) {
-      tokens.push(`[[ICON:${part.icon}]]`);
+    if (part.atomic) {
+      tokens.push(part.atomic);
       return;
     }
     if (part.text) {

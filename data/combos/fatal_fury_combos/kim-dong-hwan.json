@@ -1,0 +1,124 @@
+{
+  "arcade": [
+    {
+      "category": "Command Moves",
+      "name": "Mule Kick",
+      "input": "[In air] ← or → + [[FF:HP]]",
+      "damage": "50",
+      "description": "Pulls in on hit. Is even when done at its highest on block. Tends to bug out when done above their head. Doesn't give him a third gun as the name implies."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Tai Hineri",
+      "input": "[In air] [[FF:LP]] [[FF:LK]]",
+      "damage": "100",
+      "description": "Air throw, leaves you a full screen lenght away from them"
+    },
+    {
+      "category": "Command Combos",
+      "name": "Target Combo 1",
+      "input": "[[FF:LK]] > [[FF:HK]]",
+      "damage": "cl.B > D: 48 (19 + 29) / cl.B~D > 6B: 36 / cl.B~D~6B > CD: 108 (13x4 + 56)",
+      "description": "Only available in S.P.G, gives it a nice knockdown."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Target Combo 2",
+      "input": "[In air] [[FF:LP]] > [[FF:HP]]",
+      "damage": "33",
+      "description": "j.C loses its juggle when doing this."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Kaiten Dong Hwan",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Slap your body the floor."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Inazuma Hurricane Kick",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "130 (16x4 + 66)",
+      "description": "Whiffs on crouching opponents."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Raimei Zan BR",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 80 (20 + 60) / D: 90 / BD: 90",
+      "description": "Can be done as a feint with 2DRev. Beats Lows. Light version hits mid and isn't a true blockstring. Heavy version is unsafe most of the time. All versions can be braked. Heavy, Rev and Feint versions give you enough height to do j214BD or Super Dong Kick. Heavy, Rev and Feint versions give you enough height to do j214BD or Super Dong Kick."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Air Raimei Zan BR",
+      "input": "[In air] ↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 50 / D: 90 / BD: 90",
+      "description": "All versions hit mid and can be very unsafe. All versions can be braked. You can do anything after a Brake, including another j214K, giving him a quadruple jump of sorts. You can do anything after a Brake, including another j214K, giving him a quadruple jump of sorts. You can only do each version once per jump. Rev version is +6 on hit after a 214D Brake. Only Rev version can be done as a TK input, but it must be slightly delayed else it doesn't come out in time. Very plus depending on height"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Shiden Kyaku",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 70 / D: 80 / BD: 100 (50x2)",
+      "description": "Heavy version is a low, only comboes after clC and Counter 2C/2CRev. Death on block. Only Rev version can be braked. Can be done on startup or after the first kick. Braking the first kick leaves you +1 Can be done on startup or after the first kick. Braking the first kick leaves you +1 Light Version causes a juggle on air hit."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Kuusajin BR",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 90 (30 + 20x3) / C: 110 (30 + 10x4 + 40) / AC: 120 (40 + 10x4 + 40)",
+      "description": "Standard DP. Rev version can be canceled into another Rev Art before or with the last hit."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Ashi Binta BR",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 80 (5x4 + 60) / C: 100 (5x4 + 80) / AC: 90 (5x8 + 50)",
+      "description": "Moves him forward. Heavy and Rev versions can be braked. Rev version can be braked at 2 points during the move. Is +2 on block after either brake points. First point leaves you in throw range, second just outside of it Rev version can be braked at 2 points during the move. Is +2 on block after either brake points. First point leaves you in throw range, second just outside of it Heavy version is +6 when braked on a counter hit. Becomes a launching counter if only the last hit counters."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Hishou Kyaku",
+      "input": "[In air] ↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 100 (5x20) / D: 80 (4x20) / BD: 120 (40 + 4x20)",
+      "description": "The classic Kim dive kick, worse for wear. Heavy version will never land all hits and will often leave you minus ON HIT ...avoid the heavy version."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Raimei Dan",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "220",
+      "description": "Fully Invul. Comboes from Lights."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Super Dong Hwan Kick",
+      "input": "[In air] ↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "230 (30 + 15x4 + 140)",
+      "description": "10/10 name. Has no invul. Comboes off of jA and jC. If done very low to the opponent in a combo, it allows for combo extensions."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Raimei Dan BR",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "310 (150 + 160)",
+      "description": "Fully Invul."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Super Dong Hwan Kick",
+      "input": "[In air] ↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "340 (50 + 20x7 + 150)",
+      "description": "Not even the name can save this. Still no invul but it lets him combo from back jump jA."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Tenshou Raimei Kyaku",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "434",
+      "description": "Fully Invul. Available only in SPG."
+    }
+  ],
+  "smart": []
+}

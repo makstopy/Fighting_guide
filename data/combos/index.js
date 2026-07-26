@@ -2,7 +2,38 @@
 
 const ggStriveCombos = require('./ggstrive.json');
 const dbfzCombos = require('./dbfz.json');
-const fatalFuryCombos = require('./fatalfury.json');
+
+const fatalFuryCombos = {
+  "Andy Bogard": require("./fatal_fury_combos/andy-bogard.json"),
+  "B. Jenet": require("./fatal_fury_combos/b-jenet.json"),
+  "Billy Kane": require("./fatal_fury_combos/billy-kane.json"),
+  "Blue Mary": require("./fatal_fury_combos/blue-mary.json"),
+  "Chun-Li (CotW)": require("./fatal_fury_combos/chun-li.json"),
+  "Cristiano Ronaldo": require("./fatal_fury_combos/cristiano-ronaldo.json"),
+  "Gato": require("./fatal_fury_combos/gato.json"),
+  "Hokutomaru": require("./fatal_fury_combos/hokutomaru.json"),
+  "Hotaru Futaba": require("./fatal_fury_combos/hotaru-futaba.json"),
+  "Joe Higashi": require("./fatal_fury_combos/joe-higashi.json"),
+  "Kain R. Heinlein": require("./fatal_fury_combos/kain-r-heinlein.json"),
+  "Ken Masters (CotW)": require("./fatal_fury_combos/ken-masters.json"),
+  "Kenshiro": require("./fatal_fury_combos/kenshiro.json"),
+  "Kevin Rian": require("./fatal_fury_combos/kevin-rian.json"),
+  "Kim Dong Hwan": require("./fatal_fury_combos/kim-dong-hwan.json"),
+  "Kim Jae Hoon": require("./fatal_fury_combos/kim-jae-hoon.json"),
+  "Mai Shiranui": require("./fatal_fury_combos/mai-shiranui.json"),
+  "Marco Rodrigues": require("./fatal_fury_combos/marco-rodrigues.json"),
+  "Mr. Big": require("./fatal_fury_combos/mr-big.json"),
+  "Mr. Karate": require("./fatal_fury_combos/mr-karate.json"),
+  "Nightmare Geese": require("./fatal_fury_combos/nightmare-geese.json"),
+  "Preecha": require("./fatal_fury_combos/preecha.json"),
+  "Rick Strowd": require("./fatal_fury_combos/rick-strowd.json"),
+  "Rock Howard": require("./fatal_fury_combos/rock-howard.json"),
+  "Salvatore Ganacci": require("./fatal_fury_combos/salvatore-ganacci.json"),
+  "Terry Bogard": require("./fatal_fury_combos/terry-bogard.json"),
+  "Tizoc": require("./fatal_fury_combos/tizoc.json"),
+  "Vox Reaper": require("./fatal_fury_combos/vox-reaper.json"),
+  "Wolfgang Krauser": require("./fatal_fury_combos/wolfgang-krauser.json"),
+};
 
 // MK1 Combos
 const mk1Combos = {

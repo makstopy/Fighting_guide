@@ -16,7 +16,22 @@ import {
   XboxB,
   XboxBumper,
   XboxX,
-  XboxY
+  XboxY,
+  FFLightPunch,
+  FFHeavyPunch,
+  FFLightKick,
+  FFHeavyKick,
+  FFREVGuard,
+  FFPunch,
+  FFKick,
+  FFSpecial,
+  FFSmartCombo,
+  FFREVBlow,
+  FFDodge,
+  FFThrow,
+  FFContextBadge,
+  FFModBadge,
+  FFNeutralIcon,
 } from './icons/ControllerIcons';
 
 const MOVE_ICONS: Record<string, any> = {
@@ -64,6 +79,23 @@ const ARCADE_DOT_MAP: Record<string, number[]> = {
   "LP+RP+LK+RK": [1, 1, 1, 1],
 };
 
+const FF_IMAGE_ICONS: Record<string, any> = {
+  "LP": require('../assets/images/fatal_fury_icons/ff_arcade_light_punch.png'),
+  "HP": require('../assets/images/fatal_fury_icons/ff_arcade_heavy_punch.png'),
+  "LK": require('../assets/images/fatal_fury_icons/ff_arcade_light_kick.png'),
+  "HK": require('../assets/images/fatal_fury_icons/ff_arcade_heavy_kick.png'),
+  "REV": require('../assets/images/fatal_fury_icons/ff_rev_guard.png'),
+  "BR": require('../assets/images/fatal_fury_icons/ff_braking_ok.png'),
+  "FE": require('../assets/images/fatal_fury_icons/ff_feint_ok.png'),
+  "P": require('../assets/images/fatal_fury_icons/ff_smart_punch.png'),
+  "K": require('../assets/images/fatal_fury_icons/ff_smart_kick.png'),
+  "SP": require('../assets/images/fatal_fury_icons/ff_smart_special_move.png'),
+  "SC": require('../assets/images/fatal_fury_icons/ff_smart_smart_combo.png'),
+  "RB": require('../assets/images/fatal_fury_icons/ff_smart_rev_blow.png'),
+  "DA": require('../assets/images/fatal_fury_icons/ff_smart_doge_attack.png'),
+  "TH": require('../assets/images/fatal_fury_icons/ff_smart_throw.png'),
+};
+
 interface ButtonTokenProps {
   token: string;
   controlType: ControlType;
@@ -73,6 +105,83 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
   const s = 35;
 
   if (token === '>') return <ArcadeSep />;
+
+  // ── Badges ─────────────────────────────────────────────────────────────────
+  if (token === '[In air]') return <FFContextBadge label="In air" />;
+  if (token === '[During S.P.G.]') return <FFContextBadge label="S.P.G." />;
+  if (token === 'BR') {
+    return (
+      <Image
+        source={FF_IMAGE_ICONS['BR']}
+        style={styles.ffBadgeImage}
+        resizeMode="contain"
+      />
+    );
+  }
+  if (token === 'FE') {
+    return (
+      <Image
+        source={FF_IMAGE_ICONS['FE']}
+        style={styles.ffBadgeImage}
+        resizeMode="contain"
+      />
+    );
+  }
+
+  // ── Fatal Fury specific tokens for PS/Xbox/Arcade modes ───────────────────
+  if (token.startsWith('[[FF:')) {
+    const code = token.slice(5, -2);
+    if (controlType === 'PS') {
+      switch (code) {
+        case 'LP': case 'P': return <PSSquare size={s} />;
+        case 'HP': case 'SP': return <PSTriangle size={s} />;
+        case 'LK': case 'K': return <PSCross size={s} />;
+        case 'HK': case 'SC': return <PSCircle size={s} />;
+        case 'REV': return <PSBumper label="R1" size={s} />;
+        case 'RB': return <PSBumper label="L1" size={s} />;
+        case 'DA': return <PSBumper label="R2" size={s} />;
+        case 'TH': return <PSBumper label="L2" size={s} />;
+      }
+    }
+    if (controlType === 'Xbox') {
+      switch (code) {
+        case 'LP': case 'P': return <XboxX size={s} />;
+        case 'HP': case 'SP': return <XboxY size={s} />;
+        case 'LK': case 'K': return <XboxA size={s} />;
+        case 'HK': case 'SC': return <XboxB size={s} />;
+        case 'REV': return <XboxBumper label="RB" size={s} />;
+        case 'RB': return <XboxBumper label="LB" size={s} />;
+        case 'DA': return <XboxBumper label="RT" size={s} />;
+        case 'TH': return <XboxBumper label="LT" size={s} />;
+      }
+    }
+    // Arcade control type or fallback: show Fatal Fury PNG image icon
+    const imgSource = FF_IMAGE_ICONS[code];
+    if (imgSource) {
+      return (
+        <Image
+          source={imgSource}
+          style={styles.ffImageIcon}
+          resizeMode="contain"
+        />
+      );
+    }
+
+    switch (code) {
+      case 'LP': return <FFLightPunch size={s} />;
+      case 'HP': return <FFHeavyPunch size={s} />;
+      case 'LK': return <FFLightKick size={s} />;
+      case 'HK': return <FFHeavyKick size={s} />;
+      case 'REV': return <FFREVGuard size={s} />;
+      case 'P': return <FFPunch size={s} />;
+      case 'K': return <FFKick size={s} />;
+      case 'SP': return <FFSpecial size={s} />;
+      case 'SC': return <FFSmartCombo size={s} />;
+      case 'RB': return <FFREVBlow size={s} />;
+      case 'DA': return <FFDodge size={s} />;
+      case 'TH': return <FFThrow size={s} />;
+    }
+  }
 
   // ── SF6 Controller mappings ──
   if (controlType === 'PS') {
@@ -251,6 +360,8 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
     return <DirArrow dir={token} size={s} />;
   }
 
+  if (token === 'N') return <FFNeutralIcon size={34} />;
+  if (token === 'or') return <Text style={styles.orText}>or</Text>;
   if (token === '~') return <Text style={styles.tilde}>~</Text>;
   if (token === '+') return <Text style={styles.plus}>+</Text>;
   if (token === ',') return <Text style={styles.comma}>,</Text>;
@@ -335,5 +446,22 @@ const styles = StyleSheet.create({
     width: 35,
     height: 35,
     marginHorizontal: 2,
+  },
+  ffImageIcon: {
+    width: 34,
+    height: 34,
+    marginHorizontal: 2,
+  },
+  ffBadgeImage: {
+    height: 20,
+    width: 44,
+    marginHorizontal: 2,
+  },
+  orText: {
+    color: '#888',
+    fontSize: 13,
+    fontFamily: 'Rajdhani-Bold',
+    marginHorizontal: 4,
+    fontWeight: '700',
   },
 });

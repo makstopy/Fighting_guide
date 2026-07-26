@@ -1,0 +1,145 @@
+{
+  "arcade": [
+    {
+      "category": "Command Moves",
+      "name": "Ukihane",
+      "input": "[In air] ↓ + [[FF:LK]]",
+      "damage": "50",
+      "description": "Active hitbox till landing Can be punished on hit. Can be canceled into j214AC and air rev blow. Can change air trajectory slightly"
+    },
+    {
+      "category": "Command Moves",
+      "name": "Koukaku no Mai",
+      "input": "↘ + [[FF:HK]]",
+      "damage": "70 (30 + 40)",
+      "description": "Long range 2 hitting command normal low Can be canceled into from close C but becomes a mid. Links into cl.C on Counter Hits but the link is extremely range dependent. Great option to use after REV Sayo Chidori and REV Kachosen to catch walkback"
+    },
+    {
+      "category": "Command Moves",
+      "name": "Yume Kachou",
+      "input": "[In air] [[FF:LP]] [[FF:LK]]",
+      "damage": "100",
+      "description": "A great air throw that let's her start her pressure.A great option to counter Air rev blows."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Sankaku-Tobi",
+      "input": "[In air] ↖",
+      "damage": "-",
+      "description": "Can do air Normals and j214AC afterwards."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command combos",
+      "input": "[[FF:HP]] > ↘ + [[FF:HK]]",
+      "damage": "cl.C > 3D: 33 (14 + 19) / cl.C~3D > D: 36 / cl.C~3D > CD: 118 (99 + 19)",
+      "description": "Only available during S.P.G., replaces the last hit with her Rev Blow."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Homura Niren",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132 (110 + 22)",
+      "description": "Faster than average for a REV Blow, but stubby. It'd be a great anti air but crossups tend to beat it."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Yumihari no Mai",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "132 (77 + 55)",
+      "description": "Much better than her grounded Rev Blow. Has a decent air-to-air hitbox and is very easy to combo into off of Rev DP or Divekick. With precise cancel timing out of her Rev Specials, it's possible to only land the first hit, which sends the opponent absurdly high into the air, which enables some of Mai's strongest corner routing."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Kachousen",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C: 60 / AC: 80 (40x2)",
+      "description": "Light travels slow, heavy travels fast Rev version throws 2 fans. Acting as 2 EX projectiles."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Ryuuenbu",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 90 / C: 110 (40 + 70) / AC: 110 (30 + 80)",
+      "description": "Light version won't normally combo. Causes a launch on Counter Hit. Heavy version comboes from Lights. Rev version combos from a counter hit light attack Only the Light version deletes projectiles. Rev version frame traps from lights into a full combo The heavy version is Mai's best meterless combo ender"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Hissatsu Shinobi-Bachi BR",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 90 (20x2 + 50) / D: 100 (20x3 + 40) / BD: 90 (15x2 + 10 + 40)",
+      "description": "Light version comboes from lights. Heavy and Rev versions can be braked. Light and Heavy do fewer hits on higher height hits. [Possible bug] Be aware that this move is not effected by the SNK \"longcut\" (2369X) and will often be interpreted as Hana Arashi(623K) by the input reader when done out of a forward dash. Counterhitting with the elbow hitbox will lead to a launch"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Sayo Chidori",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 70 / D: 100 / BD: 100 (20 + 80)",
+      "description": "Despite looks, they're all mids. Heavy version comboes only after clD. Links into 2A on hit. Light and Heavy become +11 on Counter Hit and link with farC. Heavy version and Rev versions are both +2 on block."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Hana Arashi BR",
+      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 90 (30 + 10x6) / D: 90 (30 + 10x6) / BD: 120 (40 + 10x5 + 30)",
+      "description": "Can hit behind her but tends to whiff crossups."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Musasabi no Mai (Move)",
+      "input": "↓(charge) ↖ or ↑ or ↗ + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: - / C: - / AC: -",
+      "description": "Light, Heavy and Rev change trajectory and speed. 7 and 8 jump back whilst 9 jumps forward."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Musasabi no Mai (Fall)",
+      "input": "↓(charge) ↖ or ↑ or ↗ + [[FF:LP]] or [[FF:HP]] > [[FF:LP]] or [[FF:HP]]",
+      "damage": "A/C > A: 100 / A/C > C: 100 / AC > A: 120 / AC > C: 120",
+      "description": "Light and Heavy have different angles but same speed. If done after the Rev versions, it moves faster."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Air Musasabi no Mai",
+      "input": "[In air] ↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 100 / C: 120 / AC: 120",
+      "description": "Light and Heavy keep their angles from the follow up version. Rev versions act like the Heavy. Non-enhanced versions can never be plus. Launches on grounded and aerial counter hit, and knocks down on normal hit."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Kagerou no Mai",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "260 (20x7 + 120)",
+      "description": "Fully invulnerable, but with a rather terrible hitbox for a reversal. Doesn't hit behind her either. The highest damage an Ignition Gear can have."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Chou Hissatsu Shinobi Bachi",
+      "input": "236236B/j.236236B",
+      "damage": "Ground: 240 (10x3 + 20x5 + 110) / Air: 200 (20x5 + 100)",
+      "description": "A new, faster air version. Basically worthless against grounded opponents, but part of Mai's optimal routing in juggles as an instant air super, where its possible to combo after for either resource gain or a second super."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Kagerou no Mai",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "320 (10x21 + 110)",
+      "description": "Fully invulnerable and as fast as her DP. Still doesn't hit behind her."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Chou Hissatsu Shinobi Bachi BR",
+      "input": "236236D/j.236236D",
+      "damage": "Ground: 300 (10x3 + 20x6 + 150) / Air: 300 (30x5 + 150)",
+      "description": "Fully Invul."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Ouran no Mai: Akasuzumi",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "440",
+      "description": "Fully invulnerable. Available only in SPG."
+    }
+  ],
+  "smart": []
+}

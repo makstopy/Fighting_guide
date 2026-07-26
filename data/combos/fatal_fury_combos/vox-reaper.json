@@ -1,0 +1,89 @@
+{
+  "arcade": [
+    {
+      "category": "REV Blows",
+      "name": "Rasai Jin",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Only available during S.P.G"
+    },
+    {
+      "category": "REV Blows",
+      "name": "Shouen Raku",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Only available during S.P.G Could be used as  anti air bait, starts a full combo on counter hit One of Vox's best midscreen combo enders as it gives him hard knockdown oki"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Kokuen Ryuu",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 80 / 50 (Far) / C: 80 / AC: 100 (40+60)",
+      "description": "Vox's \"fireball function\" Light servers as a great and hard to contest poke in neutral . its also a good blockstring ender from heavies keeping Vox relatively safe while also punishing mashers as if functions as a 4F frametrap Heavy is the go to combo starter from heavy confirms. while its a 5f frametrap from heavy punches(trades with 4f) its unsafe on block Landing a counter hit with heavy will launch the opponent in a special state which allows another 214C to connect and relaunch EX is the combo filler usually cancelled into from 236AC Braking before the second hit of the EX version connects will grant Vox frame advantage on block (+3)."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Kyou Chou Jin BR",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 40 / C: 50 / AC: 60",
+      "description": "Vox's DP. All versions can be cancelled into divekick (2K) on hit but only heavy and EX cancel on block. 623AC~2K leaves Vox +3 and in range to use close heavy normals"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Messhou Hisetsu",
+      "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 80 / D: 80 / BD: 80",
+      "description": "Vox's divekick. good approach and fireball punish tool. Does not knock down even on counter hit EX can be done from any jump, normal versions only from neutral and forward jump. non EX can never be + on block and not rewarding on normal hit. on counter hit and wild punish normal versions can be plus enough to link a light after, or 2C if they hit deep."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Gou Dangai BR",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 60 / C: 120 / AC: 100",
+      "description": "Every version is brake-able during the dash part. Light version can be spaced to be safe (-3 from round start) Counter hitting with light and heavy give a high launch which starts a very damaging combo Heavy is always plus but can be 5f jabbed when cancelled into from heavy punches. EX is your go to juggle catcher and combo filler also has good corner carry Braking after the first hit of the EX version keeps Vox safe on block"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Gou Retsu Shou",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B / D: 180 (40x2+100) / BD: 100 (50+20+30)",
+      "description": "Command grab that nets decent hard knockdown. EX can be special cancelled into other EX moves to lead to a bigger (scaled) combo. good to catch overly defensive opponents. Will grab opponents after a blocked cl.D feint or a cl.B without need to microwalk or dash."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Shougeki Raku",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "240 (50+190)",
+      "description": "does less damage and have worse oki and has no invul compared than the kick counterpart. don't use this. can be used to OTG after a WP 2D. This single hit deals the full damage of the super for some reason. an actually decent super compared to its lvl 1 version. has invul and can be used to punish fireballs. like all of Vox lvl1 super it side switches and it has worse oki than lvl2 kick super. best used in mid screen routes or when it can guarantee a KO otherwise use the kick super."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Shougeki Raku",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "375 (100+95+180)",
+      "description": "does less damage and have worse oki and has no invul compared than the kick counterpart. don't use this. can be used to OTG after a WP 2D. This single hit deals the full damage of the super for some reason. an actually decent super compared to its lvl 1 version. has invul and can be used to punish fireballs. like all of Vox lvl1 super it side switches and it has worse oki than lvl2 kick super. best used in mid screen routes or when it can guarantee a KO otherwise use the kick super."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Majin Engetsu Rin",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "260 (50+20x5+110)",
+      "description": "the ideal lvl1 metered finisher. can be used as a reversal. sideswitches but has enough oki to dash 3 times and meaty with cl.D and continue your pressure. When used in the corner, it sets up an auto-timed cross-up by doing a hop then a jump and pressing j.B while it does less damage than the lvl2 punch super, its doesn't sideswitch and has amazing oki. always use this in corner routes to keep the corner. Sets up an easy safe jump in the corner by whiffing a cr.C and doing a forward jump"
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Majin Engetsu Rin BR",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "320 (50+10x8+190)",
+      "description": "the ideal lvl1 metered finisher. can be used as a reversal. sideswitches but has enough oki to dash 3 times and meaty with cl.D and continue your pressure. When used in the corner, it sets up an auto-timed cross-up by doing a hop then a jump and pressing j.B while it does less damage than the lvl2 punch super, its doesn't sideswitch and has amazing oki. always use this in corner routes to keep the corner. Sets up an easy safe jump in the corner by whiffing a cr.C and doing a forward jump"
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Seigai Shuu",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "456 88+33x2+55+44x2+55+11x8+16",
+      "description": "Only available during S.P.G, resets the Rev meter to 0%, even during Overheat. Cinematic super. has absolutely no oki and after the animation it sends the other character to the other side of the screen. Best used to guarantee a KO or when Vox Rev meter is high and at risk of overheat. Situational fireball punish. Can punish fireballs on reaction at half screen away"
+    }
+  ],
+  "smart": []
+}

@@ -1,0 +1,138 @@
+{
+  "arcade": [
+    {
+      "category": "Command Moves",
+      "name": "No results",
+      "input": "(нет данных на вики)",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Command Combos",
+      "name": "No results",
+      "input": "(нет данных на вики)",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Command Combos",
+      "name": "No results",
+      "input": "(нет данных на вики)",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "REV Blows",
+      "name": "No results",
+      "input": "[During S.P.G.] (нет данных на вики)",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "REV Blows",
+      "name": "No results",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "No results",
+      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "No results",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "No results",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "No results",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "No results",
+      "input": "↓ ↘ → + [[FF:LK]] > ↓ ↘ → + [[FF:P]] or [[FF:HK]] > [[FF:LP]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "No results",
+      "input": "↓ ↘ → + [[FF:HK]] > [[FF:HP]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "No results",
+      "input": "↓ ↘ → + [[FF:LK]] [[FF:HK]] > [[FF:HP]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "No results",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Special Moves",
+      "name": "No results",
+      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:P]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "No results",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Redline Gears",
+      "name": "No results",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "No results",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Redline Gears",
+      "name": "No results",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "-",
+      "description": "-"
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "Screaming Bull",
+      "input": "[During S.P.G.] (нет данных на вики)",
+      "damage": "-",
+      "description": "-"
+    }
+  ],
+  "smart": []
+}

@@ -1,0 +1,145 @@
+{
+  "arcade": [
+    {
+      "category": "Command Moves",
+      "name": "Back Approach",
+      "input": "← + [[FF:LK]] [[FF:HK]]",
+      "damage": "-",
+      "description": "Ronaldo starts shuffling backwards at a slightly slower speed than his backwards walking speed and allows him to do 2 new followups."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Step Up",
+      "input": "← + [[FF:LK]] [[FF:HK]] > [[FF:L]] [[FF:P]]",
+      "damage": "50",
+      "description": "8f forward tackle. -7 on block. Not worth using raw. Sends the Ball flying forwards towards the enemy."
+    },
+    {
+      "category": "Command Moves",
+      "name": "Headed Clearance",
+      "input": "← + [[FF:LK]] [[FF:HK]] > [[FF:H]] [[FF:P]]",
+      "damage": "50",
+      "description": "value in [] are for crouch blocking opponent. 16f header. Has ??f airborne frames, but has no Wild Punish bonus. Shoots the Ball forward."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 1",
+      "input": "[In air] [[FF:LP]] > [[FF:HP]]",
+      "damage": "-",
+      "description": "Second hit doesn't connect with opponent on hit, strictly shifts this as a tool to shoot the Ball from long range. Best used from 214[D]."
+    },
+    {
+      "category": "Command Combos",
+      "name": "Command Combo 2",
+      "input": "[In air] [[FF:LP]] > [[FF:HK]]",
+      "damage": "-",
+      "description": "Like Command Combo 1, second hit doesn't connect with opponent. Shoots Ball at a relatively lower angle."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Perfect Save",
+      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "Forward advancing REV Blow. Can be used at the end of REV Art combos for immense corner carry and hard knockdown."
+    },
+    {
+      "category": "REV Blows",
+      "name": "Lightning Strike",
+      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+      "damage": "132",
+      "description": "General aerial REV Blow. Can be used after 623AC to add some extra damage, but not as relatively useful for corner carry."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Echo Shot",
+      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+      "damage": "B: 80 / D: 80 / BD: 70",
+      "description": "Low-ground projectile. 236D advances Ronaldo a bit and shoots further. REV version will beat out non-REV projectiles and can bounce back to Ronaldo on contact with opponent for combos or continued pressure. Is also a hard knockdown on any connect , so you can just randomly win neutral by landing this once. The REV version is unaffected by juggle limits for some reason, so it can be looped into itself when hit at a sweetspot that lets it hit twice on a juggled opponent. This leads to disgusting damage if you have the execution."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Field Dominator",
+      "input": "↓ ↙ ← + [[FF:LK]] [[FF:HK]]",
+      "damage": "B: 80 / D: 80 / BD: 70,70",
+      "description": "B and D version have same frame data but change how high the Ball goes. Setplay tool. Less useful in the corner because you can't do crossups, but still a great meaty option (up to +16 as it can beat out some meterless reversals and reset the situation. 214BD is useful in the corner as it bounces on the opponent twice and can intercept meterless reversals, especially when using jumps midscreen. 214BD creates a REV Ball with different distance The button can be held in the D and REV version to make the Ball go higher and/or further."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Rising C Cross BR",
+      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: 20,60 / C: 40,50 / AC: 40,60",
+      "description": "Values in [] note break cancels. Light version is invincible to everything, Heavy and REV are invincible to air attacks. Light version mainly used as meterless reversal, while Heavy and REV are better as anti-airs or combo extenders/enders. Despite their invincibility, all versions lose to High Dodge Attack, as Ronaldo is considered airborne for all of their active frames."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Deep-Rooted Step",
+      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+      "damage": "A: - / C: - / AC: -",
+      "description": "Forward advancing stance with different followups. REV version can dribble REV Ball on the floor (e.g 214BD > 214AC), useful in combos."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Stop",
+      "input": "↓ ↙ ← + [[FF:P]] > [[FF:LP]] > [[FF:LP]]",
+      "damage": "Regular: - / Rev: -",
+      "description": "Manually stops stance. Can be used as a throw pressure tool to catch people asleep on the wheel."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Slide Tackle",
+      "input": "↓ ↙ ← + [[FF:P]] > [[FF:LK]] > [[FF:LK]]",
+      "damage": "Regular: 90 / Rev: 110",
+      "description": "Does a running slide, -9 at worst with ways to space it to be safer. REV Version launches the opponent upward for followup REV Arts and is his strongest damaging launcher among all his REV Arts in a vacuum. Can be useful as a canned mixup with 214AC~D on block. Still unsafe so you'll need to REV cancel on block."
+    },
+    {
+      "category": "Special Moves",
+      "name": "Over The Limit",
+      "input": "↓ ↙ ← + [[FF:P]] > [[FF:HK]] > [[FF:HK]]",
+      "damage": "Regular: 60 / Rev: 70",
+      "description": "18f overhead that knocks down on hit. Can catch people looking for Slide Tackle off guard. Unsafe on block, only the REV version is cancellable to REV Blow to be made safe. REV Version ground bounces on air hit. Mostly a knowledge check and can get you killed if the opponent knows how to fuzzy guard both high and low follow ups"
+    },
+    {
+      "category": "Special Moves",
+      "name": "Ironclad Shoulder",
+      "input": "↓ ↙ ← + [[FF:P]] > [[FF:HP]] > [[FF:HP]]",
+      "damage": "Regular: 80 / Rev: 100",
+      "description": "Forward advancing shoulder tackle. Safe on block but you lose your turn. Being +1 on hit at close range allows you to go for a strike/throw mixup. On Counter Hit, it is +6, which can convert into Close C from anywhere. REV Version launches opponent on hit, and is his most versatile launcher among his REV Arts, comboing into 236BD or 623AC easily. It is also +1 on block which grants you the same mixup, and Counter Hit grants a launching combo."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Stellar Strike Shot",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+      "damage": "50,200",
+      "description": "General close-range super that doesn't advance very far. Useful as a reversal on a hard read and the best 1 bar ender for damage."
+    },
+    {
+      "category": "Ignition Gears",
+      "name": "Blue Lightning Screw",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+      "damage": "30x4,100",
+      "description": "Fullscreen projectile super. Beats out almost any other non-super projectile, making this a strong answer to win fireball wars. Does less damage than Stellar Strike Shot, but grants better frame advantage; preferred ender when looking for a ball setup in the corner."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Stellar Strike Shot",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+      "damage": "70,5x11,205",
+      "description": "Slightly faster than Level 1, now being as fast as Light DP. Still a good reversal and general 2 bar meter dump when you're not in SPG."
+    },
+    {
+      "category": "Redline Gears",
+      "name": "Blue Lightning Screw",
+      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+      "damage": "50x4,80",
+      "description": "Stronger version of Level 1 that does a bit more damage. Still less damage than his other supers."
+    },
+    {
+      "category": "Hidden Gear",
+      "name": "CR7",
+      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+      "damage": "88,27x4,55,11x9, 99",
+      "description": "Cinematic super of Ronaldo doing his legendary free kick. Note that Ronaldo and the opponent side swap on hit and are brought back to the center of the stage. SIUUUUUUU!"
+    }
+  ],
+  "smart": []
+}
