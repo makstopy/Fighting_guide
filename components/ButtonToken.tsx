@@ -199,6 +199,10 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
   }
 
   // ── SF6 Controller & Arcade & Original mappings ──
+  if (token === '[[P]]' || token === 'P') return <Image source={SF6_BUTTON_ICONS['[[P]]']} style={styles.sf6Icon} resizeMode="contain" />;
+  if (token === '[[K]]' || token === 'K') return <Image source={SF6_BUTTON_ICONS['[[K]]']} style={styles.sf6Icon} resizeMode="contain" />;
+  if (token === '[[N]]' || token === 'N') return <FFNeutralIcon size={34} />;
+
   const isSf6StrengthToken = ['[[LP]]', 'LP', '[[MP]]', 'MP', '[[HP]]', 'HP', '[[LK]]', 'LK', '[[MK]]', 'MK', '[[HK]]', 'HK'].includes(token);
 
   if (controlType === 'PS') {
@@ -208,9 +212,6 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
     if (token === '[[LK]]' || token === 'LK') return <PSCross size={s} />;
     if (token === '[[MK]]' || token === 'MK') return <PSCircle size={s} />;
     if (token === '[[HK]]' || token === 'HK') return <PSBumper label="R2" size={s} />;
-    if (token === '[[P]]' || token === 'P') return <Image source={SF6_BUTTON_ICONS['[[P]]']} style={styles.sf6Icon} resizeMode="contain" />;
-    if (token === '[[K]]' || token === 'K') return <Image source={SF6_BUTTON_ICONS['[[K]]']} style={styles.sf6Icon} resizeMode="contain" />;
-    if (token === '[[N]]' || token === 'N') return <FFNeutralIcon size={34} />;
   }
 
   if (controlType === 'Xbox') {
@@ -220,13 +221,22 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
     if (token === '[[LK]]' || token === 'LK') return <XboxA size={s} />;
     if (token === '[[MK]]' || token === 'MK') return <XboxB size={s} />;
     if (token === '[[HK]]' || token === 'HK') return <XboxBumper label="RT" size={s} />;
-    if (token === '[[P]]' || token === 'P') return <Image source={SF6_BUTTON_ICONS['[[P]]']} style={styles.sf6Icon} resizeMode="contain" />;
-    if (token === '[[K]]' || token === 'K') return <Image source={SF6_BUTTON_ICONS['[[K]]']} style={styles.sf6Icon} resizeMode="contain" />;
-    if (token === '[[N]]' || token === 'N') return <FFNeutralIcon size={34} />;
   }
 
   if (controlType === 'Arcade' && isSf6StrengthToken) {
     const rawLabel = token.replace(/\[\[|\]\]/g, '');
+    if (rawLabel === 'MP' || rawLabel === 'MK') {
+      const imgSrc = SF6_BUTTON_ICONS[`[[${rawLabel}]]`] || SF6_BUTTON_ICONS[rawLabel];
+      if (imgSrc) {
+        return (
+          <Image
+            source={imgSrc}
+            style={styles.sf6Icon}
+            resizeMode="contain"
+          />
+        );
+      }
+    }
     return <ArcadeButton label={rawLabel} size={s} />;
   }
 

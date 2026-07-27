@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import CharacterHeaderCard from '../components/CharacterHeaderCard';
 import ComboCard from '../components/ComboCard';
 import ComboCreatorModal from '../components/ComboCreatorModal';
+import ButtonToken from '../components/ButtonToken';
 import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming, withSequence, withSpring, Easing } from 'react-native-reanimated';
 import COMBOS_DB from '../data/combos/index';
 import { useSQLiteContext } from 'expo-sqlite';
@@ -337,18 +338,105 @@ export default function CombosScreen() {
   );
 
   const ArcadeLegend = () => (
-    <View style={styles.legendIconsContainer}>
-      {[
-        ["□", "LP"], ["△", "RP"], ["○", "LK"], ["✕", "RK"],
-        ["L1", "1+2"], ["L2", "3+4"], ["R1", "2+3"], ["R2", "ALL"]
-      ].map(([sym, lbl]) => (
-        <View key={sym} style={styles.arcadeLegendItem}>
-          <ArcadeButton label={sym} size={28} />
-          <Text style={styles.arcadeLegendLabel}>{lbl}</Text>
-        </View>
-      ))}
+    <View style={{ alignItems: 'center', gap: 6 }}>
+      {/* Row 1: Single buttons */}
+      <View style={styles.legendIconsContainer}>
+        {[
+          ["□", "LP"], ["△", "HP"], ["○", "LK"], ["✕", "HK"]
+        ].map(([sym, lbl]) => (
+          <View key={sym} style={styles.arcadeLegendItem}>
+            <ArcadeButton label={sym} size={28} />
+            <Text style={styles.arcadeLegendLabel}>{lbl}</Text>
+          </View>
+        ))}
+      </View>
+
+      {/* Row 2: Combinations */}
+      <View style={styles.legendIconsContainer}>
+        {[
+          ["L1", "LP+HP"], ["L2", "LK+HK"],
+          ["LP+LK", "LP+LK"], ["HP+HK", "HP+HK"],
+          ["R1", "HP+LK"], ["LP+HK", "LP+HK"], ["R2", "ALL"]
+        ].map(([sym, lbl]) => (
+          <View key={sym} style={styles.arcadeLegendItem}>
+            <ArcadeButton label={sym} size={28} />
+            <Text style={styles.arcadeLegendLabel}>{lbl}</Text>
+          </View>
+        ))}
+      </View>
+
+      <Text style={styles.legendFooter}>
+        LP: Light Punch · HP: Heavy Punch · LK: Light Kick · HK: Heavy Kick
+      </Text>
     </View>
   );
+
+  const OriginalLegend = () => {
+    if (game === 'Street Fighter 6') {
+      return (
+        <View style={{ alignItems: 'center', gap: 6 }}>
+          {/* Row 1: Punches */}
+          <View style={styles.legendIconsContainer}>
+            {[
+              ['[[LP]]', 'LP'],
+              ['[[MP]]', 'MP'],
+              ['[[HP]]', 'HP'],
+              ['[[P]]', 'P'],
+            ].map(([tok, lbl]) => (
+              <View key={tok} style={styles.arcadeLegendItem}>
+                <ButtonToken token={tok} controlType="Original" />
+                <Text style={styles.arcadeLegendLabel}>{lbl}</Text>
+              </View>
+            ))}
+          </View>
+
+          {/* Row 2: Kicks */}
+          <View style={styles.legendIconsContainer}>
+            {[
+              ['[[LK]]', 'LK'],
+              ['[[MK]]', 'MK'],
+              ['[[HK]]', 'HK'],
+              ['[[K]]', 'K'],
+            ].map(([tok, lbl]) => (
+              <View key={tok} style={styles.arcadeLegendItem}>
+                <ButtonToken token={tok} controlType="Original" />
+                <Text style={styles.arcadeLegendLabel}>{lbl}</Text>
+              </View>
+            ))}
+          </View>
+
+          <Text style={styles.legendFooter}>
+            LP: Light Punch · MP: Medium Punch · HP: Heavy Punch · P: Any Punch{'\n'}
+            LK: Light Kick · MK: Medium Kick · HK: Heavy Kick · K: Any Kick
+          </Text>
+        </View>
+      );
+    }
+    if (game === 'Fatal Fury: City of the Wolves') {
+      return (
+        <View style={{ alignItems: 'center', gap: 6 }}>
+          <View style={styles.legendIconsContainer}>
+            {[
+              ['[[FF:LP]]', 'LP'],
+              ['[[FF:HP]]', 'HP'],
+              ['[[FF:LK]]', 'LK'],
+              ['[[FF:HK]]', 'HK'],
+              ['[[FF:REV]]', 'REV'],
+            ].map(([tok, lbl]) => (
+              <View key={tok} style={styles.arcadeLegendItem}>
+                <ButtonToken token={tok} controlType="Original" />
+                <Text style={styles.arcadeLegendLabel}>{lbl}</Text>
+              </View>
+            ))}
+          </View>
+          <Text style={styles.legendFooter}>
+            LP: Light Punch · HP: Heavy Punch · LK: Light Kick · HK: Heavy Kick · REV: Rev Blow
+          </Text>
+        </View>
+      );
+    }
+    return <ArcadeLegend />;
+  };
 
   // Convert a single combo's input from PS notation to current controlType
   const convertComboInput = useCallback((combo: any, control: string) => {
@@ -475,7 +563,15 @@ export default function CombosScreen() {
 
       {/* Controller inputs legend banner */}
       <View style={styles.legendBanner}>
-        {controlType === 'PS' ? <PSLegend /> : controlType === 'Xbox' ? <XboxLegend /> : <ArcadeLegend />}
+        {controlType === 'PS' ? (
+          <PSLegend />
+        ) : controlType === 'Xbox' ? (
+          <XboxLegend />
+        ) : controlType === 'Original' ? (
+          <OriginalLegend />
+        ) : (
+          <ArcadeLegend />
+        )}
       </View>
 
       {/* Category tabs */}

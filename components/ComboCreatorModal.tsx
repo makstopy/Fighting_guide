@@ -94,16 +94,26 @@ function getConsoleButtons(controlType: ControlType, game?: string): ButtonDef[]
     ];
   }
   if (controlType === 'Arcade') {
-    return [
-      { label: '□', token: '□' },
-      { label: '△', token: '△' },
-      { label: '○', token: '○' },
-      { label: '✕', token: '✕' },
-      { label: 'L1', token: 'L1' },
-      { label: 'L2', token: 'L2' },
-      { label: 'R1', token: 'R1' },
-      { label: 'R2', token: 'R2' },
+    const list: ButtonDef[] = [
+      { label: 'LP', token: '□' },
+      { label: 'HP', token: '△' },
+      { label: 'LK', token: '○' },
+      { label: 'HK', token: '✕' },
+      { label: 'LP+HP', token: 'L1' },
+      { label: 'LK+HK', token: 'L2' },
+      { label: 'LP+LK', token: 'LP+LK' },
+      { label: 'HP+HK', token: 'HP+HK' },
+      { label: 'HP+LK', token: 'R1' },
+      { label: 'LP+HK', token: 'LP+HK' },
+      { label: 'ALL', token: 'R2' },
     ];
+
+    if (game === 'Street Fighter 6') {
+      list.splice(1, 0, { label: 'MP', token: '[[MP]]' });
+      list.splice(4, 0, { label: 'MK', token: '[[MK]]' });
+    }
+
+    return list;
   }
   // PS default
   return [
@@ -118,7 +128,7 @@ function getConsoleButtons(controlType: ControlType, game?: string): ButtonDef[]
   ];
 }
 
-function getGameButtons(game?: string): ButtonDef[] {
+function getGameButtons(game?: string, controlType?: ControlType): ButtonDef[] {
   if (game === 'Street Fighter 6') {
     return [
       { label: '[[P]]', token: '[[P]]' },
@@ -128,6 +138,8 @@ function getGameButtons(game?: string): ButtonDef[] {
   }
   if (game === 'Fatal Fury: City of the Wolves') {
     return [
+      { label: '[In air]', token: '[In air]' },
+      { label: '[During S.P.G.]', token: '[During S.P.G.]' },
       { label: '[[FF:P]]', token: '[[FF:P]]' },
       { label: '[[FF:K]]', token: '[[FF:K]]' },
       { label: '[[FF:SP]]', token: '[[FF:SP]]' },
@@ -139,13 +151,6 @@ function getGameButtons(game?: string): ButtonDef[] {
   }
   return [];
 }
-
-const CONTEXT_TAGS: ButtonDef[] = [
-  { label: '[In air]', token: '[In air]' },
-  { label: '[During S.P.G.]', token: '[During S.P.G.]' },
-  { label: 'BR', token: 'BR' },
-  { label: 'FE', token: 'FE' },
-];
 
 const DIRECTION_BUTTONS: { label: string; token: string }[] = [
   { label: '↖', token: '↖' },
@@ -262,7 +267,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
   }, [onClose]);
 
   const consoleButtons = useMemo(() => getConsoleButtons(controlType, game), [controlType, game]);
-  const gameButtons = useMemo(() => getGameButtons(game), [game]);
+  const gameButtons = useMemo(() => getGameButtons(game, controlType), [game, controlType]);
 
   const canSave = name.trim().length > 0 && tokens.length > 0;
 
@@ -389,7 +394,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
             {/* Game buttons keyboard (colored strikes) */}
             {gameButtons.length > 0 && (
               <>
-                <Text style={styles.fieldLabel}>СПЕЦИФИЧЕСКИЕ ИНПУТЫ</Text>
+                <Text style={styles.fieldLabel}>ADDITIONAL BUTTONS</Text>
                 <View style={styles.actionButtonsGrid}>
                   {gameButtons.map((btn) => (
                     <Pressable
@@ -468,28 +473,6 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
                 <Text style={styles.modBtnHint}>clear</Text>
               </Pressable>
             </View>
-
-            {/* Context Tags & Conditions — only for Fatal Fury */}
-            {game === 'Fatal Fury: City of the Wolves' && (
-              <>
-                <Text style={styles.fieldLabel}>TAGS & CONDITIONS (ТЕГИ И СОСТОЯНИЯ)</Text>
-                <View style={styles.actionButtonsGrid}>
-                  {CONTEXT_TAGS.map((btn) => (
-                    <Pressable
-                      key={btn.token}
-                      style={({ pressed }) => [
-                        styles.keyBtn,
-                        styles.actionKeyBtn,
-                        pressed && styles.keyBtnPressed,
-                      ]}
-                      onPress={() => addToken(btn.token)}
-                    >
-                      <ButtonToken token={btn.token} controlType={controlType} />
-                    </Pressable>
-                  ))}
-                </View>
-              </>
-            )}
 
             {/* Description */}
             <Text style={styles.fieldLabel}>NOTE (OPTIONAL)</Text>
