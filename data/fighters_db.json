@@ -194,7 +194,7 @@
   },
   "Fatal Fury: City of the Wolves": {
     "platform": "PS4/PS5 / Xbox Series / PC",
-    "coverGrad": ["#0a1520", "#e8a020", "#3a0a00"],
+    "coverGrad": ["#042f2e", "#00d2c6", "#042f2e"],
     "coverLabel": "CotW",
     "coverEmoji": "🐺",
     "characters": [

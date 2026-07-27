@@ -1,21 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Text, ScrollView, TouchableOpacity, Platform, Image } from 'react-native';
-import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useRouter } from 'expo-router';
+import { useSQLiteContext } from 'expo-sqlite';
+import { useEffect, useState } from 'react';
+import { Image, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Header from '../components/Header';
 import FIGHTERS_DB from '../data/fighters_db.json';
-import { useSQLiteContext } from 'expo-sqlite';
 
 const GAME_LOGOS: Record<string, any> = {
   'Mortal Kombat 1': require('../assets/images/mk1-de-logo-white.webp'),
   'Street Fighter 6': require('../assets/images/SF6_logo.png'),
   'Tekken 8': require('../assets/images/tekken8-logo-sm.png'),
+  'Fatal Fury: City of the Wolves': require('../assets/images/logo_fatal_fury_cotw.png'),
 };
 
 export default function HomeScreen() {
   const router = useRouter();
   const isWeb = Platform.OS === 'web';
-  
+
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const db = isWeb ? null : useSQLiteContext();
 
@@ -72,8 +73,8 @@ export default function HomeScreen() {
         <Text style={styles.sectionTitle}>Choose a fighting game</Text>
         {games.map(([game, info]: [string, any]) => {
           const logoSource = GAME_LOGOS[game];
-          const colors = info.coverGrad && info.coverGrad.length >= 2 
-            ? info.coverGrad 
+          const colors = info.coverGrad && info.coverGrad.length >= 2
+            ? info.coverGrad
             : ['#16213e', '#0f172a'];
 
           return (
@@ -85,16 +86,14 @@ export default function HomeScreen() {
             >
               <LinearGradient
                 colors={colors}
-                start={{ x: 0, y: 0 }}
-                end={{ x: 1, y: 1 }}
+                start={game === 'Fatal Fury: City of the Wolves' ? { x: 0, y: 0.5 } : { x: 0, y: 0 }}
+                end={game === 'Fatal Fury: City of the Wolves' ? { x: 1, y: 0.5 } : { x: 1, y: 1 }}
                 style={styles.gameCard}
               >
-                <View style={styles.cardGloss} />
-
                 {logoSource ? (
                   <Image
                     source={logoSource}
-                    style={styles.gameLogo}
+                    style={game === 'Fatal Fury: City of the Wolves' ? styles.fatalFuryLogo : styles.gameLogo}
                     resizeMode="contain"
                   />
                 ) : (
@@ -152,17 +151,13 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.1)',
   },
-  cardGloss: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    height: '50%',
-    backgroundColor: 'rgba(255, 255, 255, 0.03)',
-  },
   gameLogo: {
     width: '80%',
-    height: 55,
+    height: 80,
+  },
+  fatalFuryLogo: {
+    width: '95%',
+    height: 120,
   },
   gameTitle: {
     fontFamily: 'Rajdhani-Bold',
