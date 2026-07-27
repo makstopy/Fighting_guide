@@ -1,138 +1,135 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Shoukyaku Hou",
-      "input": "← ←",
-      "damage": "70",
-      "description": "Safe on block and cancelable Good anti-air hitbox, but doesn't lead to a combo Fast recovery which makes it hard to punish, although can be telegraphed if the opponent is looking for it. On grounded hit starts a combo with REV Hangetsu Zan"
-    },
-    {
-      "category": "Command Combos",
-      "name": "Command Combo",
-      "input": "[In air] [[FF:LP]]",
-      "damage": "50",
-      "description": "Can't be done out of a hop 2nd hit only combos from a counterhit or wild punish"
-    },
-    {
-      "category": "REV Blows",
-      "name": "High-Angle Naeryo Chagi",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 [44+88 vs airborne hitstun]",
-      "description": "DOES NOT combo after the low follow up from REV dive kick ( for some odd reason)"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Air Hangetsu Zan",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 [33+33+66 vs airborne hitstun]",
-      "description": "Very useful and during REV dive kick mixups and any airborne REV special move."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hangetsu Zan BR",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 90 (20+70) / D: 110 (20+20+70) / BD: 120 (20+20+80)",
-      "description": "All versions launch on counterhit when only the last hit lands 2 Hits Travels round start distance Best meterless combo ender for most of Jae Hoon's combos and optimal ender for niche -5 on block punishes 3 Hits Travels the farthest at around 3/4ths screen length Doesn't have much uses except in very specific combo routes as an optimal ender. Travels just a little under Heavy version's distance Important for converting heavy starters into stronger REV cost routes Can be made safe with REV Accel, making this a somewhat useful neutral tool"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Houten Kyaku",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 90 / C: 110 / AC: 110",
-      "description": "Not an overhead, is a mid Does not knockdown All versions can be braked before the hit Fastest version but punishable on block More range, safe on block, but more start up Good to catch hops, back dashes, and low hitting moves +1 on block AND hit Useful combo extender Always leaves a gap when used in a cancel chain. On airborne hit, does a ground bounce which allows follow-ups."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Ryuusei Raku BR",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 80 (30+50) / D: 100 (30+70) / BD: 110 (50+60)",
-      "description": "Jae Hoon's best meterless light string ender Extremely unsafe on block Great special that has alot of uses in Jae Hoon's gameplan Safest Blockstring ender using the break Great meterless combo extender Extremely versatile move with a lot of use cases First hit can be canceled into grounded REV specials, while the 2nd hit can be canceled into air REV specials. Jae Hoon's best way to set up Dive kick mixups( if you can call them that lol)"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Shakka Shuu BR",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 100 (10+10+10+70) / C: 120 (10+10+10+90) / AC: 120 (10+10+10+20+50)",
-      "description": "Armor starts from frame 11 up to frame 28 on both Heavy and REV versions Heavy and REV versions can be forward dash cancelled by holding the button and inputting a dash input at any point during the guard point. They can also be breaked before the hit comes out by pressing the REV button. Potentially the worst move in the game, has 0 use cases in Jae Hoon's gameplan and will get you killed for using it. Unsafe on block with bad risk-reward. Avoid using at all costs. Fully held version is safe on block, non charged or even partial charged version is punishable on block. Does significant block damage and REV guage damage Can be held to enter a guard point state starting at frame 11 placeholder"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hien Zan BR",
-      "input": "↓ ↑ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 60 (30+30) / D: 40 / BD: 50",
-      "description": "placeholder"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hishou Kyaku BR",
-      "input": "[In air] ↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 80 (20+20+20+20) / D: 75 (15+15+15+15+15) / BD: 75 (15+15+15+15+15)",
-      "description": "placeholder"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Earth Flash",
-      "input": "[In air] ↓ ↘ → + [[FF:HK]] > → + [[FF:LK]]",
-      "damage": "40",
-      "description": "placeholder"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Earth Flash",
-      "input": "[In air] ↓ ↘ → + [[FF:LK]] [[FF:HK]] > → + [[FF:LK]]",
-      "damage": "40",
-      "description": "placeholder"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Phoenix Strike",
-      "input": "[In air] ↓ ↘ → + [[FF:HK]] > → + [[FF:HK]]",
-      "damage": "60",
-      "description": "placeholder"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Phoenix Strike",
-      "input": "[In air] ↓ ↘ → + [[FF:LK]] [[FF:HK]] > → + [[FF:HK]]",
-      "damage": "60",
-      "description": "placeholder"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Houyoku Hiten Kyaku",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "160 100+60",
-      "description": "Can follow up with 214K midscreen Near corner allows for 28K brake extension Always possible to link into 236236B afterwards"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Houyoku Hiten Kyaku",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "250 40+60+60+90",
-      "description": "Can follow up with 214K midscreen Near corner allows for 28K brake extension Always possible to link into 236236B afterwards"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Houou Kyaku",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "230 30+20*6+80",
-      "description": "Jae Hoon runs forward a distance until he comes into contact with the opponent. When hit he converts into a flashy combo ending with a final phoenix somersault or an explosive axe kick depending on which level. His reversal and damage super that will be used for most of his metered combos. As Jae Hoon relies on charge for his reversal, this can see use over the Flashkick when it is more convenient to input."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Houou Kyaku",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "310 20+15*13+95",
-      "description": "Jae Hoon runs forward a distance until he comes into contact with the opponent. When hit he converts into a flashy combo ending with a final phoenix somersault or an explosive axe kick depending on which level. His reversal and damage super that will be used for most of his metered combos. As Jae Hoon relies on charge for his reversal, this can see use over the Flashkick when it is more convenient to input."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Shakki Houou Kyaku",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "418 40+20*6+30*4+100",
-      "description": "Jae Hoon does a thrusting side kick, if it connects, he lunges at the opponent and unleashes a series of high kicks. He then leaps back and does a slow-mo Hien Zan for the ages. A reference to his father's Houou Kyaku against Cyber Cheng in Fatal Fury: The Motion Picture."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Shoukyaku Hou",
+    "input": "← ←",
+    "damage": "70",
+    "description": "Safe on block and cancelable Good anti-air hitbox, but doesn't lead to a combo Fast recovery which makes it hard to punish, although can be telegraphed if the opponent is looking for it. On grounded hit starts a combo with REV Hangetsu Zan"
+  },
+  {
+    "category": "Command Combos",
+    "name": "Command Combo",
+    "input": "[In air] [[FF:LP]]",
+    "damage": "50",
+    "description": "Can't be done out of a hop 2nd hit only combos from a counterhit or wild punish"
+  },
+  {
+    "category": "REV Blows",
+    "name": "High-Angle Naeryo Chagi",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 [44+88 vs airborne hitstun]",
+    "description": "DOES NOT combo after the low follow up from REV dive kick ( for some odd reason)"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Air Hangetsu Zan",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 [33+33+66 vs airborne hitstun]",
+    "description": "Very useful and during REV dive kick mixups and any airborne REV special move."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hangetsu Zan BR",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 90 (20+70) / D: 110 (20+20+70) / BD: 120 (20+20+80)",
+    "description": "All versions launch on counterhit when only the last hit lands 2 Hits Travels round start distance Best meterless combo ender for most of Jae Hoon's combos and optimal ender for niche -5 on block punishes 3 Hits Travels the farthest at around 3/4ths screen length Doesn't have much uses except in very specific combo routes as an optimal ender. Travels just a little under Heavy version's distance Important for converting heavy starters into stronger REV cost routes Can be made safe with REV Accel, making this a somewhat useful neutral tool"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Houten Kyaku",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 90 / C: 110 / AC: 110",
+    "description": "Not an overhead, is a mid Does not knockdown All versions can be braked before the hit Fastest version but punishable on block More range, safe on block, but more start up Good to catch hops, back dashes, and low hitting moves +1 on block AND hit Useful combo extender Always leaves a gap when used in a cancel chain. On airborne hit, does a ground bounce which allows follow-ups."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Ryuusei Raku BR",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 80 (30+50) / D: 100 (30+70) / BD: 110 (50+60)",
+    "description": "Jae Hoon's best meterless light string ender Extremely unsafe on block Great special that has alot of uses in Jae Hoon's gameplan Safest Blockstring ender using the break Great meterless combo extender Extremely versatile move with a lot of use cases First hit can be canceled into grounded REV specials, while the 2nd hit can be canceled into air REV specials. Jae Hoon's best way to set up Dive kick mixups( if you can call them that lol)"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Shakka Shuu BR",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 100 (10+10+10+70) / C: 120 (10+10+10+90) / AC: 120 (10+10+10+20+50)",
+    "description": "Armor starts from frame 11 up to frame 28 on both Heavy and REV versions Heavy and REV versions can be forward dash cancelled by holding the button and inputting a dash input at any point during the guard point. They can also be breaked before the hit comes out by pressing the REV button. Potentially the worst move in the game, has 0 use cases in Jae Hoon's gameplan and will get you killed for using it. Unsafe on block with bad risk-reward. Avoid using at all costs. Fully held version is safe on block, non charged or even partial charged version is punishable on block. Does significant block damage and REV guage damage Can be held to enter a guard point state starting at frame 11 placeholder"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hien Zan BR",
+    "input": "↓ ↑ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 60 (30+30) / D: 40 / BD: 50",
+    "description": "placeholder"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hishou Kyaku BR",
+    "input": "[In air] ↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 80 (20+20+20+20) / D: 75 (15+15+15+15+15) / BD: 75 (15+15+15+15+15)",
+    "description": "placeholder"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Earth Flash",
+    "input": "[In air] ↓ ↘ → + [[FF:HK]] > → + [[FF:LK]]",
+    "damage": "40",
+    "description": "placeholder"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Earth Flash",
+    "input": "[In air] ↓ ↘ → + [[FF:LK]] [[FF:HK]] > → + [[FF:LK]]",
+    "damage": "40",
+    "description": "placeholder"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Phoenix Strike",
+    "input": "[In air] ↓ ↘ → + [[FF:HK]] > → + [[FF:HK]]",
+    "damage": "60",
+    "description": "placeholder"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Phoenix Strike",
+    "input": "[In air] ↓ ↘ → + [[FF:LK]] [[FF:HK]] > → + [[FF:HK]]",
+    "damage": "60",
+    "description": "placeholder"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Houyoku Hiten Kyaku",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "160 100+60",
+    "description": "Can follow up with 214K midscreen Near corner allows for 28K brake extension Always possible to link into 236236B afterwards"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Houyoku Hiten Kyaku",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "250 40+60+60+90",
+    "description": "Can follow up with 214K midscreen Near corner allows for 28K brake extension Always possible to link into 236236B afterwards"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Houou Kyaku",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "230 30+20*6+80",
+    "description": "Jae Hoon runs forward a distance until he comes into contact with the opponent. When hit he converts into a flashy combo ending with a final phoenix somersault or an explosive axe kick depending on which level. His reversal and damage super that will be used for most of his metered combos. As Jae Hoon relies on charge for his reversal, this can see use over the Flashkick when it is more convenient to input."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Houou Kyaku",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "310 20+15*13+95",
+    "description": "Jae Hoon runs forward a distance until he comes into contact with the opponent. When hit he converts into a flashy combo ending with a final phoenix somersault or an explosive axe kick depending on which level. His reversal and damage super that will be used for most of his metered combos. As Jae Hoon relies on charge for his reversal, this can see use over the Flashkick when it is more convenient to input."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Shakki Houou Kyaku",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "418 40+20*6+30*4+100",
+    "description": "Jae Hoon does a thrusting side kick, if it connects, he lunges at the opponent and unleashes a series of high kicks. He then leaps back and does a slow-mo Hien Zan for the ages. A reference to his father's Houou Kyaku against Cyber Cheng in Fatal Fury: The Motion Picture."
+  }
+]

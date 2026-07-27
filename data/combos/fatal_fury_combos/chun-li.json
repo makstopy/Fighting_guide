@@ -1,173 +1,170 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Tiger Thrust",
-      "input": "→ + [[FF:LP]]",
-      "damage": "50",
-      "description": "Links from stand C and works from most ranges where stand C hits. Compared to 2C, it has more range, but is a frame slower and does slightly less damage. On hit, combos to all the REV moves that 2C combos into."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Water Lotus Fist",
-      "input": "↘ + [[FF:LP]]",
-      "damage": "60",
-      "description": "Links into 5A or 2A on hit, with 5A doing 4 more damage. Can be made up to +7 on hit if hit meaty, allowing stronger links."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Hakkei",
-      "input": "← + [[FF:HP]]",
-      "damage": "85",
-      "description": "One of only two normals which can combo into 236D, which is key to dealing high meterless damage, especially in the corner. If she doesn't have enough time for a jump D, this will be her optimal DP punish starter when cancelled into a forward/down feint. Interestingly, causes a knockdown on a Wild Punish, which may be a reference to this move crush countering in SFV. This is generally suboptimal and Chun-Li is better served doing 6C or 6D to start a Wild Punish."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Jaw Strike",
-      "input": "→ + [[FF:HP]]",
-      "damage": "80",
-      "description": "Chun-Li’s longest ranged normal. +22 on Wild Punish, leaving enough time for Chun-Li to dash in for a combo at most ranges."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Peacock Palm",
-      "input": "↘ + [[FF:HP]]",
-      "damage": "95 (30+65)",
-      "description": "One of only two normals which can combo into 236D, which is key to dealing high meterless damage, especially in the corner. The startup of this move is too slow to combo from any regular jump in without a Counter Hit or Wild Punish."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Crane Kick",
-      "input": "→ + [[FF:LK]]",
-      "damage": "50",
-      "description": "Absurdly long range for its speed, at just 7f startup. Poke with fairly low commitment. Can be used to confirm into Supers in ranges where 2C doesn't reach after 5B."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Falling Crane",
-      "input": "↘ + [[FF:LK]]",
-      "damage": "60",
-      "description": "A cross-up only move. Cannot hit opponents in the corner. Unlike Street Fighter, you cannot combo after this move without Counter Hit or Wild Punish. Airborne for most of its duration, but not immediately, so meaty throws still beat it."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Yokusen Kick",
-      "input": "→ + [[FF:HK]]",
-      "damage": "90",
-      "description": "A low crush that dodges lows much more quickly than her low evade. It also has the added benefit of being a valid Wild Punish heavy which doesn't scale like evasion moves, leading to very high damage. First 2 active frames whiff on crounching characters. Advantage on hit or block will therefore vary by 2 Frames is the opponent is crouching."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Gen Assassin Kick",
-      "input": "↘ + [[FF:HK]]",
-      "damage": "90",
-      "description": "This is Chun-Li’s sweep. For a sweep, it’s got good range. Although it’s definitely punishable, it can be spaced to avoid some characters’ meterless punishes. On Wild Punish, causes an OTG state that allows for a second 3D or any version of Hazanshu."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Yoso Kick",
-      "input": "[In air] ↓ + [[FF:LK]]",
-      "damage": "j.2B: 20 / j.2B x2: 20 / j.2B x3: 40",
-      "description": "Can be cancelled into any other air move (including normals) on any of the 3 hits. The 3rd stomp hitting a grounded opponent spikes them into the floor for a soft knockdown."
-    },
-    {
-      "category": "Command Combos",
-      "name": "Command Combo",
-      "input": "[In air] [[FF:HP]] > [[FF:HP]]",
-      "damage": "30",
-      "description": "Works from her air stomps, but causes an air reset state and cannot be comboed after."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Hosen Kick",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 [120]",
-      "description": "Damage value factors in SPG bonus."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Falling Phoenix",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 [120]",
-      "description": "Damage value factors in SPG bonus. Nearly impossible to make any better on block than -1."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Kikoken",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 / C: 60 / AC: 80 (30+50)",
-      "description": "A version is slow and stops just short of full screen. C version is fast and fizzles out even sooner, traveling about 2/3's screen width. AC version is as fast as the C version and doesn't dissipate while traveling."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hundred Lightning Kicks BR",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 70 (10x4 + 30) / D: 90 (10x4 + 50) / BD: 120 (10x9 + 30)",
-      "description": "B version combos from any light and is safe on block. D version can only combo from 3C, 4C and high evade. Launches the opponent, which leads to very high damage. BD version the REV combo starter of choice and combos from 5C, 2C or 6A."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Aerial Hundred Lightning Kicks",
-      "input": "[In air] ↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 100 (20x5) / D: 100 (20x5) / BD: 100 (20x5)",
-      "description": "BD version has Chun-Li recover much more quickly upon landing, which reliably combos into either version of Kikosho (236226A/C) if it hits an airborne opponent."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Spinning Bird Kick",
-      "input": "↓(charge) ↑ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 90 (10x3 + 60) / D: 100 (10x6 + 40) / BD: 130 (10x7 + 60)",
-      "description": "Chun-Li's highest damage special that can combo from lights, but hampered by its charge input. B and BD versions combo from any light while D can only combo from 5B."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hazanshu BR",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 90 / D: 110 / BD: 130",
-      "description": "All versions can be braked with AB, which causes her to land without attacking. Can be used to punish fireballs preemptively. +6 on a Counter Hit or Wild Punish, allowing links into 5B, but pushback makes this unreliable. Has no problems linking into Hidden Gear in the same situation. B version reaches about slightly more than half screen and can hit from round start position. D version goes up a higher arc and reaches about 3/4 of the screen. BD version is mostly identical to the D version but is faster and is an actual overhead. All versions can OTG but both D and BD versions do more damage than a sweep (3D). This is useful after a wild punish 3D to squeeze out slightly more damage."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Tensho Kicks BR",
-      "input": "→ ↓ ↘ or ↓ ↓ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 80 (30+50) / D: 100 (30+30+10+30) / BD: 130 (40+30+10x3+30)",
-      "description": "Placeholder"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "240 10x11 + 120",
-      "description": "Reversal super that leaves Chun-Li extremely open if jumped."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "310 20x14 + 30",
-      "description": "Reversal super that leaves Chun-Li extremely open if jumped."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "180 10x16 + 20",
-      "description": "All versions can be jump cancelled on the last launching kick. Chun-Li always jumps forward no matter which jump direction is inputted. B version is slow and is unable to combo from many juggle routes (regular dp brake, EX SBK into EX Air Kicks, to name a few) D version is slightly faster and can be braked on the upwards launching kick. Often does less damage in longer combos compared to Kikosho but has much greater mixup potential going for air stomps resets. Adds 20% scaling to the combo on hit."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "336 6x15 + 20 + 220",
-      "description": "All versions can be jump cancelled on the last launching kick. Chun-Li always jumps forward no matter which jump direction is inputted. B version is slow and is unable to combo from many juggle routes (regular dp brake, EX SBK into EX Air Kicks, to name a few) D version is slightly faster and can be braked on the upwards launching kick. Often does less damage in longer combos compared to Kikosho but has much greater mixup potential going for air stomps resets. Adds 20% scaling to the combo on hit."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Seven Star Shining Kicks",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "467 88+33+11x15+27+44+110",
-      "description": "Costs 2 bars and only avaiable during S.P.G., displayed damage is with S.P.G. bonus. Resets the Rev meter to 0%, even during Overheat."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Tiger Thrust",
+    "input": "→ + [[FF:LP]]",
+    "damage": "50",
+    "description": "Links from stand C and works from most ranges where stand C hits. Compared to 2C, it has more range, but is a frame slower and does slightly less damage. On hit, combos to all the REV moves that 2C combos into."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Water Lotus Fist",
+    "input": "↘ + [[FF:LP]]",
+    "damage": "60",
+    "description": "Links into 5A or 2A on hit, with 5A doing 4 more damage. Can be made up to +7 on hit if hit meaty, allowing stronger links."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Hakkei",
+    "input": "← + [[FF:HP]]",
+    "damage": "85",
+    "description": "One of only two normals which can combo into 236D, which is key to dealing high meterless damage, especially in the corner. If she doesn't have enough time for a jump D, this will be her optimal DP punish starter when cancelled into a forward/down feint. Interestingly, causes a knockdown on a Wild Punish, which may be a reference to this move crush countering in SFV. This is generally suboptimal and Chun-Li is better served doing 6C or 6D to start a Wild Punish."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Jaw Strike",
+    "input": "→ + [[FF:HP]]",
+    "damage": "80",
+    "description": "Chun-Li’s longest ranged normal. +22 on Wild Punish, leaving enough time for Chun-Li to dash in for a combo at most ranges."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Peacock Palm",
+    "input": "↘ + [[FF:HP]]",
+    "damage": "95 (30+65)",
+    "description": "One of only two normals which can combo into 236D, which is key to dealing high meterless damage, especially in the corner. The startup of this move is too slow to combo from any regular jump in without a Counter Hit or Wild Punish."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Crane Kick",
+    "input": "→ + [[FF:LK]]",
+    "damage": "50",
+    "description": "Absurdly long range for its speed, at just 7f startup. Poke with fairly low commitment. Can be used to confirm into Supers in ranges where 2C doesn't reach after 5B."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Falling Crane",
+    "input": "↘ + [[FF:LK]]",
+    "damage": "60",
+    "description": "A cross-up only move. Cannot hit opponents in the corner. Unlike Street Fighter, you cannot combo after this move without Counter Hit or Wild Punish. Airborne for most of its duration, but not immediately, so meaty throws still beat it."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Yokusen Kick",
+    "input": "→ + [[FF:HK]]",
+    "damage": "90",
+    "description": "A low crush that dodges lows much more quickly than her low evade. It also has the added benefit of being a valid Wild Punish heavy which doesn't scale like evasion moves, leading to very high damage. First 2 active frames whiff on crounching characters. Advantage on hit or block will therefore vary by 2 Frames is the opponent is crouching."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Gen Assassin Kick",
+    "input": "↘ + [[FF:HK]]",
+    "damage": "90",
+    "description": "This is Chun-Li’s sweep. For a sweep, it’s got good range. Although it’s definitely punishable, it can be spaced to avoid some characters’ meterless punishes. On Wild Punish, causes an OTG state that allows for a second 3D or any version of Hazanshu."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Yoso Kick",
+    "input": "[In air] ↓ + [[FF:LK]]",
+    "damage": "j.2B: 20 / j.2B x2: 20 / j.2B x3: 40",
+    "description": "Can be cancelled into any other air move (including normals) on any of the 3 hits. The 3rd stomp hitting a grounded opponent spikes them into the floor for a soft knockdown."
+  },
+  {
+    "category": "Command Combos",
+    "name": "Command Combo",
+    "input": "[In air] [[FF:HP]] > [[FF:HP]]",
+    "damage": "30",
+    "description": "Works from her air stomps, but causes an air reset state and cannot be comboed after."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Hosen Kick",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 [120]",
+    "description": "Damage value factors in SPG bonus."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Falling Phoenix",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 [120]",
+    "description": "Damage value factors in SPG bonus. Nearly impossible to make any better on block than -1."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Kikoken",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 / C: 60 / AC: 80 (30+50)",
+    "description": "A version is slow and stops just short of full screen. C version is fast and fizzles out even sooner, traveling about 2/3's screen width. AC version is as fast as the C version and doesn't dissipate while traveling."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hundred Lightning Kicks BR",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 70 (10x4 + 30) / D: 90 (10x4 + 50) / BD: 120 (10x9 + 30)",
+    "description": "B version combos from any light and is safe on block. D version can only combo from 3C, 4C and high evade. Launches the opponent, which leads to very high damage. BD version the REV combo starter of choice and combos from 5C, 2C or 6A."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Aerial Hundred Lightning Kicks",
+    "input": "[In air] ↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 100 (20x5) / D: 100 (20x5) / BD: 100 (20x5)",
+    "description": "BD version has Chun-Li recover much more quickly upon landing, which reliably combos into either version of Kikosho (236226A/C) if it hits an airborne opponent."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Spinning Bird Kick",
+    "input": "↓(charge) ↑ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 90 (10x3 + 60) / D: 100 (10x6 + 40) / BD: 130 (10x7 + 60)",
+    "description": "Chun-Li's highest damage special that can combo from lights, but hampered by its charge input. B and BD versions combo from any light while D can only combo from 5B."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hazanshu BR",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 90 / D: 110 / BD: 130",
+    "description": "All versions can be braked with AB, which causes her to land without attacking. Can be used to punish fireballs preemptively. +6 on a Counter Hit or Wild Punish, allowing links into 5B, but pushback makes this unreliable. Has no problems linking into Hidden Gear in the same situation. B version reaches about slightly more than half screen and can hit from round start position. D version goes up a higher arc and reaches about 3/4 of the screen. BD version is mostly identical to the D version but is faster and is an actual overhead. All versions can OTG but both D and BD versions do more damage than a sweep (3D). This is useful after a wild punish 3D to squeeze out slightly more damage."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Tensho Kicks BR",
+    "input": "→ ↓ ↘ or ↓ ↓ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 80 (30+50) / D: 100 (30+30+10+30) / BD: 130 (40+30+10x3+30)",
+    "description": "Placeholder"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "240 10x11 + 120",
+    "description": "Reversal super that leaves Chun-Li extremely open if jumped."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "310 20x14 + 30",
+    "description": "Reversal super that leaves Chun-Li extremely open if jumped."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "180 10x16 + 20",
+    "description": "All versions can be jump cancelled on the last launching kick. Chun-Li always jumps forward no matter which jump direction is inputted. B version is slow and is unable to combo from many juggle routes (regular dp brake, EX SBK into EX Air Kicks, to name a few) D version is slightly faster and can be braked on the upwards launching kick. Often does less damage in longer combos compared to Kikosho but has much greater mixup potential going for air stomps resets. Adds 20% scaling to the combo on hit."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "336 6x15 + 20 + 220",
+    "description": "All versions can be jump cancelled on the last launching kick. Chun-Li always jumps forward no matter which jump direction is inputted. B version is slow and is unable to combo from many juggle routes (regular dp brake, EX SBK into EX Air Kicks, to name a few) D version is slightly faster and can be braked on the upwards launching kick. Often does less damage in longer combos compared to Kikosho but has much greater mixup potential going for air stomps resets. Adds 20% scaling to the combo on hit."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Seven Star Shining Kicks",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "467 88+33+11x15+27+44+110",
+    "description": "Costs 2 bars and only avaiable during S.P.G., displayed damage is with S.P.G. bonus. Resets the Rev meter to 0%, even during Overheat."
+  }
+]

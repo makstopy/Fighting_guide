@@ -59,7 +59,28 @@ interface ButtonDef {
   render?: React.ReactNode;
 }
 
-function getConsoleButtons(controlType: ControlType): ButtonDef[] {
+function getConsoleButtons(controlType: ControlType, game?: string): ButtonDef[] {
+  if (controlType === 'Original') {
+    if (game === 'Street Fighter 6') {
+      return [
+        { label: '[[LP]]', token: '[[LP]]' },
+        { label: '[[MP]]', token: '[[MP]]' },
+        { label: '[[HP]]', token: '[[HP]]' },
+        { label: '[[LK]]', token: '[[LK]]' },
+        { label: '[[MK]]', token: '[[MK]]' },
+        { label: '[[HK]]', token: '[[HK]]' },
+      ];
+    }
+    if (game === 'Fatal Fury: City of the Wolves') {
+      return [
+        { label: '[[FF:LP]]', token: '[[FF:LP]]' },
+        { label: '[[FF:HP]]', token: '[[FF:HP]]' },
+        { label: '[[FF:LK]]', token: '[[FF:LK]]' },
+        { label: '[[FF:HK]]', token: '[[FF:HK]]' },
+        { label: '[[FF:REV]]', token: '[[FF:REV]]' },
+      ];
+    }
+  }
   if (controlType === 'Xbox') {
     return [
       { label: 'X', token: '□' },
@@ -100,19 +121,31 @@ function getConsoleButtons(controlType: ControlType): ButtonDef[] {
 function getGameButtons(game?: string): ButtonDef[] {
   if (game === 'Street Fighter 6') {
     return [
-      { label: '[[LP]]', token: '[[LP]]' },
-      { label: '[[MP]]', token: '[[MP]]' },
-      { label: '[[HP]]', token: '[[HP]]' },
       { label: '[[P]]', token: '[[P]]' },
-      { label: '[[LK]]', token: '[[LK]]' },
-      { label: '[[MK]]', token: '[[MK]]' },
-      { label: '[[HK]]', token: '[[HK]]' },
       { label: '[[K]]', token: '[[K]]' },
       { label: '[[N]]', token: '[[N]]' },
     ];
   }
+  if (game === 'Fatal Fury: City of the Wolves') {
+    return [
+      { label: '[[FF:P]]', token: '[[FF:P]]' },
+      { label: '[[FF:K]]', token: '[[FF:K]]' },
+      { label: '[[FF:SP]]', token: '[[FF:SP]]' },
+      { label: '[[FF:SC]]', token: '[[FF:SC]]' },
+      { label: '[[FF:RB]]', token: '[[FF:RB]]' },
+      { label: '[[FF:DA]]', token: '[[FF:DA]]' },
+      { label: '[[FF:TH]]', token: '[[FF:TH]]' },
+    ];
+  }
   return [];
 }
+
+const CONTEXT_TAGS: ButtonDef[] = [
+  { label: '[In air]', token: '[In air]' },
+  { label: '[During S.P.G.]', token: '[During S.P.G.]' },
+  { label: 'BR', token: 'BR' },
+  { label: 'FE', token: 'FE' },
+];
 
 const DIRECTION_BUTTONS: { label: string; token: string }[] = [
   { label: '↖', token: '↖' },
@@ -128,6 +161,9 @@ const DIRECTION_BUTTONS: { label: string; token: string }[] = [
 
 // Render the icon for an action button based on control type
 function renderButtonIcon(controlType: ControlType, label: string, size: number = 28): React.ReactNode {
+  if (label.startsWith('[[')) {
+    return <ButtonToken token={label} controlType={controlType} />;
+  }
   if (controlType === 'Arcade') {
     return <ArcadeButton label={label} size={size + 4} />;
   }
@@ -225,7 +261,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
     onClose();
   }, [onClose]);
 
-  const consoleButtons = useMemo(() => getConsoleButtons(controlType), [controlType]);
+  const consoleButtons = useMemo(() => getConsoleButtons(controlType, game), [controlType, game]);
   const gameButtons = useMemo(() => getGameButtons(game), [game]);
 
   const canSave = name.trim().length > 0 && tokens.length > 0;
@@ -326,7 +362,13 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
 
             {/* Action buttons keyboard */}
             <Text style={styles.fieldLabel}>
-              {controlType === 'PS' ? 'PLAYSTATION' : controlType === 'Xbox' ? 'XBOX' : '🕹️ ARCADE'} BUTTONS
+              {controlType === 'PS'
+                ? 'PLAYSTATION'
+                : controlType === 'Xbox'
+                ? 'XBOX'
+                : controlType === 'Arcade'
+                ? 'ARCADE'
+                : 'ORIGINAL'} BUTTONS
             </Text>
             <View style={styles.actionButtonsGrid}>
               {consoleButtons.map((btn) => (
@@ -347,7 +389,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
             {/* Game buttons keyboard (colored strikes) */}
             {gameButtons.length > 0 && (
               <>
-                <Text style={styles.fieldLabel}>ИГРОВЫЕ BUTTONS (УДАРЫ)</Text>
+                <Text style={styles.fieldLabel}>СПЕЦИФИЧЕСКИЕ ИНПУТЫ</Text>
                 <View style={styles.actionButtonsGrid}>
                   {gameButtons.map((btn) => (
                     <Pressable
@@ -359,7 +401,7 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
                       ]}
                       onPress={() => addToken(btn.token)}
                     >
-                      <ButtonToken token={btn.token} controlType="Arcade" />
+                      <ButtonToken token={btn.token} controlType="Original" />
                     </Pressable>
                   ))}
                 </View>
@@ -426,6 +468,28 @@ export default function ComboCreatorModal({ visible, onClose, onSave, controlTyp
                 <Text style={styles.modBtnHint}>clear</Text>
               </Pressable>
             </View>
+
+            {/* Context Tags & Conditions — only for Fatal Fury */}
+            {game === 'Fatal Fury: City of the Wolves' && (
+              <>
+                <Text style={styles.fieldLabel}>TAGS & CONDITIONS (ТЕГИ И СОСТОЯНИЯ)</Text>
+                <View style={styles.actionButtonsGrid}>
+                  {CONTEXT_TAGS.map((btn) => (
+                    <Pressable
+                      key={btn.token}
+                      style={({ pressed }) => [
+                        styles.keyBtn,
+                        styles.actionKeyBtn,
+                        pressed && styles.keyBtnPressed,
+                      ]}
+                      onPress={() => addToken(btn.token)}
+                    >
+                      <ButtonToken token={btn.token} controlType={controlType} />
+                    </Pressable>
+                  ))}
+                </View>
+              </>
+            )}
 
             {/* Description */}
             <Text style={styles.fieldLabel}>NOTE (OPTIONAL)</Text>
@@ -585,7 +649,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   actionKeyBtn: {
-    width: 56,
+    minWidth: 56,
+    paddingHorizontal: 8,
     height: 50,
     backgroundColor: '#1a1a2e',
     borderColor: '#2a2a4e',

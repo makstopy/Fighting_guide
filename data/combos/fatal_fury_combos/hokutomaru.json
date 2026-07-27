@@ -1,138 +1,135 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Sliding",
-      "input": "↘ + [[FF:LK]]",
-      "damage": "60",
-      "description": "Slide kick that is punishable at point blank but becomes more plus when spaced out properly. Good option for catching people who are walking away from you or just as a way to approach on the ground. Unfortunately not plus enough on hit to get a consistent combo from any spacing or with counter hit/wild punishes. It is possible to combo off of this into 4f buttons if you time it perfectly as a point blank meaty."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Kuuten Geri",
-      "input": "↘ + [[FF:HK]]",
-      "damage": "60(30+30)",
-      "description": "Cancellable into Air REV Arts and any version of j.22P Launches opponents upwards when it hits."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Nidan Jump",
-      "input": "[In air] ↖ or ↑ or ↗",
-      "damage": "-",
-      "description": "Hokutomaru's double jump. His most annoying option for mixing people's anti-air reactions or to traverse the screen. Hokutomaru will turn to reface the opponent if they got behind him while he's double jumping. He is able to perform any regular aerial option available to him like from his normal jump including: normals, specials, JD, feint, etc."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Ninpo Bakuen Punch",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Uniquely fast Rev Blow that forces the opponent to respect Hokutomaru's defense similar to a reversal, as even doing a counter Rev Blow or High Dodge is restrictive and difficult. On hit, can be followed up by air Rev Blow as a target combo, giving Hokutomaru added reward on regular hit or Wild Punish Rev Blow. Functional as an anti-air thanks to its upwards hitbox and inability to be JD'd by a jumping opponent. Comes at the cost of being -5 on block, which is universally punishable if blocked point blank, which makes low-commitment pressure options effective against it."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Ninpo Bakuen Kick",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Aerial rev blow with usual guard point properties. This is safe on block and can even be plus if you manage to hit the opponent below their waist. A great tool for blowing up anti-air or air-to-air attempts."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Shuriken",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 / C: 60 (20x3) / AC: 80",
-      "description": "An important projectile move for Hokutomaru to control space and use as an approach tool. C version throws out 3 Shuriken clustered together Opponent Normals can neutralize Shuriken if timed correctly. The Shuriken can be hit out of the air by attacks. As such, the C Version can blow through single hit fireballs as only one of the Shuriken gets neutralized. REV Art fireballs eliminate all Shuriken regardless of hits."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Naname Shuriken",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 60 / D: 60 (20x3) / BD: 80",
-      "description": "Diagonal version of 214P that throws the Shuriken(s) at an upward 45° angle. Opponent Normals can neutralize Shuriken if timed correctly."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Air Shuriken",
-      "input": "[In air] ↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 / C: 60 (20x3) / AC: 80",
-      "description": "Throws the Shuriken straight ahead while keeping Hokutomaru suspended in the air. Regular versions have a height restriction and can only be done from a forward or neutral jump. Opponent Normals can neutralize Shuriken if timed correctly. REV Art versions have no height restriction and can be done while jumping backwards or even a backdash."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Air Naname Shuriken",
-      "input": "[In air] ↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 60 / D: 60 (20x3) / BD: 80",
-      "description": "Diagonal version of j.214P that throws the Shuriken(s) at a downward 45° angle. Regular versions have a height restriction and can only be done from a forward or neutral jump. Opponent Normals can neutralize Shuriken if timed correctly. REV Art versions have no height restriction and can be done while jumping backwards or even a backdash."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Kuuha Dan BR",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 80 (40+10x4) / D: 100 ( 40 +15x4) / BD: 120 ( 40 +5x6+50)",
-      "description": "Hokutomaru executes his version of Andy's famous Kuuha Dan. This move is a staple combo piece but is very unsafe on block/whiff if not hit confirmed properly. Unlike most other brake moves, the REV Art version does not effect the juggle limit of the D version when used in the same combo. Most hits will whiff on a crouch blocking opponent. Marco, B. Jenet, Hokutomaru and Mai's CDs are fast enough to punish. If Hokutomaru is in S.P.G. cancelling into CD will neutralize the opponents CD, after which he can do his CD > j.CD target combo to get a crumbling/launching counter hit punish."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Zan'ei Ken",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 70 / C: 80 / AC: 80",
-      "description": "More time under Andy's tutelage has taught him Andy's famous rushing dash punch. It is a decent move for surprising your opponent with a quick attack from further ranges as a gap-closer. The hitbox will not come out unless Hokutomaru gets near his opponent. This means that from further ranges the animation will be shortened as the end recovery from performing the punch will not happen. The A version is notably his fastest special on the ground which makes it his fastest meterless guard cancel option. The C version is always -6 from any range. It should be used very carefully as he will be consistently punishable on block. The AC version has the same coverage as the C version but can be cancelled into other Rev Arts to be plus or get a full combo."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Karakusa Wari",
-      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: - / D: 70 / BD: 70",
-      "description": "B version is a command leap that can cancel into the REV Art versions of his air specials. A decent option for traversing over low attacks or some grounded fireballs. D version has a strike at the end. Can be combo'd off of on counter hit or wild punish. Rev Art version is the most useful as it is always plus on block and you can combo into his other Rev Arts on hit."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Rakka Zan: Kai",
-      "input": "↓ ↓ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: - / C: 70 / AC: 70",
-      "description": "Teleports Hokutomaru either directly above where he stood (22A) or above and in front of the opponent while extending a leg to hit them (22C/AC) A version can be cancelled into Air Shuriken (j.214P) or Air Naname Shuriken (j.214K) Startup for the C and AC version is much slower in actuality as the move puts Hokutomaru on the top part of the screen before he descends with a heel kick. Can always get a combo if your opponent is hit crouching or if they get counter hit. Useful tool for punishing players who are zoning him out or as a surprise neutral check. Be mindful that a wary opponent can anti-air his teleport easily with High Dodge or a DP."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Rakka Zan: Kai",
-      "input": "[In air] ↓ ↓ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: - / C: 70 / AC: 70",
-      "description": "Aerial version of his teleport. The A/C versions can only be done from neutral or forward jumps. The Rev Art version can be done from any jump and backdashes as well. Can be done very low to the ground by inputting as [282P] rapidly Has less advantage compared to his grounded version."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Zetsu: Hishou Ken",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "230 (10x13+100)",
-      "description": "\"Fireball\" super where Hokutomaru charges his ki and sends it out in front of him. This does function as a projectile so projectile invincible moves can go through it. It is also able to cancel out weaker projectiles and other Ignition gear projectiles like Kain 236236B. Has invincible startup and is your preferred reversal option when only one bar is available. Can lose to a well timed High Dodge."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Ougi: Chou Hissatsu Tatsumaki",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "250 (10x15+100)",
-      "description": "Hurricane anti-air super. This version only has frame 1 head invincibility so it should not be used as a reversal outside of anti-air situations. This super will hit on both sides so it is a good option to beat cross ups. JDing this super in the air will quickly pull you into it and often over Hokutomaru's head, potentially crossing yourself up in the process."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Zetsu: Hishou Ken",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "290 (10x14+150)",
-      "description": "More damaging version of his 236236A with similar uses and properties. It can notably cancel out weaker projectiles and other Redline gear projectiles like Kain 236236D. It has the fastest startup of his non S.P.G supers so it is the easiest to link into after a tight air juggle. Can lose to a well timed High Dodge"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Kyuukyuku Ougi: Chou Bakuen Tatsumaki",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "330 (10x15+180)",
-      "description": "His most damaging super outside of S.P.G state. Aim to end in this if you can for the most damaging combo ender. Unlike the B version this has full invincibility and can be used as a reversal option as well as an anti-air."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Hiougi: Shiranui Ryuu",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "440",
-      "description": "Hokutomaru pays tribute to his teachers and performs a dash punch similar to his 236C. If he connects he will do an explosive combo. Has the fastest startup and does the most damage out of all of his supers. He is fully invincible for the duration he is dashing which makes this a strong option for beating out mid-range fireballs or punishing far normals on block (ex. Billy f.C). Will ALWAYS side-swap if it doesn't kill. Be mindful you can potentially corner yourself after the super finishes. Does 72 damage in chip unless JD'd/REV guarded"
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Sliding",
+    "input": "↘ + [[FF:LK]]",
+    "damage": "60",
+    "description": "Slide kick that is punishable at point blank but becomes more plus when spaced out properly. Good option for catching people who are walking away from you or just as a way to approach on the ground. Unfortunately not plus enough on hit to get a consistent combo from any spacing or with counter hit/wild punishes. It is possible to combo off of this into 4f buttons if you time it perfectly as a point blank meaty."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Kuuten Geri",
+    "input": "↘ + [[FF:HK]]",
+    "damage": "60(30+30)",
+    "description": "Cancellable into Air REV Arts and any version of j.22P Launches opponents upwards when it hits."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Nidan Jump",
+    "input": "[In air] ↖ or ↑ or ↗",
+    "damage": "-",
+    "description": "Hokutomaru's double jump. His most annoying option for mixing people's anti-air reactions or to traverse the screen. Hokutomaru will turn to reface the opponent if they got behind him while he's double jumping. He is able to perform any regular aerial option available to him like from his normal jump including: normals, specials, JD, feint, etc."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Ninpo Bakuen Punch",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Uniquely fast Rev Blow that forces the opponent to respect Hokutomaru's defense similar to a reversal, as even doing a counter Rev Blow or High Dodge is restrictive and difficult. On hit, can be followed up by air Rev Blow as a target combo, giving Hokutomaru added reward on regular hit or Wild Punish Rev Blow. Functional as an anti-air thanks to its upwards hitbox and inability to be JD'd by a jumping opponent. Comes at the cost of being -5 on block, which is universally punishable if blocked point blank, which makes low-commitment pressure options effective against it."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Ninpo Bakuen Kick",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Aerial rev blow with usual guard point properties. This is safe on block and can even be plus if you manage to hit the opponent below their waist. A great tool for blowing up anti-air or air-to-air attempts."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Shuriken",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 / C: 60 (20x3) / AC: 80",
+    "description": "An important projectile move for Hokutomaru to control space and use as an approach tool. C version throws out 3 Shuriken clustered together Opponent Normals can neutralize Shuriken if timed correctly. The Shuriken can be hit out of the air by attacks. As such, the C Version can blow through single hit fireballs as only one of the Shuriken gets neutralized. REV Art fireballs eliminate all Shuriken regardless of hits."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Naname Shuriken",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 60 / D: 60 (20x3) / BD: 80",
+    "description": "Diagonal version of 214P that throws the Shuriken(s) at an upward 45° angle. Opponent Normals can neutralize Shuriken if timed correctly."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Air Shuriken",
+    "input": "[In air] ↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 / C: 60 (20x3) / AC: 80",
+    "description": "Throws the Shuriken straight ahead while keeping Hokutomaru suspended in the air. Regular versions have a height restriction and can only be done from a forward or neutral jump. Opponent Normals can neutralize Shuriken if timed correctly. REV Art versions have no height restriction and can be done while jumping backwards or even a backdash."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Air Naname Shuriken",
+    "input": "[In air] ↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 60 / D: 60 (20x3) / BD: 80",
+    "description": "Diagonal version of j.214P that throws the Shuriken(s) at a downward 45° angle. Regular versions have a height restriction and can only be done from a forward or neutral jump. Opponent Normals can neutralize Shuriken if timed correctly. REV Art versions have no height restriction and can be done while jumping backwards or even a backdash."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Kuuha Dan BR",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 80 (40+10x4) / D: 100 ( 40 +15x4) / BD: 120 ( 40 +5x6+50)",
+    "description": "Hokutomaru executes his version of Andy's famous Kuuha Dan. This move is a staple combo piece but is very unsafe on block/whiff if not hit confirmed properly. Unlike most other brake moves, the REV Art version does not effect the juggle limit of the D version when used in the same combo. Most hits will whiff on a crouch blocking opponent. Marco, B. Jenet, Hokutomaru and Mai's CDs are fast enough to punish. If Hokutomaru is in S.P.G. cancelling into CD will neutralize the opponents CD, after which he can do his CD > j.CD target combo to get a crumbling/launching counter hit punish."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Zan'ei Ken",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 70 / C: 80 / AC: 80",
+    "description": "More time under Andy's tutelage has taught him Andy's famous rushing dash punch. It is a decent move for surprising your opponent with a quick attack from further ranges as a gap-closer. The hitbox will not come out unless Hokutomaru gets near his opponent. This means that from further ranges the animation will be shortened as the end recovery from performing the punch will not happen. The A version is notably his fastest special on the ground which makes it his fastest meterless guard cancel option. The C version is always -6 from any range. It should be used very carefully as he will be consistently punishable on block. The AC version has the same coverage as the C version but can be cancelled into other Rev Arts to be plus or get a full combo."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Karakusa Wari",
+    "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: - / D: 70 / BD: 70",
+    "description": "B version is a command leap that can cancel into the REV Art versions of his air specials. A decent option for traversing over low attacks or some grounded fireballs. D version has a strike at the end. Can be combo'd off of on counter hit or wild punish. Rev Art version is the most useful as it is always plus on block and you can combo into his other Rev Arts on hit."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Rakka Zan: Kai",
+    "input": "↓ ↓ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: - / C: 70 / AC: 70",
+    "description": "Teleports Hokutomaru either directly above where he stood (22A) or above and in front of the opponent while extending a leg to hit them (22C/AC) A version can be cancelled into Air Shuriken (j.214P) or Air Naname Shuriken (j.214K) Startup for the C and AC version is much slower in actuality as the move puts Hokutomaru on the top part of the screen before he descends with a heel kick. Can always get a combo if your opponent is hit crouching or if they get counter hit. Useful tool for punishing players who are zoning him out or as a surprise neutral check. Be mindful that a wary opponent can anti-air his teleport easily with High Dodge or a DP."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Rakka Zan: Kai",
+    "input": "[In air] ↓ ↓ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: - / C: 70 / AC: 70",
+    "description": "Aerial version of his teleport. The A/C versions can only be done from neutral or forward jumps. The Rev Art version can be done from any jump and backdashes as well. Can be done very low to the ground by inputting as [282P] rapidly Has less advantage compared to his grounded version."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Zetsu: Hishou Ken",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "230 (10x13+100)",
+    "description": "\"Fireball\" super where Hokutomaru charges his ki and sends it out in front of him. This does function as a projectile so projectile invincible moves can go through it. It is also able to cancel out weaker projectiles and other Ignition gear projectiles like Kain 236236B. Has invincible startup and is your preferred reversal option when only one bar is available. Can lose to a well timed High Dodge."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Ougi: Chou Hissatsu Tatsumaki",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "250 (10x15+100)",
+    "description": "Hurricane anti-air super. This version only has frame 1 head invincibility so it should not be used as a reversal outside of anti-air situations. This super will hit on both sides so it is a good option to beat cross ups. JDing this super in the air will quickly pull you into it and often over Hokutomaru's head, potentially crossing yourself up in the process."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Zetsu: Hishou Ken",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "290 (10x14+150)",
+    "description": "More damaging version of his 236236A with similar uses and properties. It can notably cancel out weaker projectiles and other Redline gear projectiles like Kain 236236D. It has the fastest startup of his non S.P.G supers so it is the easiest to link into after a tight air juggle. Can lose to a well timed High Dodge"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Kyuukyuku Ougi: Chou Bakuen Tatsumaki",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "330 (10x15+180)",
+    "description": "His most damaging super outside of S.P.G state. Aim to end in this if you can for the most damaging combo ender. Unlike the B version this has full invincibility and can be used as a reversal option as well as an anti-air."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Hiougi: Shiranui Ryuu",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "440",
+    "description": "Hokutomaru pays tribute to his teachers and performs a dash punch similar to his 236C. If he connects he will do an explosive combo. Has the fastest startup and does the most damage out of all of his supers. He is fully invincible for the duration he is dashing which makes this a strong option for beating out mid-range fireballs or punishing far normals on block (ex. Billy f.C). Will ALWAYS side-swap if it doesn't kill. Be mindful you can potentially corner yourself after the super finishes. Does 72 damage in chip unless JD'd/REV guarded"
+  }
+]

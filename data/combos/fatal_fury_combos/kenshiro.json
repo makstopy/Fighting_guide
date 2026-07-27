@@ -1,117 +1,114 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Boulder-Splitting Slash",
-      "input": "→ + [[FF:LP]]",
-      "damage": "90",
-      "description": "Links to 5A or 2A on hit and 5AC on Counter Hit"
-    },
-    {
-      "category": "Command Moves",
-      "name": "Hokuto Three-Fist Slaughter",
-      "input": "[[FF:LP]] [[FF:HP]]",
-      "damage": "-",
-      "description": "Very fast for what’s functionally a far heavy, linking from close B on hit"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Hokuto Bone Crusher",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Kenshiro takes a big step forward on startup, which allows it to reach even REV Guarding opponents if that’s what it takes to Overheat them. However, it’s impossible to use it in a spacing trap. You can combo after the REV Blow if it hits a debuffed opponent, but it has to be a quick follow-up (like a DP) when done midscreen. The step forward leaves Kenshiro vulnerable to throws before the REV Blow connects."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Face-Splitting Fist",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 (80+40)",
-      "description": "Doesn’t go into the hitgrab if it hits an airborne opponent, but the full damage of the REV Blow will instead be on the first hit. Also doesn’t go into the hitgrab on Counter Hit, but instead crumples as though it were the grounded REV Blow. REV Accel’ing into this after j.236AC almost always gives a juggle on the ground, usually to a DP or super."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Finger Snap of Emptiness BR",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 / C: 80 / AC: 80",
-      "description": "The finger snap part of the attack is not launched if Kenshiro does not make contact with the opponent by the end of the slide's active frames All versions are safe, but minus on block The only version that hits from the front of the opponent instead of behind Combos into Far A on Counter Hit / Wild Punish Crosses over to the other side of the opponent and delivers the hit from behind, even if the opponent is in the corner Can travel about 2/3-screen distance and still launch the attack if Kenshiro makes contact with the opponent. The only version of this move that can start combos on a normal hit, and this must be done by canceling it into another REV Special via REV Accel Can travel about half-screen distance and still launch the attack if Kenshiro makes contact with the opponent. Combos into AC on Counter Hit / Wild Punish"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hokuto Hundred-Kick Rush BR",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 80 (10*6 +20) / D: 140 (10*7 + 70) / BD: 130 (1*11 + 119)",
-      "description": "Any special-cancelable normal combos into this On hit against an airborne opponent, can continue juggles and combo into other specials Combos into Far A on Counter Hit / Wild Punish against a grounded opponent Unusually easy to Hyper Defend; simply pressing forward anytime while blocking will cause a Hyper Defense AC and heavies can combo into this Cannot continue juggles, even if braked or against an airborne opponent The last hit applies the Channeling Points debuff to the opponent. If this attack is braked on hit, or canceled into another REV special before the final hit, the Channeling Points debuff will not be applied or triggered"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hokuto Soaring Split Kick BR",
-      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 80 (20 + 60) / C: 100 (20 + 80) / AC: 110 (30 + 80)",
-      "description": "All versions have invincibility to air attacks on startup You can brake the Heavy and REV versions to prevent the follow-up kick. When braked, they recover 11 frames slower on whiff only The follow-up flying kick will not go through a cornered opponent, keeping Kenshiro on the same side All versions are Counter Hit punishable on recovery if you don't brake them Fully invincible on startup Kenshiro's fastest special move at 5f Has slightly more range than the other versions The invincibility doesn't last all the way through the uppercut, which can make it trade with jump-ins if done early The first hit launches on Counter Hit, causing a high launch if you brake it. Your main combo afterward is 236B > 623A/AC Unlike the light version, the air invincibility lasts all the way through the active frames, making it more generous as an anti-air Kenshiro's best Guard Cancel special, being a fast launcher All the same features as the Heavy version, but is slightly faster and does more damage on its own The follow-up kick can always REV Accel into 236AC"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Extreme Airflow",
-      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: - / D: - / BD: -",
-      "description": "All versions move Kenshiro backward and give Kenshiro projectile invincibility while airborne Can be cancelled to j.236P upon reaching a certain point in the backflip A very niche special, but is great at dodging some reversal supers (Raging Storm, Haoh Shoukou Ken, some grab supers, etc.) Invincible to throws and projectiles on 6~30f Nullifies basic projectiles while ignoring other projectile-type moves Identical to the light version The invincibility to throws and projectiles starts 1f earlier (5~30f) Reflects all projectiles of normal or REV strength, but still ignores super-strength projectiles"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Celestial Destruction",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 90 / C: 90 / AC: 80",
-      "description": "placeholder"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Two-Fingered Intercept",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "K: - / BD: - / K (projectile): 80 / BD (projectile): 100",
-      "description": "placeholder"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Seven Stars of Death",
-      "input": "[In air] ↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 8 (10x5+30) / C: 100 (10x5+50) / AC: 100 (10x5+20+30)",
-      "description": "placeholder"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Thousand-Hand Crushing Fist",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "180",
-      "description": "placeholder"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Thousand-Hand Crushing Fist",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "270 (70 + 200)",
-      "description": "placeholder"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Hokuto Fist of Penitence",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "140 (60 + 80)",
-      "description": "placeholder"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Hokuto Fist of Penitence",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "230 (80 + 150)",
-      "description": "placeholder"
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Hokuto Hundred-Fist Rush",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "442 80 + 20 + 1*89 + 50 + 150",
-      "description": "However, if this Hidden Gear will do enough damage to KO, Kenshiro rips his top off, a significantly different animation sequence plays, a custom music track overrides the current BGM and the Hidden Gear deals a lot more damage. He also declares that the opponent is already dead. Despite this bonus damage, the KO margin is solely determined by the damage of the regular non-KO Hidden Gear, as with Tizoc's Hidden Gear. Despite this bonus damage, the KO margin is solely determined by the damage of the regular non-KO Hidden Gear, as with Tizoc's Hidden Gear."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Boulder-Splitting Slash",
+    "input": "→ + [[FF:LP]]",
+    "damage": "90",
+    "description": "Links to 5A or 2A on hit and 5AC on Counter Hit"
+  },
+  {
+    "category": "Command Moves",
+    "name": "Hokuto Three-Fist Slaughter",
+    "input": "[[FF:LP]] [[FF:HP]]",
+    "damage": "-",
+    "description": "Very fast for what’s functionally a far heavy, linking from close B on hit"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Hokuto Bone Crusher",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Kenshiro takes a big step forward on startup, which allows it to reach even REV Guarding opponents if that’s what it takes to Overheat them. However, it’s impossible to use it in a spacing trap. You can combo after the REV Blow if it hits a debuffed opponent, but it has to be a quick follow-up (like a DP) when done midscreen. The step forward leaves Kenshiro vulnerable to throws before the REV Blow connects."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Face-Splitting Fist",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 (80+40)",
+    "description": "Doesn’t go into the hitgrab if it hits an airborne opponent, but the full damage of the REV Blow will instead be on the first hit. Also doesn’t go into the hitgrab on Counter Hit, but instead crumples as though it were the grounded REV Blow. REV Accel’ing into this after j.236AC almost always gives a juggle on the ground, usually to a DP or super."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Finger Snap of Emptiness BR",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 / C: 80 / AC: 80",
+    "description": "The finger snap part of the attack is not launched if Kenshiro does not make contact with the opponent by the end of the slide's active frames All versions are safe, but minus on block The only version that hits from the front of the opponent instead of behind Combos into Far A on Counter Hit / Wild Punish Crosses over to the other side of the opponent and delivers the hit from behind, even if the opponent is in the corner Can travel about 2/3-screen distance and still launch the attack if Kenshiro makes contact with the opponent. The only version of this move that can start combos on a normal hit, and this must be done by canceling it into another REV Special via REV Accel Can travel about half-screen distance and still launch the attack if Kenshiro makes contact with the opponent. Combos into AC on Counter Hit / Wild Punish"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hokuto Hundred-Kick Rush BR",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 80 (10*6 +20) / D: 140 (10*7 + 70) / BD: 130 (1*11 + 119)",
+    "description": "Any special-cancelable normal combos into this On hit against an airborne opponent, can continue juggles and combo into other specials Combos into Far A on Counter Hit / Wild Punish against a grounded opponent Unusually easy to Hyper Defend; simply pressing forward anytime while blocking will cause a Hyper Defense AC and heavies can combo into this Cannot continue juggles, even if braked or against an airborne opponent The last hit applies the Channeling Points debuff to the opponent. If this attack is braked on hit, or canceled into another REV special before the final hit, the Channeling Points debuff will not be applied or triggered"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hokuto Soaring Split Kick BR",
+    "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 80 (20 + 60) / C: 100 (20 + 80) / AC: 110 (30 + 80)",
+    "description": "All versions have invincibility to air attacks on startup You can brake the Heavy and REV versions to prevent the follow-up kick. When braked, they recover 11 frames slower on whiff only The follow-up flying kick will not go through a cornered opponent, keeping Kenshiro on the same side All versions are Counter Hit punishable on recovery if you don't brake them Fully invincible on startup Kenshiro's fastest special move at 5f Has slightly more range than the other versions The invincibility doesn't last all the way through the uppercut, which can make it trade with jump-ins if done early The first hit launches on Counter Hit, causing a high launch if you brake it. Your main combo afterward is 236B > 623A/AC Unlike the light version, the air invincibility lasts all the way through the active frames, making it more generous as an anti-air Kenshiro's best Guard Cancel special, being a fast launcher All the same features as the Heavy version, but is slightly faster and does more damage on its own The follow-up kick can always REV Accel into 236AC"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Extreme Airflow",
+    "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: - / D: - / BD: -",
+    "description": "All versions move Kenshiro backward and give Kenshiro projectile invincibility while airborne Can be cancelled to j.236P upon reaching a certain point in the backflip A very niche special, but is great at dodging some reversal supers (Raging Storm, Haoh Shoukou Ken, some grab supers, etc.) Invincible to throws and projectiles on 6~30f Nullifies basic projectiles while ignoring other projectile-type moves Identical to the light version The invincibility to throws and projectiles starts 1f earlier (5~30f) Reflects all projectiles of normal or REV strength, but still ignores super-strength projectiles"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Celestial Destruction",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 90 / C: 90 / AC: 80",
+    "description": "placeholder"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Two-Fingered Intercept",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "K: - / BD: - / K (projectile): 80 / BD (projectile): 100",
+    "description": "placeholder"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Seven Stars of Death",
+    "input": "[In air] ↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 8 (10x5+30) / C: 100 (10x5+50) / AC: 100 (10x5+20+30)",
+    "description": "placeholder"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Thousand-Hand Crushing Fist",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "180",
+    "description": "placeholder"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Thousand-Hand Crushing Fist",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "270 (70 + 200)",
+    "description": "placeholder"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Hokuto Fist of Penitence",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "140 (60 + 80)",
+    "description": "placeholder"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Hokuto Fist of Penitence",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "230 (80 + 150)",
+    "description": "placeholder"
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Hokuto Hundred-Fist Rush",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "442 80 + 20 + 1*89 + 50 + 150",
+    "description": "However, if this Hidden Gear will do enough damage to KO, Kenshiro rips his top off, a significantly different animation sequence plays, a custom music track overrides the current BGM and the Hidden Gear deals a lot more damage. He also declares that the opponent is already dead. Despite this bonus damage, the KO margin is solely determined by the damage of the regular non-KO Hidden Gear, as with Tizoc's Hidden Gear. Despite this bonus damage, the KO margin is solely determined by the damage of the regular non-KO Hidden Gear, as with Tizoc's Hidden Gear."
+  }
+]

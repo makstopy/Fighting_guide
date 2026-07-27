@@ -1,187 +1,184 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Ha",
-      "input": "[[FF:LP]] [[FF:HP]]",
-      "damage": "80",
-      "description": "Wild Punish +21f. Has an identical animation to Fudou Ken • A (214P~5C). Can’t be cancelled into anything, not even super. Moves Geese forward on startup. When it hits meaty, can be up to +3 on hit and +8 on Counter Hit."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Jaei Ken",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 (60+20+40)",
-      "description": "A pretty standard REV blow with decent reach. Geese gets safe jump setups if he juggles into this move from EX moves like his rekkas."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Jaei Ken: Kuu",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 (50+70)",
-      "description": "A an armored divebomb at an angle. Used to end combos after EX Shippuu Ken or EX Nichirin Zan, or to contest DPs. Like grounded REV Blow, it gets beaten by High Dodge Attack. If it hits the opponent low enough to the ground, the second hit won't come out and the REV blow will end instantly, giving Geese extra okizeme or even a combo into Hidden Gear."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Reppuu Ken",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 / C: 110 (30+80) / AC: 100 (20+20+20+40)",
-      "description": "Nightmare Geese tosses a grounded projectile. The Light version of Reppuu Ken is as standard as projectiles come, used for attacking from a distance. Nightmare Geese tosses out two Reppuu Kens, a short range one that nullifies non-REV or super projectiles followed by a full screen projectile. Similar in function to Rock's Heavy Reppuu Ken, this move can give Nightmare Geese an edge in fireball wars by eating the opponent's projectile and launching one right back, thus creating an opportunity for him to get in closer. Nightmare Geese tosses out a supercharged, fast, multihitting Reppuu Ken. While it has the slowest startup among his Reppuu Ken versions, the projectile will blow through regular projectiles and cancel out with REV projectiles. Its fast speed lets it snipe opponents from half or even full screen, especially if they are still recovering from throwing their own projectile."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Shippuu Ken",
-      "input": "[In air] ↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 / C: 60 / AC: 80 (40+40)",
-      "description": "Can only be performed during a neutral or forwards jump or hop except for the REV version, which can be performed from a backwards jump or hop. All versions briefly halt Nightmare Geese's jump momentum, allowing him to mess with the opponent's anti-air timing. The Light and Heavy versions push him backwards and let Nightmare Geese keep his distance while the REV version keeps him moving forward with the exception of the backwards jump/hop version. The Light version travels slower and has a very slightly higher angle than the Heavy version. The Heavy version travels faster and has a very slightly lower angle than the Light version. The REV version fires two Shippuu Kens and generally locks down the opponent at mid range, giving Nightmare Geese an opportunity to close the gap with a dash or Far D. Can be Feinted, which halts Nightmare Geese's jump momentum and moves him backward without throwing a projectile. See the above section on his Air Feint for more detailed information."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hishou Nichirin Zan BR",
-      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 70 [70 (30+40)] / C: 100 / AC: 110",
-      "description": "All versions can be Braked on startup, which will make Nightmare Geese leap into the air without performing the slash. This can be useful for empty jump low mixups, especially when done after knockdowns and setups. Numbers in [square brakets] denote values when it hits an opponent in the air. The Light version is a safe blockstring ender, though there is a decently-sized gap between any normal cancelled into this move and when the move hits. It cannot hit crossup. The frame advantage for this move varies depending on if the opponent blocked it standing or crouching; on standing block it's -2, on crouching block it's 0. Additionally, if spaced properly (about two backdashes away from the opponent) it can become +2 on both standing and crouching block. The Light version can hit airborne opponents on the way up and knock them down with the slash hit. The first hit does not connect on grounded opponents and can make for an okay anti-air, though since it has no invincibility of any kind it can be stuffed or trade with the opponent's air buttons. It can be used as a combo ender in situations where Fudou Ken will not work due to having been used earlier in the combo. As the startup of all versions of this move can be Braked, this means that Nightmare Geese can get a psuedo-DP Brake combo if he connects with the airborne-only first hit and Brakes. At most heights he won't be able to actually juggle into anything outside of his Hidden Gear, but at higher juggle heights (like those granted by a Counter Hit Heavy Fudou Ken for example) he has just enough time to juggle a Light Hishou Nichiran Zan Brake into Raging Storm, Deadly Rave, or even Light Fudou Ken at the highest juggle. A swiss army knife of a special move that can act as an overhead, a pressure reset, a crossup, a meaty, and a hard projectile callout in just one move. At 35 frames of startup this move can unfortunately be reacted to very easily, whether by the opponent blocking correctly or by an anti-air. To compensate, Nightmare Geese travels about half the screen and it is always plus on block and able to continue his pressure, though how plus he is differs depending on spacing and if it hit meaty or not. =3 on block if done at close range/as a crossup, around +5-6 on block if spaced from two backwards hops away, and +9 on block if spaced to hit at the very tip. +5 on standing hit, allowing for a link into Far A. If Nightmare Geese does manage to hit a crouching (read: sleeping) opponent with this move, he'll be +9 (+8 on crossup) and be able to link into 2C. On Counter Hit/Wild Punish Nightmare Geese will be +10 and can link into 2C. Nightmare Geese can put himself in this situation if he preemptively leaps over a projectile with this move and hits the opponent during their projectile recovery. With a healthy amount of REV to spend, at least one bar of super meter and S.P.G. state, Nightmare Geese can get immensely damaging combos out of one good read like this. Similar to the Heavy version in that it's an overhead and is plus on block. Starts up slightly faster but is still very reactable at 32 frames of startup. Has slightly more horizontal range as well. +2 on block if done at close range/as a crossup, +9 on block if spaced to hit at the very tip. +3 on standing hit, +7 on crouching hit. Nightmare Geese doesn't get much in the way of combos outside of Far B. REV Hishou Nichirin Zan is a good combo tool, as it ground bounces airborne opponents, usually after being REV Acceled from REV Reppuu Ken."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Fudou Ken",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 30 / C: 70 / AC: 30",
-      "description": "Nightmare Geese strikes with his palm. The light and REV versions have follow-ups on hit, block and even whiff. Using Fudou Ken on block on its own without using its follow-ups is ill-advised, as the Light, Heavy, and REV versions are all punishable on block. Only the Light version can be comboed into from Light normals. The Heavy version acts very differently. Instead of a palm strike that can be followed up by a variety of different options, Nightmare Geese performs an upwards palm strike that launches the opponent, allowing for juggles. A staple part of Nightmare Geese's combos, though it only combos from Heavy normals and Counter Hit Light normals."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Fudou Ken: O",
-      "input": "↓ ↙ ← + [[FF:LP]] > [[FF:LP]]",
-      "damage": "A: 80 / AC: 90",
-      "description": "A second palm strike. Unlike the other Fudou Ken followups, this one can't be charged. When using Fudou Ken to end combos, this is Nightmare Geese's most damaging uncharged followup. Use this in situations where juggling into the charged versions of his followups is impossible. Do not use this followup on block, as it is very unsafe and highly punishable. The REV version isn't very different from the normal version aside from doing slightly more damage and being able to REV Accel out of it."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Fudou Ken: Ba",
-      "input": "↓ ↙ ← + [[FF:LP]] > [[FF:LK]]",
-      "damage": "A: 60 [80] / AC: 60 [80]",
-      "description": "Numbers in [square brakets] denote values for fully-charged versions. When charged, this move changes from being -3 to -1 on block, does slightly more damage, and allows Nightmare Geese to follow up with Raimei Gouha Nage on hit. The only difference between the normal version and the REV version is that the REV version becomes +2 on block when charged and can be REV Acceled into REV Raimei Gouha Nage or REV Raimei Shin."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Fudou Ken: A",
-      "input": "↓ ↙ ← + [[FF:LP]] > [[FF:HP]]",
-      "damage": "A: 70 [90] / AC: 70 [90]",
-      "description": "Numbers in [square brakets] denote values for fully-charged versions. The charged version changes from -5 on block to -3. IT can be used as a frame trap to dissuade the opponent from mashing out of Nightmare Geese's charged followups on block. Nightmare Geese can vary his charge timing and keep the opponent guessing, though he will only be safer on block if he fully charges the attack. If Nightmare Geese very briefly charges this attack, he can frame trap 5F normals from Fudou Ken. On hit, the charged version will leave Nightmare Geese +5, just enough to link into 2A. On Counter Hit the uncharged version is +7, enough to link into Far B. On Counter Hit the charged version is +10, allowing Nightmare Geese to follow up with 2C and start his heavier combos. If Nightmare Geese hits an airborne opponent with the charged version, he can follow up with Raimei Gouha Nage, though midscreen he will usually have to whiff cancel Far D first. The REV version is only -2 on block when uncharged and +3 when charged. Its frame data on normal hit and Counter Hit for both the uncharged and charged versions are the same as the normal versions."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Fudou Ken: Un",
-      "input": "↓ ↙ ← + [[FF:LP]] > [[FF:HK]]",
-      "damage": "A: 60 [80] / AC: 60 [80]",
-      "description": "Numbers in [square brakets] denote values for fully-charged versions. When charged this move goes from being -5 on block to -3 on block, does slightly more damage, and can be followed up with Raimei Gouha Nage. The uncharged REV version is unpunishable at -2 and only has one extra frame of startup, allowing Nightmare Geese to keep his fast overhead while also being safe on block, though there is still a gap to worry about. The charged REV version becomes  +3 on block."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Raimei Shin",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 80 / D: 90 [40+30] / BD: 90 [40+40]",
-      "description": "Numbers in [square brakets] denote values for OTG hits. A safe blockstring ender at -2, providing a less risky but also less rewarding alternative to Fudou Ken mixup attempts. This move can be used as a decent frame trap if done as a delayed cancel from a Light normal, allowing Nightmare Geese to follow up with 2A if up close or Far B at range on Counter Hit. A very slow but +3 on block pressure reset. Its 27 frame startup means that the opponent has more than enough time to react and punish, but if they are conditioned properly than Heavy Raimei Shin can catch them off guard and score Nightmare Geese some plus frames. While Nightmare Geese isn't plus enough on hit to combo afterward normally, he can make himself around +5 or +6 on a meaty hit and link into his 2A. If it Counter Hits, Nightmare Geese can link into 2C. Also hits OTG, though situations where you can actually connect OTG with this move are rare. Not even a Wild Punish 2D gives Nightmare Geese enough time to link into this move. If the move hits the opponent right as they're about to hit the ground, a brief cutscene will play where Geese smirks before punting his opponent, giving extra damage and a hard knockdown. It’s possible to combo into this. A middle ground between the Light and Heavy versions. It has the faster startup of the Light version and is plus on block like the Heavy version, though it's +2 instead of +3, making it a good choice to REV Accel into in REV Art blockstrings. If this move hits the opponent right as they’re downed from certain attacks, Geese will smirk and punt the opponent, just like the Heavy version, and you can REV Accel this punt into EX OTG Grab. You can combo into this special from various EX Fudou Ken followups depending on the state of the opponent. If done after a landing a Wild Punish 2D, this move cannot be REV Acceled."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Joudan Atemi Nage",
-      "input": "↓ ↙ ← + [[FF:LK]]",
-      "damage": "140",
-      "description": "Its fast 3F startup makes it a great option for Guard Canceling against multi-hit attacks or tight REV Accel sequences, even things that usually beat Guard Cancels like a cancel into a Heavy/REV DP Brake. In addition to the long recovery, Nightmare Geese is in a Wild Punish state for the entirety of the move's duration, whether he is hit during the recovery or is hit by something this move cannot counter like a move aimed below his waist or a projectile. Nightmare Geese can special cancel into this move. This can be used to make a hard read and call out a Guard Cancel if the opponent Just Defended the previous normal attack."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Gedan Atemi Nage",
-      "input": "↓ ↙ ← + [[FF:HK]]",
-      "damage": "160",
-      "description": "Although it might seem like this move can only counter attacks classified as Lows, it can also counter Mid attacks that are aimed at the lower body like Terry's 2C, hence why it is a Lower Body counter and not strictly a Low counter. Just like with the Upper Body counter, Nightmare Geese is in a Wild Punish state throughout the entire move's duration."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Chuudan Atemi Nage",
-      "input": "↓ ↙ ← + [[FF:LK]] [[FF:HK]]",
-      "damage": "100",
-      "description": "Meterlesly, Nightmare Geese can either stay on the side he tossed the opponent to but do less damage with Heavy Raimei Shin, or swap sides again to end up on the same side he was when he performed the counter and do more damage by doing dash/Far D into Raimei Gouha Nage. In REV Accel blockstrings Nightmare Geese can REV Accel into this move to call out Guard Cancels."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Raimei Gouha Nage",
-      "input": "→ ↘ ↓ ↙ ← → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 120 / C: 120 / BD: 140",
-      "description": "This move is very specific on when it can grab the opponent off the ground. Most soft knockdowns and even hard knockdowns like those given by supers, throws, and REV Blows cannot be picked up by any version of this move. Rather, you should treat it more like a built in followup to some of Geese's special moves, such as the charged followups to Fudou Ken, Chuudan Atemi Nage, and REV Raimei Shin, rather than something you can do every time you knock the opponent down. This is Geese's highest damage follow-up after Wild Punish 2D, but it switches sides. To keep the same side, OTG with Double Reppuken instead. Sideswaps with the opponent, so there might be instances where you would choose not to use this move in the situations where you can in order to not put yourself in the corner. The REV version has two versions, an uncharged and charged version. The uncharged version works similarly to the normal versions outside of being able to be REV Acceled into. The charged version has a bit more startup but causes a ground bounce that can be comboed out of with a REV Accel. It is impossible to follow up the ground bounce meterlessly with the exception of a Heavy Raimei Shin in the corner. The numbers in [square brakets] denote values for the fully-charged REV version."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Explosion Ball",
-      "input": "→ ↘ ↓ ↙ ← → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 140 / D: 140 / BD: 100",
-      "description": "Causes a hard knockdown. No version of this move can be comboed into no matter what, not on Counter Hit or close range or Wild Punish or REV Accel. Pushes Nightmare Geese back substantially in the corner, though he still has plenty of time to dash back in and apply okizeme. The REV version can be REV Acceled out of, giving Nightmare Geese a way to combo out of a command grab though it will be heavily scaled. Your best REV Accel option is generally Reppuu Ken (236AC)."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Raging Storm",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "220",
-      "description": "Since Nightmare Geese lacks a meterless invincible reversal, Raging Storm is his go-to wakeup reversal option, though it's obviously very risky and costs meter. Also a good anti-air and combo ender. Tends to do slightly more damage than Deadly Rave but has less range, so use that in situations where Raging Storm will whiff."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Raging Storm",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "330 50x4 + 130",
-      "description": "Since Nightmare Geese lacks a meterless invincible reversal, Raging Storm is his go-to wakeup reversal option, though it's obviously very risky and costs meter. Also a good anti-air and combo ender. Tends to do slightly more damage than Deadly Rave but has less range, so use that in situations where Raging Storm will whiff."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "True Raging Storm",
-      "input": "↙ → ↘ ↓ ↙ ← ↘ + [[FF:LP]]",
-      "damage": "240",
-      "description": "This is a secret variation of Raging Storm and is not displayed on the command list in-game. True Raging Storm does slightly more damage than the double quarter circle version of Raging Storm. It also has a slightly different visual and sound effect so you can tell the difference. True Raging Storm can be comboed out of if it connects at a high enough height, around the apex of the opponent's jump height. This can usually be achieved by landing it as a precise anti-air or landing a Counter Hit special move that causes a launch state like Counter Hit Heavy Fudou Ken. After True Raging Storm connects in these contexts you can follow up with (REV) Raimei Gouha Nage or (REV) Raimei Shin and get some more out of them with REV Accel. This applies to the Redline Gear version as well, though as usual the only marginally better damage increase isn't worth spending a second bar in most cases. None of this will work on a normal Raging Storm, only the pretzel input version. With all of that said, True Raging Storm is better than Raging Storm in pretty much every single way. There are a few use cases for the easy input version though; it's faster and easier of course, it might be better as a wakeup reversal since in that situation you would care more about getting the opponent off of you over getting slightly higher damage with a more complex input, you'd probably want to do the easier input version if the damage will end the round regardless of which input you use, and it's easier to use in Hyper Defense because of the forward inputs. Still, at least in combos you should always use True Raging Storm unless the input is too hard for you. It's only a very slight increase in damage and the followup combos require very specific situations. Don't worry if you can't pull it off."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "True Raging Storm",
-      "input": "↙ → ↘ ↓ ↙ ← ↘ + [[FF:HP]]",
-      "damage": "360 50x4 + 160",
-      "description": "This is a secret variation of Raging Storm and is not displayed on the command list in-game. True Raging Storm does slightly more damage than the double quarter circle version of Raging Storm. It also has a slightly different visual and sound effect so you can tell the difference. True Raging Storm can be comboed out of if it connects at a high enough height, around the apex of the opponent's jump height. This can usually be achieved by landing it as a precise anti-air or landing a Counter Hit special move that causes a launch state like Counter Hit Heavy Fudou Ken. After True Raging Storm connects in these contexts you can follow up with (REV) Raimei Gouha Nage or (REV) Raimei Shin and get some more out of them with REV Accel. This applies to the Redline Gear version as well, though as usual the only marginally better damage increase isn't worth spending a second bar in most cases. None of this will work on a normal Raging Storm, only the pretzel input version. With all of that said, True Raging Storm is better than Raging Storm in pretty much every single way. There are a few use cases for the easy input version though; it's faster and easier of course, it might be better as a wakeup reversal since in that situation you would care more about getting the opponent off of you over getting slightly higher damage with a more complex input, you'd probably want to do the easier input version if the damage will end the round regardless of which input you use, and it's easier to use in Hyper Defense because of the forward inputs. Still, at least in combos you should always use True Raging Storm unless the input is too hard for you. It's only a very slight increase in damage and the followup combos require very specific situations. Don't worry if you can't pull it off."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Deadly Rave",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "200 20*9 + 20",
-      "description": "While it does slightly less damage than Raging Storm and the Ignition Gear (level 1) version isn't invincible, Deadly Rave is still useful for its long horizontal range and corner carry. Because of this you should usually use Deadly Rave in midscreen combos over Raging Storm unless you're in a situation where Raging Storm is the better option (ie. in the corner or if you need the extra damage to KO)."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Deadly Rave BR",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "290 20*9 + 110",
-      "description": "While it does slightly less damage than Raging Storm and the Ignition Gear (level 1) version isn't invincible, Deadly Rave is still useful for its long horizontal range and corner carry. Because of this you should usually use Deadly Rave in midscreen combos over Raging Storm unless you're in a situation where Raging Storm is the better option (ie. in the corner or if you need the extra damage to KO)."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "True Deadly Rave",
-      "input": "↓ ↙ ← ↙ ↓ ↘ → + [[FF:LK]]",
-      "damage": "230 20*9 + 50",
-      "description": "The True Deadly Rave button squence is as follows: 2141236B > A > A > B > B > B > C > C > C > 214C.  If you're having trouble memorizing all of that, think of it as just two A presses, three B presses, three C presses, and then a quarter circle back + C press at the end. You can get away with just mashing the correct buttons as long as you know which hits in the animation are which. True Deadly Rave does slightly more damage than the normal Deadly Rave. The fact that every hit is a manual input means that the player can choose to stop the combo early, usually right before the 214C ender. Unlike prior games such as Garou: Mark of the Wolves or Capcom vs SNK 2 where stopping early leaves you with enough frame advantage to link a normal into a special move to get back some of your meter, here the only reason to end the combo before the final hit is to be +3 and right in front of the opponent, which compliments Nightmare Geese's strong offense. Losing out on more damage in the short term in exchange for the potential of more damage out of an ensuing mixup is usually worth it in most high level fighting game player's minds unless that short term damage is enough to win the round. Still, you get enough okizeme anyway that you can end it with the cool ki blast if you really want to. As usual, there's no real reason to use the Redline Gear version unless the damage will win the round. It doesn't do much more damage than the Ignition Gear version to justify spending a valuable bar of super meter, on top of the fact that the True Deadly Rave combo does the same damage on both the Ignition and Redline versions before the ending hit, meaning there is no reason to use the Redline Gear version if you want to end the super early."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "True Deadly Rave",
-      "input": "↓ ↙ ← ↙ ↓ ↘ → + [[FF:HK]]",
-      "damage": "320 20*9 + 140",
-      "description": "The True Deadly Rave button squence is as follows: 2141236B > A > A > B > B > B > C > C > C > 214C.  If you're having trouble memorizing all of that, think of it as just two A presses, three B presses, three C presses, and then a quarter circle back + C press at the end. You can get away with just mashing the correct buttons as long as you know which hits in the animation are which. True Deadly Rave does slightly more damage than the normal Deadly Rave. The fact that every hit is a manual input means that the player can choose to stop the combo early, usually right before the 214C ender. Unlike prior games such as Garou: Mark of the Wolves or Capcom vs SNK 2 where stopping early leaves you with enough frame advantage to link a normal into a special move to get back some of your meter, here the only reason to end the combo before the final hit is to be +3 and right in front of the opponent, which compliments Nightmare Geese's strong offense. Losing out on more damage in the short term in exchange for the potential of more damage out of an ensuing mixup is usually worth it in most high level fighting game player's minds unless that short term damage is enough to win the round. Still, you get enough okizeme anyway that you can end it with the cool ki blast if you really want to. As usual, there's no real reason to use the Redline Gear version unless the damage will win the round. It doesn't do much more damage than the Ignition Gear version to justify spending a valuable bar of super meter, on top of the fact that the True Deadly Rave combo does the same damage on both the Ignition and Redline versions before the ending hit, meaning there is no reason to use the Redline Gear version if you want to end the super early."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Sample Hidden Gear",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "451 40+10*19+180",
-      "description": "Resets the REV meter to 0%, even during Overheat. Swaps sides with the opponent on hit and gives very little okizeme. If you want momentum after the super, just use your Ignition Gear instead unless you need the REV meter reset. Due to its fast startup and long range, there are some combos where Hidden Gear is the only super you can end the combo with, and some moves where this attack is the only punish."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Ha",
+    "input": "[[FF:LP]] [[FF:HP]]",
+    "damage": "80",
+    "description": "Wild Punish +21f. Has an identical animation to Fudou Ken • A (214P~5C). Can’t be cancelled into anything, not even super. Moves Geese forward on startup. When it hits meaty, can be up to +3 on hit and +8 on Counter Hit."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Jaei Ken",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 (60+20+40)",
+    "description": "A pretty standard REV blow with decent reach. Geese gets safe jump setups if he juggles into this move from EX moves like his rekkas."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Jaei Ken: Kuu",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 (50+70)",
+    "description": "A an armored divebomb at an angle. Used to end combos after EX Shippuu Ken or EX Nichirin Zan, or to contest DPs. Like grounded REV Blow, it gets beaten by High Dodge Attack. If it hits the opponent low enough to the ground, the second hit won't come out and the REV blow will end instantly, giving Geese extra okizeme or even a combo into Hidden Gear."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Reppuu Ken",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 / C: 110 (30+80) / AC: 100 (20+20+20+40)",
+    "description": "Nightmare Geese tosses a grounded projectile. The Light version of Reppuu Ken is as standard as projectiles come, used for attacking from a distance. Nightmare Geese tosses out two Reppuu Kens, a short range one that nullifies non-REV or super projectiles followed by a full screen projectile. Similar in function to Rock's Heavy Reppuu Ken, this move can give Nightmare Geese an edge in fireball wars by eating the opponent's projectile and launching one right back, thus creating an opportunity for him to get in closer. Nightmare Geese tosses out a supercharged, fast, multihitting Reppuu Ken. While it has the slowest startup among his Reppuu Ken versions, the projectile will blow through regular projectiles and cancel out with REV projectiles. Its fast speed lets it snipe opponents from half or even full screen, especially if they are still recovering from throwing their own projectile."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Shippuu Ken",
+    "input": "[In air] ↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 / C: 60 / AC: 80 (40+40)",
+    "description": "Can only be performed during a neutral or forwards jump or hop except for the REV version, which can be performed from a backwards jump or hop. All versions briefly halt Nightmare Geese's jump momentum, allowing him to mess with the opponent's anti-air timing. The Light and Heavy versions push him backwards and let Nightmare Geese keep his distance while the REV version keeps him moving forward with the exception of the backwards jump/hop version. The Light version travels slower and has a very slightly higher angle than the Heavy version. The Heavy version travels faster and has a very slightly lower angle than the Light version. The REV version fires two Shippuu Kens and generally locks down the opponent at mid range, giving Nightmare Geese an opportunity to close the gap with a dash or Far D. Can be Feinted, which halts Nightmare Geese's jump momentum and moves him backward without throwing a projectile. See the above section on his Air Feint for more detailed information."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hishou Nichirin Zan BR",
+    "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 70 [70 (30+40)] / C: 100 / AC: 110",
+    "description": "All versions can be Braked on startup, which will make Nightmare Geese leap into the air without performing the slash. This can be useful for empty jump low mixups, especially when done after knockdowns and setups. Numbers in [square brakets] denote values when it hits an opponent in the air. The Light version is a safe blockstring ender, though there is a decently-sized gap between any normal cancelled into this move and when the move hits. It cannot hit crossup. The frame advantage for this move varies depending on if the opponent blocked it standing or crouching; on standing block it's -2, on crouching block it's 0. Additionally, if spaced properly (about two backdashes away from the opponent) it can become +2 on both standing and crouching block. The Light version can hit airborne opponents on the way up and knock them down with the slash hit. The first hit does not connect on grounded opponents and can make for an okay anti-air, though since it has no invincibility of any kind it can be stuffed or trade with the opponent's air buttons. It can be used as a combo ender in situations where Fudou Ken will not work due to having been used earlier in the combo. As the startup of all versions of this move can be Braked, this means that Nightmare Geese can get a psuedo-DP Brake combo if he connects with the airborne-only first hit and Brakes. At most heights he won't be able to actually juggle into anything outside of his Hidden Gear, but at higher juggle heights (like those granted by a Counter Hit Heavy Fudou Ken for example) he has just enough time to juggle a Light Hishou Nichiran Zan Brake into Raging Storm, Deadly Rave, or even Light Fudou Ken at the highest juggle. A swiss army knife of a special move that can act as an overhead, a pressure reset, a crossup, a meaty, and a hard projectile callout in just one move. At 35 frames of startup this move can unfortunately be reacted to very easily, whether by the opponent blocking correctly or by an anti-air. To compensate, Nightmare Geese travels about half the screen and it is always plus on block and able to continue his pressure, though how plus he is differs depending on spacing and if it hit meaty or not. =3 on block if done at close range/as a crossup, around +5-6 on block if spaced from two backwards hops away, and +9 on block if spaced to hit at the very tip. +5 on standing hit, allowing for a link into Far A. If Nightmare Geese does manage to hit a crouching (read: sleeping) opponent with this move, he'll be +9 (+8 on crossup) and be able to link into 2C. On Counter Hit/Wild Punish Nightmare Geese will be +10 and can link into 2C. Nightmare Geese can put himself in this situation if he preemptively leaps over a projectile with this move and hits the opponent during their projectile recovery. With a healthy amount of REV to spend, at least one bar of super meter and S.P.G. state, Nightmare Geese can get immensely damaging combos out of one good read like this. Similar to the Heavy version in that it's an overhead and is plus on block. Starts up slightly faster but is still very reactable at 32 frames of startup. Has slightly more horizontal range as well. +2 on block if done at close range/as a crossup, +9 on block if spaced to hit at the very tip. +3 on standing hit, +7 on crouching hit. Nightmare Geese doesn't get much in the way of combos outside of Far B. REV Hishou Nichirin Zan is a good combo tool, as it ground bounces airborne opponents, usually after being REV Acceled from REV Reppuu Ken."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Fudou Ken",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 30 / C: 70 / AC: 30",
+    "description": "Nightmare Geese strikes with his palm. The light and REV versions have follow-ups on hit, block and even whiff. Using Fudou Ken on block on its own without using its follow-ups is ill-advised, as the Light, Heavy, and REV versions are all punishable on block. Only the Light version can be comboed into from Light normals. The Heavy version acts very differently. Instead of a palm strike that can be followed up by a variety of different options, Nightmare Geese performs an upwards palm strike that launches the opponent, allowing for juggles. A staple part of Nightmare Geese's combos, though it only combos from Heavy normals and Counter Hit Light normals."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Fudou Ken: O",
+    "input": "↓ ↙ ← + [[FF:LP]] > [[FF:LP]]",
+    "damage": "A: 80 / AC: 90",
+    "description": "A second palm strike. Unlike the other Fudou Ken followups, this one can't be charged. When using Fudou Ken to end combos, this is Nightmare Geese's most damaging uncharged followup. Use this in situations where juggling into the charged versions of his followups is impossible. Do not use this followup on block, as it is very unsafe and highly punishable. The REV version isn't very different from the normal version aside from doing slightly more damage and being able to REV Accel out of it."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Fudou Ken: Ba",
+    "input": "↓ ↙ ← + [[FF:LP]] > [[FF:LK]]",
+    "damage": "A: 60 [80] / AC: 60 [80]",
+    "description": "Numbers in [square brakets] denote values for fully-charged versions. When charged, this move changes from being -3 to -1 on block, does slightly more damage, and allows Nightmare Geese to follow up with Raimei Gouha Nage on hit. The only difference between the normal version and the REV version is that the REV version becomes +2 on block when charged and can be REV Acceled into REV Raimei Gouha Nage or REV Raimei Shin."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Fudou Ken: A",
+    "input": "↓ ↙ ← + [[FF:LP]] > [[FF:HP]]",
+    "damage": "A: 70 [90] / AC: 70 [90]",
+    "description": "Numbers in [square brakets] denote values for fully-charged versions. The charged version changes from -5 on block to -3. IT can be used as a frame trap to dissuade the opponent from mashing out of Nightmare Geese's charged followups on block. Nightmare Geese can vary his charge timing and keep the opponent guessing, though he will only be safer on block if he fully charges the attack. If Nightmare Geese very briefly charges this attack, he can frame trap 5F normals from Fudou Ken. On hit, the charged version will leave Nightmare Geese +5, just enough to link into 2A. On Counter Hit the uncharged version is +7, enough to link into Far B. On Counter Hit the charged version is +10, allowing Nightmare Geese to follow up with 2C and start his heavier combos. If Nightmare Geese hits an airborne opponent with the charged version, he can follow up with Raimei Gouha Nage, though midscreen he will usually have to whiff cancel Far D first. The REV version is only -2 on block when uncharged and +3 when charged. Its frame data on normal hit and Counter Hit for both the uncharged and charged versions are the same as the normal versions."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Fudou Ken: Un",
+    "input": "↓ ↙ ← + [[FF:LP]] > [[FF:HK]]",
+    "damage": "A: 60 [80] / AC: 60 [80]",
+    "description": "Numbers in [square brakets] denote values for fully-charged versions. When charged this move goes from being -5 on block to -3 on block, does slightly more damage, and can be followed up with Raimei Gouha Nage. The uncharged REV version is unpunishable at -2 and only has one extra frame of startup, allowing Nightmare Geese to keep his fast overhead while also being safe on block, though there is still a gap to worry about. The charged REV version becomes  +3 on block."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Raimei Shin",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 80 / D: 90 [40+30] / BD: 90 [40+40]",
+    "description": "Numbers in [square brakets] denote values for OTG hits. A safe blockstring ender at -2, providing a less risky but also less rewarding alternative to Fudou Ken mixup attempts. This move can be used as a decent frame trap if done as a delayed cancel from a Light normal, allowing Nightmare Geese to follow up with 2A if up close or Far B at range on Counter Hit. A very slow but +3 on block pressure reset. Its 27 frame startup means that the opponent has more than enough time to react and punish, but if they are conditioned properly than Heavy Raimei Shin can catch them off guard and score Nightmare Geese some plus frames. While Nightmare Geese isn't plus enough on hit to combo afterward normally, he can make himself around +5 or +6 on a meaty hit and link into his 2A. If it Counter Hits, Nightmare Geese can link into 2C. Also hits OTG, though situations where you can actually connect OTG with this move are rare. Not even a Wild Punish 2D gives Nightmare Geese enough time to link into this move. If the move hits the opponent right as they're about to hit the ground, a brief cutscene will play where Geese smirks before punting his opponent, giving extra damage and a hard knockdown. It’s possible to combo into this. A middle ground between the Light and Heavy versions. It has the faster startup of the Light version and is plus on block like the Heavy version, though it's +2 instead of +3, making it a good choice to REV Accel into in REV Art blockstrings. If this move hits the opponent right as they’re downed from certain attacks, Geese will smirk and punt the opponent, just like the Heavy version, and you can REV Accel this punt into EX OTG Grab. You can combo into this special from various EX Fudou Ken followups depending on the state of the opponent. If done after a landing a Wild Punish 2D, this move cannot be REV Acceled."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Joudan Atemi Nage",
+    "input": "↓ ↙ ← + [[FF:LK]]",
+    "damage": "140",
+    "description": "Its fast 3F startup makes it a great option for Guard Canceling against multi-hit attacks or tight REV Accel sequences, even things that usually beat Guard Cancels like a cancel into a Heavy/REV DP Brake. In addition to the long recovery, Nightmare Geese is in a Wild Punish state for the entirety of the move's duration, whether he is hit during the recovery or is hit by something this move cannot counter like a move aimed below his waist or a projectile. Nightmare Geese can special cancel into this move. This can be used to make a hard read and call out a Guard Cancel if the opponent Just Defended the previous normal attack."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Gedan Atemi Nage",
+    "input": "↓ ↙ ← + [[FF:HK]]",
+    "damage": "160",
+    "description": "Although it might seem like this move can only counter attacks classified as Lows, it can also counter Mid attacks that are aimed at the lower body like Terry's 2C, hence why it is a Lower Body counter and not strictly a Low counter. Just like with the Upper Body counter, Nightmare Geese is in a Wild Punish state throughout the entire move's duration."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Chuudan Atemi Nage",
+    "input": "↓ ↙ ← + [[FF:LK]] [[FF:HK]]",
+    "damage": "100",
+    "description": "Meterlesly, Nightmare Geese can either stay on the side he tossed the opponent to but do less damage with Heavy Raimei Shin, or swap sides again to end up on the same side he was when he performed the counter and do more damage by doing dash/Far D into Raimei Gouha Nage. In REV Accel blockstrings Nightmare Geese can REV Accel into this move to call out Guard Cancels."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Raimei Gouha Nage",
+    "input": "→ ↘ ↓ ↙ ← → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 120 / C: 120 / BD: 140",
+    "description": "This move is very specific on when it can grab the opponent off the ground. Most soft knockdowns and even hard knockdowns like those given by supers, throws, and REV Blows cannot be picked up by any version of this move. Rather, you should treat it more like a built in followup to some of Geese's special moves, such as the charged followups to Fudou Ken, Chuudan Atemi Nage, and REV Raimei Shin, rather than something you can do every time you knock the opponent down. This is Geese's highest damage follow-up after Wild Punish 2D, but it switches sides. To keep the same side, OTG with Double Reppuken instead. Sideswaps with the opponent, so there might be instances where you would choose not to use this move in the situations where you can in order to not put yourself in the corner. The REV version has two versions, an uncharged and charged version. The uncharged version works similarly to the normal versions outside of being able to be REV Acceled into. The charged version has a bit more startup but causes a ground bounce that can be comboed out of with a REV Accel. It is impossible to follow up the ground bounce meterlessly with the exception of a Heavy Raimei Shin in the corner. The numbers in [square brakets] denote values for the fully-charged REV version."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Explosion Ball",
+    "input": "→ ↘ ↓ ↙ ← → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 140 / D: 140 / BD: 100",
+    "description": "Causes a hard knockdown. No version of this move can be comboed into no matter what, not on Counter Hit or close range or Wild Punish or REV Accel. Pushes Nightmare Geese back substantially in the corner, though he still has plenty of time to dash back in and apply okizeme. The REV version can be REV Acceled out of, giving Nightmare Geese a way to combo out of a command grab though it will be heavily scaled. Your best REV Accel option is generally Reppuu Ken (236AC)."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Raging Storm",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "220",
+    "description": "Since Nightmare Geese lacks a meterless invincible reversal, Raging Storm is his go-to wakeup reversal option, though it's obviously very risky and costs meter. Also a good anti-air and combo ender. Tends to do slightly more damage than Deadly Rave but has less range, so use that in situations where Raging Storm will whiff."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Raging Storm",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "330 50x4 + 130",
+    "description": "Since Nightmare Geese lacks a meterless invincible reversal, Raging Storm is his go-to wakeup reversal option, though it's obviously very risky and costs meter. Also a good anti-air and combo ender. Tends to do slightly more damage than Deadly Rave but has less range, so use that in situations where Raging Storm will whiff."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "True Raging Storm",
+    "input": "↙ → ↘ ↓ ↙ ← ↘ + [[FF:LP]]",
+    "damage": "240",
+    "description": "This is a secret variation of Raging Storm and is not displayed on the command list in-game. True Raging Storm does slightly more damage than the double quarter circle version of Raging Storm. It also has a slightly different visual and sound effect so you can tell the difference. True Raging Storm can be comboed out of if it connects at a high enough height, around the apex of the opponent's jump height. This can usually be achieved by landing it as a precise anti-air or landing a Counter Hit special move that causes a launch state like Counter Hit Heavy Fudou Ken. After True Raging Storm connects in these contexts you can follow up with (REV) Raimei Gouha Nage or (REV) Raimei Shin and get some more out of them with REV Accel. This applies to the Redline Gear version as well, though as usual the only marginally better damage increase isn't worth spending a second bar in most cases. None of this will work on a normal Raging Storm, only the pretzel input version. With all of that said, True Raging Storm is better than Raging Storm in pretty much every single way. There are a few use cases for the easy input version though; it's faster and easier of course, it might be better as a wakeup reversal since in that situation you would care more about getting the opponent off of you over getting slightly higher damage with a more complex input, you'd probably want to do the easier input version if the damage will end the round regardless of which input you use, and it's easier to use in Hyper Defense because of the forward inputs. Still, at least in combos you should always use True Raging Storm unless the input is too hard for you. It's only a very slight increase in damage and the followup combos require very specific situations. Don't worry if you can't pull it off."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "True Raging Storm",
+    "input": "↙ → ↘ ↓ ↙ ← ↘ + [[FF:HP]]",
+    "damage": "360 50x4 + 160",
+    "description": "This is a secret variation of Raging Storm and is not displayed on the command list in-game. True Raging Storm does slightly more damage than the double quarter circle version of Raging Storm. It also has a slightly different visual and sound effect so you can tell the difference. True Raging Storm can be comboed out of if it connects at a high enough height, around the apex of the opponent's jump height. This can usually be achieved by landing it as a precise anti-air or landing a Counter Hit special move that causes a launch state like Counter Hit Heavy Fudou Ken. After True Raging Storm connects in these contexts you can follow up with (REV) Raimei Gouha Nage or (REV) Raimei Shin and get some more out of them with REV Accel. This applies to the Redline Gear version as well, though as usual the only marginally better damage increase isn't worth spending a second bar in most cases. None of this will work on a normal Raging Storm, only the pretzel input version. With all of that said, True Raging Storm is better than Raging Storm in pretty much every single way. There are a few use cases for the easy input version though; it's faster and easier of course, it might be better as a wakeup reversal since in that situation you would care more about getting the opponent off of you over getting slightly higher damage with a more complex input, you'd probably want to do the easier input version if the damage will end the round regardless of which input you use, and it's easier to use in Hyper Defense because of the forward inputs. Still, at least in combos you should always use True Raging Storm unless the input is too hard for you. It's only a very slight increase in damage and the followup combos require very specific situations. Don't worry if you can't pull it off."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Deadly Rave",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "200 20*9 + 20",
+    "description": "While it does slightly less damage than Raging Storm and the Ignition Gear (level 1) version isn't invincible, Deadly Rave is still useful for its long horizontal range and corner carry. Because of this you should usually use Deadly Rave in midscreen combos over Raging Storm unless you're in a situation where Raging Storm is the better option (ie. in the corner or if you need the extra damage to KO)."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Deadly Rave BR",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "290 20*9 + 110",
+    "description": "While it does slightly less damage than Raging Storm and the Ignition Gear (level 1) version isn't invincible, Deadly Rave is still useful for its long horizontal range and corner carry. Because of this you should usually use Deadly Rave in midscreen combos over Raging Storm unless you're in a situation where Raging Storm is the better option (ie. in the corner or if you need the extra damage to KO)."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "True Deadly Rave",
+    "input": "↓ ↙ ← ↙ ↓ ↘ → + [[FF:LK]]",
+    "damage": "230 20*9 + 50",
+    "description": "The True Deadly Rave button squence is as follows: 2141236B > A > A > B > B > B > C > C > C > 214C.  If you're having trouble memorizing all of that, think of it as just two A presses, three B presses, three C presses, and then a quarter circle back + C press at the end. You can get away with just mashing the correct buttons as long as you know which hits in the animation are which. True Deadly Rave does slightly more damage than the normal Deadly Rave. The fact that every hit is a manual input means that the player can choose to stop the combo early, usually right before the 214C ender. Unlike prior games such as Garou: Mark of the Wolves or Capcom vs SNK 2 where stopping early leaves you with enough frame advantage to link a normal into a special move to get back some of your meter, here the only reason to end the combo before the final hit is to be +3 and right in front of the opponent, which compliments Nightmare Geese's strong offense. Losing out on more damage in the short term in exchange for the potential of more damage out of an ensuing mixup is usually worth it in most high level fighting game player's minds unless that short term damage is enough to win the round. Still, you get enough okizeme anyway that you can end it with the cool ki blast if you really want to. As usual, there's no real reason to use the Redline Gear version unless the damage will win the round. It doesn't do much more damage than the Ignition Gear version to justify spending a valuable bar of super meter, on top of the fact that the True Deadly Rave combo does the same damage on both the Ignition and Redline versions before the ending hit, meaning there is no reason to use the Redline Gear version if you want to end the super early."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "True Deadly Rave",
+    "input": "↓ ↙ ← ↙ ↓ ↘ → + [[FF:HK]]",
+    "damage": "320 20*9 + 140",
+    "description": "The True Deadly Rave button squence is as follows: 2141236B > A > A > B > B > B > C > C > C > 214C.  If you're having trouble memorizing all of that, think of it as just two A presses, three B presses, three C presses, and then a quarter circle back + C press at the end. You can get away with just mashing the correct buttons as long as you know which hits in the animation are which. True Deadly Rave does slightly more damage than the normal Deadly Rave. The fact that every hit is a manual input means that the player can choose to stop the combo early, usually right before the 214C ender. Unlike prior games such as Garou: Mark of the Wolves or Capcom vs SNK 2 where stopping early leaves you with enough frame advantage to link a normal into a special move to get back some of your meter, here the only reason to end the combo before the final hit is to be +3 and right in front of the opponent, which compliments Nightmare Geese's strong offense. Losing out on more damage in the short term in exchange for the potential of more damage out of an ensuing mixup is usually worth it in most high level fighting game player's minds unless that short term damage is enough to win the round. Still, you get enough okizeme anyway that you can end it with the cool ki blast if you really want to. As usual, there's no real reason to use the Redline Gear version unless the damage will win the round. It doesn't do much more damage than the Ignition Gear version to justify spending a valuable bar of super meter, on top of the fact that the True Deadly Rave combo does the same damage on both the Ignition and Redline versions before the ending hit, meaning there is no reason to use the Redline Gear version if you want to end the super early."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Sample Hidden Gear",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "451 40+10*19+180",
+    "description": "Resets the REV meter to 0%, even during Overheat. Swaps sides with the opponent on hit and gives very little okizeme. If you want momentum after the super, just use your Ignition Gear instead unless you need the REV meter reset. Due to its fast startup and long range, there are some combos where Hidden Gear is the only super you can end the combo with, and some moves where this attack is the only punish."
+  }
+]

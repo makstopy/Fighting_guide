@@ -1,103 +1,100 @@
-{
-  "arcade": [
-    {
-      "category": "REV Blows",
-      "name": "Zanretsu Ken",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "9*5+82 (127)",
-      "description": "Damage value factors in SPG bonus. Rapid punches into an uppercut. Marco's Rev Blow is very unique, as it lacks the horizontal range of most Rev Blows. In return he gets one of the fastest Rev Blows, which can make it useful for busting through gaps in pressure. Uniquely this Rev Blow is currently the only Rev Blow that allows for some juggles after regular hit. 623A connects in the corner, and stronger versions can be used if it hits an airborne opponent. This gives it some use in combos as well. It can also be used as an anti air, but Marco usually would prefer using High Dodge or 623C. If this Rev Blow counter hits, the opponent is not sent into a unique hitstun state like most other Rev Blows. If you are fishing for this you will have to use the alternate version listed below."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Zanretsu Ken (Interrupt)",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]] > [[FF:P]]",
-      "damage": "82",
-      "description": "Damage value factors in SPG bonus. Skips the rapid punch portion of the Rev Blow. When done this way, counter hits will behave like a traditional Rev Blow, allowing for follow-ups."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Mouko Raijin Setsu",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Damage value factors in SPG bonus. Downwards chop that can be used to beat anti airs but primarily used after a 236BD to tack on some extra damage and set up a meaty overhead 6A."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Ko'ou Ken",
-      "input": "↓ ↘ → + [[FF:P]]",
-      "damage": "A: 60 / C: 60 / AC: 100",
-      "description": "Classic fireball. Important part of Marco's neutral game. Marco's travel relatively fast, making them primarily useful for zoning and checking movement; not so much starting offense. The fireball appears around Marco's hand, so if you want better advantage on hit or block than listed, the opponent must be spaced somewhere in front of Marco's hand. Because of this, it's not the best cancel on block, however, the A version frame traps from lights and the C version frame traps from heavies, which can be useful. Unfortunately, even if they counter hit, you are too far away to get a conversion. The AC version acts as a close range hit instead of a projectile, causing a launch. Its primary use is to be cancelled into 214AC to dash forward. On hit you get to continue the combo. On block Marco is left +3, allowing him to extend his pressure. Cancelling this from C normals is a frame trap, and if it counter hits, Marco is able to continue the juggle without cancelling into 214AC."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Kohou BR",
-      "input": "→ ↓ ↘ + [[FF:P]]",
-      "damage": "A: 70 (50) / C: 70 (50) / C ~ Brake: 70 / AC: 80 (70) / AC ~ Brake: 80",
-      "description": "() = damage value if the attack hits high up (outside of brake range) Classic uppercut. A version is fast and fully invincible. Use this as your meterless reversal. C version has upper body invincibility making it great as an anti-air. When braked (which you have no good reason not to, ever), this acts as a safe on block combo starter as well. leading into great damage anywhere on screen. Its speed makes it easy to combo into from any normal, although the short horizontal range may make it whiff at some ranges. The AC version acts almost identically to the C version but starts up one frame faster and can be used to extend juggles after 623C>Brake has already been used. It also launches slightly higher. When the C and AC versions counter hit, the opponent gets launched very high in the air, allowing Marco to dash up and use the same uppercut again."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hien Shippuu Kyaku",
-      "input": "↓ ↘ → + [[FF:K]]",
-      "damage": "B: 30+60 (90) / B ~ Brake: - / D: 50+70 (120) / D ~ Brake: 50 / BD: 35+35+50 (120) / BD ~ Brake: 35+35 (70)",
-      "description": "A series of flying kicks. The B version is a forward advancing flying kick that leads into a short combo on hit. Fast and combos reliably from all light normals except far A. Works well as a juggle ender as well. Can be used as a jump scare in neutral; works well against people who hop a lot, but is unsafe if blocked on the ground. This move can be braked before the kick connects, making the move act as a sort of dash. Note that if the opponent is too close (a little shorter than round start distance), the kick will automatically come out and it won't be able to be braked. The D version is an upward knee followed by a downwards kick. Combo filler mainly. When braked, Marco skips the downward kick and recovers faster, allowing for juggles. This combos from 2A at all ranges but only connects on standing opponents. 2C forces stand, so hit confirms from that normal are guaranteed. The BD version looks similar to the B version, but is faster and applies a hard knockdown. The corner carry and hard knockdown is very good for Marco, making this your preferred combo ender. Combos reliably from all lights, including far A. You can brake in the middle of the kicking animation, skipping the last kick. On block this leaves you at only -2, making this a useful neutral skip option. You can also use the brake version for some corner juggle extensions."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hari Uke",
-      "input": "↓ ↙ ← + [[FF:P]]",
-      "damage": "A: 140 / C: 160 / AC: 30+70 (100)",
-      "description": "Counter window is active at frame 3 (needs testing) Does not work against projectiles. A and AC version counters highs and mids. C version counters lows."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Ryuusen Ken",
-      "input": "[[FF:P]] [[FF:t]] [[FF:h]] [[FF:e]] [[FF:n]] [[FF:P]]",
-      "damage": "P: 80 / AC: 30*3 (90)",
-      "description": "Button must be held for at least 60 frames. Often referred to as either \"TAP\" or \"Zonk\" by the community after the similar hold-then-release moves of Street Fighter's Boxer and Cody respectively."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Kosen Kyaku",
-      "input": "[[FF:K]] [[FF:t]] [[FF:h]] [[FF:e]] [[FF:n]] [[FF:K]]",
-      "damage": "K: 80 / BD: 90",
-      "description": "Button must be held for at least 60 frames."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Haou Shoukou Ken",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "250",
-      "description": "Hits around frame 19 at full screen"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Super Kyokuhen Kohou",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "40*2+10*4+100 (220)",
-      "description": "Super uppercut. Can be used as a reversal, which could be useful if it will kill; otherwise 623A is more effective since its faster. Harder to combo into than 236236A due to its lack of range but is slightly stronger and works well in juggles. Can lose hits if it hits too high."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Haou Shoukou Ken",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "80*3+70 (310)",
-      "description": "Multi hitting super fireball. Basically, just stronger than the A version. The chip damage is about the same as the A version, so if you're going for a chip kill, just stick with that."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Super Kyokugen Kohou BR",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "50*3+20+5*4+130 (320)",
-      "description": "Double super uppercut. Although stronger than 236236C, the lack of horizontal range and the tendency to lose hits if it hits too high up makes this the worse option usually when you want to cash out. The second uppercut also doesn't come out on block so Just Defending it is not more difficult than the B version. You can brake after the first uppercut and get a juggle combo, but this is only good for disrespecting your opponent."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Ryuuko Ranbu",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "11+5*2+16*3+5*4+16*2+11*4+38+231 (434)",
-      "description": "Tackle that goes about 1/3 of the screen forward. Enters cinematic automatically on hit. Very fast, making it easy to combo into. Although linking two level 1 supers is usually stronger, it's still worth it to combo into this when given the opportunity to reset your REV guage. Oki situation afterwards is not very good, however."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "REV Blows",
+    "name": "Zanretsu Ken",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "9*5+82 (127)",
+    "description": "Damage value factors in SPG bonus. Rapid punches into an uppercut. Marco's Rev Blow is very unique, as it lacks the horizontal range of most Rev Blows. In return he gets one of the fastest Rev Blows, which can make it useful for busting through gaps in pressure. Uniquely this Rev Blow is currently the only Rev Blow that allows for some juggles after regular hit. 623A connects in the corner, and stronger versions can be used if it hits an airborne opponent. This gives it some use in combos as well. It can also be used as an anti air, but Marco usually would prefer using High Dodge or 623C. If this Rev Blow counter hits, the opponent is not sent into a unique hitstun state like most other Rev Blows. If you are fishing for this you will have to use the alternate version listed below."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Zanretsu Ken (Interrupt)",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]] > [[FF:P]]",
+    "damage": "82",
+    "description": "Damage value factors in SPG bonus. Skips the rapid punch portion of the Rev Blow. When done this way, counter hits will behave like a traditional Rev Blow, allowing for follow-ups."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Mouko Raijin Setsu",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Damage value factors in SPG bonus. Downwards chop that can be used to beat anti airs but primarily used after a 236BD to tack on some extra damage and set up a meaty overhead 6A."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Ko'ou Ken",
+    "input": "↓ ↘ → + [[FF:P]]",
+    "damage": "A: 60 / C: 60 / AC: 100",
+    "description": "Classic fireball. Important part of Marco's neutral game. Marco's travel relatively fast, making them primarily useful for zoning and checking movement; not so much starting offense. The fireball appears around Marco's hand, so if you want better advantage on hit or block than listed, the opponent must be spaced somewhere in front of Marco's hand. Because of this, it's not the best cancel on block, however, the A version frame traps from lights and the C version frame traps from heavies, which can be useful. Unfortunately, even if they counter hit, you are too far away to get a conversion. The AC version acts as a close range hit instead of a projectile, causing a launch. Its primary use is to be cancelled into 214AC to dash forward. On hit you get to continue the combo. On block Marco is left +3, allowing him to extend his pressure. Cancelling this from C normals is a frame trap, and if it counter hits, Marco is able to continue the juggle without cancelling into 214AC."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Kohou BR",
+    "input": "→ ↓ ↘ + [[FF:P]]",
+    "damage": "A: 70 (50) / C: 70 (50) / C ~ Brake: 70 / AC: 80 (70) / AC ~ Brake: 80",
+    "description": "() = damage value if the attack hits high up (outside of brake range) Classic uppercut. A version is fast and fully invincible. Use this as your meterless reversal. C version has upper body invincibility making it great as an anti-air. When braked (which you have no good reason not to, ever), this acts as a safe on block combo starter as well. leading into great damage anywhere on screen. Its speed makes it easy to combo into from any normal, although the short horizontal range may make it whiff at some ranges. The AC version acts almost identically to the C version but starts up one frame faster and can be used to extend juggles after 623C>Brake has already been used. It also launches slightly higher. When the C and AC versions counter hit, the opponent gets launched very high in the air, allowing Marco to dash up and use the same uppercut again."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hien Shippuu Kyaku",
+    "input": "↓ ↘ → + [[FF:K]]",
+    "damage": "B: 30+60 (90) / B ~ Brake: - / D: 50+70 (120) / D ~ Brake: 50 / BD: 35+35+50 (120) / BD ~ Brake: 35+35 (70)",
+    "description": "A series of flying kicks. The B version is a forward advancing flying kick that leads into a short combo on hit. Fast and combos reliably from all light normals except far A. Works well as a juggle ender as well. Can be used as a jump scare in neutral; works well against people who hop a lot, but is unsafe if blocked on the ground. This move can be braked before the kick connects, making the move act as a sort of dash. Note that if the opponent is too close (a little shorter than round start distance), the kick will automatically come out and it won't be able to be braked. The D version is an upward knee followed by a downwards kick. Combo filler mainly. When braked, Marco skips the downward kick and recovers faster, allowing for juggles. This combos from 2A at all ranges but only connects on standing opponents. 2C forces stand, so hit confirms from that normal are guaranteed. The BD version looks similar to the B version, but is faster and applies a hard knockdown. The corner carry and hard knockdown is very good for Marco, making this your preferred combo ender. Combos reliably from all lights, including far A. You can brake in the middle of the kicking animation, skipping the last kick. On block this leaves you at only -2, making this a useful neutral skip option. You can also use the brake version for some corner juggle extensions."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hari Uke",
+    "input": "↓ ↙ ← + [[FF:P]]",
+    "damage": "A: 140 / C: 160 / AC: 30+70 (100)",
+    "description": "Counter window is active at frame 3 (needs testing) Does not work against projectiles. A and AC version counters highs and mids. C version counters lows."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Ryuusen Ken",
+    "input": "[[FF:P]] [[FF:t]] [[FF:h]] [[FF:e]] [[FF:n]] [[FF:P]]",
+    "damage": "P: 80 / AC: 30*3 (90)",
+    "description": "Button must be held for at least 60 frames. Often referred to as either \"TAP\" or \"Zonk\" by the community after the similar hold-then-release moves of Street Fighter's Boxer and Cody respectively."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Kosen Kyaku",
+    "input": "[[FF:K]] [[FF:t]] [[FF:h]] [[FF:e]] [[FF:n]] [[FF:K]]",
+    "damage": "K: 80 / BD: 90",
+    "description": "Button must be held for at least 60 frames."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Haou Shoukou Ken",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "250",
+    "description": "Hits around frame 19 at full screen"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Super Kyokuhen Kohou",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "40*2+10*4+100 (220)",
+    "description": "Super uppercut. Can be used as a reversal, which could be useful if it will kill; otherwise 623A is more effective since its faster. Harder to combo into than 236236A due to its lack of range but is slightly stronger and works well in juggles. Can lose hits if it hits too high."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Haou Shoukou Ken",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "80*3+70 (310)",
+    "description": "Multi hitting super fireball. Basically, just stronger than the A version. The chip damage is about the same as the A version, so if you're going for a chip kill, just stick with that."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Super Kyokugen Kohou BR",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "50*3+20+5*4+130 (320)",
+    "description": "Double super uppercut. Although stronger than 236236C, the lack of horizontal range and the tendency to lose hits if it hits too high up makes this the worse option usually when you want to cash out. The second uppercut also doesn't come out on block so Just Defending it is not more difficult than the B version. You can brake after the first uppercut and get a juggle combo, but this is only good for disrespecting your opponent."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Ryuuko Ranbu",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "11+5*2+16*3+5*4+16*2+11*4+38+231 (434)",
+    "description": "Tackle that goes about 1/3 of the screen forward. Enters cinematic automatically on hit. Very fast, making it easy to combo into. Although linking two level 1 supers is usually stronger, it's still worth it to combo into this when given the opportunity to reset your REV guage. Oki situation afterwards is not very good, however."
+  }
+]

@@ -1,131 +1,128 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Poli-Kick",
-      "input": "→ + [[FF:LK]]",
-      "damage": "80 (20 + 60)",
-      "description": "Its long animation makes it dangerous to whiff, but it is safe on block Cannot be canceled into anything, and does not combo into anything on a normal hit On Counter Hit / Wild Punish, becomes +6 on hit and can combo into Far A , 2A or 2B after the animation ends The first hit is not a low, despite the animation. However, a 5CR will high-profile it for a Wild Punish. Conversely, the second hit can be low-profiled by 2CR ."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Creeper",
-      "input": "↓ ↓ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "-",
-      "description": "Can low profile some moves, including projectiles It takes 11 frames to enter Creeper, then Kevin crawls forward for 60 frames and spends 30 frames getting up"
-    },
-    {
-      "category": "Command Moves",
-      "name": "Punch",
-      "input": "↓ ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:HP]]",
-      "damage": "90",
-      "description": "Punishable on block (and even on hit) if it is not canceled into a special attack or feint"
-    },
-    {
-      "category": "Command Moves",
-      "name": "Kick",
-      "input": "↓ ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:HK]]",
-      "damage": "90",
-      "description": "Ordinarily does not start a combo on hit, but some setups can make this up to +9 on normal hit (or +4 on block), allowing it to combo into Close C for a full combo Will not high profile any low attacks, does not grant airborne status or throw immunity, and 2CR will low profile it for a Wild Punish"
-    },
-    {
-      "category": "Command Moves",
-      "name": "Rise",
-      "input": "↓ ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:LP]] or [[FF:LK]]",
-      "damage": "-",
-      "description": "This animation is faster than the one that automatically activates after 60 frames of crawling, taking only 20 frames to get up instead of 30 Can be used to bait reversals if Creeper is used while an opponent is knocked down"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Blast Charge",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Travels about 1/3 screen distance forward Due to a complete lack of reversals outside of super attacks, Kevin will be reliant on Guard Canceled Rev Blows on defense While in SPG, ending combos with REV Blow will open up a wide variety of mixup options on the hard knockdown; see Kevin's [ Strategy page ] for more information"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Air Raid",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Cancels all midair momentum upon activation and briefly floats Kevin in place, making it difficult to time a 2CR in response to this move"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Avoid Mine",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B/D: - / BD: -",
-      "description": "Will not switch sides with an opponent Faster roll with a shorter animation than the normal version Can roll past an opponent to quickly switch sides Can REV Accel into any other REV special to make the roll animation 1 frame shorter and spend less REV for subsequent REV specials"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hell Rotor",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 100/120/140 / C: 110/130/150 / AC: 110/130/150 Lv1: 40+70 Lv2: 60+70 Lv3: 80+70 / [A/C/AC] > K: -",
-      "description": "Press any kick button during the charge to cancel without attacking (minimum total animation length is 17 frames, or 16 for REV version). This is referred to as a Rotor Cancel. All versions and charge levels cause a knockdown on normal hit / Wild Punish and cause a slow launch on counterhit, with only one exception (see 214A below) A Rotor Cancel can be used as a Guard Cancel to force any attack to inflict only 17 frames of blockstun, opening up dangerous new punish opportunities. Read more about it here. All special-cancelable attacks can combo into this on a normal hit except for Far A, which can still combo into it if Far A hits as a counterhit / Wild Punish Good spacing makes this very difficult or downright impossible to punish despite being -6 on block for the uncharged version. As an exception to the above note on 214P granting knockdowns, an uncharged hit will leave the opponent grounded, even on counterhit / Wild Punish (where it becomes +9 instead of +4). An uncharged counterhit against an airborne enemy causes slow launch, and an uncharged airborne wild punish causes a knockdown. Only combos from Close C/D, but also frametraps from these normals on block Knocks the opponent straight down instead of away from Kevin If fully charged, Kevin steps forward far enough to make this hit from a bit further than round start distance, in addition to becoming safe on block Despite the animation, the first hit is not an overhead Can be braked on the first hit to remain plus on block. Otherwise, punishable if not braked or REV Accel canceled into another REV special. A Rotor Cancel from this version is 1 frame faster than the normal versions of 214P"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hell Snipe",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 90 / C: 100 / AC: 120",
-      "description": "Can jump over attacks and potentially score a Wild Punish, starting a combo Very tall hitbox, capable of hitting full jumping and crouching opponents reliably Regardless of hit or block, gains an additional 3 frames of advantage against a crouching opponent Combos into 2A or Far A on grounded counterhit / Wild Punish, or Close C if the opponent is crouching. Causes big launch if it counterhits an airborne opponent About the same jump angle as a forward hop Will never jump over an opponent, even if they are knocked down About the same jump height as a forward jump, but travels a bit further Can jump over a crouching opponent and whiff if they are too close Can also be used as a combo ender following a braked 214AC hit Identical animation and jump angle to the light version, but deals more damage and is always plus on block Strangely, more advantageous on block than on hit (+2 vs +1)"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hell Trap BR",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 110 (40+70) / D: 110 (50 + 60) / BD: 100 (50x2)",
-      "description": "Not a low, despite the animation The grab animation does not actually have a hitbox, the second hit only activates if the first hit lands Kevin’s fastest strike special, but very punishable on block and cannot be braked. Any special-cancelable normal will combo into this Always brake this version. There is currently no benefit to letting the grab animation play, ever. The following information assumes this attack is braked. Slower, but safe on block and launches the opponent for a combo starter/extension on hit Causes big launch on counterhit Any special-cancelable heavy normal will combo into this Plus on block if braked, and the first hit pulls the opponent closer on block Launches on hit if braked. If not braked, the second hit can be canceled into uncharged 214AC In addition to heavies, Close A and 2A can also combo into this if they hit as a counterhit / Wild Punish"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hell Arrest",
-      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B/D: 180 (50+130) / BD: 100 (30+70)",
-      "description": "A standard command grab. High damage and better knockdown compared to the normal grab Tied for Kevin's fastest special attack (other than 623BD), making it a good choice for Guard Cancels if the opponent is close enough to be grabbed Starts up 1 frame faster and can be canceled into 236BD to start a combo, but also applies a heavy amount of damage scaling that requires a significant Rev Meter or Power Gauge investment in order to deal more damage than the normal version"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hell Drop",
-      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 70 / C: 90 [60] / AC: 100 (60+40)",
-      "description": "Safe on block and relatively fast, but has the shortest and lowest jump Cannot cross up an opponent Combos into Close C on counterhit / Wild Punish Slowest version, but jumps further and higher and is always plus on block Can cross up an opponent Fastest startup, longest horizontal jump distance and slightly shorter vertical jump height than the heavy version Can cross up a crouching opponent, but becomes (-2 on block / +3 on hit / +8 on counter hit or Wild Punish) and will never cross up a standing opponent Has a hitbox while in air, making it capable of extending a combo Combos into 2A on normal hit as long as it does not cross up, or Close C on counterhit / Wild Punish"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Lucky Strike",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "230 (40x3+110)",
-      "description": "Standard reversal / combo ender super Kevin's cheapest reversal without using a Zero Frame Super (see Gatling Freeze / 236236K below) Not very good against jumping opponents Identical in function to 236236A, just deals more damage"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Lucky Strike",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "310 (30x3+70+150)",
-      "description": "Standard reversal / combo ender super Kevin's cheapest reversal without using a Zero Frame Super (see Gatling Freeze / 236236K below) Not very good against jumping opponents Identical in function to 236236A, just deals more damage"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Gatling Freeze",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "180",
-      "description": "Launches the opponent, allowing a combo to continue (or start) with an additional 25% of combo scaling applied Does not have any invulnerability and cannot be used as a reversal unless it is used as a Zero Frame Super , but is exceptionally rewarding in this case as it still functions as a combo-starting reversal Any ground normal can be canceled into 236236K to start a combo except for 2D. 6B and 5CR cannot directly cancel into 236236K , but a counterhit / Wild Punish on either of these attacks allows them to combo into other normals, which can then be super-canceled. Not the most reliable anti-air despite the attack angle, especially when 2CR can combo into 236236K anyway Unlike 236236B, this super is fully invulnerable and can be used as a reversal On grounded hit, opponent remains in a lengthy hitstun animation on the ground, giving Kevin enough time to move in and hit Close D to continue the combo. On airborne hit, launches even higher and slower than a counterhit launch Still not great at covering the air space above Kevin"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Gatling Freeze",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "270 (30x4+170)",
-      "description": "Launches the opponent, allowing a combo to continue (or start) with an additional 25% of combo scaling applied Does not have any invulnerability and cannot be used as a reversal unless it is used as a Zero Frame Super , but is exceptionally rewarding in this case as it still functions as a combo-starting reversal Any ground normal can be canceled into 236236K to start a combo except for 2D. 6B and 5CR cannot directly cancel into 236236K , but a counterhit / Wild Punish on either of these attacks allows them to combo into other normals, which can then be super-canceled. Not the most reliable anti-air despite the attack angle, especially when 2CR can combo into 236236K anyway Unlike 236236B, this super is fully invulnerable and can be used as a reversal On grounded hit, opponent remains in a lengthy hitstun animation on the ground, giving Kevin enough time to move in and hit Close D to continue the combo. On airborne hit, launches even higher and slower than a counterhit launch Still not great at covering the air space above Kevin"
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Big Bang Arrest",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "440 (11+99+330)",
-      "description": "Like any other Hidden Gear, this is a standard reversal / damage cashout tool that can only be accessed while in S.P.G. and costs 2 stocks of the Power Gauge. Resets Rev Meter to 0%, even if the user was overheated when the attack was activated Short horizontal range"
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Poli-Kick",
+    "input": "→ + [[FF:LK]]",
+    "damage": "80 (20 + 60)",
+    "description": "Its long animation makes it dangerous to whiff, but it is safe on block Cannot be canceled into anything, and does not combo into anything on a normal hit On Counter Hit / Wild Punish, becomes +6 on hit and can combo into Far A , 2A or 2B after the animation ends The first hit is not a low, despite the animation. However, a 5CR will high-profile it for a Wild Punish. Conversely, the second hit can be low-profiled by 2CR ."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Creeper",
+    "input": "↓ ↓ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "-",
+    "description": "Can low profile some moves, including projectiles It takes 11 frames to enter Creeper, then Kevin crawls forward for 60 frames and spends 30 frames getting up"
+  },
+  {
+    "category": "Command Moves",
+    "name": "Punch",
+    "input": "↓ ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:HP]]",
+    "damage": "90",
+    "description": "Punishable on block (and even on hit) if it is not canceled into a special attack or feint"
+  },
+  {
+    "category": "Command Moves",
+    "name": "Kick",
+    "input": "↓ ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:HK]]",
+    "damage": "90",
+    "description": "Ordinarily does not start a combo on hit, but some setups can make this up to +9 on normal hit (or +4 on block), allowing it to combo into Close C for a full combo Will not high profile any low attacks, does not grant airborne status or throw immunity, and 2CR will low profile it for a Wild Punish"
+  },
+  {
+    "category": "Command Moves",
+    "name": "Rise",
+    "input": "↓ ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:LP]] or [[FF:LK]]",
+    "damage": "-",
+    "description": "This animation is faster than the one that automatically activates after 60 frames of crawling, taking only 20 frames to get up instead of 30 Can be used to bait reversals if Creeper is used while an opponent is knocked down"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Blast Charge",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Travels about 1/3 screen distance forward Due to a complete lack of reversals outside of super attacks, Kevin will be reliant on Guard Canceled Rev Blows on defense While in SPG, ending combos with REV Blow will open up a wide variety of mixup options on the hard knockdown; see Kevin's [ Strategy page ] for more information"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Air Raid",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Cancels all midair momentum upon activation and briefly floats Kevin in place, making it difficult to time a 2CR in response to this move"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Avoid Mine",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B/D: - / BD: -",
+    "description": "Will not switch sides with an opponent Faster roll with a shorter animation than the normal version Can roll past an opponent to quickly switch sides Can REV Accel into any other REV special to make the roll animation 1 frame shorter and spend less REV for subsequent REV specials"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hell Rotor",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 100/120/140 / C: 110/130/150 / AC: 110/130/150 Lv1: 40+70 Lv2: 60+70 Lv3: 80+70 / [A/C/AC] > K: -",
+    "description": "Press any kick button during the charge to cancel without attacking (minimum total animation length is 17 frames, or 16 for REV version). This is referred to as a Rotor Cancel. All versions and charge levels cause a knockdown on normal hit / Wild Punish and cause a slow launch on counterhit, with only one exception (see 214A below) A Rotor Cancel can be used as a Guard Cancel to force any attack to inflict only 17 frames of blockstun, opening up dangerous new punish opportunities. Read more about it here. All special-cancelable attacks can combo into this on a normal hit except for Far A, which can still combo into it if Far A hits as a counterhit / Wild Punish Good spacing makes this very difficult or downright impossible to punish despite being -6 on block for the uncharged version. As an exception to the above note on 214P granting knockdowns, an uncharged hit will leave the opponent grounded, even on counterhit / Wild Punish (where it becomes +9 instead of +4). An uncharged counterhit against an airborne enemy causes slow launch, and an uncharged airborne wild punish causes a knockdown. Only combos from Close C/D, but also frametraps from these normals on block Knocks the opponent straight down instead of away from Kevin If fully charged, Kevin steps forward far enough to make this hit from a bit further than round start distance, in addition to becoming safe on block Despite the animation, the first hit is not an overhead Can be braked on the first hit to remain plus on block. Otherwise, punishable if not braked or REV Accel canceled into another REV special. A Rotor Cancel from this version is 1 frame faster than the normal versions of 214P"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hell Snipe",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 90 / C: 100 / AC: 120",
+    "description": "Can jump over attacks and potentially score a Wild Punish, starting a combo Very tall hitbox, capable of hitting full jumping and crouching opponents reliably Regardless of hit or block, gains an additional 3 frames of advantage against a crouching opponent Combos into 2A or Far A on grounded counterhit / Wild Punish, or Close C if the opponent is crouching. Causes big launch if it counterhits an airborne opponent About the same jump angle as a forward hop Will never jump over an opponent, even if they are knocked down About the same jump height as a forward jump, but travels a bit further Can jump over a crouching opponent and whiff if they are too close Can also be used as a combo ender following a braked 214AC hit Identical animation and jump angle to the light version, but deals more damage and is always plus on block Strangely, more advantageous on block than on hit (+2 vs +1)"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hell Trap BR",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 110 (40+70) / D: 110 (50 + 60) / BD: 100 (50x2)",
+    "description": "Not a low, despite the animation The grab animation does not actually have a hitbox, the second hit only activates if the first hit lands Kevin’s fastest strike special, but very punishable on block and cannot be braked. Any special-cancelable normal will combo into this Always brake this version. There is currently no benefit to letting the grab animation play, ever. The following information assumes this attack is braked. Slower, but safe on block and launches the opponent for a combo starter/extension on hit Causes big launch on counterhit Any special-cancelable heavy normal will combo into this Plus on block if braked, and the first hit pulls the opponent closer on block Launches on hit if braked. If not braked, the second hit can be canceled into uncharged 214AC In addition to heavies, Close A and 2A can also combo into this if they hit as a counterhit / Wild Punish"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hell Arrest",
+    "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B/D: 180 (50+130) / BD: 100 (30+70)",
+    "description": "A standard command grab. High damage and better knockdown compared to the normal grab Tied for Kevin's fastest special attack (other than 623BD), making it a good choice for Guard Cancels if the opponent is close enough to be grabbed Starts up 1 frame faster and can be canceled into 236BD to start a combo, but also applies a heavy amount of damage scaling that requires a significant Rev Meter or Power Gauge investment in order to deal more damage than the normal version"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hell Drop",
+    "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 70 / C: 90 [60] / AC: 100 (60+40)",
+    "description": "Safe on block and relatively fast, but has the shortest and lowest jump Cannot cross up an opponent Combos into Close C on counterhit / Wild Punish Slowest version, but jumps further and higher and is always plus on block Can cross up an opponent Fastest startup, longest horizontal jump distance and slightly shorter vertical jump height than the heavy version Can cross up a crouching opponent, but becomes (-2 on block / +3 on hit / +8 on counter hit or Wild Punish) and will never cross up a standing opponent Has a hitbox while in air, making it capable of extending a combo Combos into 2A on normal hit as long as it does not cross up, or Close C on counterhit / Wild Punish"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Lucky Strike",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "230 (40x3+110)",
+    "description": "Standard reversal / combo ender super Kevin's cheapest reversal without using a Zero Frame Super (see Gatling Freeze / 236236K below) Not very good against jumping opponents Identical in function to 236236A, just deals more damage"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Lucky Strike",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "310 (30x3+70+150)",
+    "description": "Standard reversal / combo ender super Kevin's cheapest reversal without using a Zero Frame Super (see Gatling Freeze / 236236K below) Not very good against jumping opponents Identical in function to 236236A, just deals more damage"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Gatling Freeze",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "180",
+    "description": "Launches the opponent, allowing a combo to continue (or start) with an additional 25% of combo scaling applied Does not have any invulnerability and cannot be used as a reversal unless it is used as a Zero Frame Super , but is exceptionally rewarding in this case as it still functions as a combo-starting reversal Any ground normal can be canceled into 236236K to start a combo except for 2D. 6B and 5CR cannot directly cancel into 236236K , but a counterhit / Wild Punish on either of these attacks allows them to combo into other normals, which can then be super-canceled. Not the most reliable anti-air despite the attack angle, especially when 2CR can combo into 236236K anyway Unlike 236236B, this super is fully invulnerable and can be used as a reversal On grounded hit, opponent remains in a lengthy hitstun animation on the ground, giving Kevin enough time to move in and hit Close D to continue the combo. On airborne hit, launches even higher and slower than a counterhit launch Still not great at covering the air space above Kevin"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Gatling Freeze",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "270 (30x4+170)",
+    "description": "Launches the opponent, allowing a combo to continue (or start) with an additional 25% of combo scaling applied Does not have any invulnerability and cannot be used as a reversal unless it is used as a Zero Frame Super , but is exceptionally rewarding in this case as it still functions as a combo-starting reversal Any ground normal can be canceled into 236236K to start a combo except for 2D. 6B and 5CR cannot directly cancel into 236236K , but a counterhit / Wild Punish on either of these attacks allows them to combo into other normals, which can then be super-canceled. Not the most reliable anti-air despite the attack angle, especially when 2CR can combo into 236236K anyway Unlike 236236B, this super is fully invulnerable and can be used as a reversal On grounded hit, opponent remains in a lengthy hitstun animation on the ground, giving Kevin enough time to move in and hit Close D to continue the combo. On airborne hit, launches even higher and slower than a counterhit launch Still not great at covering the air space above Kevin"
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Big Bang Arrest",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "440 (11+99+330)",
+    "description": "Like any other Hidden Gear, this is a standard reversal / damage cashout tool that can only be accessed while in S.P.G. and costs 2 stocks of the Power Gauge. Resets Rev Meter to 0%, even if the user was overheated when the attack was activated Short horizontal range"
+  }
+]

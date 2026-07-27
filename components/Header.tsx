@@ -1,7 +1,6 @@
 import React from 'react';
-import { StyleSheet, View, Text, Pressable, TouchableOpacity, Platform } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
-import { useControl, ControlType } from './ControlContext';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 interface HeaderProps {
@@ -12,19 +11,12 @@ interface HeaderProps {
 
 export default function Header({ showBack = false, gameTitle, charName }: HeaderProps) {
   const router = useRouter();
-  const { controlType, setControlType } = useControl();
   const insets = useSafeAreaInsets();
 
   const handleBack = () => {
     if (router.canGoBack()) {
       router.back();
     }
-  };
-
-  const TAB_COLORS: Record<string, string> = {
-    PS:     '#006FCD',   // PlayStation blue
-    Xbox:   '#107C10',   // Xbox green
-    Arcade: '#e63b2e',   // arcade red
   };
 
   return (
@@ -49,37 +41,6 @@ export default function Header({ showBack = false, gameTitle, charName }: Header
           )}
         </View>
       </View>
-
-      {/* Bottom row: Controller Selector Tabs */}
-      <View style={styles.tabContainer}>
-        {(['PS', 'Xbox', 'Arcade'] as ControlType[]).map((type) => {
-          const isActive = controlType === type;
-          const accentColor = TAB_COLORS[type];
-          const label = type === 'PS' ? 'PlayStation' : type === 'Xbox' ? 'Xbox' : '🕹️ Arcade';
-          return (
-            <Pressable
-              key={type}
-              onPress={() => setControlType(type)}
-              style={({ pressed }) => [
-                styles.tabButton,
-                isActive
-                  ? { backgroundColor: accentColor }
-                  : styles.tabInactive,
-                pressed && { opacity: 0.55, transform: [{ scale: 0.93 }] },
-              ]}
-            >
-              <Text
-                style={[
-                  styles.tabText,
-                  isActive ? styles.tabTextActive : styles.tabTextInactive
-                ]}
-              >
-                {label}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </View>
     </View>
   );
 }
@@ -95,7 +56,6 @@ const styles = StyleSheet.create({
   topRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 12,
     height: 40,
   },
   backButton: {
@@ -130,34 +90,5 @@ const styles = StyleSheet.create({
     letterSpacing: 0.8,
     marginTop: 1,
     textTransform: 'uppercase',
-  },
-  tabContainer: {
-    flexDirection: 'row',
-    backgroundColor: '#111',
-    borderRadius: 8,
-    padding: 3,
-  },
-  tabButton: {
-    flex: 1,
-    paddingVertical: 8,
-    alignItems: 'center',
-    borderRadius: 6,
-  },
-  tabActive: {
-    backgroundColor: '#e63b2e', // fallback active color
-  },
-  tabInactive: {
-    backgroundColor: 'transparent',
-  },
-  tabText: {
-    fontFamily: 'Rajdhani-Bold',
-    fontSize: 13,
-    letterSpacing: 0.8,
-  },
-  tabTextActive: {
-    color: '#fff',
-  },
-  tabTextInactive: {
-    color: '#555',
   },
 });

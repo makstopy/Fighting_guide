@@ -1,124 +1,121 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Kneeling Hammer",
-      "input": "→ + [[FF:LP]]",
-      "damage": "60",
-      "description": "Has quite distinct start up which makes it slightly easier to react to when compared to other command overhead moves and only 2 active frames, so it is hard to get strong conversions using it."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Blitz Strike",
-      "input": "→ + [[FF:HP]]",
-      "damage": "80",
-      "description": "Super cancellable Long reach"
-    },
-    {
-      "category": "Command Combos",
-      "name": "Command Combo",
-      "input": "[[FF:HP]] > ← or → + [[FF:HP]]",
-      "damage": "50",
-      "description": "Scales combos by an extra 5% on hit, which makes this feint route into a 2C do less damage than close D > feint, far C in combos."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Chariot Bash",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Damage value factors in S.P.G bonus."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Imperial Skyfall",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Damage value factors in S.P.G bonus. Hits OTG."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Blitz Ball",
-      "input": "214A/C/ACHold214A/C/AC",
-      "damage": "A: 50 [60] / C: 60 [70] / AC: 80 [100]",
-      "description": "Light version is the high fireball; faster to startup and recover, but whiffs on crouch. Heavy version is the low fireball; can hit crouching characters but is slow to recover, being minus on hit point blank. It also hits OTG. The meterless versions have near-identical startup animations, making telling them apart extremely difficult until they come out. REV version is the slowest to startup, and is the height of your average fireball. It travels slowly at first but accelerates over time. It also launches on Counter Hit. Every version can be held; if held long enough, they do extra damage, are more plus on hit/block, and out-prioritize other basic projectiles. REV/Super projectiles will still beat them."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Leg Tomahawk BR",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 90 / D: 110 / BD: 100",
-      "description": "All versions are breakable before the hit, stopping Krauser short. Light version becomes active faster but covers less range and is slightly minus. Heavy version is slow and reactable but covers a wider range while being up to +3 on crouching block. It can also go over most standard projectiles and punish them. REV version is a happy medium, being only one frame slower than the light version but has the heavy version's plus frames. Heavy and REV versions leave Krauser outside of close heavies' range, but surprisingly, Krauser is still left in throw range. All versions don't hit grounded opponents until the fourth active frame, making them 26/28/27 frames startup against them respectively."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Phoenix Slam",
-      "input": "→ ↘ ↓ ↙ ← → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 150 / D: 180 / BD: 130",
-      "description": "Heavy and REV versions have guard point from frame 3 until recovery REV version instead lifts the opponent up and strikes them in the back, switching sides before allowing REV Accel."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Kaiser Claw",
-      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 140 / C: 170 / AC: 140",
-      "description": "Heavy and REV versions are air invuln frame 1 to recovery. Cannot be Just Defended. A meterless hard knockdown that you can combo into."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Knee Halberd BR",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 30 / D: 40 / BD: 30",
-      "description": "All versions are Brakeable before the hit. Unsafe up close, but can be made plus when spaced Light version is his most consistent special from lights Light version leaves a grounded opponent standing, heavy and REV versions knock down on hit and launch on Counter Hit. Heavy version is great combo filler in juggles."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Knee Halberd: Stab",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > ← or → + [[FF:K]]",
-      "damage": "B > 4/6K: 60 / D > 4/6K: 60",
-      "description": "Very minus on block Soft knockdown"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Knee Halberd: Lunge",
-      "input": "↓ ↙ ← + [[FF:LK]] [[FF:HK]] > ← or → + [[FF:K]]",
-      "damage": "90 (30+60)",
-      "description": "Brakeable on first hit only 214BD > 4/6D.BR is only -3 on block."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Kaiser Wave",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "240 [260, 280]",
-      "description": "Extrtemely tall hitbox, very difficult to jump unless very close Neither version is fully invincible on startup, not even the Redline version All versions hit OTG Worse damage than Gigantic Cyclone, but better okizeme"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Kaiser Wave",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "300 [320, 340]",
-      "description": "Extrtemely tall hitbox, very difficult to jump unless very close Neither version is fully invincible on startup, not even the Redline version All versions hit OTG Worse damage than Gigantic Cyclone, but better okizeme"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Gigantic Cyclone",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "260 0 + 20*8 + 100",
-      "description": "Krauser's best invincible reversal. Despite the animation, it’s a hitgrab that only hits front. On block, pulls the opponent in without dealing any chip damage or REV buildup. Krauser’s highest-damage ender, but needs specific routes to juggle it due to the small hitbox. Cannot hit opponents in grounded, throw-invincible states (such as during hitstun, or if the opponent backdashes or does a Low Dodge Attack). Thus the only way to combo into it is with a juggle. Redline version has slightly more range, allowing it to combo from slightly more optimal routes ending with a REV Leg Tomahawk."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Gigantic Cyclone",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "320 0 + 20*8 + 160",
-      "description": "Krauser's best invincible reversal. Despite the animation, it’s a hitgrab that only hits front. On block, pulls the opponent in without dealing any chip damage or REV buildup. Krauser’s highest-damage ender, but needs specific routes to juggle it due to the small hitbox. Cannot hit opponents in grounded, throw-invincible states (such as during hitstun, or if the opponent backdashes or does a Low Dodge Attack). Thus the only way to combo into it is with a juggle. Redline version has slightly more range, allowing it to combo from slightly more optimal routes ending with a REV Leg Tomahawk."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Unlimited Desire X",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "451 50 + 20*8 + 40 + 160",
-      "description": "Resets the Rev meter to 0%, even during Overheat. Only available during S.P.G. Damage value factors in S.P.G. bonus. Hits from slightly further than round start range, making some things punishable exclusively by this move."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Kneeling Hammer",
+    "input": "→ + [[FF:LP]]",
+    "damage": "60",
+    "description": "Has quite distinct start up which makes it slightly easier to react to when compared to other command overhead moves and only 2 active frames, so it is hard to get strong conversions using it."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Blitz Strike",
+    "input": "→ + [[FF:HP]]",
+    "damage": "80",
+    "description": "Super cancellable Long reach"
+  },
+  {
+    "category": "Command Combos",
+    "name": "Command Combo",
+    "input": "[[FF:HP]] > ← or → + [[FF:HP]]",
+    "damage": "50",
+    "description": "Scales combos by an extra 5% on hit, which makes this feint route into a 2C do less damage than close D > feint, far C in combos."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Chariot Bash",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Damage value factors in S.P.G bonus."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Imperial Skyfall",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Damage value factors in S.P.G bonus. Hits OTG."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Blitz Ball",
+    "input": "214A/C/ACHold214A/C/AC",
+    "damage": "A: 50 [60] / C: 60 [70] / AC: 80 [100]",
+    "description": "Light version is the high fireball; faster to startup and recover, but whiffs on crouch. Heavy version is the low fireball; can hit crouching characters but is slow to recover, being minus on hit point blank. It also hits OTG. The meterless versions have near-identical startup animations, making telling them apart extremely difficult until they come out. REV version is the slowest to startup, and is the height of your average fireball. It travels slowly at first but accelerates over time. It also launches on Counter Hit. Every version can be held; if held long enough, they do extra damage, are more plus on hit/block, and out-prioritize other basic projectiles. REV/Super projectiles will still beat them."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Leg Tomahawk BR",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 90 / D: 110 / BD: 100",
+    "description": "All versions are breakable before the hit, stopping Krauser short. Light version becomes active faster but covers less range and is slightly minus. Heavy version is slow and reactable but covers a wider range while being up to +3 on crouching block. It can also go over most standard projectiles and punish them. REV version is a happy medium, being only one frame slower than the light version but has the heavy version's plus frames. Heavy and REV versions leave Krauser outside of close heavies' range, but surprisingly, Krauser is still left in throw range. All versions don't hit grounded opponents until the fourth active frame, making them 26/28/27 frames startup against them respectively."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Phoenix Slam",
+    "input": "→ ↘ ↓ ↙ ← → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 150 / D: 180 / BD: 130",
+    "description": "Heavy and REV versions have guard point from frame 3 until recovery REV version instead lifts the opponent up and strikes them in the back, switching sides before allowing REV Accel."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Kaiser Claw",
+    "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 140 / C: 170 / AC: 140",
+    "description": "Heavy and REV versions are air invuln frame 1 to recovery. Cannot be Just Defended. A meterless hard knockdown that you can combo into."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Knee Halberd BR",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 30 / D: 40 / BD: 30",
+    "description": "All versions are Brakeable before the hit. Unsafe up close, but can be made plus when spaced Light version is his most consistent special from lights Light version leaves a grounded opponent standing, heavy and REV versions knock down on hit and launch on Counter Hit. Heavy version is great combo filler in juggles."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Knee Halberd: Stab",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > ← or → + [[FF:K]]",
+    "damage": "B > 4/6K: 60 / D > 4/6K: 60",
+    "description": "Very minus on block Soft knockdown"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Knee Halberd: Lunge",
+    "input": "↓ ↙ ← + [[FF:LK]] [[FF:HK]] > ← or → + [[FF:K]]",
+    "damage": "90 (30+60)",
+    "description": "Brakeable on first hit only 214BD > 4/6D.BR is only -3 on block."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Kaiser Wave",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "240 [260, 280]",
+    "description": "Extrtemely tall hitbox, very difficult to jump unless very close Neither version is fully invincible on startup, not even the Redline version All versions hit OTG Worse damage than Gigantic Cyclone, but better okizeme"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Kaiser Wave",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "300 [320, 340]",
+    "description": "Extrtemely tall hitbox, very difficult to jump unless very close Neither version is fully invincible on startup, not even the Redline version All versions hit OTG Worse damage than Gigantic Cyclone, but better okizeme"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Gigantic Cyclone",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "260 0 + 20*8 + 100",
+    "description": "Krauser's best invincible reversal. Despite the animation, it’s a hitgrab that only hits front. On block, pulls the opponent in without dealing any chip damage or REV buildup. Krauser’s highest-damage ender, but needs specific routes to juggle it due to the small hitbox. Cannot hit opponents in grounded, throw-invincible states (such as during hitstun, or if the opponent backdashes or does a Low Dodge Attack). Thus the only way to combo into it is with a juggle. Redline version has slightly more range, allowing it to combo from slightly more optimal routes ending with a REV Leg Tomahawk."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Gigantic Cyclone",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "320 0 + 20*8 + 160",
+    "description": "Krauser's best invincible reversal. Despite the animation, it’s a hitgrab that only hits front. On block, pulls the opponent in without dealing any chip damage or REV buildup. Krauser’s highest-damage ender, but needs specific routes to juggle it due to the small hitbox. Cannot hit opponents in grounded, throw-invincible states (such as during hitstun, or if the opponent backdashes or does a Low Dodge Attack). Thus the only way to combo into it is with a juggle. Redline version has slightly more range, allowing it to combo from slightly more optimal routes ending with a REV Leg Tomahawk."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Unlimited Desire X",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "451 50 + 20*8 + 40 + 160",
+    "description": "Resets the Rev meter to 0%, even during Overheat. Only available during S.P.G. Damage value factors in S.P.G. bonus. Hits from slightly further than round start range, making some things punishable exclusively by this move."
+  }
+]

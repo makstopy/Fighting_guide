@@ -52,6 +52,14 @@ const SF6_BUTTON_ICONS: Record<string, any> = {
   "[[HK]]": require('../public/icon_kick_h.png'),
   "[[K]]": require('../public/icon_kick.png'),
   "[[N]]": require('../public/key-nutral.png'),
+  "LP": require('../public/icon_punch_l.png'),
+  "MP": require('../public/icon_punch_m.png'),
+  "HP": require('../public/icon_punch_h.png'),
+  "P": require('../public/icon_punch.png'),
+  "LK": require('../public/icon_kick_l.png'),
+  "MK": require('../public/icon_kick_m.png'),
+  "HK": require('../public/icon_kick_h.png'),
+  "K": require('../public/icon_kick.png'),
   "N": require('../public/key-nutral.png'),
 };
 
@@ -68,6 +76,10 @@ const ARCADE_DOT_MAP: Record<string, number[]> = {
   "RP": [0, 1, 0, 0],
   "LK": [0, 0, 1, 0],
   "RK": [0, 0, 0, 1],
+  "MP": [0, 1, 0, 0],
+  "HP": [0, 1, 1, 0],
+  "MK": [0, 0, 1, 0],
+  "HK": [0, 0, 1, 1],
   "LP+RP": [1, 1, 0, 0],
   "LK+RK": [0, 0, 1, 1],
   "RP+LK": [0, 1, 1, 0],
@@ -128,7 +140,7 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
     );
   }
 
-  // ── Fatal Fury specific tokens for PS/Xbox/Arcade modes ───────────────────
+  // ── Fatal Fury specific tokens for PS/Xbox/Arcade/Original modes ───────────
   if (token.startsWith('[[FF:')) {
     const code = token.slice(5, -2);
     if (controlType === 'PS') {
@@ -155,7 +167,10 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
         case 'TH': return <XboxBumper label="LT" size={s} />;
       }
     }
-    // Arcade control type or fallback: show Fatal Fury PNG image icon
+    if (controlType === 'Arcade') {
+      return <ArcadeButton label={code} size={s} />;
+    }
+    // Original control type or fallback: show Fatal Fury PNG image icon
     const imgSource = FF_IMAGE_ICONS[code];
     if (imgSource) {
       return (
@@ -183,32 +198,43 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
     }
   }
 
-  // ── SF6 Controller mappings ──
+  // ── SF6 Controller & Arcade & Original mappings ──
+  const isSf6StrengthToken = ['[[LP]]', 'LP', '[[MP]]', 'MP', '[[HP]]', 'HP', '[[LK]]', 'LK', '[[MK]]', 'MK', '[[HK]]', 'HK'].includes(token);
+
   if (controlType === 'PS') {
-    if (token === '[[LP]]') return <PSSquare size={s} />;
-    if (token === '[[MP]]') return <PSTriangle size={s} />;
-    if (token === '[[HP]]') return <PSBumper label="R1" size={s} />;
-    if (token === '[[LK]]') return <PSCross size={s} />;
-    if (token === '[[MK]]') return <PSCircle size={s} />;
-    if (token === '[[HK]]') return <PSBumper label="R2" size={s} />;
+    if (token === '[[LP]]' || token === 'LP') return <PSSquare size={s} />;
+    if (token === '[[MP]]' || token === 'MP') return <PSTriangle size={s} />;
+    if (token === '[[HP]]' || token === 'HP') return <PSBumper label="R1" size={s} />;
+    if (token === '[[LK]]' || token === 'LK') return <PSCross size={s} />;
+    if (token === '[[MK]]' || token === 'MK') return <PSCircle size={s} />;
+    if (token === '[[HK]]' || token === 'HK') return <PSBumper label="R2" size={s} />;
+    if (token === '[[P]]' || token === 'P') return <Image source={SF6_BUTTON_ICONS['[[P]]']} style={styles.sf6Icon} resizeMode="contain" />;
+    if (token === '[[K]]' || token === 'K') return <Image source={SF6_BUTTON_ICONS['[[K]]']} style={styles.sf6Icon} resizeMode="contain" />;
+    if (token === '[[N]]' || token === 'N') return <FFNeutralIcon size={34} />;
   }
 
   if (controlType === 'Xbox') {
-    if (token === '[[LP]]') return <XboxX size={s} />;
-    if (token === '[[MP]]') return <XboxY size={s} />;
-    if (token === '[[HP]]') return <XboxBumper label="RB" size={s} />;
-    if (token === '[[LK]]') return <XboxA size={s} />;
-    if (token === '[[MK]]') return <XboxB size={s} />;
-    if (token === '[[HK]]') return <XboxBumper label="RT" size={s} />;
+    if (token === '[[LP]]' || token === 'LP') return <XboxX size={s} />;
+    if (token === '[[MP]]' || token === 'MP') return <XboxY size={s} />;
+    if (token === '[[HP]]' || token === 'HP') return <XboxBumper label="RB" size={s} />;
+    if (token === '[[LK]]' || token === 'LK') return <XboxA size={s} />;
+    if (token === '[[MK]]' || token === 'MK') return <XboxB size={s} />;
+    if (token === '[[HK]]' || token === 'HK') return <XboxBumper label="RT" size={s} />;
+    if (token === '[[P]]' || token === 'P') return <Image source={SF6_BUTTON_ICONS['[[P]]']} style={styles.sf6Icon} resizeMode="contain" />;
+    if (token === '[[K]]' || token === 'K') return <Image source={SF6_BUTTON_ICONS['[[K]]']} style={styles.sf6Icon} resizeMode="contain" />;
+    if (token === '[[N]]' || token === 'N') return <FFNeutralIcon size={34} />;
   }
 
-  // ── SF6 Native Icons (Arcade mode & non-colored punches/kicks) ──
-  if (SF6_BUTTON_ICONS[token]) {
-    const isArcade = controlType === 'Arcade';
+  if (controlType === 'Arcade' && isSf6StrengthToken) {
+    const rawLabel = token.replace(/\[\[|\]\]/g, '');
+    return <ArcadeButton label={rawLabel} size={s} />;
+  }
+
+  if (controlType === 'Original' && SF6_BUTTON_ICONS[token]) {
     return (
       <Image
         source={SF6_BUTTON_ICONS[token]}
-        style={isArcade ? styles.sf6ArcadeIcon : styles.sf6Icon}
+        style={styles.sf6Icon}
         resizeMode="contain"
       />
     );

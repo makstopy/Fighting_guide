@@ -1,138 +1,135 @@
-{
-  "arcade": [
-    {
-      "category": "Command Combos",
-      "name": "Command Combo",
-      "input": "[[FF:HP]] > ← or → + [[FF:HP]]",
-      "damage": "25",
-      "description": "Far C follow-up, cannot be used on whiff. On hit, it increases scaling: Better for short combos, worse for long combos (especially with REV) than far C alone. On block, this increases your opponent’s pushback and REV meter, but beware of hyper defense."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Afterburner",
-      "input": "[In air] → + [[FF:LK]]",
-      "damage": "75 (15x5)",
-      "description": "Diagonal dive kick, depending on the spacing it can be safe and can allow B. Jenet to start a combo on counter hit."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Rolling Thunder",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 (77+55)",
-      "description": "The follow up won't come out on whiff or counter hit(Allows B.Jenet to start a combo). DO NOT WHIFF THIS"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Dress Carpet",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Only available during S.P.G, her air REV blow that causes a hard knockdown and crumple on counter hit. Safe if used close to the ground."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Baffles",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 70 (20+20+30) / C: 70 (20+20+30) / AC: 80 (20+20+40)",
-      "description": "A version travels nearly 30% of the screen and stays active a small moment before disappearing. C and AC version travel full screen. AC version has a vacuum effect on block(And it's positive), meaning it's her best REV special to REV cancel on block."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Crazy Ivan",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 80 / C: 90 / AC: 90",
-      "description": "B. Jenet swipes her dress forward for a big hit, any version on counter hit launches the opponent high into the air. A version : A safe ender unless used very close. cl.A > 214A is a frametrap and far A/B > 214A is a safe blockstring if far enough. You can delay it a bit to frametrap. C version : Slower, unsafe but deals more damage, B. Jenet advances during this version so don't use it on block or you'll be punished. AC version : Can be safe if spaced but B. Jenet advances(More than the A version). However it deals a lot of damage and can be REV cancelled. Also Far C > 214AC is a frametrap."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Gulf Tomahawk BR",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 90 / D: 110 / BD: 120 (40+80)",
-      "description": "B and BD go up to hop height, while D goes up to jump height. D and BD can be cancelled into any air move on brake(An air normal makes them land faster). BD version is arguably B.Jenet's most powerful and important move. Braking it allows Jenet to set up an extremely oppressive high,low,grab mix up that is not reactable."
-    },
-    {
-      "category": "Special Moves",
-      "name": "The Hind BR",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 70 20+10+40 / D: 100 20+10x2+60 / BD: 100 20+10x3+50",
-      "description": "Every version has air invulnerability. D and BD can be braked before the spinning follow up. BD can be Rev cancelled into Harrier Bee during the second part of this move."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Harrier Bee",
-      "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: - / D: - / BD: -",
-      "description": "B Version start with a small hop in the air. D and BD version start at a diagonal angle. B and D can be only used during a neutral or forward jump. BD can be used during any jump and even a backdash."
-    },
-    {
-      "category": "Special Moves",
-      "name": "1st Kick follow up",
-      "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:K]]",
-      "damage": "B/D > K: 20 / BD > K: 20",
-      "description": "1st of the kick follow-ups. Against a grounded opponent, you will have more advantage the closer to the ground you are when hitting them."
-    },
-    {
-      "category": "Special Moves",
-      "name": "2nd Kick follow up",
-      "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:K]] ×2",
-      "damage": "B/D > Kx2: 20 / BD > Kx2: 20",
-      "description": "The 2nd kick, nearly same as the previous version. You can use the second attack to improve your advantage after hitting the opponent high with the first attack."
-    },
-    {
-      "category": "Special Moves",
-      "name": "3rd Kick follow up",
-      "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:K]] ×3",
-      "damage": "B/D > Kx3: 30 / BD > Kx3: 30",
-      "description": "The BD version launches a grounded opponent on hit, can combo into 236B or a super if she's close enough to the ground."
-    },
-    {
-      "category": "Special Moves",
-      "name": "4th Kick follow up",
-      "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:K]] ×4",
-      "damage": "B/D > Kx4: 50 / BD > Kx4: 50",
-      "description": "BD version sends the opponent higher on hit, allows B. Jenet to combo in the air or if she's close to the ground."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Secret Mademoiselle",
-      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]] > [[FF:P]]",
-      "damage": "A/C: 150 / AC: 140 / AC > P: 140",
-      "description": "Every version loses to lows, cross-ups and projectiles, it only works at the 3rd frame meaning it loses against meaty attacks. A/C version need to parry a move to automatically trigger a 1F follow-up. AC can also trigger the follow-up manually by pressing any punch button(But the startup is slow). Light normals can combo into 623AC > P follow-up if close enough. On counter hit it launches the opponent high into the air allows B. Jenet to start a combo."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Many Many Torpedoes",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "220 20x6+100",
-      "description": "Both versions are invincible. C version starts and travels faster and deals more damage."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Many Many Torpedoes",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "300 20x9+120",
-      "description": "Both versions are invincible. C version starts and travels faster and deals more damage."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Aurora",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "240 20+10x8+30+110",
-      "description": "B Version is your highest damage ender. Landing it in the corner after a mid-air juggle( usually after a 214AC->214BC juggle) will give an extremely easy auto-timed safe jump by buffering a jump right after the super finishes the animation D Version can be braked before the last hit(Kiss), allows B. Jenet to extend her combo. D Version is faster, goes higher, deals more damage and has better advantage on hit."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Aurora BR",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "330 10x16+170",
-      "description": "B Version is your highest damage ender. Landing it in the corner after a mid-air juggle( usually after a 214AC->214BC juggle) will give an extremely easy auto-timed safe jump by buffering a jump right after the super finishes the animation D Version can be braked before the last hit(Kiss), allows B. Jenet to extend her combo. D Version is faster, goes higher, deals more damage and has better advantage on hit."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "JB-14",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "434 (88+11x7+33x2+203)",
-      "description": "Resets the Rev meter to 0%, even during Overheat."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Combos",
+    "name": "Command Combo",
+    "input": "[[FF:HP]] > ← or → + [[FF:HP]]",
+    "damage": "25",
+    "description": "Far C follow-up, cannot be used on whiff. On hit, it increases scaling: Better for short combos, worse for long combos (especially with REV) than far C alone. On block, this increases your opponent’s pushback and REV meter, but beware of hyper defense."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Afterburner",
+    "input": "[In air] → + [[FF:LK]]",
+    "damage": "75 (15x5)",
+    "description": "Diagonal dive kick, depending on the spacing it can be safe and can allow B. Jenet to start a combo on counter hit."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Rolling Thunder",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 (77+55)",
+    "description": "The follow up won't come out on whiff or counter hit(Allows B.Jenet to start a combo). DO NOT WHIFF THIS"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Dress Carpet",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Only available during S.P.G, her air REV blow that causes a hard knockdown and crumple on counter hit. Safe if used close to the ground."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Baffles",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 70 (20+20+30) / C: 70 (20+20+30) / AC: 80 (20+20+40)",
+    "description": "A version travels nearly 30% of the screen and stays active a small moment before disappearing. C and AC version travel full screen. AC version has a vacuum effect on block(And it's positive), meaning it's her best REV special to REV cancel on block."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Crazy Ivan",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 80 / C: 90 / AC: 90",
+    "description": "B. Jenet swipes her dress forward for a big hit, any version on counter hit launches the opponent high into the air. A version : A safe ender unless used very close. cl.A > 214A is a frametrap and far A/B > 214A is a safe blockstring if far enough. You can delay it a bit to frametrap. C version : Slower, unsafe but deals more damage, B. Jenet advances during this version so don't use it on block or you'll be punished. AC version : Can be safe if spaced but B. Jenet advances(More than the A version). However it deals a lot of damage and can be REV cancelled. Also Far C > 214AC is a frametrap."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Gulf Tomahawk BR",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 90 / D: 110 / BD: 120 (40+80)",
+    "description": "B and BD go up to hop height, while D goes up to jump height. D and BD can be cancelled into any air move on brake(An air normal makes them land faster). BD version is arguably B.Jenet's most powerful and important move. Braking it allows Jenet to set up an extremely oppressive high,low,grab mix up that is not reactable."
+  },
+  {
+    "category": "Special Moves",
+    "name": "The Hind BR",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 70 20+10+40 / D: 100 20+10x2+60 / BD: 100 20+10x3+50",
+    "description": "Every version has air invulnerability. D and BD can be braked before the spinning follow up. BD can be Rev cancelled into Harrier Bee during the second part of this move."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Harrier Bee",
+    "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: - / D: - / BD: -",
+    "description": "B Version start with a small hop in the air. D and BD version start at a diagonal angle. B and D can be only used during a neutral or forward jump. BD can be used during any jump and even a backdash."
+  },
+  {
+    "category": "Special Moves",
+    "name": "1st Kick follow up",
+    "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:K]]",
+    "damage": "B/D > K: 20 / BD > K: 20",
+    "description": "1st of the kick follow-ups. Against a grounded opponent, you will have more advantage the closer to the ground you are when hitting them."
+  },
+  {
+    "category": "Special Moves",
+    "name": "2nd Kick follow up",
+    "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:K]] ×2",
+    "damage": "B/D > Kx2: 20 / BD > Kx2: 20",
+    "description": "The 2nd kick, nearly same as the previous version. You can use the second attack to improve your advantage after hitting the opponent high with the first attack."
+  },
+  {
+    "category": "Special Moves",
+    "name": "3rd Kick follow up",
+    "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:K]] ×3",
+    "damage": "B/D > Kx3: 30 / BD > Kx3: 30",
+    "description": "The BD version launches a grounded opponent on hit, can combo into 236B or a super if she's close enough to the ground."
+  },
+  {
+    "category": "Special Moves",
+    "name": "4th Kick follow up",
+    "input": "[In air] ↓ + [[FF:LK]] or [[FF:HK]] > [[FF:K]] ×4",
+    "damage": "B/D > Kx4: 50 / BD > Kx4: 50",
+    "description": "BD version sends the opponent higher on hit, allows B. Jenet to combo in the air or if she's close to the ground."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Secret Mademoiselle",
+    "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]] > [[FF:P]]",
+    "damage": "A/C: 150 / AC: 140 / AC > P: 140",
+    "description": "Every version loses to lows, cross-ups and projectiles, it only works at the 3rd frame meaning it loses against meaty attacks. A/C version need to parry a move to automatically trigger a 1F follow-up. AC can also trigger the follow-up manually by pressing any punch button(But the startup is slow). Light normals can combo into 623AC > P follow-up if close enough. On counter hit it launches the opponent high into the air allows B. Jenet to start a combo."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Many Many Torpedoes",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "220 20x6+100",
+    "description": "Both versions are invincible. C version starts and travels faster and deals more damage."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Many Many Torpedoes",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "300 20x9+120",
+    "description": "Both versions are invincible. C version starts and travels faster and deals more damage."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Aurora",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "240 20+10x8+30+110",
+    "description": "B Version is your highest damage ender. Landing it in the corner after a mid-air juggle( usually after a 214AC->214BC juggle) will give an extremely easy auto-timed safe jump by buffering a jump right after the super finishes the animation D Version can be braked before the last hit(Kiss), allows B. Jenet to extend her combo. D Version is faster, goes higher, deals more damage and has better advantage on hit."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Aurora BR",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "330 10x16+170",
+    "description": "B Version is your highest damage ender. Landing it in the corner after a mid-air juggle( usually after a 214AC->214BC juggle) will give an extremely easy auto-timed safe jump by buffering a jump right after the super finishes the animation D Version can be braked before the last hit(Kiss), allows B. Jenet to extend her combo. D Version is faster, goes higher, deals more damage and has better advantage on hit."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "JB-14",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "434 (88+11x7+33x2+203)",
+    "description": "Resets the Rev meter to 0%, even during Overheat."
+  }
+]

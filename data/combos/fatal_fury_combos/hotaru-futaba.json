@@ -1,131 +1,128 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Koushuu Da",
-      "input": "[In air] ↓ + [[FF:LK]]",
-      "damage": "25",
-      "description": "Allows the normally unusable E air turn after if performed during a hop. But performing during a hop also restricts jB from crossing up. Must use fulljump to get the crossup version. But performing during a hop also restricts jB from crossing up. Must use fulljump to get the crossup version."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Aerial Turn",
-      "input": "[In air] [[FF:REV]]",
-      "damage": "-",
-      "description": "Hotaru faces the other side while airborne, mainly used for crossups. Allows a corner steal with j.D"
-    },
-    {
-      "category": "Command Combos",
-      "name": "Command Combo 1",
-      "input": "[[FF:HP]] > → + [[FF:HK]]",
-      "damage": "cl.C > 6D: 30 / cl.C~6D > 6D: 80",
-      "description": "A noob-trap move made by the mash police. \nLeaves Hotaru wide open for the opponent's juiciest party starter on block, and ends the combo on hit."
-    },
-    {
-      "category": "Command Combos",
-      "name": "Command Combo 2",
-      "input": "[In air] [[FF:LP]] > [[FF:LK]]",
-      "damage": "30",
-      "description": "Cannot be used in a short hop"
-    },
-    {
-      "category": "Command Moves",
-      "name": "Hanten Tou",
-      "input": "[In air] [[FF:LP]] [[FF:LK]]",
-      "damage": "100",
-      "description": "Air Grab Hotaru throws the opponent to the opposite side."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Soushou Da",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Armored palm strike with great horizontal range."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Rakuei Kyaku",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Despite having a height restriction, can still basically be performed instantly from the air. In this situation, it's +2 on crouch block, -2 on stand block. 15f startup makes it very hard to High Dodge Attack (2CE) on reaction In this situation, it's +2 on crouch block, -2 on stand block. 15f startup makes it very hard to High Dodge Attack (2CE) on reaction Extremely fast startup considering it's armored on frame 2. Decent pushback on block that will leave you out of close normal proximity (where most 4fs are usuable) Excellent reward on counter hit means you can throw it out in many situations, or use it to enforce strike/throw mixups if you are concerned about invulnerable reversals. Excellent combo ender that builds super meter and grants safejumps from almost any route you can use it."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Soushou Shin BR",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 70 (10x3+40) / C: 80 (10x3+50) / AC: 90 (10x4+50)",
-      "description": "Hotaru's light chain ender and a general pressure tool. 214A combos from lights but is always unsafe, 214C and 214A+C can be braked to become safe or +3 respectively at the cost of a slower startup. The meterless and metered versions actually have a different amount of hits, which makes a Guard Cancel DP feint punish difficult to pull off consistently. On top of that, the A+C version can be cancelled into other Rev Arts before the brake, which makes it so the only consistent way to punish Hotaru for abusing this move on block is a Guard Cancel Super, as slower/non-super reversals can get hit by a cancel to Rev Blow for enormous damage."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hakki Shou",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 / C: 60 / AC: 80 (40x2)",
-      "description": "The slower speed of 236A Hakki Shou allows Hotaru to run behind it and maintain offensive pressure."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Kobi Kyaku",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 80 / D: 100 / BD: 110",
-      "description": "214B/D reflects most standard projectiles, while 214BD can reflect Rev Art projectiles. In the season 2 major patch, the D version is no longer plus on block. Reflecting Mai's Rev Kachousen will deflect the first fan, causing the second fan to be destroyed."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Tenshin Shou BR",
-      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 80 (50+15x2) / C: 90 (30+20x3) / AC: 110 (30x3+10x2)",
-      "description": "A version is extremely fast and fully invincible. C and AC is air invincible and brake-able."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Shajou Tai",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B/D: 150 (40x2+70) / BD: 100 (30x2+40)",
-      "description": "Command Grab 236BD can be Rev Accel'd into other special moves for a combo. Hotaru's premier guard cancel, the B+D version actually beats 4 frame light chains and all versions beat DP feint cancels. Another one of Hotaru's special moves that is arbitrarily faster than most other moves of its type, only surpassed by Tizoc's heavy SPD (6248C)"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Rengeki Shuu",
-      "input": "[In air] ↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 80 (30+50) / D: 80 (30+50) / BD: 90 (20x2+50)",
-      "description": "Hotaru's divekick. Useful to alter your jump arc and mess with anti-airs."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Soushou Tenrenge",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "230 (10x8+5x7+115) 38 (3x8+2x7) (block)",
-      "description": "-"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Soushou Tenrenge",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "320 (15x8+10x8+120) 56 (4x8+3x6) (block)",
-      "description": "-"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Tenshou Ranki",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "220 (30x3+130) 36 (12x3) (block)",
-      "description": "Side swaps after completion unless done in the corner"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Tenshou Ranki BR",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "300 (50x3+10x5+100) 51 (16x2+19) (block)",
-      "description": "Side swaps after completion unless done in the corner"
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Freeze Fang: Souhou Chihigiri",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "456 (88+44x2+88+192) 75 (block)",
-      "description": "Goes stupidly far in 6 frames with no travel time, so if you know your frame data you can use this to pick up punishes most characters can't hope for. This also means it's easy to combo into in juggles or grounded confirms, and it can work as an anti air. After the super, crouch A will beat 4f+ normals if they choose to attack (or jump), but conversions are limited. Instant Air Rev Blow covers many options they can do, losing mostly only to High Dodge Attack and supers."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Koushuu Da",
+    "input": "[In air] ↓ + [[FF:LK]]",
+    "damage": "25",
+    "description": "Allows the normally unusable E air turn after if performed during a hop. But performing during a hop also restricts jB from crossing up. Must use fulljump to get the crossup version. But performing during a hop also restricts jB from crossing up. Must use fulljump to get the crossup version."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Aerial Turn",
+    "input": "[In air] [[FF:REV]]",
+    "damage": "-",
+    "description": "Hotaru faces the other side while airborne, mainly used for crossups. Allows a corner steal with j.D"
+  },
+  {
+    "category": "Command Combos",
+    "name": "Command Combo 1",
+    "input": "[[FF:HP]] > → + [[FF:HK]]",
+    "damage": "cl.C > 6D: 30 / cl.C~6D > 6D: 80",
+    "description": "A noob-trap move made by the mash police. \nLeaves Hotaru wide open for the opponent's juiciest party starter on block, and ends the combo on hit."
+  },
+  {
+    "category": "Command Combos",
+    "name": "Command Combo 2",
+    "input": "[In air] [[FF:LP]] > [[FF:LK]]",
+    "damage": "30",
+    "description": "Cannot be used in a short hop"
+  },
+  {
+    "category": "Command Moves",
+    "name": "Hanten Tou",
+    "input": "[In air] [[FF:LP]] [[FF:LK]]",
+    "damage": "100",
+    "description": "Air Grab Hotaru throws the opponent to the opposite side."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Soushou Da",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Armored palm strike with great horizontal range."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Rakuei Kyaku",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Despite having a height restriction, can still basically be performed instantly from the air. In this situation, it's +2 on crouch block, -2 on stand block. 15f startup makes it very hard to High Dodge Attack (2CE) on reaction In this situation, it's +2 on crouch block, -2 on stand block. 15f startup makes it very hard to High Dodge Attack (2CE) on reaction Extremely fast startup considering it's armored on frame 2. Decent pushback on block that will leave you out of close normal proximity (where most 4fs are usuable) Excellent reward on counter hit means you can throw it out in many situations, or use it to enforce strike/throw mixups if you are concerned about invulnerable reversals. Excellent combo ender that builds super meter and grants safejumps from almost any route you can use it."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Soushou Shin BR",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 70 (10x3+40) / C: 80 (10x3+50) / AC: 90 (10x4+50)",
+    "description": "Hotaru's light chain ender and a general pressure tool. 214A combos from lights but is always unsafe, 214C and 214A+C can be braked to become safe or +3 respectively at the cost of a slower startup. The meterless and metered versions actually have a different amount of hits, which makes a Guard Cancel DP feint punish difficult to pull off consistently. On top of that, the A+C version can be cancelled into other Rev Arts before the brake, which makes it so the only consistent way to punish Hotaru for abusing this move on block is a Guard Cancel Super, as slower/non-super reversals can get hit by a cancel to Rev Blow for enormous damage."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hakki Shou",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 / C: 60 / AC: 80 (40x2)",
+    "description": "The slower speed of 236A Hakki Shou allows Hotaru to run behind it and maintain offensive pressure."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Kobi Kyaku",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 80 / D: 100 / BD: 110",
+    "description": "214B/D reflects most standard projectiles, while 214BD can reflect Rev Art projectiles. In the season 2 major patch, the D version is no longer plus on block. Reflecting Mai's Rev Kachousen will deflect the first fan, causing the second fan to be destroyed."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Tenshin Shou BR",
+    "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 80 (50+15x2) / C: 90 (30+20x3) / AC: 110 (30x3+10x2)",
+    "description": "A version is extremely fast and fully invincible. C and AC is air invincible and brake-able."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Shajou Tai",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B/D: 150 (40x2+70) / BD: 100 (30x2+40)",
+    "description": "Command Grab 236BD can be Rev Accel'd into other special moves for a combo. Hotaru's premier guard cancel, the B+D version actually beats 4 frame light chains and all versions beat DP feint cancels. Another one of Hotaru's special moves that is arbitrarily faster than most other moves of its type, only surpassed by Tizoc's heavy SPD (6248C)"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Rengeki Shuu",
+    "input": "[In air] ↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 80 (30+50) / D: 80 (30+50) / BD: 90 (20x2+50)",
+    "description": "Hotaru's divekick. Useful to alter your jump arc and mess with anti-airs."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Soushou Tenrenge",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "230 (10x8+5x7+115) 38 (3x8+2x7) (block)",
+    "description": "-"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Soushou Tenrenge",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "320 (15x8+10x8+120) 56 (4x8+3x6) (block)",
+    "description": "-"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Tenshou Ranki",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "220 (30x3+130) 36 (12x3) (block)",
+    "description": "Side swaps after completion unless done in the corner"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Tenshou Ranki BR",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "300 (50x3+10x5+100) 51 (16x2+19) (block)",
+    "description": "Side swaps after completion unless done in the corner"
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Freeze Fang: Souhou Chihigiri",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "456 (88+44x2+88+192) 75 (block)",
+    "description": "Goes stupidly far in 6 frames with no travel time, so if you know your frame data you can use this to pick up punishes most characters can't hope for. This also means it's easy to combo into in juggles or grounded confirms, and it can work as an anti air. After the super, crouch A will beat 4f+ normals if they choose to attack (or jump), but conversions are limited. Instant Air Rev Blow covers many options they can do, losing mostly only to High Dodge Attack and supers."
+  }
+]

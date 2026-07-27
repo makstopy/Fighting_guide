@@ -1,138 +1,135 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Prick Stick",
-      "input": "→ + [[FF:LP]]",
-      "damage": "80",
-      "description": "Unlike 5CR, does not require a counterhit / Wild Punish to start a combo Can be made safer (up to -4 and too far for a Close A to activate) by using a meaty setup. A counterhit, meaty 6A can combo into Far D."
-    },
-    {
-      "category": "Command Combos",
-      "name": "Command Combo",
-      "input": "[[FF:HP]] > [[FF:HP]]",
-      "damage": "40",
-      "description": "Combos into anything Far C would, except 214D always whiffs Can be delayed by up to 2 frames after Far C connects"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Union Shot",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Moves Mr Big forward by about 1/3 of the screen, and has enough range to hit from even further thanks to an extended hitbox."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Cross Shot",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Upon activation, briefly floats Mr Big upward before diving to the ground. Mr Big will also roll forward a short distance after landing."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Cross Diving BR",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 90 / D: 120 / BD: 130",
-      "description": "Can be braked at any point after the first active frame to cancel the rest of the flight and immediately enter recovery frames Mostly very unsafe (can be mitigated with extremely accurate spacing, attempting to utilize this is not recommended), but has very long range and launches on counterhit. Launches on counterhit Can be used to bypass these projectiles by flying over/through it. Anything not listed here can hit Mr Big during the flight. Rock's Reppuken (All versions) Terry's Power Wave (A/C versions) B. Jenet's Baffles (All versions) Hokutomaru's Shuriken (Regular versions, the move's hitbox destroys the projectiles) Rock's Reppuken (All versions) Terry's Power Wave (A/C versions) B. Jenet's Baffles (All versions) Hokutomaru's Shuriken (Regular versions, the move's hitbox destroys the projectiles) Fastest startup, but shortest range While 623K and 214K are better Guard Cancel options in many situations, 236B is a great option in its own right with powerful, niche applications where it can shine, such as to launch the counterhit recovery state of a braked anti-air (especially Kain flashkick) and Billy's Far C special cancels from long range Slowest startup, better range than the light version Still fast enough to launch a braked anti-air if used as a guard cancel, but too slow to punish most other attacks Same range as the heavy version, but slightly faster startup (still slower than the light version) Can be made safe on block (or start a combo on hit) by canceling into another Rev special, making it a solid option for approaching the opponent"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Crazy Drum BR",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 60 (15x4) / D: 80 (20x4) / BD: 130 (20x4+50)",
-      "description": "Mr Big’s most reliable special attack for Guard Cancels at close range. Use 236B instead if the opponent is too far. Any special-cancelable normal can combo into this, if Mr Big is close enough. Can only start/extend a combo if it hits an airborne/juggled opponent, or as counterhit / Wild Punish. Slower and just barely unsafe on block, but launches the opponent just enough to start a combo on hit. Any special-cancelable heavy attack can combo into this, assuming the opponent is close enough. On hit, combos into 623C (brake). Slower than the light version, but faster than the heavy version. Adds a fifth hit, but can be braked to stop on the fourth and remain safe on block. Although the final hit is unsafe on block, it can be canceled into another Rev special, keeping Mr Big safe at the cost of additional Rev meter."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Drum Shot",
-      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 140 10x6+80 / D: 140 10x6+80 / BD: 100 10x6+40",
-      "description": "Has slightly more range compared to regular grabs. Mr Big’s best guard cancel option in many situations, if the opponent is close enough Rev version starts a harshly-scaled combo on hit and can be canceled into other Rev specials. Can lead to big damage if Mr Big has super meter to spend."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Ground Blaster",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 [80] / C: 60 [100] / AC: 80",
-      "description": "Light and heavy versions have a close-range hitbox that is only active for 2 frames with better damage and advantage on block than the projectile. It also knocks the opponent down on hit. The numbers in [brackets] represent values for the close-range hitbox (exact range is very slightly shorter than 1 forward hop). Shortest range, will hit from slightly shorter than round start distance The short range hitbox will launch on counterhit, a projectile counterhit stumbles the opponent for 32 frames Slower startup, but better damage, advantage on block/hit, and range (will hit from slightly further than round-start) The short range hitbox will launch on counterhit, a projectile counterhit stumbles the opponent for 35 frames Can be used as a frame-trap tool if canceled into from Close C Fires a fullscreen projectile along the ground, but does not include the close-range hitbox that the normal versions have and will never launch on counterhit (stumbles opponent for 38 frames) Same startup as the light version with better damage on the projectile, and is always at least +2 on block"
-    },
-    {
-      "category": "Special Moves",
-      "name": "California Romance BR",
-      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 80 (30+50) / C: 110 (30+20+60) / AC: 130 (40+20+70)",
-      "description": "This is not fully invulnerable during startup (or ever). Do not use this as a reversal. It is, however, immediately invulnerable to air attacks through all of its startup and first half of its active frames. Mr Big's fastest anti-air, and it hits twice Hits from slightly shorter than round-start distance, or the distance of a full jump Adds a long dash before attacking. Despite retaining air-invulnerability, this is way too slow to be used as an anti-air, and so it is mostly used as combo filler. Can be braked at two different points: If braked during the startup dash on the ground, immediately enters recovery frames after 9 frames of air-invulnerable dashing Otherwise, can be braked right as the attack becomes active to stop Mr Big from going airborne and cancel the third hit. This is still barely punishable on block, unlike other braked anti-air specials. If braked during the startup dash on the ground, immediately enters recovery frames after 9 frames of air-invulnerable dashing Otherwise, can be braked right as the attack becomes active to stop Mr Big from going airborne and cancel the third hit. This is still barely punishable on block, unlike other braked anti-air specials. Slightly slower than the light version, but with longer range. It is still fast enough to combo from any special-cancelable attack, making it an excellent tool for starting combos from lights. Has the same two brake points as the heavy version, but is actually safe on block Braked version launches the opponent higher than the braked heavy version"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Silat Parry",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: - / C: - / AC: -",
-      "description": "The light version blocks any non-projectile attack that does not hit low, even super attacks The heavy version blocks lows, and will not block any other kind of attack The Rev version will block any non-projectile attack. If a mid/high attack is blocked, the mid counterattack will be used. If a low attack is blocked, the low counterattack will be used. Mr. Big automatically follows up with an attack if he successfully parries an attack. This special automatic attack has 34 frames of full invulnerability with no recovery frames, allowing Mr. Big to immediately block if it counters an invincible, multi-hitting super. If an attack does not match the correct version of 214P used, it will hit as a Wild Punish starting on frame 3 (before this, it is a counterhit) The counterattack follow-ups can be manually activated, but these attacks will not have invulnerability and come with 1 less frame of advantage on hit. See the section below for more details"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Alpha",
-      "input": "↓ ↙ ← + [[FF:LP]] > [[FF:P]]",
-      "damage": "90",
-      "description": "The exact cancel window is from frame 11 to 15 during the 214A stance Unsafe on block at close range, good spacing will make punishes difficult or impossible"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Beta",
-      "input": "↓ ↙ ← + [[FF:HP]] > [[FF:P]]",
-      "damage": "110",
-      "description": "The exact cancel window is from frame 11 to 15 of the 214C stance Hits low. Unsafe at close range, good spacing will make punishes difficult or impossible"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Charlie",
-      "input": "↓ ↙ ← + [[FF:LP]] [[FF:HP]] > [[FF:LP]]",
-      "damage": "100",
-      "description": "The exact cancel window is from frame 11 to 20 of the 214AC stance Safe on block Can start a combo if canceled into another Rev special Scales combos by an extra 15%, for a total of 40% (5% move, 20% REV Art, 15% extra)."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Delta",
-      "input": "↓ ↙ ← + [[FF:LP]] [[FF:HP]] > [[FF:HP]]",
-      "damage": "120",
-      "description": "The exact cancel window is from frame 11 to 20 of the 214AC stance Safe on block Hits low and can start a combo if canceled into another Rev special. Scales combos by an extra 15%, for a total of 40% (5% move, 20% REV Art, 15% extra)."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Blaster Wave",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "240 30x5+90",
-      "description": "Because this move spawns a projectile and is not a strike move \"connected\" to Mr. Big himself, JDing all of the hits of the move causes the extra JD stop frames to delay the blockstun of this move beyond normal amounts, resulting in a frame advantage for him to what would normally be about -30. This creates a win-win situation for Mr. Big if this is used as an anti-air: if it hits, it hits. If it gets JD'd, the opponent will have to JD all the remaining hits in order to not take damage, but doing so probably results in it being safe or even plus for Mr. Big. This creates a win-win situation for Mr. Big if this is used as an anti-air: if it hits, it hits. If it gets JD'd, the opponent will have to JD all the remaining hits in order to not take damage, but doing so probably results in it being safe or even plus for Mr. Big."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Blaster Wave",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "310 30x5+160",
-      "description": "Because this move spawns a projectile and is not a strike move \"connected\" to Mr. Big himself, JDing all of the hits of the move causes the extra JD stop frames to delay the blockstun of this move beyond normal amounts, resulting in a frame advantage for him to what would normally be about -30. This creates a win-win situation for Mr. Big if this is used as an anti-air: if it hits, it hits. If it gets JD'd, the opponent will have to JD all the remaining hits in order to not take damage, but doing so probably results in it being safe or even plus for Mr. Big. This creates a win-win situation for Mr. Big if this is used as an anti-air: if it hits, it hits. If it gets JD'd, the opponent will have to JD all the remaining hits in order to not take damage, but doing so probably results in it being safe or even plus for Mr. Big."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Rising Spear",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "250 15x10+10",
-      "description": "Also great for use as a Guard Cancel during an opponent’s blockstring, unless the opponent is using a long-range attack (e.g. Billy Far C blockstrings) The slower startup of the 1-bar version ( 236236B ) allows it to beat safejumps. For the extra meter spent, the 2-bar version ( 236236D ) is faster and deals more damage. Using it as a Guard Cancel on wakeup will scale the damage for no benefit at all (it is already active and invulnerable on frame 1), and should be avoided."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Rising Spear",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "340 5x10 + 30 + 10x10 + 160",
-      "description": "Also great for use as a Guard Cancel during an opponent’s blockstring, unless the opponent is using a long-range attack (e.g. Billy Far C blockstrings) The slower startup of the 1-bar version ( 236236B ) allows it to beat safejumps. For the extra meter spent, the 2-bar version ( 236236D ) is faster and deals more damage. Using it as a Guard Cancel on wakeup will scale the damage for no benefit at all (it is already active and invulnerable on frame 1), and should be avoided."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Lethal Dose Blues",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "440 55 + 33x4 + 11x8 + 165",
-      "description": "Short range Leaves Mr Big at approximately hop distance away from the opponent after the cinematic"
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Prick Stick",
+    "input": "→ + [[FF:LP]]",
+    "damage": "80",
+    "description": "Unlike 5CR, does not require a counterhit / Wild Punish to start a combo Can be made safer (up to -4 and too far for a Close A to activate) by using a meaty setup. A counterhit, meaty 6A can combo into Far D."
+  },
+  {
+    "category": "Command Combos",
+    "name": "Command Combo",
+    "input": "[[FF:HP]] > [[FF:HP]]",
+    "damage": "40",
+    "description": "Combos into anything Far C would, except 214D always whiffs Can be delayed by up to 2 frames after Far C connects"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Union Shot",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Moves Mr Big forward by about 1/3 of the screen, and has enough range to hit from even further thanks to an extended hitbox."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Cross Shot",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Upon activation, briefly floats Mr Big upward before diving to the ground. Mr Big will also roll forward a short distance after landing."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Cross Diving BR",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 90 / D: 120 / BD: 130",
+    "description": "Can be braked at any point after the first active frame to cancel the rest of the flight and immediately enter recovery frames Mostly very unsafe (can be mitigated with extremely accurate spacing, attempting to utilize this is not recommended), but has very long range and launches on counterhit. Launches on counterhit Can be used to bypass these projectiles by flying over/through it. Anything not listed here can hit Mr Big during the flight. Rock's Reppuken (All versions) Terry's Power Wave (A/C versions) B. Jenet's Baffles (All versions) Hokutomaru's Shuriken (Regular versions, the move's hitbox destroys the projectiles) Rock's Reppuken (All versions) Terry's Power Wave (A/C versions) B. Jenet's Baffles (All versions) Hokutomaru's Shuriken (Regular versions, the move's hitbox destroys the projectiles) Fastest startup, but shortest range While 623K and 214K are better Guard Cancel options in many situations, 236B is a great option in its own right with powerful, niche applications where it can shine, such as to launch the counterhit recovery state of a braked anti-air (especially Kain flashkick) and Billy's Far C special cancels from long range Slowest startup, better range than the light version Still fast enough to launch a braked anti-air if used as a guard cancel, but too slow to punish most other attacks Same range as the heavy version, but slightly faster startup (still slower than the light version) Can be made safe on block (or start a combo on hit) by canceling into another Rev special, making it a solid option for approaching the opponent"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Crazy Drum BR",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 60 (15x4) / D: 80 (20x4) / BD: 130 (20x4+50)",
+    "description": "Mr Big’s most reliable special attack for Guard Cancels at close range. Use 236B instead if the opponent is too far. Any special-cancelable normal can combo into this, if Mr Big is close enough. Can only start/extend a combo if it hits an airborne/juggled opponent, or as counterhit / Wild Punish. Slower and just barely unsafe on block, but launches the opponent just enough to start a combo on hit. Any special-cancelable heavy attack can combo into this, assuming the opponent is close enough. On hit, combos into 623C (brake). Slower than the light version, but faster than the heavy version. Adds a fifth hit, but can be braked to stop on the fourth and remain safe on block. Although the final hit is unsafe on block, it can be canceled into another Rev special, keeping Mr Big safe at the cost of additional Rev meter."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Drum Shot",
+    "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 140 10x6+80 / D: 140 10x6+80 / BD: 100 10x6+40",
+    "description": "Has slightly more range compared to regular grabs. Mr Big’s best guard cancel option in many situations, if the opponent is close enough Rev version starts a harshly-scaled combo on hit and can be canceled into other Rev specials. Can lead to big damage if Mr Big has super meter to spend."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Ground Blaster",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 [80] / C: 60 [100] / AC: 80",
+    "description": "Light and heavy versions have a close-range hitbox that is only active for 2 frames with better damage and advantage on block than the projectile. It also knocks the opponent down on hit. The numbers in [brackets] represent values for the close-range hitbox (exact range is very slightly shorter than 1 forward hop). Shortest range, will hit from slightly shorter than round start distance The short range hitbox will launch on counterhit, a projectile counterhit stumbles the opponent for 32 frames Slower startup, but better damage, advantage on block/hit, and range (will hit from slightly further than round-start) The short range hitbox will launch on counterhit, a projectile counterhit stumbles the opponent for 35 frames Can be used as a frame-trap tool if canceled into from Close C Fires a fullscreen projectile along the ground, but does not include the close-range hitbox that the normal versions have and will never launch on counterhit (stumbles opponent for 38 frames) Same startup as the light version with better damage on the projectile, and is always at least +2 on block"
+  },
+  {
+    "category": "Special Moves",
+    "name": "California Romance BR",
+    "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 80 (30+50) / C: 110 (30+20+60) / AC: 130 (40+20+70)",
+    "description": "This is not fully invulnerable during startup (or ever). Do not use this as a reversal. It is, however, immediately invulnerable to air attacks through all of its startup and first half of its active frames. Mr Big's fastest anti-air, and it hits twice Hits from slightly shorter than round-start distance, or the distance of a full jump Adds a long dash before attacking. Despite retaining air-invulnerability, this is way too slow to be used as an anti-air, and so it is mostly used as combo filler. Can be braked at two different points: If braked during the startup dash on the ground, immediately enters recovery frames after 9 frames of air-invulnerable dashing Otherwise, can be braked right as the attack becomes active to stop Mr Big from going airborne and cancel the third hit. This is still barely punishable on block, unlike other braked anti-air specials. If braked during the startup dash on the ground, immediately enters recovery frames after 9 frames of air-invulnerable dashing Otherwise, can be braked right as the attack becomes active to stop Mr Big from going airborne and cancel the third hit. This is still barely punishable on block, unlike other braked anti-air specials. Slightly slower than the light version, but with longer range. It is still fast enough to combo from any special-cancelable attack, making it an excellent tool for starting combos from lights. Has the same two brake points as the heavy version, but is actually safe on block Braked version launches the opponent higher than the braked heavy version"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Silat Parry",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: - / C: - / AC: -",
+    "description": "The light version blocks any non-projectile attack that does not hit low, even super attacks The heavy version blocks lows, and will not block any other kind of attack The Rev version will block any non-projectile attack. If a mid/high attack is blocked, the mid counterattack will be used. If a low attack is blocked, the low counterattack will be used. Mr. Big automatically follows up with an attack if he successfully parries an attack. This special automatic attack has 34 frames of full invulnerability with no recovery frames, allowing Mr. Big to immediately block if it counters an invincible, multi-hitting super. If an attack does not match the correct version of 214P used, it will hit as a Wild Punish starting on frame 3 (before this, it is a counterhit) The counterattack follow-ups can be manually activated, but these attacks will not have invulnerability and come with 1 less frame of advantage on hit. See the section below for more details"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Alpha",
+    "input": "↓ ↙ ← + [[FF:LP]] > [[FF:P]]",
+    "damage": "90",
+    "description": "The exact cancel window is from frame 11 to 15 during the 214A stance Unsafe on block at close range, good spacing will make punishes difficult or impossible"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Beta",
+    "input": "↓ ↙ ← + [[FF:HP]] > [[FF:P]]",
+    "damage": "110",
+    "description": "The exact cancel window is from frame 11 to 15 of the 214C stance Hits low. Unsafe at close range, good spacing will make punishes difficult or impossible"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Charlie",
+    "input": "↓ ↙ ← + [[FF:LP]] [[FF:HP]] > [[FF:LP]]",
+    "damage": "100",
+    "description": "The exact cancel window is from frame 11 to 20 of the 214AC stance Safe on block Can start a combo if canceled into another Rev special Scales combos by an extra 15%, for a total of 40% (5% move, 20% REV Art, 15% extra)."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Delta",
+    "input": "↓ ↙ ← + [[FF:LP]] [[FF:HP]] > [[FF:HP]]",
+    "damage": "120",
+    "description": "The exact cancel window is from frame 11 to 20 of the 214AC stance Safe on block Hits low and can start a combo if canceled into another Rev special. Scales combos by an extra 15%, for a total of 40% (5% move, 20% REV Art, 15% extra)."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Blaster Wave",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "240 30x5+90",
+    "description": "Because this move spawns a projectile and is not a strike move \"connected\" to Mr. Big himself, JDing all of the hits of the move causes the extra JD stop frames to delay the blockstun of this move beyond normal amounts, resulting in a frame advantage for him to what would normally be about -30. This creates a win-win situation for Mr. Big if this is used as an anti-air: if it hits, it hits. If it gets JD'd, the opponent will have to JD all the remaining hits in order to not take damage, but doing so probably results in it being safe or even plus for Mr. Big. This creates a win-win situation for Mr. Big if this is used as an anti-air: if it hits, it hits. If it gets JD'd, the opponent will have to JD all the remaining hits in order to not take damage, but doing so probably results in it being safe or even plus for Mr. Big."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Blaster Wave",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "310 30x5+160",
+    "description": "Because this move spawns a projectile and is not a strike move \"connected\" to Mr. Big himself, JDing all of the hits of the move causes the extra JD stop frames to delay the blockstun of this move beyond normal amounts, resulting in a frame advantage for him to what would normally be about -30. This creates a win-win situation for Mr. Big if this is used as an anti-air: if it hits, it hits. If it gets JD'd, the opponent will have to JD all the remaining hits in order to not take damage, but doing so probably results in it being safe or even plus for Mr. Big. This creates a win-win situation for Mr. Big if this is used as an anti-air: if it hits, it hits. If it gets JD'd, the opponent will have to JD all the remaining hits in order to not take damage, but doing so probably results in it being safe or even plus for Mr. Big."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Rising Spear",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "250 15x10+10",
+    "description": "Also great for use as a Guard Cancel during an opponent’s blockstring, unless the opponent is using a long-range attack (e.g. Billy Far C blockstrings) The slower startup of the 1-bar version ( 236236B ) allows it to beat safejumps. For the extra meter spent, the 2-bar version ( 236236D ) is faster and deals more damage. Using it as a Guard Cancel on wakeup will scale the damage for no benefit at all (it is already active and invulnerable on frame 1), and should be avoided."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Rising Spear",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "340 5x10 + 30 + 10x10 + 160",
+    "description": "Also great for use as a Guard Cancel during an opponent’s blockstring, unless the opponent is using a long-range attack (e.g. Billy Far C blockstrings) The slower startup of the 1-bar version ( 236236B ) allows it to beat safejumps. For the extra meter spent, the 2-bar version ( 236236D ) is faster and deals more damage. Using it as a Guard Cancel on wakeup will scale the damage for no benefit at all (it is already active and invulnerable on frame 1), and should be avoided."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Lethal Dose Blues",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "440 55 + 33x4 + 11x8 + 165",
+    "description": "Short range Leaves Mr Big at approximately hop distance away from the opponent after the cinematic"
+  }
+]

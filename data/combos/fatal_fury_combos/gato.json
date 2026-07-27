@@ -1,166 +1,163 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Chinbreaker",
-      "input": "→ + [[FF:LP]]",
-      "damage": "60",
-      "description": "Hits overhead Links into 2A at really close range Can hit meaty to be upwards of +7 on hit, however, Gato will always be pushed out of the activation range of cl.C, so the reward remains more or less the same, only can convert into 623D/BD brake for more damage Startup animation is practically indistinguishable from Quaking Fang (236P) and Forward Feint (6D+REV) 50/50 setup after B super in the corner, full jump into either forward feint (6D+REV) into 2B or 6A"
-    },
-    {
-      "category": "Command Moves",
-      "name": "Tranquil Kick",
-      "input": "→ + [[FF:LK]]",
-      "damage": "80",
-      "description": "Gato does a long reaching leaping kick capable of avoiding low pokes and grounded projectiles Has a very high hitbox, letting you hit people out of jumps and hops quite consistently With proper spacing it can be made plus on block Can link into 2A on normal hit and cl.B(or even cl.C) on counter hit/Wild Punish depending on spacing"
-    },
-    {
-      "category": "Command Moves",
-      "name": "Aerial Turn",
-      "input": "[In air] [[FF:REV]]",
-      "damage": "-",
-      "description": "Gato faces the other side while airborne, mainly used for cross-ups Jumping over with this properly lets you bait most reversals while maintaining offense by landing with j.D"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Mouko Kou Hazan",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "120",
-      "description": "Hyper armor starts from frame 2 and lasts until recovery Hyper armor will absorb any strike except supers and High Dodge Attacks"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Ryuujin Kyayu",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "120",
-      "description": "Completely alters Gato's jump arc, briefly lifting him up in the air before he plummets down heel first Has quite a bit of forward momentum, potentially flying over the opponent and landing on the other side of them when performed up close - whiffing completely"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Quaking Fang",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 40 / C: 60 / AC: 60",
-      "description": "Less safe and less good than it usually is in other games. A version frametraps from lights, C version from lights and heavies (except for cl.5C). A version is still an excellent tool as it is safe from buttons at max spacing (easy to get in pressure with lights) and easily converts from lights in neutral. A and REV Art version both travel the same distance. C version covers farther distance, but due to its lack of safety, sees use mostly as a combo tool."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Piercing Fang",
-      "input": "→ + [[FF:LP]]",
-      "damage": "A/C > P: 30 / AC > P: 30",
-      "description": "Can be delayed after Quaking Fang to frametrap REV Art version can also be delayed; this does not frametrap, but does delay HD timing Can be canceled into Lull by holding A or C. Holding AC cancels into EX Lull; but REV Art version must use REV Accel to cancel into EX Lull. Instead of holding buttons, you can also cancel into Lull by timing your button press to be during Piercing Fang's recovery. Instead of holding buttons, you can also cancel into Lull by timing your button press to be during Piercing Fang's recovery. REV Art version does not knockdown"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Lull",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "-",
-      "description": "Gato turns his back to the opponent, becoming unable to block but gaining access to a new set of moves Stance with 5 follow-ups: A stance cancel (A) A counter that catches highs, mids and lows, and nullifies projectiles (B) A series of 3 strikes (C) A command grab (D) A dash cancel (66) At 12f is the earliest you can go into these follow-ups. Stance cancel (A) and dash cancel (66) exit the Lull stance; after all the other follow-ups, you go back to the Lull stance. The dash cancel is distinct from a regular forward dash as it is completely inactionable throughout its duration Gato can move around while his back is turned to reposition himself, but only laterally"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Return",
-      "input": "[[FF:LP]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:L]] [[FF:u]] [[FF:l]] [[FF:l]]",
-      "damage": "-",
-      "description": "Exits Lull stance."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Black Fang",
-      "input": "[[FF:LK]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:L]] [[FF:u]] [[FF:l]] [[FF:l]]",
-      "damage": "A/C > B: 150 / AC > B: 120",
-      "description": "Counter that uniquely catches all strikes regardless of how they're normally guarded As of the Season 2 beginning patch, normal version nullifies projectiles, REV version reflects them Extremely high reward when catching REV Blows as it causes an unscaled counter hit launch Lengthy recovery where Gato can be thrown or Wild Punished should he fail to catch something Can quick cancel into Black Fang again or into White Fang anytime during this lengthy recovery"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Soaring Fang",
-      "input": "[[FF:HP]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:L]] [[FF:u]] [[FF:l]] [[FF:l]]",
-      "damage": "A/C > C: 100 (20+20+60) / AC > C: 120 (30+30+60)",
-      "description": "Multihit multitool (3 hits). Your best DP punish, and a very high damage DP punish starter in general. Can quick cancel and exit Lull stance immediately after the 3rd hit by pressing A. (Can press as early as the startup of the 2nd hit and as late as during the 3rd hit.) Can quick cancel into Black Fang or into White Fang anytime during recovery Both EX and normal version are used in all of his best juggles for optimal damage and meter efficiency."
-    },
-    {
-      "category": "Special Moves",
-      "name": "White Fang",
-      "input": "[[FF:HK]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:L]] [[FF:u]] [[FF:l]] [[FF:l]]",
-      "damage": "A/C > D: 120 / AC > D: 100",
-      "description": "Command grab Gato can set up tick throws by cancelling his lights into White Fang"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Lightning Fang",
-      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 80 (50+5*3+15) / D: 100 ( 40 +5*4+40) / BD: 130 ( 50 +10*4+40)",
-      "description": "B version has invul frames D version and REV are now the same speed as of the season 2 opening patch D and Rev version can be braked on the first hit Optimal way to go into 1EX combos. Has less forward movement than other DP brakes, making it worse for conversions but better for anti airs."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Wind Fang",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 50 / D: 60 / BD: 80",
-      "description": "B version is a great cancel option from an anti-air high dodge, allowing you to react to a counter hit with Whirling Fang (214K > B) or remain safe/plus with Vortex Fang (214K > A) in case of a flipout. D version can be braked at -2. Very useful in frametraps."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Vortex Fang",
-      "input": "[[FF:LP]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:W]] [[FF:i]] [[FF:n]] [[FF:d]] [[FF:F]] [[FF:a]] [[FF:n]] [[FF:g]]",
-      "damage": "B > A: 60 / D > A: 60 / BD > A: 80",
-      "description": "Psuedo projectile that hits the ground diagonally across from Gato. Hits the area right in front of Gato when done from 214B and 214BD Hits around two character's lengths away from Gato when done from 214D The 214BD > A version can be cancelled into air REV Blow, creating a gapless blockstring that takes off 60% of the opponents guard gauge when they're overheated"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Whirling Fang",
-      "input": "[[FF:LK]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:W]] [[FF:i]] [[FF:n]] [[FF:d]] [[FF:F]] [[FF:a]] [[FF:n]] [[FF:g]]",
-      "damage": "B/D > B: 50 / BD > B: 120 (60+60)",
-      "description": "Normal version is a combo tool for certain juggles, specifically when the juggle limit of 214P ~ C has been reached The 214BD ~ B version grants a very high juggle that lets Gato follow-up with basically anything he wants, often completely refunding the REV spent on 214BD if no other EX move is used The 214BD ~ B version can not hit grounded opponents, though this rarely matters as 214BD launches them up for a juggle anyway"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Arrow Fang",
-      "input": "[[FF:HP]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:W]] [[FF:i]] [[FF:n]] [[FF:d]] [[FF:F]] [[FF:a]] [[FF:n]] [[FF:g]]",
-      "damage": "B/D > C: 60 / BD > C: 80",
-      "description": "A divekick that's quite easy to make safe with large pushback. Mostly good for landing quickly after using wind fang or for frametrapping off a blocked wind fang. Wind Fang's angle makes this not really great for getting in. Can substitute Whirling Fang (214K ~ B) when in the corner to squeeze a little more damage out of a combo"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Sliding Fang",
-      "input": "[[FF:HK]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:W]] [[FF:i]] [[FF:n]] [[FF:d]] [[FF:F]] [[FF:a]] [[FF:n]] [[FF:g]]",
-      "damage": "B/D > D: 60 / BD > D: 80",
-      "description": "A lot weaker than it usually is. Not a mixup as he doesn't have an overhead from demon flip anymore. Quite easy to make it hit very meaty after a hard knockdown, letting Gato be +3 and point blank to threaten with cl.B, which will combo if the opponent doesn't block Sliding Fang"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Freeze Fang",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "70 + 160 = 230",
-      "description": "Provides a poor knockdown as it leaves Gato very far from the opponent, even in the corner Generally outclassed by Dragon Fang(236236B) in most situations, however Freeze Fang is much easier to combo into, giving it a niche as a round closing option following a 2B or a 6A"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Dragon Fang",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "250 (100 + 20*4 + 70)",
-      "description": "Has a sweet spot close to Gato, signaled by the slightly more dramatic hitstop on the first hit and a zoom-in on the last hit Failing to hit the sweet spot causes the last hit to whiff, resulting in less knockdown advantage and significantly worse damage Gato's preferred way to spend one bar as it gives him a better knockdown than 236236A while also dealing more damage"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Freeze Fang",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "310 (100 + 80 + 130)",
-      "description": "Identical range to the A version Provides an even worse knockdown than the A version Looks very cool Can be braked on the first hit"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Dragon Fang",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "330 (20*12 + 90)",
-      "description": "One frame faster than the B version, allowing it to be used in even lower juggles"
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Shin: Tenryuu Retsuga",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "456 (88 + 33 + 33 + 44 + 60 + 198)",
-      "description": "Does 75 damage in chip unless JD'd or REV guarded Generally what Gato wants to spend 2 bars on if the opportunity presents itself and he wants to cash out, as he has no double level 1 combo routes"
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Chinbreaker",
+    "input": "→ + [[FF:LP]]",
+    "damage": "60",
+    "description": "Hits overhead Links into 2A at really close range Can hit meaty to be upwards of +7 on hit, however, Gato will always be pushed out of the activation range of cl.C, so the reward remains more or less the same, only can convert into 623D/BD brake for more damage Startup animation is practically indistinguishable from Quaking Fang (236P) and Forward Feint (6D+REV) 50/50 setup after B super in the corner, full jump into either forward feint (6D+REV) into 2B or 6A"
+  },
+  {
+    "category": "Command Moves",
+    "name": "Tranquil Kick",
+    "input": "→ + [[FF:LK]]",
+    "damage": "80",
+    "description": "Gato does a long reaching leaping kick capable of avoiding low pokes and grounded projectiles Has a very high hitbox, letting you hit people out of jumps and hops quite consistently With proper spacing it can be made plus on block Can link into 2A on normal hit and cl.B(or even cl.C) on counter hit/Wild Punish depending on spacing"
+  },
+  {
+    "category": "Command Moves",
+    "name": "Aerial Turn",
+    "input": "[In air] [[FF:REV]]",
+    "damage": "-",
+    "description": "Gato faces the other side while airborne, mainly used for cross-ups Jumping over with this properly lets you bait most reversals while maintaining offense by landing with j.D"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Mouko Kou Hazan",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "120",
+    "description": "Hyper armor starts from frame 2 and lasts until recovery Hyper armor will absorb any strike except supers and High Dodge Attacks"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Ryuujin Kyayu",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "120",
+    "description": "Completely alters Gato's jump arc, briefly lifting him up in the air before he plummets down heel first Has quite a bit of forward momentum, potentially flying over the opponent and landing on the other side of them when performed up close - whiffing completely"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Quaking Fang",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 40 / C: 60 / AC: 60",
+    "description": "Less safe and less good than it usually is in other games. A version frametraps from lights, C version from lights and heavies (except for cl.5C). A version is still an excellent tool as it is safe from buttons at max spacing (easy to get in pressure with lights) and easily converts from lights in neutral. A and REV Art version both travel the same distance. C version covers farther distance, but due to its lack of safety, sees use mostly as a combo tool."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Piercing Fang",
+    "input": "→ + [[FF:LP]]",
+    "damage": "A/C > P: 30 / AC > P: 30",
+    "description": "Can be delayed after Quaking Fang to frametrap REV Art version can also be delayed; this does not frametrap, but does delay HD timing Can be canceled into Lull by holding A or C. Holding AC cancels into EX Lull; but REV Art version must use REV Accel to cancel into EX Lull. Instead of holding buttons, you can also cancel into Lull by timing your button press to be during Piercing Fang's recovery. Instead of holding buttons, you can also cancel into Lull by timing your button press to be during Piercing Fang's recovery. REV Art version does not knockdown"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Lull",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "-",
+    "description": "Gato turns his back to the opponent, becoming unable to block but gaining access to a new set of moves Stance with 5 follow-ups: A stance cancel (A) A counter that catches highs, mids and lows, and nullifies projectiles (B) A series of 3 strikes (C) A command grab (D) A dash cancel (66) At 12f is the earliest you can go into these follow-ups. Stance cancel (A) and dash cancel (66) exit the Lull stance; after all the other follow-ups, you go back to the Lull stance. The dash cancel is distinct from a regular forward dash as it is completely inactionable throughout its duration Gato can move around while his back is turned to reposition himself, but only laterally"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Return",
+    "input": "[[FF:LP]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:L]] [[FF:u]] [[FF:l]] [[FF:l]]",
+    "damage": "-",
+    "description": "Exits Lull stance."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Black Fang",
+    "input": "[[FF:LK]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:L]] [[FF:u]] [[FF:l]] [[FF:l]]",
+    "damage": "A/C > B: 150 / AC > B: 120",
+    "description": "Counter that uniquely catches all strikes regardless of how they're normally guarded As of the Season 2 beginning patch, normal version nullifies projectiles, REV version reflects them Extremely high reward when catching REV Blows as it causes an unscaled counter hit launch Lengthy recovery where Gato can be thrown or Wild Punished should he fail to catch something Can quick cancel into Black Fang again or into White Fang anytime during this lengthy recovery"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Soaring Fang",
+    "input": "[[FF:HP]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:L]] [[FF:u]] [[FF:l]] [[FF:l]]",
+    "damage": "A/C > C: 100 (20+20+60) / AC > C: 120 (30+30+60)",
+    "description": "Multihit multitool (3 hits). Your best DP punish, and a very high damage DP punish starter in general. Can quick cancel and exit Lull stance immediately after the 3rd hit by pressing A. (Can press as early as the startup of the 2nd hit and as late as during the 3rd hit.) Can quick cancel into Black Fang or into White Fang anytime during recovery Both EX and normal version are used in all of his best juggles for optimal damage and meter efficiency."
+  },
+  {
+    "category": "Special Moves",
+    "name": "White Fang",
+    "input": "[[FF:HK]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:L]] [[FF:u]] [[FF:l]] [[FF:l]]",
+    "damage": "A/C > D: 120 / AC > D: 100",
+    "description": "Command grab Gato can set up tick throws by cancelling his lights into White Fang"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Lightning Fang",
+    "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 80 (50+5*3+15) / D: 100 ( 40 +5*4+40) / BD: 130 ( 50 +10*4+40)",
+    "description": "B version has invul frames D version and REV are now the same speed as of the season 2 opening patch D and Rev version can be braked on the first hit Optimal way to go into 1EX combos. Has less forward movement than other DP brakes, making it worse for conversions but better for anti airs."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Wind Fang",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 50 / D: 60 / BD: 80",
+    "description": "B version is a great cancel option from an anti-air high dodge, allowing you to react to a counter hit with Whirling Fang (214K > B) or remain safe/plus with Vortex Fang (214K > A) in case of a flipout. D version can be braked at -2. Very useful in frametraps."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Vortex Fang",
+    "input": "[[FF:LP]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:W]] [[FF:i]] [[FF:n]] [[FF:d]] [[FF:F]] [[FF:a]] [[FF:n]] [[FF:g]]",
+    "damage": "B > A: 60 / D > A: 60 / BD > A: 80",
+    "description": "Psuedo projectile that hits the ground diagonally across from Gato. Hits the area right in front of Gato when done from 214B and 214BD Hits around two character's lengths away from Gato when done from 214D The 214BD > A version can be cancelled into air REV Blow, creating a gapless blockstring that takes off 60% of the opponents guard gauge when they're overheated"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Whirling Fang",
+    "input": "[[FF:LK]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:W]] [[FF:i]] [[FF:n]] [[FF:d]] [[FF:F]] [[FF:a]] [[FF:n]] [[FF:g]]",
+    "damage": "B/D > B: 50 / BD > B: 120 (60+60)",
+    "description": "Normal version is a combo tool for certain juggles, specifically when the juggle limit of 214P ~ C has been reached The 214BD ~ B version grants a very high juggle that lets Gato follow-up with basically anything he wants, often completely refunding the REV spent on 214BD if no other EX move is used The 214BD ~ B version can not hit grounded opponents, though this rarely matters as 214BD launches them up for a juggle anyway"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Arrow Fang",
+    "input": "[[FF:HP]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:W]] [[FF:i]] [[FF:n]] [[FF:d]] [[FF:F]] [[FF:a]] [[FF:n]] [[FF:g]]",
+    "damage": "B/D > C: 60 / BD > C: 80",
+    "description": "A divekick that's quite easy to make safe with large pushback. Mostly good for landing quickly after using wind fang or for frametrapping off a blocked wind fang. Wind Fang's angle makes this not really great for getting in. Can substitute Whirling Fang (214K ~ B) when in the corner to squeeze a little more damage out of a combo"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Sliding Fang",
+    "input": "[[FF:HK]] [[FF:a]] [[FF:f]] [[FF:t]] [[FF:e]] [[FF:r]] [[FF:W]] [[FF:i]] [[FF:n]] [[FF:d]] [[FF:F]] [[FF:a]] [[FF:n]] [[FF:g]]",
+    "damage": "B/D > D: 60 / BD > D: 80",
+    "description": "A lot weaker than it usually is. Not a mixup as he doesn't have an overhead from demon flip anymore. Quite easy to make it hit very meaty after a hard knockdown, letting Gato be +3 and point blank to threaten with cl.B, which will combo if the opponent doesn't block Sliding Fang"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Freeze Fang",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "70 + 160 = 230",
+    "description": "Provides a poor knockdown as it leaves Gato very far from the opponent, even in the corner Generally outclassed by Dragon Fang(236236B) in most situations, however Freeze Fang is much easier to combo into, giving it a niche as a round closing option following a 2B or a 6A"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Dragon Fang",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "250 (100 + 20*4 + 70)",
+    "description": "Has a sweet spot close to Gato, signaled by the slightly more dramatic hitstop on the first hit and a zoom-in on the last hit Failing to hit the sweet spot causes the last hit to whiff, resulting in less knockdown advantage and significantly worse damage Gato's preferred way to spend one bar as it gives him a better knockdown than 236236A while also dealing more damage"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Freeze Fang",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "310 (100 + 80 + 130)",
+    "description": "Identical range to the A version Provides an even worse knockdown than the A version Looks very cool Can be braked on the first hit"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Dragon Fang",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "330 (20*12 + 90)",
+    "description": "One frame faster than the B version, allowing it to be used in even lower juggles"
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Shin: Tenryuu Retsuga",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "456 (88 + 33 + 33 + 44 + 60 + 198)",
+    "description": "Does 75 damage in chip unless JD'd or REV guarded Generally what Gato wants to spend 2 bars on if the opportunity presents itself and he wants to cash out, as he has no double level 1 combo routes"
+  }
+]

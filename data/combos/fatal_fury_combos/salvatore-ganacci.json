@@ -1,152 +1,149 @@
-{
-  "arcade": [
-    {
-      "category": "REV Blows",
-      "name": "Spinning Ganacci",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Travels 1/4 of the screen"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Salvatore Stomp",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Cancels air momentum Hits on frame 28"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Amazing Run",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B/D: - / BD: -",
-      "description": "214BD runs faster than normal versions No notable differences between 214B and 214D Will automatically do Stop follow up after a certain amount of time"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Stop",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:LP]] or [[FF:LK]]",
-      "damage": "-",
-      "description": "Cancels Amazing Run Fast on recovery"
-    },
-    {
-      "category": "Special Moves",
-      "name": "You Can't Stop Me!",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HK]]",
-      "damage": "B/D > D: 90 / BD > D: 100",
-      "description": "Can be made safe if spaced or meatied on normal version Rev Version is always safe, or occasionally plus when it hits late enough."
-    },
-    {
-      "category": "Special Moves",
-      "name": "You Can't Hold Me!",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HP]]",
-      "damage": "B/D > C: 70 / BD > C: 100 (40+60)",
-      "description": "Safe On 214BD, the two hits will always come out even on whiff True strings into 214AC-B on 214BD Rev version is the tends to be the only version used"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Earth's Beat",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 60 / D: 90 (60 far) / BD: 120 (50+10+30x2)",
-      "description": "Regular versions are both safe All versions lose to Rev Blow For the anti projectile properties, all versions have to be timed with the projectile Combos from lights Frame traps from lights Gives small combo on counter hit Nullify projectiles Most optimal DP punish starter Frame traps and combos from cl.C On hit, can link into 2C First hit can break to be +4 True strings into Groove stance 50/50 or Amazing Run strike throw situation Can reflect projectiles True strings from heavies"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Sky's Beat",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 20 / C: 20 / AC: 30",
-      "description": "Frame 1 air invulnerable Gives full combo on counter hit 236C is the slowest, 236AC is the fastest, 236A is the middle ground 236A is the fastest meterless guard cancel option 236C gives the most reward off a successful guard cancel 236AC is the overall fastest and safest with S.P.G. but the most expensive and scales the hardest"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Sky's Beat ~ Descend",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:LK]]",
-      "damage": "A/C > B: - / AC > B: -",
-      "description": "Fast recovery On 236A, links only into 236236rev on the lowest hit and the others if hit high enough On 236C, links into 236236D and 236236rev on the lowest hit and will link into 236236B if hit high enough. If close enough also links into 236AC. This makes 236C the most rewarding and preferred anti air option On 236AC, links into every super regardless of height but the scaling is significantly worse"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Sky's Beat ~ Air Swim",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:LP]]",
-      "damage": "A/C > A: 40 / AC > A: 50",
-      "description": "Can stall Sky's beat"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Air Dive",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:HP]]",
-      "damage": "A/C > C: 60 / AC > C: 70",
-      "description": "Brings you straight to the ground"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Groove",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A/C: - / AC: -",
-      "description": "No differences between 214A and 214D"
-    },
-    {
-      "category": "Special Moves",
-      "name": "No More Groove",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:LP]]",
-      "damage": "-",
-      "description": "Cancels the stance Fast recovery"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Scratch",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:LK]]",
-      "damage": "A/C > B: 30 (10x3) / AC > B: 60 (20x3)",
-      "description": "Three hits Can be cancelled into any follow up"
-    },
-    {
-      "category": "Special Moves",
-      "name": "On Cue",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:HP]]",
-      "damage": "A/C > C: 100 / AC > C: 100",
-      "description": "Slightly faster than the low option Can be delayed"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Gain",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:HK]] > [[FF:HK]]",
-      "damage": "A/C > D: 40 (20x2) / A/C~D > D: 60 / AC > D: 40 (20x2) / AC~D > D: 80",
-      "description": "Slightly slower than overhead Can be delayed Safe on REV guard"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Fight Dirty",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "250",
-      "description": "1F counter super, win against any attack exept cross-up and throw. Because it's 1 frame, it can't be safe-jumped."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Fight Dirty",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "300",
-      "description": "1F counter super, win against any attack exept cross-up and throw. Because it's 1 frame, it can't be safe-jumped."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "B&A.F",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "220 ((20x4)x2+60)",
-      "description": "Both version are full invincible D version will always play an unskippable dance animation on K.O B version has more range while the D version is faster"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "B&A.F",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "310 (10x19+20+100)",
-      "description": "Both version are full invincible D version will always play an unskippable dance animation on K.O B version has more range while the D version is faster"
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Ultimate Beat: II Salvatore",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "451 (88+11x25+88)",
-      "description": "Resets the Rev meter to 0%, even during Overheat."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "REV Blows",
+    "name": "Spinning Ganacci",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Travels 1/4 of the screen"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Salvatore Stomp",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Cancels air momentum Hits on frame 28"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Amazing Run",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B/D: - / BD: -",
+    "description": "214BD runs faster than normal versions No notable differences between 214B and 214D Will automatically do Stop follow up after a certain amount of time"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Stop",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:LP]] or [[FF:LK]]",
+    "damage": "-",
+    "description": "Cancels Amazing Run Fast on recovery"
+  },
+  {
+    "category": "Special Moves",
+    "name": "You Can't Stop Me!",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HK]]",
+    "damage": "B/D > D: 90 / BD > D: 100",
+    "description": "Can be made safe if spaced or meatied on normal version Rev Version is always safe, or occasionally plus when it hits late enough."
+  },
+  {
+    "category": "Special Moves",
+    "name": "You Can't Hold Me!",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HP]]",
+    "damage": "B/D > C: 70 / BD > C: 100 (40+60)",
+    "description": "Safe On 214BD, the two hits will always come out even on whiff True strings into 214AC-B on 214BD Rev version is the tends to be the only version used"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Earth's Beat",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 60 / D: 90 (60 far) / BD: 120 (50+10+30x2)",
+    "description": "Regular versions are both safe All versions lose to Rev Blow For the anti projectile properties, all versions have to be timed with the projectile Combos from lights Frame traps from lights Gives small combo on counter hit Nullify projectiles Most optimal DP punish starter Frame traps and combos from cl.C On hit, can link into 2C First hit can break to be +4 True strings into Groove stance 50/50 or Amazing Run strike throw situation Can reflect projectiles True strings from heavies"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Sky's Beat",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 20 / C: 20 / AC: 30",
+    "description": "Frame 1 air invulnerable Gives full combo on counter hit 236C is the slowest, 236AC is the fastest, 236A is the middle ground 236A is the fastest meterless guard cancel option 236C gives the most reward off a successful guard cancel 236AC is the overall fastest and safest with S.P.G. but the most expensive and scales the hardest"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Sky's Beat ~ Descend",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:LK]]",
+    "damage": "A/C > B: - / AC > B: -",
+    "description": "Fast recovery On 236A, links only into 236236rev on the lowest hit and the others if hit high enough On 236C, links into 236236D and 236236rev on the lowest hit and will link into 236236B if hit high enough. If close enough also links into 236AC. This makes 236C the most rewarding and preferred anti air option On 236AC, links into every super regardless of height but the scaling is significantly worse"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Sky's Beat ~ Air Swim",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:LP]]",
+    "damage": "A/C > A: 40 / AC > A: 50",
+    "description": "Can stall Sky's beat"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Air Dive",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]] > [[FF:HP]]",
+    "damage": "A/C > C: 60 / AC > C: 70",
+    "description": "Brings you straight to the ground"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Groove",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A/C: - / AC: -",
+    "description": "No differences between 214A and 214D"
+  },
+  {
+    "category": "Special Moves",
+    "name": "No More Groove",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:LP]]",
+    "damage": "-",
+    "description": "Cancels the stance Fast recovery"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Scratch",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:LK]]",
+    "damage": "A/C > B: 30 (10x3) / AC > B: 60 (20x3)",
+    "description": "Three hits Can be cancelled into any follow up"
+  },
+  {
+    "category": "Special Moves",
+    "name": "On Cue",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:HP]]",
+    "damage": "A/C > C: 100 / AC > C: 100",
+    "description": "Slightly faster than the low option Can be delayed"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Gain",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]] > [[FF:HK]] > [[FF:HK]]",
+    "damage": "A/C > D: 40 (20x2) / A/C~D > D: 60 / AC > D: 40 (20x2) / AC~D > D: 80",
+    "description": "Slightly slower than overhead Can be delayed Safe on REV guard"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Fight Dirty",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "250",
+    "description": "1F counter super, win against any attack exept cross-up and throw. Because it's 1 frame, it can't be safe-jumped."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Fight Dirty",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "300",
+    "description": "1F counter super, win against any attack exept cross-up and throw. Because it's 1 frame, it can't be safe-jumped."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "B&A.F",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "220 ((20x4)x2+60)",
+    "description": "Both version are full invincible D version will always play an unskippable dance animation on K.O B version has more range while the D version is faster"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "B&A.F",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "310 (10x19+20+100)",
+    "description": "Both version are full invincible D version will always play an unskippable dance animation on K.O B version has more range while the D version is faster"
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Ultimate Beat: II Salvatore",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "451 (88+11x25+88)",
+    "description": "Resets the Rev meter to 0%, even during Overheat."
+  }
+]

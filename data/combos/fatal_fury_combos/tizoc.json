@@ -1,124 +1,121 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Grif-Fall",
-      "input": "← or → + [[FF:HP]]",
-      "damage": "40",
-      "description": "An extension of his back throw that adds damage and does not side-switch the opponent. Do not use this if you want to keep your opponent behind you."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Charge Grif-Chop",
-      "input": "← + [[FF:HP]]",
-      "damage": "100",
-      "description": "If not fully charged, will be identical to Far C with no partial bonuses given If it hits an airborne opponent, this can usually be followed up with 214A or 214AC, even on normal hit. This does not make it a good anti-air, but it is certainly a rewarding one. If feint cancelled against a opponent on the ground, can follow up with Far C at most ranges (will require Far A at max range)."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Charge Grif-Kick",
-      "input": "← + [[FF:HK]]",
-      "damage": "110",
-      "description": "Moves Tizoc forward when the kick is launched and fully charged If spaced properly, can become even more advantageous on hit/block (up to +4 on block, +12 on normal hit and up to +17 on counterhit)"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Grif-Drop Superkick",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 (120)",
-      "description": "Long range, will hit from just a little further than round start distance. Sets up a safejump on hit. After the hit, immediately dash forward once, then forward jump with no delays."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Big Cross",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 (120)",
-      "description": "Can be canceled into immediately after the second hit of 214BD"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Justice Hurricane",
-      "input": "→ ↓ ← ↑ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 200 / C: 240 / AC: 310",
-      "description": "At least 3 consecutive cardinal (straight up, down, left or right) directions must be hit. If this requirement is met, the fourth one can be substituted with a diagonal input (for example, 4269 is valid) The direction of rotation does not matter. Additionally, diagonal inputs are not necessary for the input (but their inclusion will not invalidate the input sequence). For example, 4268 is valid, but 4862 is also valid. The starting point can be any of the four cardinal directions. For example, 2684, 6842, 8426 and 4268 are all valid inputs. Tied with EX/REV for longest range version Slowest at 7F, which can actually be advantageous when using as a guard cancel vs deep jump attacks. After the animation, immediately press 214AC (brake) to move up to approximately hop distance away from the opponent at +10. Tizoc will be much closer to the opponent after the animation if he is backed up to the corner when using this More damage and faster startup than the light grab, but shorter range Great for guard cancels due to its high damage and extremely fast startup at no additional REV gauge cost. This grab is fast enough to even beat some light chains if used as a guard cancel, assuming the opponent is close enough to get grabbed. Leaves Tizoc a little closer to the opponent after the animation compared to the light version. 214AC (brake) will leave you at point-blank range at +6. When used while backed up against the corner, one dash leaves Tizoc at point-blank range at +19. Spend some Rev meter to get the range of the light version and the speed of the heavy version in one package, plus massively increased damage (nearly as much as his super grab). Rev Accel into 214BD to inflict a total of 377 damage and stay at point-blank range from the opponent with +44 advantage Rev Accel into 214BD to inflict a total of 377 damage and stay at point-blank range from the opponent with +44 advantage Dash twice immediately after the animation ends to be +11 at point blank range, setting up a meaty Close D that will be +5 on block and +9 on hit (enough to link into Close C) without canceling into feint (and feinting will not improve this) If used while backed up to the corner, 360C > hop > feint leaves Tizoc at +1 and just close enough to hit 236P or 360A / 360AC, or press 214A (do not brake) to be +11 at point-blank range, similar to the midscreen setup"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Poseidon Wave",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 100 / C: 140 / AC: 100",
-      "description": "Used for meterless light confirms. Any special-cancelable attack will combo into this. The chest has a hitbox during the slide, but this is -6 on block at best and -9 at worst, making it unsafe. If the hand hitbox is blocked, it is safe at -2. Can be braked during the travel to slide Tizoc forward by about half-screen distance without attacking the opponent Used to approach the opponent with +2 advantage on block at minimum Tizoc backsteps before performing his lariat, making this significantly slower than the other versions. Can be braked during the backstep to cancel the lariat entirely, but can also be braked during the travel to slide forward by about half to fullscreen distance, depending on brake timing. This is the go-to move to cancel into from heavies. Slides the furthest (nearly fullscreen distance) and recovers fastest when braked, making this a useful (and costly) tool for oki setups. Similar on-block situation to the light version, but can be canceled into Rev Blow if Tizoc is in SPG, making this safe on block unless the opponent Guard Cancels into a grab or parry when the 214AC is blocked. Guard Canceled Rev Blows with 22F or faster startup will lose against Tizoc's Rev Blow, and the opponent does not exit blockstun after 214AC in time to counter Tizoc's Rev Blow."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Olympus Over",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 100 (40+60) / D: 120 (40+80) / BD: 120 (40+80)",
-      "description": "Longest range Shortest range and slowest startup, but more damage than light version Tizoc backdashes before jumping into the air. This version can be braked during the backdash, canceling the jump entirely. Has a few air-invulnerable frames as soon as the first hitbox becomes active Mostly used in combos (especially 214AC > 214BD ) and as a Rev Accel after many of Tizoc's grabs to grant better knockdowns. Second hit ground bounces the opponent on hit. Can always combo into 214B on the ground bounce, or Rev Accel the second hit into a Rev Blow (better oki than j.236AC) or j.236AC (better damage than Rev Blow) for a hard knockdown. If the cancel from 214AC into 214BD is manually delayed, this can also combo into 214A for better corner carry (and worse oki) than 214B, or j.236A for superior damage and a hard knockdown compared to the other meterless enders. Second hit can hit an opponent as an OTG attack. This leaves Tizoc at +44 advantage, and two forward dashes after will place him at point-blank range from the opponent with +2 advantage. Rev Accel into this after Tizoc's EX grabs to keep the pressure on the opponent."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hercules Throw",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A/C: 140 / AC: 60",
-      "description": "The only true grab that Tizoc is allowed to combo into, and its range is extended if used during a combo Like 360P/AC, this can be a powerful option for guard cancels. It is much easier, but slower and less rewarding compared to 360P. Useful for throwing the opponent into the corner. The EX version starts a combo instead of playing a cinematic. A single Rev Accel into 214BD > 214B alone can make this version deal more damage than the normal versions. Supers can easily push this damage to around 300, and a hidden gear scores around 423 if opponent isn't in SPG."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Active Typhoon",
-      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 170 / D: 170 / BD: 180",
-      "description": "Light and heavy versions are mostly identical, but the heavy version goes further and recovers 2 frames faster. However, the heavy version can whiff on a crouching opponent if they are too close. After the normal versions, immediately press 214AC (brake) to move up to point-blank distance at +4 advantage. After the normal versions, immediately press 214AC (brake) to move up to point-blank distance at +4 advantage. EX version is slightly faster and does just a little more damage, but whiffs on crouching opponents. Rev Accel into 214BD after the animation to deal a total of 247 damage and remain close to the opponent at +44 advantage All versions have invulnerability to aerial attacks, but make no mistake, this is not an anti-air. At best, it makes this move a situational response to incoming safejumps."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Artemis Rex",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 140 / D: 140 / BD: 140",
-      "description": "Shortest travel distance and slowest travel speed Can be braked at any point before the grab hitbox becomes active Dashing twice after the animation leaves Tizoc at point blank distance at -1, or spend a 214AC (brake) to be +6 at close enough distance to hit Close C In the corner, grants a safejump after the animation: 1-frame microwalk, then jump forward. Either hit an air normal on the way down, or immediately use a grab on landing. Can be performed midscreen, but your followup on a hit is limited to Far A > 214A or Far B > super Slower startup, but travels further and faster than the light version and recovers faster Otherwise identical to the light version Unlike the other versions, this is not a true grab and can be blocked. Despite this, it still does not hit an airborne or juggled opponent Any special cancelable attack will combo into this, and this can combo into 214BD with a Rev Accel on hit. Fastest travel speed and longest travel distance Can only be braked after the first active frame, not before. In the corner, feint and hop forward immediately after the animation for a safejump Dash twice after the animation to be +8 at point blank range ( Close B > Close C will combo in this situation)"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Icarus Crash",
-      "input": "[In air] ↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 140 / C: 160 / AC: 180",
-      "description": "Heavy version has shorter range than the other versions. Rev version can be performed after a backdash. Additionally, it can combo into 214BD for 247 damage and +44 advantage. Rev version has anywhere juggle property. This means that any juggle restrictions are bypassed. While Tizoc's aerials are not special cancellable, landing after hitting with an aerial can be followed up with j.236AC if you're fast enough. 214A (do not brake) leaves Tizoc point blank at +1 for normal versions and +3 for the EX version"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Big Fall Griffon",
-      "input": "→ ↓ ← ↑ → ↓ ← ↑ + [[FF:LP]]",
-      "damage": "320 (100+220)",
-      "description": "Slightly shorter range than 360A/360AC. 1-bar version deals 10 more damage than 360AC, but its 1F startup gives it powerful defensive utility 2-bar version is identical to the 1-bar version, but deals more damage. Dashing twice or jumping forward after the 1-bar version leaves Tizoc +10 at point blank range. 2-bar version leaves Tizoc too far away with insufficient advantage frames for any meaningful oki setups."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Big Fall Griffon",
-      "input": "→ ↓ ← ↑ → ↓ ← ↑ + [[FF:HP]]",
-      "damage": "400 (100+300)",
-      "description": "Slightly shorter range than 360A/360AC. 1-bar version deals 10 more damage than 360AC, but its 1F startup gives it powerful defensive utility 2-bar version is identical to the 1-bar version, but deals more damage. Dashing twice or jumping forward after the 1-bar version leaves Tizoc +10 at point blank range. 2-bar version leaves Tizoc too far away with insufficient advantage frames for any meaningful oki setups."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Daedalus Attack",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "200 (50x2+100)",
-      "description": "This is not a reversal, it is only invulnerable up to frame 3. Can become a reversal and, unlike the grab super, will even beat safejumps if used as a guard cancel. At max range, the second and third hit may not combo, even if the first hit lands. This makes it ineffective as a standalone punish tool. On hit, dash 3 times to be +5 at point blank range. 214C (do not brake) will leave Tizoc +1 at point blank range, allowing 360C / 360AC to grab the opponent on their earliest grabbable frame. Fully invulnerable and can function as a reversal, unlike the 1-bar version. Switches sides with the opponent, but also leaves Tizoc +36 at point blank range with no movement needed. This opens up numerous options for oki: An immediate dash followed by feint will reduce the advantage to 0, allowing a 5F grab to hit on the opponent's first grabbable frame. Alternatively, whiff any 2 of the following moves twice: 2A, 2B, Close C Empty hop forward is -1 after landing (can block a reversal) Whiff Close D (+9), a Close B launched immediately after will be +10 on hit and +8 on block Whiff 2C or 2D (+2), a 360A will hit on the first grabbable frame An immediate dash followed by feint will reduce the advantage to 0, allowing a 5F grab to hit on the opponent's first grabbable frame. Alternatively, whiff any 2 of the following moves twice: 2A, 2B, Close C Empty hop forward is -1 after landing (can block a reversal) Whiff Close D (+9), a Close B launched immediately after will be +10 on hit and +8 on block Whiff 2C or 2D (+2), a 360A will hit on the first grabbable frame"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Daedalus Attack",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "310 (30x6+130)",
-      "description": "This is not a reversal, it is only invulnerable up to frame 3. Can become a reversal and, unlike the grab super, will even beat safejumps if used as a guard cancel. At max range, the second and third hit may not combo, even if the first hit lands. This makes it ineffective as a standalone punish tool. On hit, dash 3 times to be +5 at point blank range. 214C (do not brake) will leave Tizoc +1 at point blank range, allowing 360C / 360AC to grab the opponent on their earliest grabbable frame. Fully invulnerable and can function as a reversal, unlike the 1-bar version. Switches sides with the opponent, but also leaves Tizoc +36 at point blank range with no movement needed. This opens up numerous options for oki: An immediate dash followed by feint will reduce the advantage to 0, allowing a 5F grab to hit on the opponent's first grabbable frame. Alternatively, whiff any 2 of the following moves twice: 2A, 2B, Close C Empty hop forward is -1 after landing (can block a reversal) Whiff Close D (+9), a Close B launched immediately after will be +10 on hit and +8 on block Whiff 2C or 2D (+2), a 360A will hit on the first grabbable frame An immediate dash followed by feint will reduce the advantage to 0, allowing a 5F grab to hit on the opponent's first grabbable frame. Alternatively, whiff any 2 of the following moves twice: 2A, 2B, Close C Empty hop forward is -1 after landing (can block a reversal) Whiff Close D (+9), a Close B launched immediately after will be +10 on hit and +8 on block Whiff 2C or 2D (+2), a 360A will hit on the first grabbable frame"
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Daedalus Slalom Turn Sunset",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "418 (88+110+220)",
-      "description": "It is a strike and can be blocked or Just Defended. Long range for a hidden gear, can counter slow startup moves at range. Can hit airborne opponents, though the hitbox does not go very high. Can whiff if an opponent is moving forward or crouching at point-blank range in front of Tizoc Only accessible while in SPG and costs 2 bars. Resets the Rev Meter to 0% on hit, even if the player is overheated when this attack is launched. Leaves Tizoc on the other side of the screen at +8, there is no meaningful advantage to be pressed after the animation"
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Grif-Fall",
+    "input": "← or → + [[FF:HP]]",
+    "damage": "40",
+    "description": "An extension of his back throw that adds damage and does not side-switch the opponent. Do not use this if you want to keep your opponent behind you."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Charge Grif-Chop",
+    "input": "← + [[FF:HP]]",
+    "damage": "100",
+    "description": "If not fully charged, will be identical to Far C with no partial bonuses given If it hits an airborne opponent, this can usually be followed up with 214A or 214AC, even on normal hit. This does not make it a good anti-air, but it is certainly a rewarding one. If feint cancelled against a opponent on the ground, can follow up with Far C at most ranges (will require Far A at max range)."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Charge Grif-Kick",
+    "input": "← + [[FF:HK]]",
+    "damage": "110",
+    "description": "Moves Tizoc forward when the kick is launched and fully charged If spaced properly, can become even more advantageous on hit/block (up to +4 on block, +12 on normal hit and up to +17 on counterhit)"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Grif-Drop Superkick",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 (120)",
+    "description": "Long range, will hit from just a little further than round start distance. Sets up a safejump on hit. After the hit, immediately dash forward once, then forward jump with no delays."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Big Cross",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 (120)",
+    "description": "Can be canceled into immediately after the second hit of 214BD"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Justice Hurricane",
+    "input": "→ ↓ ← ↑ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 200 / C: 240 / AC: 310",
+    "description": "At least 3 consecutive cardinal (straight up, down, left or right) directions must be hit. If this requirement is met, the fourth one can be substituted with a diagonal input (for example, 4269 is valid) The direction of rotation does not matter. Additionally, diagonal inputs are not necessary for the input (but their inclusion will not invalidate the input sequence). For example, 4268 is valid, but 4862 is also valid. The starting point can be any of the four cardinal directions. For example, 2684, 6842, 8426 and 4268 are all valid inputs. Tied with EX/REV for longest range version Slowest at 7F, which can actually be advantageous when using as a guard cancel vs deep jump attacks. After the animation, immediately press 214AC (brake) to move up to approximately hop distance away from the opponent at +10. Tizoc will be much closer to the opponent after the animation if he is backed up to the corner when using this More damage and faster startup than the light grab, but shorter range Great for guard cancels due to its high damage and extremely fast startup at no additional REV gauge cost. This grab is fast enough to even beat some light chains if used as a guard cancel, assuming the opponent is close enough to get grabbed. Leaves Tizoc a little closer to the opponent after the animation compared to the light version. 214AC (brake) will leave you at point-blank range at +6. When used while backed up against the corner, one dash leaves Tizoc at point-blank range at +19. Spend some Rev meter to get the range of the light version and the speed of the heavy version in one package, plus massively increased damage (nearly as much as his super grab). Rev Accel into 214BD to inflict a total of 377 damage and stay at point-blank range from the opponent with +44 advantage Rev Accel into 214BD to inflict a total of 377 damage and stay at point-blank range from the opponent with +44 advantage Dash twice immediately after the animation ends to be +11 at point blank range, setting up a meaty Close D that will be +5 on block and +9 on hit (enough to link into Close C) without canceling into feint (and feinting will not improve this) If used while backed up to the corner, 360C > hop > feint leaves Tizoc at +1 and just close enough to hit 236P or 360A / 360AC, or press 214A (do not brake) to be +11 at point-blank range, similar to the midscreen setup"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Poseidon Wave",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 100 / C: 140 / AC: 100",
+    "description": "Used for meterless light confirms. Any special-cancelable attack will combo into this. The chest has a hitbox during the slide, but this is -6 on block at best and -9 at worst, making it unsafe. If the hand hitbox is blocked, it is safe at -2. Can be braked during the travel to slide Tizoc forward by about half-screen distance without attacking the opponent Used to approach the opponent with +2 advantage on block at minimum Tizoc backsteps before performing his lariat, making this significantly slower than the other versions. Can be braked during the backstep to cancel the lariat entirely, but can also be braked during the travel to slide forward by about half to fullscreen distance, depending on brake timing. This is the go-to move to cancel into from heavies. Slides the furthest (nearly fullscreen distance) and recovers fastest when braked, making this a useful (and costly) tool for oki setups. Similar on-block situation to the light version, but can be canceled into Rev Blow if Tizoc is in SPG, making this safe on block unless the opponent Guard Cancels into a grab or parry when the 214AC is blocked. Guard Canceled Rev Blows with 22F or faster startup will lose against Tizoc's Rev Blow, and the opponent does not exit blockstun after 214AC in time to counter Tizoc's Rev Blow."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Olympus Over",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 100 (40+60) / D: 120 (40+80) / BD: 120 (40+80)",
+    "description": "Longest range Shortest range and slowest startup, but more damage than light version Tizoc backdashes before jumping into the air. This version can be braked during the backdash, canceling the jump entirely. Has a few air-invulnerable frames as soon as the first hitbox becomes active Mostly used in combos (especially 214AC > 214BD ) and as a Rev Accel after many of Tizoc's grabs to grant better knockdowns. Second hit ground bounces the opponent on hit. Can always combo into 214B on the ground bounce, or Rev Accel the second hit into a Rev Blow (better oki than j.236AC) or j.236AC (better damage than Rev Blow) for a hard knockdown. If the cancel from 214AC into 214BD is manually delayed, this can also combo into 214A for better corner carry (and worse oki) than 214B, or j.236A for superior damage and a hard knockdown compared to the other meterless enders. Second hit can hit an opponent as an OTG attack. This leaves Tizoc at +44 advantage, and two forward dashes after will place him at point-blank range from the opponent with +2 advantage. Rev Accel into this after Tizoc's EX grabs to keep the pressure on the opponent."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hercules Throw",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A/C: 140 / AC: 60",
+    "description": "The only true grab that Tizoc is allowed to combo into, and its range is extended if used during a combo Like 360P/AC, this can be a powerful option for guard cancels. It is much easier, but slower and less rewarding compared to 360P. Useful for throwing the opponent into the corner. The EX version starts a combo instead of playing a cinematic. A single Rev Accel into 214BD > 214B alone can make this version deal more damage than the normal versions. Supers can easily push this damage to around 300, and a hidden gear scores around 423 if opponent isn't in SPG."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Active Typhoon",
+    "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 170 / D: 170 / BD: 180",
+    "description": "Light and heavy versions are mostly identical, but the heavy version goes further and recovers 2 frames faster. However, the heavy version can whiff on a crouching opponent if they are too close. After the normal versions, immediately press 214AC (brake) to move up to point-blank distance at +4 advantage. After the normal versions, immediately press 214AC (brake) to move up to point-blank distance at +4 advantage. EX version is slightly faster and does just a little more damage, but whiffs on crouching opponents. Rev Accel into 214BD after the animation to deal a total of 247 damage and remain close to the opponent at +44 advantage All versions have invulnerability to aerial attacks, but make no mistake, this is not an anti-air. At best, it makes this move a situational response to incoming safejumps."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Artemis Rex",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 140 / D: 140 / BD: 140",
+    "description": "Shortest travel distance and slowest travel speed Can be braked at any point before the grab hitbox becomes active Dashing twice after the animation leaves Tizoc at point blank distance at -1, or spend a 214AC (brake) to be +6 at close enough distance to hit Close C In the corner, grants a safejump after the animation: 1-frame microwalk, then jump forward. Either hit an air normal on the way down, or immediately use a grab on landing. Can be performed midscreen, but your followup on a hit is limited to Far A > 214A or Far B > super Slower startup, but travels further and faster than the light version and recovers faster Otherwise identical to the light version Unlike the other versions, this is not a true grab and can be blocked. Despite this, it still does not hit an airborne or juggled opponent Any special cancelable attack will combo into this, and this can combo into 214BD with a Rev Accel on hit. Fastest travel speed and longest travel distance Can only be braked after the first active frame, not before. In the corner, feint and hop forward immediately after the animation for a safejump Dash twice after the animation to be +8 at point blank range ( Close B > Close C will combo in this situation)"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Icarus Crash",
+    "input": "[In air] ↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 140 / C: 160 / AC: 180",
+    "description": "Heavy version has shorter range than the other versions. Rev version can be performed after a backdash. Additionally, it can combo into 214BD for 247 damage and +44 advantage. Rev version has anywhere juggle property. This means that any juggle restrictions are bypassed. While Tizoc's aerials are not special cancellable, landing after hitting with an aerial can be followed up with j.236AC if you're fast enough. 214A (do not brake) leaves Tizoc point blank at +1 for normal versions and +3 for the EX version"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Big Fall Griffon",
+    "input": "→ ↓ ← ↑ → ↓ ← ↑ + [[FF:LP]]",
+    "damage": "320 (100+220)",
+    "description": "Slightly shorter range than 360A/360AC. 1-bar version deals 10 more damage than 360AC, but its 1F startup gives it powerful defensive utility 2-bar version is identical to the 1-bar version, but deals more damage. Dashing twice or jumping forward after the 1-bar version leaves Tizoc +10 at point blank range. 2-bar version leaves Tizoc too far away with insufficient advantage frames for any meaningful oki setups."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Big Fall Griffon",
+    "input": "→ ↓ ← ↑ → ↓ ← ↑ + [[FF:HP]]",
+    "damage": "400 (100+300)",
+    "description": "Slightly shorter range than 360A/360AC. 1-bar version deals 10 more damage than 360AC, but its 1F startup gives it powerful defensive utility 2-bar version is identical to the 1-bar version, but deals more damage. Dashing twice or jumping forward after the 1-bar version leaves Tizoc +10 at point blank range. 2-bar version leaves Tizoc too far away with insufficient advantage frames for any meaningful oki setups."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Daedalus Attack",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "200 (50x2+100)",
+    "description": "This is not a reversal, it is only invulnerable up to frame 3. Can become a reversal and, unlike the grab super, will even beat safejumps if used as a guard cancel. At max range, the second and third hit may not combo, even if the first hit lands. This makes it ineffective as a standalone punish tool. On hit, dash 3 times to be +5 at point blank range. 214C (do not brake) will leave Tizoc +1 at point blank range, allowing 360C / 360AC to grab the opponent on their earliest grabbable frame. Fully invulnerable and can function as a reversal, unlike the 1-bar version. Switches sides with the opponent, but also leaves Tizoc +36 at point blank range with no movement needed. This opens up numerous options for oki: An immediate dash followed by feint will reduce the advantage to 0, allowing a 5F grab to hit on the opponent's first grabbable frame. Alternatively, whiff any 2 of the following moves twice: 2A, 2B, Close C Empty hop forward is -1 after landing (can block a reversal) Whiff Close D (+9), a Close B launched immediately after will be +10 on hit and +8 on block Whiff 2C or 2D (+2), a 360A will hit on the first grabbable frame An immediate dash followed by feint will reduce the advantage to 0, allowing a 5F grab to hit on the opponent's first grabbable frame. Alternatively, whiff any 2 of the following moves twice: 2A, 2B, Close C Empty hop forward is -1 after landing (can block a reversal) Whiff Close D (+9), a Close B launched immediately after will be +10 on hit and +8 on block Whiff 2C or 2D (+2), a 360A will hit on the first grabbable frame"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Daedalus Attack",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "310 (30x6+130)",
+    "description": "This is not a reversal, it is only invulnerable up to frame 3. Can become a reversal and, unlike the grab super, will even beat safejumps if used as a guard cancel. At max range, the second and third hit may not combo, even if the first hit lands. This makes it ineffective as a standalone punish tool. On hit, dash 3 times to be +5 at point blank range. 214C (do not brake) will leave Tizoc +1 at point blank range, allowing 360C / 360AC to grab the opponent on their earliest grabbable frame. Fully invulnerable and can function as a reversal, unlike the 1-bar version. Switches sides with the opponent, but also leaves Tizoc +36 at point blank range with no movement needed. This opens up numerous options for oki: An immediate dash followed by feint will reduce the advantage to 0, allowing a 5F grab to hit on the opponent's first grabbable frame. Alternatively, whiff any 2 of the following moves twice: 2A, 2B, Close C Empty hop forward is -1 after landing (can block a reversal) Whiff Close D (+9), a Close B launched immediately after will be +10 on hit and +8 on block Whiff 2C or 2D (+2), a 360A will hit on the first grabbable frame An immediate dash followed by feint will reduce the advantage to 0, allowing a 5F grab to hit on the opponent's first grabbable frame. Alternatively, whiff any 2 of the following moves twice: 2A, 2B, Close C Empty hop forward is -1 after landing (can block a reversal) Whiff Close D (+9), a Close B launched immediately after will be +10 on hit and +8 on block Whiff 2C or 2D (+2), a 360A will hit on the first grabbable frame"
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Daedalus Slalom Turn Sunset",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "418 (88+110+220)",
+    "description": "It is a strike and can be blocked or Just Defended. Long range for a hidden gear, can counter slow startup moves at range. Can hit airborne opponents, though the hitbox does not go very high. Can whiff if an opponent is moving forward or crouching at point-blank range in front of Tizoc Only accessible while in SPG and costs 2 bars. Resets the Rev Meter to 0% on hit, even if the player is overheated when this attack is launched. Leaves Tizoc on the other side of the screen at +8, there is no meaningful advantage to be pressed after the animation"
+  }
+]

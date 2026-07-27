@@ -9,7 +9,7 @@ import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
 import FATAL_FURY_PORTRAITS from '../data/fatal_fury_portraits.json';
 import COMBOS_DB from '../data/combos/index';
 
-export const DB_VERSION = 29;
+export const DB_VERSION = 30;
 
 export interface SQLiteCombo {
   id: string;
@@ -22,7 +22,7 @@ export interface SQLiteCombo {
   description: string;
   category: string;
   is_custom: number;
-  control_style: string; // 'arcade' | 'smart' | '' (empty for non-FF games)
+  control_style?: string;
 }
 
 export interface SQLiteCharacter {
@@ -241,49 +241,22 @@ async function seedData(db: SQLiteDatabase) {
         for (const [charName, charData] of Object.entries(gameCombos as any)) {
           const charId = `${gameName}::${charName}`;
 
-          // Fatal Fury uses nested { arcade: [...], smart: [...] } structure
-          if (charData && typeof charData === 'object' && !Array.isArray(charData) &&
-              ('arcade' in (charData as any) || 'smart' in (charData as any))) {
-            const ffChar = charData as { arcade?: any[]; smart?: any[] };
-            for (const style of ['arcade', 'smart'] as const) {
-              const styleList = ffChar[style] || [];
-              for (let i = 0; i < styleList.length; i++) {
-                const c = styleList[i] as any;
-                const comboId = `static::${gameName}::${charName}::${style}::${i}`;
-                await comboStmt.executeAsync([
-                  comboId,
-                  charId,
-                  gameName,
-                  c.name || '',
-                  c.input || '',
-                  c.damage || '-',
-                  c.difficulty || '-',
-                  c.description || '',
-                  c.category || 'combo',
-                  style
-                ]);
-              }
-            }
-          } else {
-            // Standard flat array for all other games
-            const combosList = charData as any[];
-            if (!Array.isArray(combosList)) continue;
-            for (let i = 0; i < combosList.length; i++) {
-              const c = combosList[i] as any;
-              const comboId = `static::${gameName}::${charName}::${i}`;
-              await comboStmt.executeAsync([
-                comboId,
-                charId,
-                gameName,
-                c.name || '',
-                c.input || '',
-                c.damage || '-',
-                c.difficulty || '-',
-                c.description || '',
-                c.category || 'combo',
-                ''
-              ]);
-            }
+          const combosList = (Array.isArray(charData) ? charData : (charData as any)?.arcade || []) as any[];
+          for (let i = 0; i < combosList.length; i++) {
+            const c = combosList[i] as any;
+            const comboId = `static::${gameName}::${charName}::${i}`;
+            await comboStmt.executeAsync([
+              comboId,
+              charId,
+              gameName,
+              c.name || '',
+              c.input || '',
+              c.damage || '-',
+              c.difficulty || '-',
+              c.description || '',
+              c.category || 'combo',
+              ''
+            ]);
           }
         }
       }

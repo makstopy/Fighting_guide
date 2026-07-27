@@ -1,138 +1,135 @@
-{
-  "arcade": [
-    {
-      "category": "REV Blows",
-      "name": "Overhead Kick",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Only available during S.P.G, this REV Blow has a good horizontal hitbox and travels about 40% of the screen forward. The vertical hitbox is good too but won’t hit opponents at their maximum jump height."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Hishou Getsurin Zan",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Only available during S.P.G, Rock's air REV Blow causes hard knockdown and is safe on block."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Reppuu Ken",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 / C: 100 (20+80) / AC: 100 (20+80)",
-      "description": "C and AC version are two hit, the first hit can nullify a projectile and the second can go through the projectile."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Shippuu Ken",
-      "input": "[In air] ↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A/C: 60 / AC: 80 (40x2)",
-      "description": "A angle is a bit upward, C downward and AC is between both of them. A and C version are only available during neutral and forward jump. REV version fires two projectiles and can be used in any jump direction and also backdash."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Rising Tackle BR",
-      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 80 (30+10x2+30) / C: 100 (30+20x2+30) / AC: 120 (40+10x4+40)",
-      "description": "C and AC versions first hit is brake-able(hit & block)."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Hard Edge BR",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 80 / C: 120 (40+80) / AC: 100 (40+60)",
-      "description": "Every versions are Brake-able before they connect with the opponent."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Crack Counter",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 100 / D: 120 / BD: 120",
-      "description": "B and BD version counter mid and high D version counter low The follow-up is 1F and triggers automatically when Rock successfully counters a move. Is able to counter Rev blows"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Rage Run",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B/D: - / BD: -",
-      "description": "REV Rage Run turns all follow-ups into their REV versions at no additional REV cost."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Type: Layup",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:LP]]",
-      "damage": "B/D > A: 90 / BD > A: 100",
-      "description": "Can be used as a cross up"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Type: Cut",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:LK]]",
-      "damage": "B/D > B: 60 / BD > B: 70",
-      "description": "REV version can combo into light if close enough."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Type: Dunk",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HP]]",
-      "damage": "B/D > C: 70 / BD > C: 80",
-      "description": "REV version is positif, meaning it's a good ender during a REV cancel combo."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Type: Shift",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HK]]",
-      "damage": "B/D > D: - / BD > D: -",
-      "description": "Swaps sides with the opponent when done up close, or simply stops Rock in his tracks when done further away."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Type: Shinkuu Nage",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HK]] > [[FF:LP]] or [[FF:HP]]",
-      "damage": "214K~D > A: 80 / 214K~D > C: 90 / 214K~D > AC: 100",
-      "description": "Identical to the standard (632146P) version. B/D Rage Run can use the A, C, or AC versions. BD Rage Run always uses the REV version of Shinkuu Nage, regardless of input, with no extra REV cost."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Shinkuu Nage BR",
-      "input": "→ ↘ ↓ ↙ ← → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 80 / C: 90 / AC: 100",
-      "description": "Rock's special throw, can be used manually at any by doing the 632146+P input or as a Type: Shift follow-up by pressing any P buttons. A version : Is kinda fast and throw the opponent really far away without any way to cancel Rock's animation. C version : Slower, also throw the opponent far away but you can brake it and be able to move before the opponent fall on the ground. In brake version, the throw deal less damage but you have a better advantage and also you can choose to combo(214C, 236236B for exemple). The issue with that is the damage reduction is really high. AC version : Same speed than the A version and have an automatically follow-up that allow Rock to combo with less damage reduction than the C version."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Raging Storm",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "240",
-      "description": "Both version are invincible"
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Raging Storm",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "310 (60x3+130)",
-      "description": "Both version are invincible"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Shining Knuckle",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "220 (30x4+100)",
-      "description": "D version is invincible and is brake-able at the third hit."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Shining Knuckle BR",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "280 (60+30x2+7x10+90)",
-      "description": "D version is invincible and is brake-able at the third hit."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Power Geyser - Type: R",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "451 (88+363)",
-      "description": "Resets the Rev meter to 0%, even during Overheat."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "REV Blows",
+    "name": "Overhead Kick",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Only available during S.P.G, this REV Blow has a good horizontal hitbox and travels about 40% of the screen forward. The vertical hitbox is good too but won’t hit opponents at their maximum jump height."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Hishou Getsurin Zan",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Only available during S.P.G, Rock's air REV Blow causes hard knockdown and is safe on block."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Reppuu Ken",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 / C: 100 (20+80) / AC: 100 (20+80)",
+    "description": "C and AC version are two hit, the first hit can nullify a projectile and the second can go through the projectile."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Shippuu Ken",
+    "input": "[In air] ↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A/C: 60 / AC: 80 (40x2)",
+    "description": "A angle is a bit upward, C downward and AC is between both of them. A and C version are only available during neutral and forward jump. REV version fires two projectiles and can be used in any jump direction and also backdash."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Rising Tackle BR",
+    "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 80 (30+10x2+30) / C: 100 (30+20x2+30) / AC: 120 (40+10x4+40)",
+    "description": "C and AC versions first hit is brake-able(hit & block)."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Hard Edge BR",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 80 / C: 120 (40+80) / AC: 100 (40+60)",
+    "description": "Every versions are Brake-able before they connect with the opponent."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Crack Counter",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 100 / D: 120 / BD: 120",
+    "description": "B and BD version counter mid and high D version counter low The follow-up is 1F and triggers automatically when Rock successfully counters a move. Is able to counter Rev blows"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Rage Run",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B/D: - / BD: -",
+    "description": "REV Rage Run turns all follow-ups into their REV versions at no additional REV cost."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Type: Layup",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:LP]]",
+    "damage": "B/D > A: 90 / BD > A: 100",
+    "description": "Can be used as a cross up"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Type: Cut",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:LK]]",
+    "damage": "B/D > B: 60 / BD > B: 70",
+    "description": "REV version can combo into light if close enough."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Type: Dunk",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HP]]",
+    "damage": "B/D > C: 70 / BD > C: 80",
+    "description": "REV version is positif, meaning it's a good ender during a REV cancel combo."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Type: Shift",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HK]]",
+    "damage": "B/D > D: - / BD > D: -",
+    "description": "Swaps sides with the opponent when done up close, or simply stops Rock in his tracks when done further away."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Type: Shinkuu Nage",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > [[FF:HK]] > [[FF:LP]] or [[FF:HP]]",
+    "damage": "214K~D > A: 80 / 214K~D > C: 90 / 214K~D > AC: 100",
+    "description": "Identical to the standard (632146P) version. B/D Rage Run can use the A, C, or AC versions. BD Rage Run always uses the REV version of Shinkuu Nage, regardless of input, with no extra REV cost."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Shinkuu Nage BR",
+    "input": "→ ↘ ↓ ↙ ← → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 80 / C: 90 / AC: 100",
+    "description": "Rock's special throw, can be used manually at any by doing the 632146+P input or as a Type: Shift follow-up by pressing any P buttons. A version : Is kinda fast and throw the opponent really far away without any way to cancel Rock's animation. C version : Slower, also throw the opponent far away but you can brake it and be able to move before the opponent fall on the ground. In brake version, the throw deal less damage but you have a better advantage and also you can choose to combo(214C, 236236B for exemple). The issue with that is the damage reduction is really high. AC version : Same speed than the A version and have an automatically follow-up that allow Rock to combo with less damage reduction than the C version."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Raging Storm",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "240",
+    "description": "Both version are invincible"
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Raging Storm",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "310 (60x3+130)",
+    "description": "Both version are invincible"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Shining Knuckle",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "220 (30x4+100)",
+    "description": "D version is invincible and is brake-able at the third hit."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Shining Knuckle BR",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "280 (60+30x2+7x10+90)",
+    "description": "D version is invincible and is brake-able at the third hit."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Power Geyser - Type: R",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "451 (88+363)",
+    "description": "Resets the Rev meter to 0%, even during Overheat."
+  }
+]

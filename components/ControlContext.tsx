@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-export type ControlType = 'PS' | 'Xbox' | 'Arcade';
+export type ControlType = 'PS' | 'Xbox' | 'Arcade' | 'Original';
 
 interface ControlContextType {
   controlType: ControlType;

@@ -1,117 +1,114 @@
-{
-  "arcade": [
-    {
-      "category": "Command Combos",
-      "name": "Command Combo 1",
-      "input": "[[FF:HP]] > ← or → + [[FF:HP]] > → + [[FF:HK]] > [[FF:HP]] [[FF:HK]]",
-      "damage": "cl.C > 4/6C: 20 / cl.C~4/6C > 6D: 50 / cl.C~4/6C~6D > CD: 132 (50 + 70 [120])",
-      "description": "This follow up from your close C is amazing… if you only do the 6C, since feint cancelling it gives you a link to most of Terry’s heavies. This extension is important for all of Terry’s high-damage combos. Any part of this Command Combo beyond the 6C is outclassed by REV Accel and feint cancelling. You’re better off forgetting they exist."
-    },
-    {
-      "category": "Command Combos",
-      "name": "Command Combo 2",
-      "input": "[[FF:LK]] > [[FF:HK]]",
-      "damage": "35",
-      "description": "Terry’s only meterless followup from his far B"
-    },
-    {
-      "category": "REV Blows",
-      "name": "Max Power Dunk",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 (50 + 20 + 50 [120])",
-      "description": "Travels very far and can hit from slightly more than half screen distance, allowing Terry to shut down many fireballs on reaction. Due to the far forward movement, it can sometimes evade correctly-timed air REV blows which would have beaten typical ground REV blows with less movement."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Max Crack Shoot",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 (50 + 70 [120])",
-      "description": "If done very low to the ground, Terry will land before he continues into the Crack Shoot, allowing for juggles. If cancelled into from REV Power Dunk (623BD) very close to the ground, it allows for juggles normally impossible, such as light Burning Knuckle or Buster Wolf."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Power Wave",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 60 / C: 60 [80] / AC: 60 (30x2) [90 (30x3)]",
-      "description": "The button pressed for it determines its startup and travel speed. REV version is instead a big wave that travels slowly along the ground, letting Terry approach. Holding C/AC transforms the move into a short-range energy blast similar to Round Wave from other games. Numbers in [brackets] indicate values that change when you hold C/AC."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Burning Knuckle BR",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 110 / C: 140 / AC: 120",
-      "description": "You can combo into the light version from 2A or Power Dunk Brake, and REV versions from heavies. Heavy version is too slow to combo from anything that isn’t a Wild Punish. All versions launch on Counter Hit. You can Brake the move to stop it short. More advantageous when properly spaced, use this farther out to avoid taking a big punish."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Crack Shoot",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 90 / D: 100 / BD: 110",
-      "description": "More advantageous on block when crouched. In the corner, if the D version hits a standing opponent, Terry can combo into light Power Dunk. Against a crouching opponent, Terry can go into heavy Power Dunk Brake. Interestingly, because Terry himself goes into a semi low profile when doing a Power Wave, hitting Terry out of Power Wave with heavy Crack Shoot increases the juggle advantage from 5 to 6, allowing him to link into his 6 frame Hidden Gear even at midscreen."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Power Dunk BR",
-      "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 90 (30+10+50) / D: 90 (30+10+50) / BD: 110 (50+5x4+40)",
-      "description": "B version is fully invincible on startup and acts as Terry’s main reversal. D and REV versions both Brake after the first hit and launch on Counter Hit. They make great Guard Cancels. D version has more reach and combos from two lights, or a very close jump in and two lights. It can also be trivially confirmed from a point blank close C > 6C > forward feint. Against grounded opponents, the last hit is punishable on hit, but it can’t be Counter Hit punished this way."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Power Charge",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 20 / D: 20 / BD: 20",
-      "description": "B version is only special move Terry has that combos from far A. As of the Season 2 patch, the D version is no longer plus on block."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Power Charge 2",
-      "input": "↓ ↘ → + [[FF:K]] > → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 20 / D: 20 / BD: 20",
-      "description": "Characters with an invincible reversal (for example a DP) can always punish this move"
-    },
-    {
-      "category": "Special Moves",
-      "name": "Power Charge 3",
-      "input": "↓ ↘ → + [[FF:K]] > → + [[FF:K]] > → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 50 / D: 60 / BD: 60",
-      "description": "B and D versions are very unsafe on block. The REV version at least has REV Accel to confirm whether it hits"
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Power Geyser",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "240",
-      "description": "Both versiion are fully invincible. Fast and fully invincible with a massive hitbox, one of the most effective anti-airs in the game. If braked from a raw hit and followed up with the entire suite of corner REV Accels, it does a minuscule amount of extra damage (381 vs 363)."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Power Geyser BR",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "330 (70+100+160)",
-      "description": "Both versiion are fully invincible. Fast and fully invincible with a massive hitbox, one of the most effective anti-airs in the game. If braked from a raw hit and followed up with the entire suite of corner REV Accels, it does a minuscule amount of extra damage (381 vs 363)."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Buster Wolf",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "200 (40+160)",
-      "description": "Not invincible and loose against projectile. Can work as a fireball punish at a pinch, but is less effective compared to ignition Power Geyser and REV Blow as it doesn't have many invulnerability frames. Unlike Ignition Buster Wolf, this vacuums the opponent down to the ground and kills any follow-up combo possibilities."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Buster Wolf",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "300 (50+15*10+100)",
-      "description": "Not invincible and loose against projectile. Can work as a fireball punish at a pinch, but is less effective compared to ignition Power Geyser and REV Blow as it doesn't have many invulnerability frames. Unlike Ignition Buster Wolf, this vacuums the opponent down to the ground and kills any follow-up combo possibilities."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Cosmic Strike Geyser",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "434 Min: 208, (80+35+15*10+135)",
-      "description": "Has the fastest startup among his supers and reliably combos from almost any juggle, which can be useful if you messed up a corner route. Leaves Terry at near fullscreen distance with poor oki. Best course of action is generally a REV Power Wave followed with a run."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Combos",
+    "name": "Command Combo 1",
+    "input": "[[FF:HP]] > ← or → + [[FF:HP]] > → + [[FF:HK]] > [[FF:HP]] [[FF:HK]]",
+    "damage": "cl.C > 4/6C: 20 / cl.C~4/6C > 6D: 50 / cl.C~4/6C~6D > CD: 132 (50 + 70 [120])",
+    "description": "This follow up from your close C is amazing… if you only do the 6C, since feint cancelling it gives you a link to most of Terry’s heavies. This extension is important for all of Terry’s high-damage combos. Any part of this Command Combo beyond the 6C is outclassed by REV Accel and feint cancelling. You’re better off forgetting they exist."
+  },
+  {
+    "category": "Command Combos",
+    "name": "Command Combo 2",
+    "input": "[[FF:LK]] > [[FF:HK]]",
+    "damage": "35",
+    "description": "Terry’s only meterless followup from his far B"
+  },
+  {
+    "category": "REV Blows",
+    "name": "Max Power Dunk",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 (50 + 20 + 50 [120])",
+    "description": "Travels very far and can hit from slightly more than half screen distance, allowing Terry to shut down many fireballs on reaction. Due to the far forward movement, it can sometimes evade correctly-timed air REV blows which would have beaten typical ground REV blows with less movement."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Max Crack Shoot",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 (50 + 70 [120])",
+    "description": "If done very low to the ground, Terry will land before he continues into the Crack Shoot, allowing for juggles. If cancelled into from REV Power Dunk (623BD) very close to the ground, it allows for juggles normally impossible, such as light Burning Knuckle or Buster Wolf."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Power Wave",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 60 / C: 60 [80] / AC: 60 (30x2) [90 (30x3)]",
+    "description": "The button pressed for it determines its startup and travel speed. REV version is instead a big wave that travels slowly along the ground, letting Terry approach. Holding C/AC transforms the move into a short-range energy blast similar to Round Wave from other games. Numbers in [brackets] indicate values that change when you hold C/AC."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Burning Knuckle BR",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 110 / C: 140 / AC: 120",
+    "description": "You can combo into the light version from 2A or Power Dunk Brake, and REV versions from heavies. Heavy version is too slow to combo from anything that isn’t a Wild Punish. All versions launch on Counter Hit. You can Brake the move to stop it short. More advantageous when properly spaced, use this farther out to avoid taking a big punish."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Crack Shoot",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 90 / D: 100 / BD: 110",
+    "description": "More advantageous on block when crouched. In the corner, if the D version hits a standing opponent, Terry can combo into light Power Dunk. Against a crouching opponent, Terry can go into heavy Power Dunk Brake. Interestingly, because Terry himself goes into a semi low profile when doing a Power Wave, hitting Terry out of Power Wave with heavy Crack Shoot increases the juggle advantage from 5 to 6, allowing him to link into his 6 frame Hidden Gear even at midscreen."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Power Dunk BR",
+    "input": "→ ↓ ↘ + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 90 (30+10+50) / D: 90 (30+10+50) / BD: 110 (50+5x4+40)",
+    "description": "B version is fully invincible on startup and acts as Terry’s main reversal. D and REV versions both Brake after the first hit and launch on Counter Hit. They make great Guard Cancels. D version has more reach and combos from two lights, or a very close jump in and two lights. It can also be trivially confirmed from a point blank close C > 6C > forward feint. Against grounded opponents, the last hit is punishable on hit, but it can’t be Counter Hit punished this way."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Power Charge",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 20 / D: 20 / BD: 20",
+    "description": "B version is only special move Terry has that combos from far A. As of the Season 2 patch, the D version is no longer plus on block."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Power Charge 2",
+    "input": "↓ ↘ → + [[FF:K]] > → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 20 / D: 20 / BD: 20",
+    "description": "Characters with an invincible reversal (for example a DP) can always punish this move"
+  },
+  {
+    "category": "Special Moves",
+    "name": "Power Charge 3",
+    "input": "↓ ↘ → + [[FF:K]] > → + [[FF:K]] > → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 50 / D: 60 / BD: 60",
+    "description": "B and D versions are very unsafe on block. The REV version at least has REV Accel to confirm whether it hits"
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Power Geyser",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "240",
+    "description": "Both versiion are fully invincible. Fast and fully invincible with a massive hitbox, one of the most effective anti-airs in the game. If braked from a raw hit and followed up with the entire suite of corner REV Accels, it does a minuscule amount of extra damage (381 vs 363)."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Power Geyser BR",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "330 (70+100+160)",
+    "description": "Both versiion are fully invincible. Fast and fully invincible with a massive hitbox, one of the most effective anti-airs in the game. If braked from a raw hit and followed up with the entire suite of corner REV Accels, it does a minuscule amount of extra damage (381 vs 363)."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Buster Wolf",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "200 (40+160)",
+    "description": "Not invincible and loose against projectile. Can work as a fireball punish at a pinch, but is less effective compared to ignition Power Geyser and REV Blow as it doesn't have many invulnerability frames. Unlike Ignition Buster Wolf, this vacuums the opponent down to the ground and kills any follow-up combo possibilities."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Buster Wolf",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "300 (50+15*10+100)",
+    "description": "Not invincible and loose against projectile. Can work as a fireball punish at a pinch, but is less effective compared to ignition Power Geyser and REV Blow as it doesn't have many invulnerability frames. Unlike Ignition Buster Wolf, this vacuums the opponent down to the ground and kills any follow-up combo possibilities."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Cosmic Strike Geyser",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "434 Min: 208, (80+35+15*10+135)",
+    "description": "Has the fastest startup among his supers and reliably combos from almost any juggle, which can be useful if you messed up a corner route. Leaves Terry at near fullscreen distance with poor oki. Best course of action is generally a REV Power Wave followed with a run."
+  }
+]

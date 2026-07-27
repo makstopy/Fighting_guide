@@ -1,145 +1,142 @@
-{
-  "arcade": [
-    {
-      "category": "Command Moves",
-      "name": "Dai Kaiten Geri",
-      "input": "→ + [[FF:LP]]",
-      "damage": "80 (30+50)",
-      "description": "Advances with two hits. Covers about the same space as Far C, while the forward movement slips under jump-in attempts. Goes over grounded projectiles. Safe on block unlike 6B, but doesn't reach as far. Beware that both hits jail, so if the 1st gets blocked the 2nd can be punished by a Hyper Defense Guard Cancel. Can combo into 2B on Counter Hit, regardless of which hit is the first to land."
-    },
-    {
-      "category": "Command Moves",
-      "name": "Bou Takotobi Geri",
-      "input": "→ + [[FF:LK]]",
-      "damage": "90",
-      "description": "Goes very far, but is unsafe on block and loses to High Dodge Attack. Goes over low attacks and projectiles. Space this move to make it safe, perhaps even plus. Its abundant active frames make some meaty setups possible."
-    },
-    {
-      "category": "Command Combos",
-      "name": "Command combo",
-      "input": "[In air] [[FF:LK]] > [[FF:HK]]",
-      "damage": "40",
-      "description": "Only available from full jumps."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Raimei Uchi",
-      "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
-      "damage": "132 (110+22)",
-      "description": "Damage value factors in SPG bonus. Has a second attack that doesn't come out if the first hit Counter Hits, whiffs, or is blocked."
-    },
-    {
-      "category": "REV Blows",
-      "name": "Dai Tenkyuu Otoshi",
-      "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
-      "damage": "132",
-      "description": "Damage value factors in SPG bonus."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Senpuu Kon",
-      "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A/C: 10xhit / AC: 80",
-      "description": "Each version deflects projectiles of equal strength, including the AC version. Can be held indefinitely, but is easily countered by using low attacks (or Rev Blow). Regular, non-held version recovers slightly faster after a successful deflect. While the AC version is plus on block, it can’t be REV cancelled until the last hit, making it very susceptible to Hyper Defense. AC version will combo after almost every REV cancel, no matter the state of the opponent."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Sansetsu Kon Chuudan Uchi",
-      "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 80 / C: 60 / AC: 60 (20x3)",
-      "description": "A super long-reaching poke that outranges most characters' jump ranges. All versions lose to High Dodge Attack and are considerably punishable if jumped. A version will only air reset against a jumping opponent, but juggles properly in combos. Beware that while the follow-ups to C and AC versions are mostly safe on block, characters with long range specials can punish using Guard Cancels."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Sansetsu Kon Chuudan Uchi",
-      "input": "↓ ↘ → + [[FF:HP]] > → + [[FF:P]]",
-      "damage": "C: 60 / AC: 60",
-      "description": "C version is really unsafe on block, and can be punished by some super moves at any range (such as Terry's Buster Wolf)."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Sansetsu Kon Chuudan Uchi",
-      "input": "↓ ↘ → + [[FF:HP]] > ← + [[FF:P]]",
-      "damage": "C: 40 / AC: 40",
-      "description": "Both versions are safe on block. Vacuum on hit and block, but doesn’t knock a standing opponent down."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Suzume Otoshi",
-      "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
-      "damage": "A: 80 / C: 80 / AC: 80 (40x2)",
-      "description": "Long reaching anti-air; does not hit grounded opponents. No invulnerability, but combos from the High Dodge Attack for anti-air combos. A version will only air reset against a jumping opponent, but juggles properly in combos. C version launches on Counter Hit."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Kaen Suzume Otoshi",
-      "input": "↓ ↙ ← + [[FF:HP]] > ← or → + [[FF:P]]",
-      "damage": "C: 40 / AC: 50",
-      "description": "C and REV Suzume Otoshi follow-up."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Kyoushuu Hishou Kon BR",
-      "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 100 (20x5) / D: 110 (20+30+20x3) / D > Brake: 20 / BD: 100 (40+30+10x3) / BD > Brake: 40",
-      "description": "D version is Billy's only brakable special move. For all versions, the gap between jumping up and landing is punishable by running under Billy and hitting from the opposite side. REV version can be canceled into j.REV Blow."
-    },
-    {
-      "category": "Special Moves",
-      "name": "Sandan Shoujou",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
-      "damage": "B: 20 / D: 20 / BD: 30",
-      "description": "The first hit is +7 on Counter Hit, allowing you to link into 2A."
-    },
-    {
-      "category": "Special Moves",
-      "name": "2nd hit follow-up",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > ← or → + [[FF:K]]",
-      "damage": "B: 20 / D: 20 / BD: 30",
-      "description": "Second rekka's follow-up."
-    },
-    {
-      "category": "Special Moves",
-      "name": "3rd hit follow-up",
-      "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > ← or → + [[FF:K]] > ← or → + [[FF:K]]",
-      "damage": "B: 50 / D: 60 / BD: 50",
-      "description": "Final rekka's follow-up, and the one that knocks down on hit. If you somehow manage to delay trap the last hit it launches on Counter Hit."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Chou Kaen Senpuu Kon",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
-      "damage": "250 (25x6+100)",
-      "description": "Hits behind Billy as well; even when this happens, he will still launch them forward. All hits nullify projectiles, even other projectile supers like Terry’s Power Geyser. Does not reach from the max range of close C. The final hit launches on Counter Hit, but has additional scaling."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Chou Kaen Senpuu Kon",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
-      "damage": "330 (8x20+170)",
-      "description": "Hits behind Billy as well; even when this happens, he will still launch them forward. All hits nullify projectiles, even other projectile supers like Terry’s Power Geyser. Does not reach from the max range of close C. The final hit launches on Counter Hit, but has additional scaling."
-    },
-    {
-      "category": "Ignition Gears",
-      "name": "Guren Sakkon",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
-      "damage": "230 30x2+20x5+70",
-      "description": "Has way better corner carry and range than his other supers, at the cost of damage. Only the D version is invincible on startup. If it hits an extended limb, the opponent will fall out as Billy goes through the whole animation, leaving him wide open for a punish on the ground. This never happens in combos."
-    },
-    {
-      "category": "Redline Gears",
-      "name": "Guren Sakkon BR",
-      "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
-      "damage": "300 40+20x2+10x9+130",
-      "description": "Has way better corner carry and range than his other supers, at the cost of damage. Only the D version is invincible on startup. If it hits an extended limb, the opponent will fall out as Billy goes through the whole animation, leaving him wide open for a punish on the ground. This never happens in combos."
-    },
-    {
-      "category": "Hidden Gear",
-      "name": "Dai Gouen Senpuu Kon",
-      "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
-      "damage": "429 (55+88+5x21+181)",
-      "description": "Resets the Rev meter to 0%, even during Overheat. Only available during S.P.G. Damage value factors in S.P.G. bonus. Huge range for a Hidden Gear and especially for a 6-frame move, making some things punishable exclusively by this move. Very good okizeme compared to other characters’ Hidden Gears. Like B/D super, you can confirm into this from lights, including max range 5A."
-    }
-  ],
-  "smart": []
-}
+[
+  {
+    "category": "Command Moves",
+    "name": "Dai Kaiten Geri",
+    "input": "→ + [[FF:LP]]",
+    "damage": "80 (30+50)",
+    "description": "Advances with two hits. Covers about the same space as Far C, while the forward movement slips under jump-in attempts. Goes over grounded projectiles. Safe on block unlike 6B, but doesn't reach as far. Beware that both hits jail, so if the 1st gets blocked the 2nd can be punished by a Hyper Defense Guard Cancel. Can combo into 2B on Counter Hit, regardless of which hit is the first to land."
+  },
+  {
+    "category": "Command Moves",
+    "name": "Bou Takotobi Geri",
+    "input": "→ + [[FF:LK]]",
+    "damage": "90",
+    "description": "Goes very far, but is unsafe on block and loses to High Dodge Attack. Goes over low attacks and projectiles. Space this move to make it safe, perhaps even plus. Its abundant active frames make some meaty setups possible."
+  },
+  {
+    "category": "Command Combos",
+    "name": "Command combo",
+    "input": "[In air] [[FF:LK]] > [[FF:HK]]",
+    "damage": "40",
+    "description": "Only available from full jumps."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Raimei Uchi",
+    "input": "[During S.P.G.] [[FF:HP]] [[FF:HK]]",
+    "damage": "132 (110+22)",
+    "description": "Damage value factors in SPG bonus. Has a second attack that doesn't come out if the first hit Counter Hits, whiffs, or is blocked."
+  },
+  {
+    "category": "REV Blows",
+    "name": "Dai Tenkyuu Otoshi",
+    "input": "[During S.P.G.] [In air] [[FF:HP]] [[FF:HK]]",
+    "damage": "132",
+    "description": "Damage value factors in SPG bonus."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Senpuu Kon",
+    "input": "→ ↓ ↘ + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A/C: 10xhit / AC: 80",
+    "description": "Each version deflects projectiles of equal strength, including the AC version. Can be held indefinitely, but is easily countered by using low attacks (or Rev Blow). Regular, non-held version recovers slightly faster after a successful deflect. While the AC version is plus on block, it can’t be REV cancelled until the last hit, making it very susceptible to Hyper Defense. AC version will combo after almost every REV cancel, no matter the state of the opponent."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Sansetsu Kon Chuudan Uchi",
+    "input": "↓ ↘ → + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 80 / C: 60 / AC: 60 (20x3)",
+    "description": "A super long-reaching poke that outranges most characters' jump ranges. All versions lose to High Dodge Attack and are considerably punishable if jumped. A version will only air reset against a jumping opponent, but juggles properly in combos. Beware that while the follow-ups to C and AC versions are mostly safe on block, characters with long range specials can punish using Guard Cancels."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Sansetsu Kon Chuudan Uchi",
+    "input": "↓ ↘ → + [[FF:HP]] > → + [[FF:P]]",
+    "damage": "C: 60 / AC: 60",
+    "description": "C version is really unsafe on block, and can be punished by some super moves at any range (such as Terry's Buster Wolf)."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Sansetsu Kon Chuudan Uchi",
+    "input": "↓ ↘ → + [[FF:HP]] > ← + [[FF:P]]",
+    "damage": "C: 40 / AC: 40",
+    "description": "Both versions are safe on block. Vacuum on hit and block, but doesn’t knock a standing opponent down."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Suzume Otoshi",
+    "input": "↓ ↙ ← + [[FF:LP]] or [[FF:HP]]",
+    "damage": "A: 80 / C: 80 / AC: 80 (40x2)",
+    "description": "Long reaching anti-air; does not hit grounded opponents. No invulnerability, but combos from the High Dodge Attack for anti-air combos. A version will only air reset against a jumping opponent, but juggles properly in combos. C version launches on Counter Hit."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Kaen Suzume Otoshi",
+    "input": "↓ ↙ ← + [[FF:HP]] > ← or → + [[FF:P]]",
+    "damage": "C: 40 / AC: 50",
+    "description": "C and REV Suzume Otoshi follow-up."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Kyoushuu Hishou Kon BR",
+    "input": "↓ ↘ → + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 100 (20x5) / D: 110 (20+30+20x3) / D > Brake: 20 / BD: 100 (40+30+10x3) / BD > Brake: 40",
+    "description": "D version is Billy's only brakable special move. For all versions, the gap between jumping up and landing is punishable by running under Billy and hitting from the opposite side. REV version can be canceled into j.REV Blow."
+  },
+  {
+    "category": "Special Moves",
+    "name": "Sandan Shoujou",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]]",
+    "damage": "B: 20 / D: 20 / BD: 30",
+    "description": "The first hit is +7 on Counter Hit, allowing you to link into 2A."
+  },
+  {
+    "category": "Special Moves",
+    "name": "2nd hit follow-up",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > ← or → + [[FF:K]]",
+    "damage": "B: 20 / D: 20 / BD: 30",
+    "description": "Second rekka's follow-up."
+  },
+  {
+    "category": "Special Moves",
+    "name": "3rd hit follow-up",
+    "input": "↓ ↙ ← + [[FF:LK]] or [[FF:HK]] > ← or → + [[FF:K]] > ← or → + [[FF:K]]",
+    "damage": "B: 50 / D: 60 / BD: 50",
+    "description": "Final rekka's follow-up, and the one that knocks down on hit. If you somehow manage to delay trap the last hit it launches on Counter Hit."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Chou Kaen Senpuu Kon",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LP]]",
+    "damage": "250 (25x6+100)",
+    "description": "Hits behind Billy as well; even when this happens, he will still launch them forward. All hits nullify projectiles, even other projectile supers like Terry’s Power Geyser. Does not reach from the max range of close C. The final hit launches on Counter Hit, but has additional scaling."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Chou Kaen Senpuu Kon",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HP]]",
+    "damage": "330 (8x20+170)",
+    "description": "Hits behind Billy as well; even when this happens, he will still launch them forward. All hits nullify projectiles, even other projectile supers like Terry’s Power Geyser. Does not reach from the max range of close C. The final hit launches on Counter Hit, but has additional scaling."
+  },
+  {
+    "category": "Ignition Gears",
+    "name": "Guren Sakkon",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:LK]]",
+    "damage": "230 30x2+20x5+70",
+    "description": "Has way better corner carry and range than his other supers, at the cost of damage. Only the D version is invincible on startup. If it hits an extended limb, the opponent will fall out as Billy goes through the whole animation, leaving him wide open for a punish on the ground. This never happens in combos."
+  },
+  {
+    "category": "Redline Gears",
+    "name": "Guren Sakkon BR",
+    "input": "↓ ↘ → ↓ ↘ → + [[FF:HK]]",
+    "damage": "300 40+20x2+10x9+130",
+    "description": "Has way better corner carry and range than his other supers, at the cost of damage. Only the D version is invincible on startup. If it hits an extended limb, the opponent will fall out as Billy goes through the whole animation, leaving him wide open for a punish on the ground. This never happens in combos."
+  },
+  {
+    "category": "Hidden Gear",
+    "name": "Dai Gouen Senpuu Kon",
+    "input": "[During S.P.G.] ↓ ↘ → ↓ ↘ → + [[FF:REV]]",
+    "damage": "429 (55+88+5x21+181)",
+    "description": "Resets the Rev meter to 0%, even during Overheat. Only available during S.P.G. Damage value factors in S.P.G. bonus. Huge range for a Hidden Gear and especially for a 6-frame move, making some things punishable exclusively by this move. Very good okizeme compared to other characters’ Hidden Gears. Like B/D super, you can confirm into this from lights, including max range 5A."
+  }
+]
