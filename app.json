@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Fighting-guide-expo",
+    "name": "Fighting Guide",
     "slug": "Fighting-guide-expo",
     "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/app_icon.png",
     "scheme": "fightingguideexpo",
     "userInterfaceStyle": "automatic",
     "backgroundColor": "#0a0a0f",
@@ -25,10 +25,10 @@
       "package": "com.makstopy.fightingguide",
       "backgroundColor": "#0a0a0f",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#0a0a0f",
+        "foregroundImage": "./assets/images/app_icon.png",
+        "backgroundImage": "./assets/images/app_icon.png",
+        "monochromeImage": "./assets/images/app_icon.png"
       },
       "predictiveBackGestureEnabled": false
     },
