@@ -13,6 +13,8 @@ import { initializeDatabase, DB_VERSION } from '../services/db';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationBar } from 'expo-navigation-bar';
 import IntroScreen from '../components/IntroScreen';
+import mobileAds from 'react-native-google-mobile-ads';
+import BannerAdComponent from '../components/BannerAdComponent';
 
 import {
   Rajdhani_400Regular,
@@ -49,6 +51,15 @@ export default function RootLayout() {
       SplashScreen.hideAsync();
     }
   }, [loaded]);
+
+  // Initialize Google Mobile Ads SDK
+  useEffect(() => {
+    mobileAds()
+      .initialize()
+      .then(adapterStatuses => {
+        console.log('[AdMob] Initialized:', adapterStatuses);
+      });
+  }, []);
 
   if (!loaded) {
     return null;
@@ -120,6 +131,7 @@ function RootLayoutNav() {
           <Suspense fallback={<View style={styles.root} />}>
             <SQLiteProvider databaseName="fighters.db" onInit={handleDbInit}>
               {mainContent}
+              <BannerAdComponent />
             </SQLiteProvider>
           </Suspense>
           {/* IntroScreen is OUTSIDE Suspense so it can render DURING migration */}
