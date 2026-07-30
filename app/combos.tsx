@@ -232,7 +232,7 @@ export default function CombosScreen() {
         "□": "X", "△": "Y", "○": "B", "✕": "A",
         "L1": "LB", "L2": "LT", "R1": "RB", "R2": "RT",
         "LP": "X", "MP": "Y", "HP": "RB", "RP": "Y",
-        "LK": "A", "MK": "B", "HK": "RT", "RK": "A",
+        "LK": "A", "MK": "B", "HK": "RT", "RK": "B",
         "LP+RP": "LB", "LK+RK": "LT", "RP+LK": "RB", "LP+RP+LK+RK": "RT",
         "LP+HP": "LB", "LK+HK": "LT"
       };
@@ -247,7 +247,7 @@ export default function CombosScreen() {
         "X": "□", "Y": "△", "B": "○", "A": "✕",
         "LB": "L1", "LT": "L2", "RB": "R1", "RT": "R2",
         "LP": "□", "MP": "△", "HP": "R1", "RP": "△",
-        "LK": "✕", "MK": "○", "HK": "R2", "RK": "✕",
+        "LK": "✕", "MK": "○", "HK": "R2", "RK": "○",
         "LP+RP": "L1", "LK+RK": "L2", "RP+LK": "R1", "LP+RP+LK+RK": "R2"
       };
       return rawWithOriginal.map((c: any) => ({
@@ -446,8 +446,8 @@ export default function CombosScreen() {
       const map: Record<string, string> = {
         "□": "X", "△": "Y", "○": "B", "✕": "A",
         "L1": "LB", "L2": "LT", "R1": "RB", "R2": "RT",
-        "LP": "X", "MP": "Y", "HP": "RB",
-        "LK": "A", "MK": "B", "HK": "RT",
+        "LP": "X", "MP": "Y", "HP": "RB", "RP": "Y",
+        "LK": "A", "MK": "B", "HK": "RT", "RK": "B",
       };
       return {
         ...rawWithOriginal,
@@ -458,8 +458,8 @@ export default function CombosScreen() {
       const map: Record<string, string> = {
         "X": "□", "Y": "△", "B": "○", "A": "✕",
         "LB": "L1", "LT": "L2", "RB": "R1", "RT": "R2",
-        "LP": "□", "MP": "△", "HP": "R1",
-        "LK": "✕", "MK": "○", "HK": "R2",
+        "LP": "□", "MP": "△", "HP": "R1", "RP": "△",
+        "LK": "✕", "MK": "○", "HK": "R2", "RK": "○",
       };
       return {
         ...rawWithOriginal,

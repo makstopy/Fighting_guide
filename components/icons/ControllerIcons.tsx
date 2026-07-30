@@ -169,7 +169,7 @@ export function DotGrid({ dots, size = 28 }: { dots: number[]; size?: number }) 
 // ─── Arcade Button SVG ────────────────────────────────────────────────────────
 export function ArcadeButton({ label, size = 28 }: { label: string; size?: number }) {
   const ARCADE_DOT_MAP: Record<string, number[]> = {
-    "□": [1, 0, 0, 0],  "△": [0, 1, 0, 0],  "○": [0, 0, 1, 0],  "✕": [0, 0, 0, 1],
+    "□": [1, 0, 0, 0],  "△": [0, 1, 0, 0],  "✕": [0, 0, 1, 0],  "○": [0, 0, 0, 1],
     "L1": [1, 1, 0, 0], "L2": [0, 0, 1, 1], "R1": [0, 1, 1, 0], "R2": [1, 1, 1, 1],
     "LP": [1, 0, 0, 0], "MP": [0, 1, 0, 0], "HP": [0, 1, 0, 0], "RP": [0, 1, 0, 0],
     "LK": [0, 0, 1, 0], "MK": [0, 0, 1, 0], "HK": [0, 0, 0, 1], "RK": [0, 0, 0, 1],

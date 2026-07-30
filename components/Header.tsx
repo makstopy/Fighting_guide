@@ -7,6 +7,7 @@ interface HeaderProps {
   showBack?: boolean;
   gameTitle?: string;
   charName?: string;
+  showControls?: boolean;
 }
 
 export default function Header({ showBack = false, gameTitle, charName }: HeaderProps) {

@@ -97,8 +97,8 @@ function getConsoleButtons(controlType: ControlType, game?: string): ButtonDef[]
     const list: ButtonDef[] = [
       { label: 'LP', token: '□' },
       { label: 'HP', token: '△' },
-      { label: 'LK', token: '○' },
-      { label: 'HK', token: '✕' },
+      { label: 'LK', token: '✕' },
+      { label: 'HK', token: '○' },
       { label: 'LP+HP', token: 'L1' },
       { label: 'LK+HK', token: 'L2' },
       { label: 'LP+LK', token: 'LP+LK' },
@@ -147,6 +147,8 @@ function getGameButtons(game?: string, controlType?: ControlType): ButtonDef[] {
       { label: '[[FF:RB]]', token: '[[FF:RB]]' },
       { label: '[[FF:DA]]', token: '[[FF:DA]]' },
       { label: '[[FF:TH]]', token: '[[FF:TH]]' },
+      { label: 'BR', token: 'BR' },
+      { label: 'FE', token: 'FE' },
     ];
   }
   return [];

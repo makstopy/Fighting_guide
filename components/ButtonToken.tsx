@@ -66,8 +66,8 @@ const SF6_BUTTON_ICONS: Record<string, any> = {
 const ARCADE_DOT_MAP: Record<string, number[]> = {
   "□": [1, 0, 0, 0],
   "△": [0, 1, 0, 0],
-  "○": [0, 0, 1, 0],
-  "✕": [0, 0, 0, 1],
+  "✕": [0, 0, 1, 0],
+  "○": [0, 0, 0, 1],
   "L1": [1, 1, 0, 0],
   "L2": [0, 0, 1, 1],
   "R1": [0, 1, 1, 0],
@@ -313,8 +313,8 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
     const tekkenPS: Record<string, React.ReactNode> = {
       'LP': <PSSquare size={s} />,
       'RP': <PSTriangle size={s} />,
-      'LK': <PSCircle size={s} />,
-      'RK': <PSCross size={s} />,
+      'LK': <PSCross size={s} />,
+      'RK': <PSCircle size={s} />,
       'LP+RP': <PSBumper label="L1" size={s} />,
       'LK+RK': <PSBumper label="L2" size={s} />,
       'RP+LK': <PSBumper label="R1" size={s} />,
@@ -352,8 +352,8 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
     const tekkenXbox: Record<string, React.ReactNode> = {
       'LP': <XboxX size={s} />,
       'RP': <XboxY size={s} />,
-      'LK': <XboxB size={s} />,
-      'RK': <XboxA size={s} />,
+      'LK': <XboxA size={s} />,
+      'RK': <XboxB size={s} />,
       'LP+RP': <XboxBumper label="LB" size={s} />,
       'LK+RK': <XboxBumper label="LT" size={s} />,
       'RP+LK': <XboxBumper label="RB" size={s} />,
