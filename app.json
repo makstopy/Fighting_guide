@@ -2,7 +2,7 @@
   "expo": {
     "name": "Fighting Guide",
     "slug": "Fighting-guide-expo",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "orientation": "portrait",
     "icon": "./assets/images/new_logo.png",
     "scheme": "fightingguideexpo",
@@ -22,7 +22,7 @@
       "backgroundColor": "#0a0a0f"
     },
     "android": {
-      "versionCode": 2,
+      "versionCode": 3,
       "package": "com.makstopy.fightingguide",
       "backgroundColor": "#0a0a0f",
       "adaptiveIcon": {
@@ -67,8 +67,5 @@
         "projectId": "14222150-d12f-436f-950c-fbcadea259b3"
       }
     }
-  },
-  "react-native-google-mobile-ads": {
-    "android_app_id": "ca-app-pub-1629168680416513~2844600811"
   }
 }
