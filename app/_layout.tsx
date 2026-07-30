@@ -111,6 +111,7 @@ function RootLayoutNav() {
               <Stack.Screen name="characters" />
               <Stack.Screen name="combos" />
             </Stack>
+            <BannerAdComponent />
           </View>
         </ControlProvider>
       </CustomCombosProvider>
@@ -131,7 +132,6 @@ function RootLayoutNav() {
           <Suspense fallback={<View style={styles.root} />}>
             <SQLiteProvider databaseName="fighters.db" onInit={handleDbInit}>
               {mainContent}
-              <BannerAdComponent />
             </SQLiteProvider>
           </Suspense>
           {/* IntroScreen is OUTSIDE Suspense so it can render DURING migration */}
