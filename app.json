@@ -2,7 +2,7 @@
   "expo": {
     "name": "Fighting Guide",
     "slug": "Fighting-guide-expo",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/app_icon.png",
     "scheme": "fightingguideexpo",
@@ -22,6 +22,7 @@
       "backgroundColor": "#0a0a0f"
     },
     "android": {
+      "versionCode": 2,
       "package": "com.makstopy.fightingguide",
       "backgroundColor": "#0a0a0f",
       "adaptiveIcon": {
@@ -55,7 +56,8 @@
           "android_app_id": "ca-app-pub-1629168680416513~2844600811"
         }
       ],
-      "./plugins/withForcePlayServicesAds"
+      "./plugins/withForcePlayServicesAds",
+      "./plugins/withKotlinVersion"
     ],
     "experiments": {
       "typedRoutes": true
