@@ -57,7 +57,8 @@
         }
       ],
       "./plugins/withForcePlayServicesAds",
-      "./plugins/withKotlinVersion"
+      "./plugins/withKotlinVersion",
+      "./plugins/withBundleInDebug"
     ],
     "experiments": {
       "typedRoutes": true
