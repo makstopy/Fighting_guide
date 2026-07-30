@@ -95,17 +95,17 @@ function getConsoleButtons(controlType: ControlType, game?: string): ButtonDef[]
   }
   if (controlType === 'Arcade') {
     const list: ButtonDef[] = [
-      { label: 'LP', token: '□' },
-      { label: 'HP', token: '△' },
-      { label: 'LK', token: '✕' },
-      { label: 'HK', token: '○' },
-      { label: 'LP+HP', token: 'L1' },
-      { label: 'LK+HK', token: 'L2' },
+      { label: 'LP', token: 'LP' },
+      { label: 'HP', token: 'HP' },
+      { label: 'LK', token: 'LK' },
+      { label: 'HK', token: 'HK' },
+      { label: 'LP+HP', token: 'LP+HP' },
+      { label: 'LK+HK', token: 'LK+HK' },
       { label: 'LP+LK', token: 'LP+LK' },
       { label: 'HP+HK', token: 'HP+HK' },
-      { label: 'HP+LK', token: 'R1' },
+      { label: 'HP+LK', token: 'HP+LK' },
       { label: 'LP+HK', token: 'LP+HK' },
-      { label: 'ALL', token: 'R2' },
+      { label: 'ALL', token: 'ALL' },
     ];
 
     if (game === 'Street Fighter 6') {
@@ -149,6 +149,15 @@ function getGameButtons(game?: string, controlType?: ControlType): ButtonDef[] {
       { label: '[[FF:TH]]', token: '[[FF:TH]]' },
       { label: 'BR', token: 'BR' },
       { label: 'FE', token: 'FE' },
+    ];
+  }
+  if (game === 'Tekken 8') {
+    return [
+      { label: '[[ICON:heat-engager]]', token: '[[ICON:heat-engager]]' },
+      { label: '[[ICON:power-crush]]', token: '[[ICON:power-crush]]' },
+      { label: '[[ICON:tornado-move]]', token: '[[ICON:tornado-move]]' },
+      { label: '[[ICON:homing-attack]]', token: '[[ICON:homing-attack]]' },
+      { label: '[[ICON:gauge-diminisher]]', token: '[[ICON:gauge-diminisher]]' },
     ];
   }
   return [];

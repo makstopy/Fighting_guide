@@ -145,32 +145,28 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
     const code = token.slice(5, -2);
     if (controlType === 'PS') {
       switch (code) {
-        case 'LP': case 'P': return <PSSquare size={s} />;
-        case 'HP': case 'SP': return <PSTriangle size={s} />;
-        case 'LK': case 'K': return <PSCross size={s} />;
-        case 'HK': case 'SC': return <PSCircle size={s} />;
+        case 'LP': return <PSSquare size={s} />;
+        case 'HP': return <PSTriangle size={s} />;
+        case 'LK': return <PSCross size={s} />;
+        case 'HK': return <PSCircle size={s} />;
         case 'REV': return <PSBumper label="R1" size={s} />;
-        case 'RB': return <PSBumper label="L1" size={s} />;
-        case 'DA': return <PSBumper label="R2" size={s} />;
-        case 'TH': return <PSBumper label="L2" size={s} />;
       }
     }
     if (controlType === 'Xbox') {
       switch (code) {
-        case 'LP': case 'P': return <XboxX size={s} />;
-        case 'HP': case 'SP': return <XboxY size={s} />;
-        case 'LK': case 'K': return <XboxA size={s} />;
-        case 'HK': case 'SC': return <XboxB size={s} />;
+        case 'LP': return <XboxX size={s} />;
+        case 'HP': return <XboxY size={s} />;
+        case 'LK': return <XboxA size={s} />;
+        case 'HK': return <XboxB size={s} />;
         case 'REV': return <XboxBumper label="RB" size={s} />;
-        case 'RB': return <XboxBumper label="LB" size={s} />;
-        case 'DA': return <XboxBumper label="RT" size={s} />;
-        case 'TH': return <XboxBumper label="LT" size={s} />;
       }
     }
     if (controlType === 'Arcade') {
-      return <ArcadeButton label={code} size={s} />;
+      if (['LP', 'HP', 'LK', 'HK', 'REV'].includes(code)) {
+        return <ArcadeButton label={code} size={s} />;
+      }
     }
-    // Original control type or fallback: show Fatal Fury PNG image icon
+    // Original control type or additional smart buttons (P, K, SP, SC, RB, DA, TH): show Fatal Fury PNG image icon
     const imgSource = FF_IMAGE_ICONS[code];
     if (imgSource) {
       return (
@@ -319,6 +315,7 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
       'LK+RK': <PSBumper label="L2" size={s} />,
       'RP+LK': <PSBumper label="R1" size={s} />,
       'LP+RP+LK+RK': <PSBumper label="R2" size={s} />,
+      'ALL': <PSBumper label="R2" size={s} />,
     };
     if (tekkenPS[token]) return <>{tekkenPS[token]}</>;
 
@@ -358,6 +355,7 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
       'LK+RK': <XboxBumper label="LT" size={s} />,
       'RP+LK': <XboxBumper label="RB" size={s} />,
       'LP+RP+LK+RK': <XboxBumper label="RT" size={s} />,
+      'ALL': <XboxBumper label="RT" size={s} />,
     };
     if (tekkenXbox[token]) return <>{tekkenXbox[token]}</>;
 

@@ -265,7 +265,7 @@ export default function CombosScreen() {
       return rawWithOriginal.map((c: any) => ({
         ...c,
         input: c.rawInput || c.input,
-        inputNumpad: (c.rawInput || c.input).split("").map((ch: string) => dirMap[ch] || ch).join("")
+        inputNumpad: (c.rawInput || c.input).replace(/[↖↑↗←→↙↓↘]/g, (ch: string) => dirMap[ch] || ch)
       }));
     }
 
@@ -342,7 +342,7 @@ export default function CombosScreen() {
       {/* Row 1: Single buttons */}
       <View style={styles.legendIconsContainer}>
         {[
-          ["□", "LP"], ["△", "HP"], ["○", "LK"], ["✕", "HK"]
+          ["LP", "LP"], ["HP", "HP"], ["LK", "LK"], ["HK", "HK"]
         ].map(([sym, lbl]) => (
           <View key={sym} style={styles.arcadeLegendItem}>
             <ArcadeButton label={sym} size={28} />
@@ -354,9 +354,9 @@ export default function CombosScreen() {
       {/* Row 2: Combinations */}
       <View style={styles.legendIconsContainer}>
         {[
-          ["L1", "LP+HP"], ["L2", "LK+HK"],
+          ["LP+HP", "LP+HP"], ["LK+HK", "LK+HK"],
           ["LP+LK", "LP+LK"], ["HP+HK", "HP+HK"],
-          ["R1", "HP+LK"], ["LP+HK", "LP+HK"], ["R2", "ALL"]
+          ["HP+LK", "HP+LK"], ["LP+HK", "LP+HK"], ["ALL", "ALL"]
         ].map(([sym, lbl]) => (
           <View key={sym} style={styles.arcadeLegendItem}>
             <ArcadeButton label={sym} size={28} />
@@ -475,7 +475,7 @@ export default function CombosScreen() {
       return {
         ...rawWithOriginal,
         input: rawWithOriginal.rawInput || rawWithOriginal.input,
-        inputNumpad: (rawWithOriginal.rawInput || rawWithOriginal.input).split("").map((ch: string) => dirMap[ch] || ch).join("")
+        inputNumpad: (rawWithOriginal.rawInput || rawWithOriginal.input).replace(/[↖↑↗←→↙↓↘]/g, (ch: string) => dirMap[ch] || ch)
       };
     }
     return rawWithOriginal;
