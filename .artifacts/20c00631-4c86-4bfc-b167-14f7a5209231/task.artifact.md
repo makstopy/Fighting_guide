@@ -1,0 +1,3 @@
+- [/] Delete `node_modules/expo-modules-core/android/.cxx` directory
+- [/] Modify `node_modules/expo-modules-core/android/build.gradle` to restrict `generateStubPCH` to `Debug` builds
+- [ ] Verify the fix by running `:expo-modules-core:buildCMakeRelWithDebInfo`

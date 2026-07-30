@@ -51,9 +51,11 @@
       [
         "react-native-google-mobile-ads",
         {
+          "androidAppId": "ca-app-pub-1629168680416513~2844600811",
           "android_app_id": "ca-app-pub-1629168680416513~2844600811"
         }
-      ]
+      ],
+      "./plugins/withForcePlayServicesAds"
     ],
     "experiments": {
       "typedRoutes": true
@@ -64,5 +66,8 @@
         "projectId": "14222150-d12f-436f-950c-fbcadea259b3"
       }
     }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-1629168680416513~2844600811"
   }
 }
