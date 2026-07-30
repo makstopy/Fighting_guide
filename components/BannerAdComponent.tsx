@@ -1,20 +1,28 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
 import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-// Use test ID in dev, real ad unit ID in production
-const adUnitId = __DEV__
+// Set to true for testing with test ads. Set to false before final release to Google Play.
+const USE_TEST_ADS = true;
+
+const adUnitId = (__DEV__ || USE_TEST_ADS)
   ? TestIds.ADAPTIVE_BANNER
   : 'ca-app-pub-1629168680416513/6532684528';
 
 export default function BannerAdComponent() {
   const [adLoaded, setAdLoaded] = useState(false);
+  const insets = useSafeAreaInsets();
 
   // Don't show ads on web
   if (Platform.OS === 'web') return null;
 
   return (
-    <View style={[styles.container, !adLoaded && styles.hidden]}>
+    <View style={[
+      styles.container,
+      { paddingBottom: insets.bottom },
+      !adLoaded && styles.hidden
+    ]}>
       <BannerAd
         unitId={adUnitId}
         size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
