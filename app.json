@@ -4,7 +4,7 @@
     "slug": "Fighting-guide-expo",
     "version": "1.1.0",
     "orientation": "portrait",
-    "icon": "./assets/images/app_icon.png",
+    "icon": "./assets/images/new_logo.png",
     "scheme": "fightingguideexpo",
     "userInterfaceStyle": "automatic",
     "backgroundColor": "#0a0a0f",
@@ -27,9 +27,7 @@
       "backgroundColor": "#0a0a0f",
       "adaptiveIcon": {
         "backgroundColor": "#0a0a0f",
-        "foregroundImage": "./assets/images/app_icon.png",
-        "backgroundImage": "./assets/images/app_icon.png",
-        "monochromeImage": "./assets/images/app_icon.png"
+        "foregroundImage": "./assets/images/new_logo.png"
       },
       "predictiveBackGestureEnabled": false
     },
@@ -43,7 +41,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/app_icon.png",
+          "image": "./assets/images/new_logo.png",
           "resizeMode": "contain",
           "backgroundColor": "#0a0a0f"
         }
