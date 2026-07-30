@@ -109,8 +109,8 @@ function getConsoleButtons(controlType: ControlType, game?: string): ButtonDef[]
     ];
 
     if (game === 'Street Fighter 6') {
-      list.splice(1, 0, { label: 'MP', token: '[[MP]]' });
-      list.splice(4, 0, { label: 'MK', token: '[[MK]]' });
+      list.splice(1, 0, { label: 'MP', token: 'MP' });
+      list.splice(4, 0, { label: 'MK', token: 'MK' });
     }
 
     return list;

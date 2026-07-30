@@ -77,18 +77,24 @@ const ARCADE_DOT_MAP: Record<string, number[]> = {
   "LK": [0, 0, 1, 0],
   "RK": [0, 0, 0, 1],
   "MP": [0, 1, 0, 0],
-  "HP": [0, 1, 1, 0],
-  "MK": [0, 0, 1, 0],
-  "HK": [0, 0, 1, 1],
+  "HP": [0, 1, 0, 0],
+  "MK": [0, 0, 0, 1],
+  "HK": [0, 0, 0, 1],
+  "LP+HP": [1, 1, 0, 0],
   "LP+RP": [1, 1, 0, 0],
+  "LK+HK": [0, 0, 1, 1],
   "LK+RK": [0, 0, 1, 1],
+  "HP+LK": [0, 1, 1, 0],
   "RP+LK": [0, 1, 1, 0],
+  "LP+HK": [1, 0, 0, 1],
   "LP+RK": [1, 0, 0, 1],
   "LP+LK": [1, 0, 1, 0],
+  "HP+HK": [0, 1, 0, 1],
   "RP+RK": [0, 1, 0, 1],
   "LP+RP+LK": [1, 1, 1, 0],
   "LP+RP+RK": [1, 1, 0, 1],
   "LP+RP+LK+RK": [1, 1, 1, 1],
+  "ALL": [1, 1, 1, 1],
 };
 
 const FF_IMAGE_ICONS: Record<string, any> = {
@@ -221,18 +227,6 @@ export default function ButtonToken({ token, controlType }: ButtonTokenProps) {
 
   if (controlType === 'Arcade' && isSf6StrengthToken) {
     const rawLabel = token.replace(/\[\[|\]\]/g, '');
-    if (rawLabel === 'MP' || rawLabel === 'MK') {
-      const imgSrc = SF6_BUTTON_ICONS[`[[${rawLabel}]]`] || SF6_BUTTON_ICONS[rawLabel];
-      if (imgSrc) {
-        return (
-          <Image
-            source={imgSrc}
-            style={styles.sf6Icon}
-            resizeMode="contain"
-          />
-        );
-      }
-    }
     return <ArcadeButton label={rawLabel} size={s} />;
   }
 

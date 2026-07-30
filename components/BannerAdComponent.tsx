@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
-import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+import mobileAds, { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
+let isInitialized = false;
 
 // Set to true for testing with test ads. Set to false before final release to Google Play.
 const USE_TEST_ADS = true;
@@ -13,6 +15,20 @@ const adUnitId = (__DEV__ || USE_TEST_ADS)
 export default function BannerAdComponent() {
   const [adLoaded, setAdLoaded] = useState(false);
   const insets = useSafeAreaInsets();
+
+  useEffect(() => {
+    if (!isInitialized) {
+      isInitialized = true;
+      mobileAds()
+        .initialize()
+        .then(adapterStatuses => {
+          console.log('[AdMob] Initialized:', adapterStatuses);
+        })
+        .catch(err => {
+          console.warn('[AdMob] Init error:', err);
+        });
+    }
+  }, []);
 
   // Don't show ads on web
   if (Platform.OS === 'web') return null;

@@ -13,7 +13,6 @@ import { initializeDatabase, DB_VERSION } from '../services/db';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationBar } from 'expo-navigation-bar';
 import IntroScreen from '../components/IntroScreen';
-import mobileAds from 'react-native-google-mobile-ads';
 import BannerAdComponent from '../components/BannerAdComponent';
 
 import {
@@ -51,15 +50,6 @@ export default function RootLayout() {
       SplashScreen.hideAsync();
     }
   }, [loaded]);
-
-  // Initialize Google Mobile Ads SDK
-  useEffect(() => {
-    mobileAds()
-      .initialize()
-      .then(adapterStatuses => {
-        console.log('[AdMob] Initialized:', adapterStatuses);
-      });
-  }, []);
 
   if (!loaded) {
     return null;
