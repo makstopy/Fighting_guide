@@ -6,7 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 let isInitialized = false;
 
 // Set to true for testing with test ads. Set to false before final release to Google Play.
-const USE_TEST_ADS = true;
+const USE_TEST_ADS = false;
 
 const adUnitId = (__DEV__ || USE_TEST_ADS)
   ? TestIds.ADAPTIVE_BANNER

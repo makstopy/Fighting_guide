@@ -35,11 +35,11 @@ import {
 } from './icons/ControllerIcons';
 
 const MOVE_ICONS: Record<string, any> = {
-  "heat-engager": require('../assets/images/heat-engager.avif'),
-  "gauge-diminisher": require('../assets/images/gauge-diminisher.avif'),
-  "homing-attack": require('../assets/images/homing-attack.avif'),
-  "power-crush": require('../assets/images/power-crush.avif'),
-  "tornado-move": require('../assets/images/tornado-move.avif'),
+  "heat-engager": require('../assets/images/heat-engager.webp'),
+  "gauge-diminisher": require('../assets/images/gauge-diminisher.webp'),
+  "homing-attack": require('../assets/images/homing-attack.webp'),
+  "power-crush": require('../assets/images/power-crush.webp'),
+  "tornado-move": require('../assets/images/tornado-move.webp'),
 };
 
 const SF6_BUTTON_ICONS: Record<string, any> = {

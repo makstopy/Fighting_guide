@@ -2,7 +2,7 @@
   "expo": {
     "name": "Fighting Guide",
     "slug": "Fighting-guide-expo",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "react-native-google-mobile-ads": {
       "android_app_id": "ca-app-pub-1629168680416513~2844600811",
       "ios_app_id": "ca-app-pub-1629168680416513~2844600811"
@@ -26,7 +26,7 @@
       "backgroundColor": "#0a0a0f"
     },
     "android": {
-      "versionCode": 12,
+      "versionCode": 13,
       "package": "com.makstopy.fightingguide",
       "backgroundColor": "#0a0a0f",
       "adaptiveIcon": {
@@ -46,8 +46,9 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/new_logo.png",
+          "imageWidth": 280,
           "resizeMode": "contain",
-          "backgroundColor": "#0a0a0f"
+          "backgroundColor": "#181b31"
         }
       ],
       "expo-sqlite",

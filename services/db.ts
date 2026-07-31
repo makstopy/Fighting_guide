@@ -9,7 +9,7 @@ import TEKKEN8_PORTRAITS from '../data/tekken8_portaits.json';
 import FATAL_FURY_PORTRAITS from '../data/fatal_fury_portraits.json';
 import COMBOS_DB from '../data/combos/index';
 
-export const DB_VERSION = 31;
+export const DB_VERSION = 32;
 
 export interface SQLiteCombo {
   id: string;
