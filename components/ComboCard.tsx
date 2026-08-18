@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, { useSharedValue, useAnimatedStyle, withTiming, withSequence } from 'react-native-reanimated';
+import { captureRef } from 'react-native-view-shot';
+import * as Sharing from 'expo-sharing';
+import Svg, { Path } from 'react-native-svg';
 import ComboInput from './ComboInput';
 import { ControlType } from './ControlContext';
 import { useFavoritesContext } from './FavoritesContext';
@@ -90,10 +93,15 @@ function parseNameBadges(name: string) {
 export default function ComboCard({ combo, controlType, comboKey }: ComboCardProps) {
   const { isFavorite, toggleFavorite } = useFavoritesContext();
   const fav = isFavorite(comboKey);
+  const captureViewRef = useRef<View>(null);
 
-  // Spring scale animation for the star button
+  // Spring scale animation for the fav button
   const scale = useSharedValue(1);
   const animStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.value }] }));
+
+  // Spring scale animation for the share button
+  const shareScale = useSharedValue(1);
+  const shareAnimStyle = useAnimatedStyle(() => ({ transform: [{ scale: shareScale.value }] }));
 
   const handleFavPress = () => {
     scale.value = withSequence(
@@ -101,6 +109,26 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
       withTiming(1, { duration: 80 })
     );
     toggleFavorite(comboKey);
+  };
+
+  const handleSharePress = async () => {
+    try {
+      shareScale.value = withSequence(
+        withTiming(1.2, { duration: 80 }),
+        withTiming(1, { duration: 80 })
+      );
+      if (!captureViewRef.current) return;
+      const uri = await captureRef(captureViewRef, {
+        format: 'png',
+        quality: 1,
+      });
+      await Sharing.shareAsync(uri, {
+        mimeType: 'image/png',
+        dialogTitle: 'Share Combo',
+      });
+    } catch (error) {
+      console.error('Share failed:', error);
+    }
   };
 
   // Left border gradient colors selection
@@ -170,37 +198,22 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
 
   const diffColors = combo.difficulty ? getDifficultyColors(combo.difficulty) : null;
 
-  return (
-    <View style={styles.cardContainer}>
+  // Shared card content rendered in both visible and capture views
+  const renderCardContent = () => (
+    <>
       <LinearGradient
         colors={['#1a1a2e', '#16213e']}
         style={StyleSheet.absoluteFill}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
       />
-      
-      {/* Left accent bar — colored by category */}
       <LinearGradient
         colors={grad}
         style={styles.accentBar}
         start={{ x: 0, y: 0 }}
         end={{ x: 0, y: 1 }}
       />
-
-      {/* Favorite star button — top right */}
-      <TouchableOpacity
-        style={styles.favButton}
-        onPress={handleFavPress}
-        hitSlop={{ top: 10, right: 10, bottom: 10, left: 10 }}
-        activeOpacity={0.7}
-      >
-        <Animated.Text style={[styles.favIcon, fav && styles.favIconActive, animStyle]}>
-          ♥
-        </Animated.Text>
-      </TouchableOpacity>
-
       <View style={styles.contentWrapper}>
-        {/* Title and Badges */}
         <View style={styles.headerRow}>
           <View style={styles.titleWithBadgesContainer}>
             <Text style={styles.comboName}>{cleanTitle}</Text>
@@ -217,13 +230,10 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
               />
             ))}
           </View>
-
           <View style={styles.badgeContainer}>
-            {/* Category badge */}
             <View style={[styles.badge, { backgroundColor: `${badgeColor}22`, borderColor: `${badgeColor}44` }]}>
               <Text style={[styles.badgeText, { color: badgeColor }]}>{badgeLabel}</Text>
             </View>
-            {/* Difficulty badge */}
             {combo.difficulty && combo.difficulty !== '-' && diffColors && (
               <View style={[styles.badge, { backgroundColor: diffColors.bg, borderColor: 'transparent' }]}>
                 <Text style={[styles.badgeText, { color: diffColors.text }]}>{combo.difficulty}</Text>
@@ -231,13 +241,7 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
             )}
           </View>
         </View>
-
-        {/* Input tokens row */}
         <ComboInput input={combo.input} controlType={controlType} />
-
-
-
-        {/* Damage and description */}
         <Text style={styles.descriptionText}>
           {combo.damage && combo.damage !== '-' && (
             <Text style={styles.damageHighlight}>💥 {combo.damage} dmg </Text>
@@ -245,6 +249,63 @@ export default function ComboCard({ combo, controlType, comboKey }: ComboCardPro
           {combo.description}
         </Text>
       </View>
+    </>
+  );
+
+  return (
+    <View style={styles.cardContainer}>
+      {/* Hidden capture view — identical size/content + app logo instead of buttons.
+          Covered completely by the visible layer on top, so user never sees it,
+          but Android lays it out within the screen bounds so Image is fully rendered for captureRef. */}
+      <View
+        ref={captureViewRef}
+        collapsable={false}
+        pointerEvents="none"
+        style={StyleSheet.absoluteFill}
+      >
+        {renderCardContent()}
+        <View style={styles.logoContainer}>
+          <Image
+            source={require('../assets/images/app_icon.png')}
+            style={styles.logoImage}
+            resizeMode="contain"
+          />
+        </View>
+      </View>
+
+      {/* Visible layer — rendered in-flow on top with action buttons */}
+      {renderCardContent()}
+
+      {/* Share button — above favorite */}
+      <TouchableOpacity
+        style={styles.shareButton}
+        onPress={handleSharePress}
+        hitSlop={{ top: 10, right: 10, bottom: 10, left: 10 }}
+        activeOpacity={0.7}
+      >
+        <Animated.View style={shareAnimStyle}>
+          <Svg width={22} height={22} viewBox="0 -960 960 960">
+            <Path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm508.5-291.5Q720-743 720-760t-11.5-28.5Q697-800 680-800t-28.5 11.5Q640-777 640-760t11.5 28.5Q663-720 680-720t28.5-11.5ZM680-200ZM200-480Zm480-280Z" fill="rgba(255,255,255,0.15)" />
+          </Svg>
+        </Animated.View>
+      </TouchableOpacity>
+
+      {/* Favorite button */}
+      <TouchableOpacity
+        style={styles.favButton}
+        onPress={handleFavPress}
+        hitSlop={{ top: 10, right: 10, bottom: 10, left: 10 }}
+        activeOpacity={0.7}
+      >
+        <Animated.View style={animStyle}>
+          <Svg width={24} height={24} viewBox="0 -960 960 960">
+            <Path d={fav
+              ? 'm480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z'
+              : 'm480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z'
+            } fill={fav ? '#ef4444' : 'rgba(255,255,255,0.15)'} />
+          </Svg>
+        </Animated.View>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -332,11 +393,29 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  favIcon: {
-    fontSize: 26,
-    color: 'rgba(255, 255, 255, 0.15)',
+  shareButton: {
+    position: 'absolute',
+    bottom: 44,
+    right: 8,
+    zIndex: 10,
+    width: 36,
+    height: 36,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  favIconActive: {
-    color: '#ef4444',
+  logoContainer: {
+    position: 'absolute',
+    bottom: 6,
+    right: 6,
+    zIndex: 10,
+    width: 48,
+    height: 48,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  logoImage: {
+    width: 44,
+    height: 44,
+    borderRadius: 8,
   },
 });

@@ -2,7 +2,7 @@
   "expo": {
     "name": "Fighting Guide",
     "slug": "Fighting-guide-expo",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "react-native-google-mobile-ads": {
       "android_app_id": "ca-app-pub-1629168680416513~2844600811",
       "ios_app_id": "ca-app-pub-1629168680416513~2844600811"
@@ -26,7 +26,7 @@
       "backgroundColor": "#0a0a0f"
     },
     "android": {
-      "versionCode": 13,
+      "versionCode": 14,
       "package": "com.makstopy.fightingguide",
       "backgroundColor": "#0a0a0f",
       "adaptiveIcon": {
@@ -61,7 +61,8 @@
       ],
       "./plugins/withForcePlayServicesAds",
       "./plugins/withKotlinVersion",
-      "./plugins/withBundleInDebug"
+      "./plugins/withBundleInDebug",
+      "expo-sharing"
     ],
     "experiments": {
       "typedRoutes": true
